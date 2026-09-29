@@ -8,6 +8,7 @@ const translations = {
     // Navigation
     'nav.home': 'Início',
     'nav.about': 'Sobre & Trajetória',
+    'nav.versatility': 'Atuação Multissetorial',
     'nav.sysotto': 'Sysotto Software House',
     'nav.projects': 'Projetos',
     'nav.skills': 'Tecnologias',
@@ -18,9 +19,9 @@ const translations = {
     'nav.cv_en': 'Resume EN-US',
 
     // Hero
-    'hero.badge': 'CEO da Sysotto Software House & Desenvolvedor de Software',
-    'hero.title_start': 'Transformando visão estratégica executiva em',
-    'hero.title_highlight': 'engenharia de software',
+    'hero.badge': 'Liderança Executiva · CEO Sysotto · Engenheiro de Software',
+    'hero.title_start': 'Transformando visão estratégica de negócios em',
+    'hero.title_highlight': 'arquitetura & software',
     'hero.title_end': 'de alto desempenho.',
     'hero.subtitle': 'Mais de 20 anos de liderança em gestão de negócios e operações de grande porte (Gerdau, CSN, Servisan), com sólida transição para a computação e desenvolvimento de software corporativo moderno em C#, .NET 10, Next.js e baixo nível.',
     'hero.cta_projects': 'Explorar Sistemas Sysotto',
@@ -48,8 +49,21 @@ const translations = {
     'about.diff_3_title': 'Engenharia com Foco em Qualidade:',
     'about.diff_3_desc': 'Práticas rigorosas de arquitetura limpa, testes automatizados, segurança fail-closed e isolamento multi-tenant.',
 
+    // Versatility & Multi-Sector Solutions
+    'versatility.pill': 'Soluções Multissetoriais',
+    'versatility.title': 'Versatilidade & Capacidade de Entrega por Segmento',
+    'versatility.subtitle': 'Arquitetura técnica e visão executiva aplicadas a diferentes portes, necessidades operacionais e mercados.',
+    'versatility.ind_title': 'Grandes Indústrias & Logística (Enterprise)',
+    'versatility.ind_desc': 'Controle de estoques de alto volume com regras FEFO/FIFO, rastreabilidade GS1-128, endereçamento tridimensional de armazéns, conformidade regulatória e auditoria contábil.',
+    'versatility.sme_title': 'PMEs, Varejo & Serviços Alimentícios',
+    'versatility.sme_desc': 'Operação comercial ágil com controle de comandas/mesas, cardápio digital dinâmico via QR Code, Kitchen Display System (KDS) e agente nativo desktop de impressão térmica sem intermediários.',
+    'versatility.saas_title': 'Startups & Produtos Digitais (SaaS B2B)',
+    'versatility.saas_desc': 'Arquiteturas SaaS multi-tenant resilientes, isolamento de dados com PostgreSQL RLS, construtor de sites em Next.js com geração estática de snapshots e pipelines de alta performance.',
+    'versatility.critical_title': 'Sistemas Críticos & Cibersegurança',
+    'versatility.critical_desc': 'Engenharia de baixo nível em C/C++, eficiência algorítmica, gerenciamento direto de memória na heap, monitoramento ativo com Wireshark e segurança de redes com padrões Cisco.',
+
     // Sysotto Section
-    'sysotto.badge': 'Software House & Sistemas em Produção',
+    'sysotto.badge': 'Case em Destaque: Software House',
     'sysotto.title': 'Sysotto Software House',
     'sysotto.lead': 'A Sysotto é uma software house fundada e liderada por Otto David de Santana Freitag (CEO), focada em soluções SaaS verticais de alta densidade técnica, performance e conformidade corporativa.',
     'sysotto.functional_badge': 'Módulos Funcionais em Produção / Homologação',
@@ -198,6 +212,7 @@ const translations = {
     // Navigation
     'nav.home': 'Home',
     'nav.about': 'About & Career',
+    'nav.versatility': 'Capabilities',
     'nav.sysotto': 'Sysotto Software House',
     'nav.projects': 'Projects',
     'nav.skills': 'Tech Stack',
@@ -208,10 +223,10 @@ const translations = {
     'nav.cv_en': 'Resume EN-US',
 
     // Hero
-    'hero.badge': 'CEO at Sysotto Software House & Software Engineer',
-    'hero.title_start': 'Bridging senior executive business vision with',
-    'hero.title_highlight': 'high-performance',
-    'hero.title_end': 'software engineering.',
+    'hero.badge': 'Executive Leadership · Sysotto CEO · Software Engineer',
+    'hero.title_start': 'Bridging executive business strategy with',
+    'hero.title_highlight': 'high-performance software',
+    'hero.title_end': 'and resilient architecture.',
     'hero.subtitle': 'Over 20 years of executive leadership in business operations and regional distribution (Gerdau, CSN, Servisan), transitioning with technical depth into modern enterprise software engineering in C#, .NET 10, Next.js, and low-level computing.',
     'hero.cta_projects': 'Explore Sysotto Systems',
     'hero.cta_academic': 'View Academic Projects',
@@ -238,8 +253,21 @@ const translations = {
     'about.diff_3_title': 'Quality-Driven Engineering:',
     'about.diff_3_desc': 'Strict adherence to clean code, comprehensive automated testing, fail-closed security models, and resilient multi-tenant isolation.',
 
+    // Versatility & Multi-Sector Solutions
+    'versatility.pill': 'Multi-Sector Solutions',
+    'versatility.title': 'Versatility & Multi-Sector Delivery Capabilities',
+    'versatility.subtitle': 'Technical architecture and executive foresight tailored to diverse organizational scales and market demands.',
+    'versatility.ind_title': 'Enterprise Industry & Supply Chain',
+    'versatility.ind_desc': 'High-volume inventory governance with automated FEFO/FIFO rules, GS1-128 lot traceability, 3D warehouse address mapping, strict regulatory compliance, and audited reconciliation.',
+    'versatility.sme_title': 'SMBs, Retail & Food Service',
+    'versatility.sme_desc': 'Agile point-of-sale operations, concurrent table and tab management, dynamic QR menus, real-time Kitchen Display Systems, and autonomous native desktop thermal printing agents.',
+    'versatility.saas_title': 'Startups & Digital B2B SaaS',
+    'versatility.saas_desc': 'Resilient multi-tenant architectures, row-level security isolation in PostgreSQL, Next.js dynamic site builders with static snapshot pipelines, and audited Lighthouse performance.',
+    'versatility.critical_title': 'Critical Systems & Cybersecurity',
+    'versatility.critical_desc': 'Low-level systems engineering in C/C++, algorithmic efficiency, direct heap memory control, active network traffic inspection with Wireshark, and Cisco network defense standards.',
+
     // Sysotto Section
-    'sysotto.badge': 'Software House & Production Systems',
+    'sysotto.badge': 'Featured Case: Software House',
     'sysotto.title': 'Sysotto Software House',
     'sysotto.lead': 'Sysotto is an enterprise software house founded and led by Otto David de Santana Freitag (CEO), engineered for high-density multi-tenant SaaS verticals, operational resilience, and scalable business workflows.',
     'sysotto.functional_badge': 'Live & Functional Production Modules',
