@@ -1,0 +1,15 @@
+<svg width="420" height="110" viewBox="0 0 420 110" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .primary { fill: #0A2540; }
+    .accent { fill: none; stroke: #1E6F9F; stroke-width: 4; stroke-linecap: round; }
+    .text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 600; }
+  </style>
+
+  <g transform="translate(20,20)">
+    <rect width="70" height="70" rx="18" class="primary"/>
+    <path d="M52 20 C52 12, 18 12, 18 22 C18 32, 52 32, 52 42 C52 52, 18 52, 18 42"
+          class="accent"/>
+  </g>
+
+  <text x="110" y="65" font-size="38" class="text primary">Sysotto</text>
+</svg>

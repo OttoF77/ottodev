@@ -1,0 +1,28 @@
+<svg width="500" height="120" viewBox="0 0 500 120" xmlns="http://www.w3.org/2000/svg">
+
+<style>
+.primary{fill:#E6EDF3}
+.accent{fill:none;stroke:#4CC2FF;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+.text{font-family:'Segoe UI',Arial,sans-serif;font-weight:600}
+</style>
+
+<g transform="translate(20,20)">
+    <rect width="70" height="70" rx="18" fill="#112F4A"/>
+
+    <path
+        d="M22 18
+           L22 52
+           M22 18
+           H45
+           C58 18 58 38 45 38
+           H22
+           M42 38
+           L55 52"
+        class="accent"/>
+</g>
+
+<text x="115" y="65" font-size="40" class="text primary">
+RestSaaS
+</text>
+
+</svg>

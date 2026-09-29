@@ -1,0 +1,20 @@
+<svg width="420" height="110" viewBox="0 0 420 110" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Sysotto Sites — Dark</title>
+  <desc id="desc">Logomarca Sysotto com a extensão de produto sites, para fundos escuros.</desc>
+  <style>
+    .primary { fill: #E6EDF3; }
+    .accent-fill { fill: #4CC2FF; }
+    .accent-stroke { fill: none; stroke: #4CC2FF; stroke-width: 4; stroke-linecap: round; }
+    .symbol { fill: #112F4A; }
+    .text { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; font-weight: 600; }
+  </style>
+
+  <g transform="translate(20,20)">
+    <rect width="70" height="70" rx="18" class="symbol"/>
+    <path d="M52 20 C52 12, 18 12, 18 22 C18 32, 52 32, 52 42 C52 52, 18 52, 18 42"
+          class="accent-stroke"/>
+  </g>
+
+  <text x="110" y="65" font-size="38" class="text primary">Sysotto</text>
+  <text x="249" y="84" font-size="16" text-anchor="end" class="text accent-fill">sites</text>
+</svg>
