@@ -9,7 +9,7 @@ const translations = {
     'nav.home': 'Início',
     'nav.about': 'Sobre & Trajetória',
     'nav.versatility': 'Atuação Multissetorial',
-    'nav.sysotto': 'Sysotto Software House',
+    'nav.sysotto': 'Case Sysotto',
     'nav.projects': 'Projetos',
     'nav.skills': 'Tecnologias',
     'nav.education': 'Formação & Certificados',
@@ -19,21 +19,23 @@ const translations = {
     'nav.cv_en': 'Resume EN-US',
 
     // Hero
-    'hero.badge': 'Liderança Executiva · CEO Sysotto · Engenheiro de Software',
+    'hero.badge': 'Liderança Executiva · Arquiteto de Soluções · Engenheiro de Software',
     'hero.title_start': 'Transformando visão estratégica de negócios em',
     'hero.title_highlight': 'arquitetura & software',
     'hero.title_end': 'de alto desempenho.',
     'hero.subtitle': 'Mais de 20 anos de liderança em gestão de negócios e operações de grande porte (Gerdau, CSN, Servisan), com sólida transição para a computação e desenvolvimento de software corporativo moderno em C#, .NET 10, Next.js e baixo nível.',
-    'hero.cta_projects': 'Explorar Sistemas Sysotto',
-    'hero.cta_academic': 'Ver Projetos Acadêmicos',
+    'hero.cta_projects': 'Conhecer Soluções & Cases',
+    'hero.cta_academic': 'Ver Projetos de Engenharia',
     'hero.cta_cv': 'Baixar Currículo (PT-BR)',
-    'hero.role_location': 'Parnaíba & Teresina, PI — Brasil | Disponível para projetos e posições remotas e presenciais',
+    'hero.role_location': 'Parnaíba & Teresina, PI — Brasil | Disponível para posições executivas e arquitetura de software (remoto e presencial)',
+    'hero.pill_experience': '20+ Anos em Gestão Executiva',
+    'hero.pill_role': 'Arquiteto & Eng. de Software',
     'hero.stat_experience': '20+ Anos',
     'hero.stat_experience_desc': 'Liderança executiva & gestão de resultados',
     'hero.stat_academic': 'Eng. de Software',
     'hero.stat_academic_desc': 'UNIFBV/Wyden + MBA FGV',
-    'hero.stat_sysotto': 'Sysotto Software House',
-    'hero.stat_sysotto_desc': 'Arquitetura SaaS Multi-Tenant & ERP',
+    'hero.stat_sysotto': 'Engenharia de Soluções',
+    'hero.stat_sysotto_desc': 'Fundador da Sysotto & Arquiteto SaaS',
 
     // About Section
     'about.title': 'Sobre & Transição de Carreira',
@@ -63,9 +65,10 @@ const translations = {
     'versatility.critical_desc': 'Engenharia de baixo nível em C/C++, eficiência algorítmica, gerenciamento direto de memória na heap, monitoramento ativo com Wireshark e segurança de redes com padrões Cisco.',
 
     // Sysotto Section
-    'sysotto.badge': 'Case em Destaque: Software House',
+    'sysotto.badge': 'Case de Engenharia & Empreendedorismo',
     'sysotto.title': 'Sysotto Software House',
-    'sysotto.lead': 'A Sysotto é uma software house fundada e liderada por Otto David de Santana Freitag (CEO), focada em soluções SaaS verticais de alta densidade técnica, performance e conformidade corporativa.',
+    'sysotto.role_badge': 'Otto Freitag — Fundador & Arquiteto',
+    'sysotto.lead': 'Fundada e arquitetada por Otto David de Santana Freitag, a Sysotto Software House materializa a união entre visão de negócios corporativos e engenharia de software de ponta, com 4 plataformas corporativas complexas projetadas para alta escala, segurança e resiliência.',
     'sysotto.functional_badge': 'Módulos Funcionais em Produção / Homologação',
     'sysotto.upcoming_badge': 'Em Fase de Homologação & Próximos Lançamentos',
     
@@ -101,7 +104,7 @@ const translations = {
     'projects.title': 'Projetos em Destaque & Repositórios',
     'projects.subtitle': 'Seleção de projetos do GitHub (OttoF77) demonstrando fundamentos de computação, microsserviços, inteligência artificial e desenvolvimento full-stack.',
     'projects.tab_all': 'Todos os Projetos',
-    'projects.tab_sysotto': 'Sistemas Sysotto (Reais)',
+    'projects.tab_sysotto': 'Sistemas Corporativos (Cases Reais)',
     'projects.tab_academic': 'Projetos Acadêmicos & Formação',
     
     // Project items
@@ -213,7 +216,7 @@ const translations = {
     'nav.home': 'Home',
     'nav.about': 'About & Career',
     'nav.versatility': 'Capabilities',
-    'nav.sysotto': 'Sysotto Software House',
+    'nav.sysotto': 'Featured Case: Sysotto',
     'nav.projects': 'Projects',
     'nav.skills': 'Tech Stack',
     'nav.education': 'Education & Certifications',
@@ -223,21 +226,23 @@ const translations = {
     'nav.cv_en': 'Resume EN-US',
 
     // Hero
-    'hero.badge': 'Executive Leadership · Sysotto CEO · Software Engineer',
+    'hero.badge': 'Executive Leadership · Solutions Architect · Software Engineer',
     'hero.title_start': 'Bridging executive business strategy with',
     'hero.title_highlight': 'high-performance software',
     'hero.title_end': 'and resilient architecture.',
     'hero.subtitle': 'Over 20 years of executive leadership in business operations and regional distribution (Gerdau, CSN, Servisan), transitioning with technical depth into modern enterprise software engineering in C#, .NET 10, Next.js, and low-level computing.',
-    'hero.cta_projects': 'Explore Sysotto Systems',
-    'hero.cta_academic': 'View Academic Projects',
+    'hero.cta_projects': 'Explore Solutions & Cases',
+    'hero.cta_academic': 'View Engineering Projects',
     'hero.cta_cv': 'Download Resume (EN-US)',
-    'hero.role_location': 'Parnaíba & Teresina, PI — Brazil | Open to remote and on-site corporate roles & partnerships',
+    'hero.role_location': 'Parnaíba & Teresina, PI — Brazil | Open to executive and senior software architecture roles (remote & on-site)',
+    'hero.pill_experience': '20+ Years in Executive Leadership',
+    'hero.pill_role': 'Solutions Architect & Engineer',
     'hero.stat_experience': '20+ Years',
     'hero.stat_experience_desc': 'Executive leadership & business growth',
     'hero.stat_academic': 'Software Eng.',
     'hero.stat_academic_desc': 'UNIFBV/Wyden + FGV MBA',
-    'hero.stat_sysotto': 'Sysotto Software House',
-    'hero.stat_sysotto_desc': 'Multi-Tenant SaaS Architecture & ERP',
+    'hero.stat_sysotto': 'Solutions Engineering',
+    'hero.stat_sysotto_desc': 'Sysotto Founder & SaaS Architect',
 
     // About Section
     'about.title': 'About & Career Migration',
@@ -267,9 +272,10 @@ const translations = {
     'versatility.critical_desc': 'Low-level systems engineering in C/C++, algorithmic efficiency, direct heap memory control, active network traffic inspection with Wireshark, and Cisco network defense standards.',
 
     // Sysotto Section
-    'sysotto.badge': 'Featured Case: Software House',
+    'sysotto.badge': 'Featured Case: Engineering & Entrepreneurship',
     'sysotto.title': 'Sysotto Software House',
-    'sysotto.lead': 'Sysotto is an enterprise software house founded and led by Otto David de Santana Freitag (CEO), engineered for high-density multi-tenant SaaS verticals, operational resilience, and scalable business workflows.',
+    'sysotto.role_badge': 'Otto Freitag — Founder & Lead Architect',
+    'sysotto.lead': 'Founded and engineered by Otto David de Santana Freitag, Sysotto Software House unites senior corporate business acumen with cutting-edge software architecture, featuring 4 full-scale enterprise platforms built for high throughput, security, and multi-tenant resilience.',
     'sysotto.functional_badge': 'Live & Functional Production Modules',
     'sysotto.upcoming_badge': 'In Final Staging & Upcoming Launches',
     
@@ -305,7 +311,7 @@ const translations = {
     'projects.title': 'Featured Projects & Repositories',
     'projects.subtitle': 'Curated open-source repositories from GitHub (OttoF77) highlighting computer science foundations, microservices, AI, and full-stack software development.',
     'projects.tab_all': 'All Projects',
-    'projects.tab_sysotto': 'Sysotto Systems (Real-World)',
+    'projects.tab_sysotto': 'Enterprise Systems (Real-World Cases)',
     'projects.tab_academic': 'Academic & Foundation Projects',
     
     // Project items

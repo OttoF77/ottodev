@@ -22,7 +22,7 @@
 
     const metaThemeColor = document.querySelector('meta[name="theme-color"]');
     if (metaThemeColor) {
-      metaThemeColor.setAttribute('content', theme === 'dark' ? '#0a101d' : '#f8fafc');
+      metaThemeColor.setAttribute('content', theme === 'dark' ? '#090d16' : '#fcfbf9');
     }
 
     const metaColorScheme = document.querySelector('meta[name="color-scheme"]');
