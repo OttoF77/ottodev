@@ -188,6 +188,7 @@ button {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  flex-shrink: 0;
 }
 
 .brand-logo-img {
@@ -201,12 +202,22 @@ button {
   letter-spacing: -0.02em;
   color: var(--text-primary);
   line-height: 1;
+  white-space: nowrap;
+}
+
+/* Central Navigation */
+.site-nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin: 0 1.25rem;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  justify-content: center;
+  gap: clamp(1rem, 1.4vw, 1.5rem);
   list-style: none;
 }
 
@@ -215,17 +226,38 @@ button {
   font-weight: 500;
   color: var(--text-secondary);
   padding: 0.5rem 0.25rem;
+  white-space: nowrap;
   position: relative;
+  transition: color var(--transition-fast);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0.25rem;
+  right: 0.25rem;
+  height: 2px;
+  background-color: var(--brand-primary);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform var(--transition-fast);
 }
 
 .nav-link:hover {
   color: var(--brand-primary);
 }
 
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: scaleX(1);
+}
+
 .nav-actions {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  flex-shrink: 0;
 }
 
 /* Action Buttons (Lang & Theme) */
@@ -1734,6 +1766,33 @@ button {
    RESPONSIVE DESIGN (MEDIA QUERIES)
    ========================================================================== */
 @media (max-width: 992px) {
+  .site-nav {
+    flex: initial;
+    margin: 0;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 4.5rem;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-medium);
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    gap: 1.25rem;
+    display: none;
+    box-shadow: var(--shadow-xl);
+  }
+
+  .nav-links.nav-open {
+    display: flex;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
   .hero-grid-2col {
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -1774,28 +1833,6 @@ button {
 }
 
 @media (max-width: 768px) {
-  .nav-links {
-    position: fixed;
-    top: 4.5rem;
-    left: 0;
-    right: 0;
-    background-color: var(--bg-secondary);
-    border-bottom: 1px solid var(--border-medium);
-    flex-direction: column;
-    padding: 2rem 1.5rem;
-    gap: 1.25rem;
-    display: none;
-    box-shadow: var(--shadow-xl);
-  }
-
-  .nav-links.nav-open {
-    display: flex;
-  }
-
-  .mobile-menu-toggle {
-    display: flex;
-  }
-
   .projects-grid {
     grid-template-columns: 1fr;
   }

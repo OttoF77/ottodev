@@ -7,12 +7,12 @@ const translations = {
   'pt-BR': {
     // Navigation
     'nav.home': 'Início',
-    'nav.about': 'Sobre & Trajetória',
-    'nav.versatility': 'Atuação Multissetorial',
+    'nav.about': 'Sobre',
+    'nav.versatility': 'Atuação',
     'nav.sysotto': 'Case Sysotto',
     'nav.projects': 'Projetos',
     'nav.skills': 'Tecnologias',
-    'nav.education': 'Formação & Certificados',
+    'nav.education': 'Formação',
     'nav.contact': 'Contato',
     'nav.cv': 'Currículo (PDF)',
     'nav.cv_pt': 'Currículo PT-BR',
@@ -228,12 +228,12 @@ const translations = {
   'en-US': {
     // Navigation
     'nav.home': 'Home',
-    'nav.about': 'About & Career',
-    'nav.versatility': 'Capabilities',
-    'nav.sysotto': 'Featured Case: Sysotto',
+    'nav.about': 'About',
+    'nav.versatility': 'Expertise',
+    'nav.sysotto': 'Case Sysotto',
     'nav.projects': 'Projects',
     'nav.skills': 'Tech Stack',
-    'nav.education': 'Education & Certifications',
+    'nav.education': 'Education',
     'nav.contact': 'Contact',
     'nav.cv': 'Resume (PDF)',
     'nav.cv_pt': 'Currículo PT-BR',
