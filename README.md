@@ -1,6 +1,6 @@
 # Portfólio Profissional — Otto David de Santana Freitag
 
-> **CEO da Sysotto Software House & Engenheiro de Software**  
+> **CEO da Sysotto Softwares & Engenheiro de Software**  
 > Mais de 20 anos de experiência em liderança executiva em grandes corporações industriais (Gerdau, CSN, Servisan, Servicon) integrados a sólida fundamentação técnica e arquitetura de software corporativo moderno.
 
 ---
@@ -26,8 +26,8 @@ Construído com base em padrões modernos da web, o site foi projetado com foco 
    - Script inline anti-FOUC (Flash of Unstyled Content) garantindo renderização instantânea no tema correto.
    - Persistência da escolha do usuário no `localStorage`.
 
-3. **Sysotto Software House & Sistemas em Produção:**
-   - Apresentação da **Sysotto** como software house especializada em SaaS verticais e ERP modular, tendo Otto como seu CEO e Arquiteto Fundador.
+3. **Sysotto Softwares & Sistemas em Produção:**
+   - Apresentação da **Sysotto Softwares** como desenvolvedora e ecossistema especializado em SaaS verticais e ERP modular, tendo Otto como seu CEO e Arquiteto Fundador.
    - Módulos reais detalhados entre o que já está **100% funcional** e o que está **em fase de homologação / próximos lançamentos**:
      - **Sysotto ERP / Industry (IndSaaS):** Gestão avançada de inventário (FEFO, FIFO, LIFO), controle de lotes, rastreabilidade GS1-128 com QR Code, endereçamento 3D de armazéns e inventário rotativo auditado.
      - **Sysotto FoodService (RestSaaS):** Módulo `TableOrdersManager` para comandas e mesas, cardápio digital dinâmico multi-tenant, Kitchen Display System (KDS) em tempo real e agente de impressão térmica desktop nativo em .NET 10 (`Sysotto.PrintingModule.Agent`).
@@ -35,13 +35,13 @@ Construído com base em padrões modernos da web, o site foi projetado com foco 
      - **Sysotto Multi-Tenant Core:** Resolução dinâmica de tenant via middleware (`MonolithTenantProvider`), isolamento lógico de banco com PostgreSQL RLS, OpenIddict OAuth2/OIDC, segurança fail-closed e Redis cache.
    - Mockups de alta fidelidade simulando a operação real de cada sistema.
 
-4. **Projetos Acadêmicos & Capacitação de Alto Impacto (GitHub OttoF77):**
+4. **Projetos em Destaque, Simulações & Capacitação (GitHub OttoF77):**
+   - **CondoTrack (No Country - Simulação S08-26 / Equipe 17):** Plataforma de operações e rastreabilidade 360° em Java 21, Spring Boot 3, Next.js 14, TypeScript, PostgreSQL e Docker (Otto: Top Contributor e Líder Técnico).
+   - **TechMind (Hackathon ONE | Oracle + Alura):** Classificação inteligente com IA, microsserviço Java 17 / Spring Boot, API de inferência Python / FastAPI, React 19 e deploy na Oracle Cloud (OCI).
    - **Estruturas de Dados em C:** Listas encadeadas, árvores binárias, filas, pilhas e algoritmos com gestão manual de ponteiros e memória na heap.
    - **E-Commerce Microservices:** Arquitetura distribuída em C# / .NET com mensageria assíncrona.
    - **Challenge LiterAlura & ONE Backend:** Aplicação corporativa Java 17 + Spring Boot 3 + PostgreSQL consumindo API Gutendex.
    - **Classificador Inteligente de E-mails:** Aplicação em Python aplicando NLP e aprendizado supervisionado.
-   - **Agentes Autônomos de IA & Voz:** Agentes conversacionais integrando LLMs e Speech-to-Text (DIO / Suzano).
-   - **Conversor de Moedas Full-Stack:** Integração full-stack Java e JavaScript com taxas de câmbio em tempo real.
 
 5. **Taxonomia Tecnológica (Stacks por Nível de Profundidade):**
    - **Stacks Principais (Produção Sysotto):** C#, .NET 10, ASP.NET Core, EF Core 10, PostgreSQL 17, Redis, Docker, Next.js, React, TypeScript, Tailwind CSS, Linux.

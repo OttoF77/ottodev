@@ -41,7 +41,7 @@ const translations = {
     'about.title': 'Sobre & Transição de Carreira',
     'about.subtitle': 'A união entre solidez executiva de mercado e rigor técnico em engenharia de software.',
     'about.p1': 'Com mais de duas décadas de trajetória como Gerente Geral e Gerente Comercial em líderes industriais e de distribuição nacional como a <strong>Gerdau S/A</strong> (onde liderou expansão com mais de 30% a.a. de crescimento e gestão logística regional), <strong>Companhia Siderúrgica Nacional (CSN)</strong>, <strong>Servisan</strong> e <strong>Servicon</strong>, trago uma bagagem executiva diferenciada para a indústria de software.',
-    'about.p2': 'Atualmente, atuo como <strong>CEO e Arquiteto de Soluções na Sysotto Software House</strong>, liderando o design e a implementação de plataformas corporativas SaaS multi-tenant completas, orientadas a microsserviços e monólitos modulares resilientes com <strong>C#, .NET 10, PostgreSQL e Next.js</strong>.',
+    'about.p2': 'Atualmente, atuo como <strong>CEO e Arquiteto de Soluções na Sysotto Softwares</strong>, liderando o design e a implementação de plataformas corporativas SaaS multi-tenant completas, orientadas a microsserviços e monólitos modulares resilientes com <strong>C#, .NET 10, PostgreSQL e Next.js</strong>.',
     'about.p3': 'Graduando em <strong>Engenharia de Software (UNIFBV/Wyden)</strong>, com <strong>MBA em Gestão Empresarial pela FGV (Fundação Getúlio Vargas)</strong> e <strong>Bacharelado em Turismo pela UNIFOR</strong>, mantenho dedicação profunda aos fundamentos da Ciência da Computação, estruturas de dados em C, arquitetura distribuída e cibersegurança.',
     'about.leadership_title': 'Diferenciais Estratégicos',
     'about.diff_1_title': 'Visão de Negócio & ROI:',
@@ -65,10 +65,13 @@ const translations = {
     'versatility.critical_desc': 'Engenharia de baixo nível em C/C++, eficiência algorítmica, gerenciamento direto de memória na heap, monitoramento ativo com Wireshark e segurança de redes com padrões Cisco.',
 
     // Sysotto Section
-    'sysotto.badge': 'Case de Engenharia & Empreendedorismo',
-    'sysotto.title': 'Sysotto Software House',
+    'sysotto.pill': 'Sistemas Corporativos em Produção',
+    'sysotto.title': 'Case de Engenharia & Empreendedorismo',
+    'sysotto.subtitle': 'A união entre visão executiva corporativa e engenharia de software de ponta, com plataformas complexas projetadas para alta escala e resiliência.',
+    'sysotto.company_name': 'Sysotto Softwares',
+    'sysotto.company_tagline': 'Ecossistema SaaS & Engenharia Corporativa',
     'sysotto.role_badge': 'Otto Freitag — Fundador & Arquiteto',
-    'sysotto.lead': 'Fundada e arquitetada por Otto David de Santana Freitag, a Sysotto Software House materializa a união entre visão de negócios corporativos e engenharia de software de ponta, com 4 plataformas corporativas complexas projetadas para alta escala, segurança e resiliência.',
+    'sysotto.lead': 'Fundada e arquitetada por Otto David de Santana Freitag, a Sysotto Softwares materializa a união entre visão de negócios corporativos e engenharia de software de ponta, com 4 plataformas corporativas complexas projetadas para alta escala, segurança e resiliência.',
     'sysotto.functional_badge': 'Módulos Funcionais em Produção / Homologação',
     'sysotto.upcoming_badge': 'Em Fase de Homologação & Próximos Lançamentos',
     
@@ -104,10 +107,19 @@ const translations = {
     'projects.title': 'Projetos em Destaque & Repositórios',
     'projects.subtitle': 'Seleção de projetos do GitHub (OttoF77) demonstrando fundamentos de computação, microsserviços, inteligência artificial e desenvolvimento full-stack.',
     'projects.tab_all': 'Todos os Projetos',
-    'projects.tab_sysotto': 'Sistemas Corporativos (Cases Reais)',
-    'projects.tab_academic': 'Projetos Acadêmicos & Formação',
+    'projects.tab_sysotto': 'Sistemas Corporativos (Sysotto)',
+    'projects.tab_hackathons': 'Simulações & Hackathons',
+    'projects.tab_academic': 'Ciência da Computação & Fundamentos',
     
     // Project items
+    'proj.condotrack_title': 'CondoTrack — Gestão & Rastreabilidade 360°',
+    'proj.condotrack_desc': 'Plataforma corporativa de gestão operacional e rastreabilidade para condomínios. Controle de acesso por QR Code (<1.5s), custódia e baixa de encomendas, agendamentos atômicos sem conflito e documentação técnica C4/UML completa (Otto: Top Contributor e Líder Técnico).',
+    'proj.condotrack_badge': 'No Country · Simulação S08',
+
+    'proj.techmind_title': 'TechMind — Classificação com IA & OCI',
+    'proj.techmind_desc': 'Solução desenvolvida no Hackathon ONE unindo arquitetura de microsserviço backend em Java 17 / Spring Boot e inferência de Machine Learning (NLP) em Python / FastAPI, com esteira de deploy e persistência na Oracle Cloud Infrastructure (OCI).',
+    'proj.techmind_badge': 'Hackathon ONE · Oracle + Alura',
+
     'proj.c_ds_title': 'Estruturas de Dados em C',
     'proj.c_ds_desc': 'Implementação de baixo nível em linguagem C de algoritmos essenciais e estruturas de dados: listas encadeadas simples e duplas, pilhas, filas, árvores binárias de busca e algoritmos de ordenação, com gestão manual de ponteiros e desalocação de memória.',
     'proj.c_ds_badge': 'Ciência da Computação & Baixo Nível',
@@ -136,7 +148,7 @@ const translations = {
     'skills.title': 'Tecnologias & Competências',
     'skills.subtitle': 'Classificação transparente do ecossistema tecnológico com base no grau de profundidade e aplicação prática.',
     'skills.core_title': 'Stacks Principais (Produção Sysotto)',
-    'skills.core_desc': 'Tecnologias utilizadas diariamente no desenvolvimento dos sistemas em produção da Sysotto Software House, com domínio aprofundado de arquitetura, ciclo de vida e performance.',
+    'skills.core_desc': 'Tecnologias utilizadas diariamente no desenvolvimento dos sistemas em produção da Sysotto Softwares, com domínio aprofundado de arquitetura, ciclo de vida e performance.',
     'skills.interests_title': 'Interesses & Pesquisa Ativa (Baixo Nível & Segurança)',
     'skills.interests_desc': 'Áreas de dedicação contínua em engenharia de sistemas, programação de baixo nível, controle rígido de memória e proteção de infraestrutura.',
     'skills.academic_title': 'Fundamentação Acadêmica & Formações Complementares',
@@ -262,7 +274,7 @@ const translations = {
     'about.title': 'About & Career Migration',
     'about.subtitle': 'A unique combination of boardroom executive maturity and modern software engineering discipline.',
     'about.p1': 'With over two decades of experience as General Manager and Commercial Manager at major Brazilian industrial and distribution powerhouses such as <strong>Gerdau S/A</strong> (leading regional distribution centers with >30% annual sales growth), <strong>Companhia Siderúrgica Nacional (CSN)</strong>, <strong>Servisan</strong>, and <strong>Servicon</strong>, I offer a business-first perspective rarely found in software development.',
-    'about.p2': 'Currently, I serve as <strong>CEO and Solutions Architect at Sysotto Software House</strong>, where I design and build full-featured multi-tenant B2B SaaS platforms with resilient modular monoliths and microservices using <strong>C#, .NET 10, PostgreSQL, and Next.js</strong>.',
+    'about.p2': 'Currently, I serve as <strong>CEO and Solutions Architect at Sysotto Softwares</strong>, where I design and build full-featured multi-tenant B2B SaaS platforms with resilient modular monoliths and microservices using <strong>C#, .NET 10, PostgreSQL, and Next.js</strong>.',
     'about.p3': 'Pursuing a <strong>B.S. in Software Engineering (UNIFBV/Wyden)</strong>, holding an <strong>MBA in Business Management from FGV</strong> and a <strong>Bachelor\'s degree in Tourism from UNIFOR</strong>, I am deeply committed to fundamental computer science principles, C data structures, distributed systems, and cybersecurity.',
     'about.leadership_title': 'Strategic Advantages',
     'about.diff_1_title': 'Business Acumen & ROI Focus:',
@@ -286,10 +298,13 @@ const translations = {
     'versatility.critical_desc': 'Low-level systems engineering in C/C++, algorithmic efficiency, direct heap memory control, active network traffic inspection with Wireshark, and Cisco network defense standards.',
 
     // Sysotto Section
-    'sysotto.badge': 'Featured Case: Engineering & Entrepreneurship',
-    'sysotto.title': 'Sysotto Software House',
+    'sysotto.pill': 'Enterprise Production Systems',
+    'sysotto.title': 'Case: Engineering & Entrepreneurship',
+    'sysotto.subtitle': 'The fusion of boardroom executive acumen and cutting-edge software engineering, featuring complex platforms built for scale and resilience.',
+    'sysotto.company_name': 'Sysotto Softwares',
+    'sysotto.company_tagline': 'Multi-Tenant SaaS Ecosystem & Enterprise Engineering',
     'sysotto.role_badge': 'Otto Freitag — Founder & Lead Architect',
-    'sysotto.lead': 'Founded and engineered by Otto David de Santana Freitag, Sysotto Software House unites senior corporate business acumen with cutting-edge software architecture, featuring 4 full-scale enterprise platforms built for high throughput, security, and multi-tenant resilience.',
+    'sysotto.lead': 'Founded and engineered by Otto David de Santana Freitag, Sysotto Softwares unites senior corporate business acumen with cutting-edge software architecture, featuring 4 full-scale enterprise platforms built for high throughput, security, and multi-tenant resilience.',
     'sysotto.functional_badge': 'Live & Functional Production Modules',
     'sysotto.upcoming_badge': 'In Final Staging & Upcoming Launches',
     
@@ -325,10 +340,19 @@ const translations = {
     'projects.title': 'Featured Projects & Repositories',
     'projects.subtitle': 'Curated open-source repositories from GitHub (OttoF77) highlighting computer science foundations, microservices, AI, and full-stack software development.',
     'projects.tab_all': 'All Projects',
-    'projects.tab_sysotto': 'Enterprise Systems (Real-World Cases)',
-    'projects.tab_academic': 'Academic & Foundation Projects',
+    'projects.tab_sysotto': 'Enterprise Systems (Sysotto)',
+    'projects.tab_hackathons': 'Simulations & Hackathons',
+    'projects.tab_academic': 'Computer Science & Foundations',
     
     // Project items
+    'proj.condotrack_title': 'CondoTrack — 360° Operations Platform',
+    'proj.condotrack_desc': 'Centralized operations and 360° traceability platform for condominiums. Fast QR Code visitor clearance (<1.5s), parcel custody timeline, conflict-free atomic bookings, and comprehensive C4/UML architectural docs (Otto: Top Contributor & Tech Lead).',
+    'proj.condotrack_badge': 'No Country · Simulation S08',
+
+    'proj.techmind_title': 'TechMind — AI Classifier & OCI',
+    'proj.techmind_desc': 'Solution developed during the ONE Hackathon integrating Java 17 / Spring Boot backend microservice with Python / FastAPI Machine Learning (NLP) inference, deployed on Oracle Cloud Infrastructure (OCI).',
+    'proj.techmind_badge': 'Hackathon ONE · Oracle + Alura',
+
     'proj.c_ds_title': 'Data Structures in C',
     'proj.c_ds_desc': 'Low-level C implementations of core computer science algorithms and data structures: singly and doubly linked lists, stacks, queues, binary search trees, and sorting algorithms, focusing on manual pointer manipulation and heap memory management.',
     'proj.c_ds_badge': 'Computer Science & Low-Level',
@@ -357,7 +381,7 @@ const translations = {
     'skills.title': 'Tech Stacks & Competencies',
     'skills.subtitle': 'A structured, transparent taxonomy of technologies based on production mastery and academic application.',
     'skills.core_title': 'Core Production Stacks (Sysotto)',
-    'skills.core_desc': 'Technologies used daily in active production and deployment at Sysotto Software House, with deep architecture, lifecycle, and scalability mastery.',
+    'skills.core_desc': 'Technologies used daily in active production and deployment at Sysotto Softwares, with deep architecture, lifecycle, and scalability mastery.',
     'skills.interests_title': 'Active Focus & Low-Level Interests (Systems & Security)',
     'skills.interests_desc': 'Continuous active research in systems engineering, low-level memory mechanics, and infrastructure cybersecurity defense.',
     'skills.academic_title': 'Academic Foundations & Complementary Technologies',
