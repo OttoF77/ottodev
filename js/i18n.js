@@ -8,14 +8,26 @@ const translations = {
     // Page Metadata
     'meta.title': 'Otto David de Santana Freitag | Liderança Executiva & Engenharia de Software',
     'meta.description': 'Portfólio executivo de Otto David de Santana Freitag: mais de 20 anos de liderança executiva em grandes corporações (Gerdau, CSN, Servisan), Arquiteto de Soluções e fundador da Sysotto Softwares.',
+    'meta.image_alt': 'Retrato profissional de Otto Freitag',
+    'brand.monogram_alt': 'Monograma de Otto Freitag',
 
     // Navigation & Common Accessibility
     'nav.skip_to_content': 'Pular para o conteúdo principal',
     'nav.primary_label': 'Navegação Principal',
     'nav.brand_aria': 'Otto Freitag - Início',
+    'nav.cv_aria': 'Baixar currículo em PDF',
     'projects.filter_label': 'Filtrar projetos por categoria',
+    'projects.repo_aria': 'Ver repositório do projeto no GitHub',
+    'projects.showcase_aria': 'Ver showcase do projeto no GitHub',
+    'projects.video_aria': 'Assistir à demonstração do projeto no YouTube',
     'sysotto.tabs_label': 'Plataformas e Módulos Sysotto',
+    'sysotto.sites_video_aria': 'Assistir ao tour técnico da Sysotto Sites no YouTube',
     'modal.close': 'Fechar janela modal',
+    'theme.enable_light': 'Ativar tema claro',
+    'theme.enable_dark': 'Ativar tema escuro',
+    'modal.cert_default': 'Certificado Oficial',
+    'modal.document_title': 'Documento do certificado',
+    'modal.badge_alt': 'Badge ou certificado',
     'nav.home': 'Início',
     'nav.about': 'Sobre',
     'nav.versatility': 'Atuação',
@@ -65,6 +77,22 @@ const translations = {
     'about.diff_2_desc': 'Experiência sólida na coordenação de equipes multidisciplinares, alinhando objetivos estratégicos a metas operacionais.',
     'about.diff_3_title': 'Engenharia com Foco em Qualidade:',
     'about.diff_3_desc': 'Práticas rigorosas de arquitetura limpa, testes automatizados, segurança fail-closed e isolamento multi-tenant.',
+    'timeline.title': 'Marcos Executivos & Trajetória',
+    'timeline.sysotto_role': 'CEO & Arquiteto Fundador',
+    'timeline.sysotto_date': '2022 – Presente',
+    'timeline.sysotto_desc': 'Liderança integral no desenvolvimento das plataformas SaaS de ERP Industrial, Food Service e SiteBuilder multi-tenant em .NET 10 e Next.js.',
+    'timeline.servicon_role': 'Sócio-Gerente',
+    'timeline.servicon_date': '2017 – 2021',
+    'timeline.servicon_desc': 'Gestão comercial de energia solar e infraestrutura nos estados do Piauí e Maranhão, além da administração contábil e financeira.',
+    'timeline.servisan_role': 'Gerente Geral Regional',
+    'timeline.servisan_date': '2014 – 2016',
+    'timeline.servisan_desc': 'Responsável por uma operação de grande porte em terceirização, prospecção e retenção de contratos corporativos e públicos.',
+    'timeline.csn_role': 'Gerente Comercial',
+    'timeline.csn_date': '2011 – 2014',
+    'timeline.csn_desc': 'Gestão de vendas industriais corporativas e logística de downstream no Ceará, Piauí e Maranhão.',
+    'timeline.gerdau_role': 'Gerente de Unidade / Filial Fortaleza',
+    'timeline.gerdau_date': '2004 – 2010',
+    'timeline.gerdau_desc': 'Liderança de centro de distribuição regional da Gerdau. Crescimento superior a 30% ao ano no volume e alta rentabilidade.',
 
     // Versatility & Multi-Sector Solutions
     'versatility.pill': 'Soluções Multissetoriais',
@@ -131,6 +159,42 @@ const translations = {
     'sysotto.mock_sites_footer_left': 'Renderizador SSR / Static Snapshots',
     'sysotto.mock_sites_footer_right': 'Layout Ilustrativo · Tour em Vídeo Disponível',
     'sysotto.mock_core_status': '[Diagnóstico de Demonstração]: Validação fail-closed de JWT · RLS Ativo',
+    'sysotto.mock_table_lot': 'Lote / Código',
+    'sysotto.mock_table_product': 'Produto',
+    'sysotto.mock_table_expiry': 'Validade',
+    'sysotto.mock_table_location': 'Endereço do estoque',
+    'sysotto.mock_table_status': 'Status',
+    'sysotto.mock_product_coil': 'Bobina de aço galvanizado',
+    'sysotto.mock_location_b': 'Rua B · Mód. 04 · Nív. 2',
+    'sysotto.mock_status_fefo': 'Alocado por FEFO',
+    'sysotto.mock_product_profile': 'Perfil estrutural U',
+    'sysotto.mock_location_a': 'Rua A · Mód. 01 · Nív. 1',
+    'sysotto.mock_status_fifo': 'Ativo por FIFO',
+    'sysotto.mock_product_chemical': 'Insumo químico decapante',
+    'sysotto.mock_location_quarantine': 'Quarentena Q-01',
+    'sysotto.mock_status_review': 'Em análise',
+    'sysotto.mock_ticket_one': 'Mesa 07 · Comanda #1042',
+    'sysotto.mock_ticket_preparing': 'Em preparo (04:12)',
+    'sysotto.mock_food_item_one': '1x Filé-mignon ao poivre',
+    'sysotto.mock_food_item_two': '1x Risoto de parmesão',
+    'sysotto.mock_food_note': '* Obs.: sem glúten / molho à parte',
+    'sysotto.mock_server_one': 'Garçom: Carlos R.',
+    'sysotto.mock_printed': '🖨️ Comprovante impresso',
+    'sysotto.mock_ticket_two': 'Mesa 12 · Comanda #1045',
+    'sysotto.mock_ticket_ready': 'Pronto para entrega',
+    'sysotto.mock_food_item_three': '2x Salmão grelhado com alcaparras',
+    'sysotto.mock_food_item_four': '2x Suco natural de laranja',
+    'sysotto.mock_server_two': 'Garçonete: Luiza M.',
+    'sysotto.mock_total_time': 'Tempo total: 12 min',
+    'sysotto.mock_preset': 'Preset: Indústria B2B Clean #08',
+    'sysotto.mock_device_desktop': 'Desktop',
+    'sysotto.mock_device_tablet': 'Tablet',
+    'sysotto.mock_device_mobile': 'Celular',
+    'sysotto.mock_cta': 'Botão CTA: Conectar',
+    'sysotto.mock_url_industry': 'industry.sysotto.com.br/dashboard/estoque/lotes',
+    'sysotto.mock_url_food': 'foodservice.sysotto.com.br/kitchen',
+    'sysotto.mock_url_sites': 'sitebuilder.sysotto.com.br/editor?tenant=ind-norte',
+    'sysotto.mock_url_core': 'core.sysotto.internal/health/diagnostics',
     
     // Sysotto Industry
     'sysotto.ind_title': 'Sysotto ERP / Industry (IndSaaS)',
@@ -170,6 +234,7 @@ const translations = {
 
     // Academic & Impact Projects
     'projects.title': 'Projetos em Destaque & Repositórios',
+    'projects.section_heading': 'Engenharia de Software em Prática',
     'projects.subtitle': 'Seleção de projetos do GitHub (OttoF77) demonstrando fundamentos de computação, microsserviços, inteligência artificial e desenvolvimento full-stack.',
     'projects.tab_all': 'Todos os Projetos',
     'projects.tab_sysotto': 'Sistemas Corporativos (Sysotto)',
@@ -233,6 +298,7 @@ const translations = {
 
     // Tech Stacks Section
     'skills.title': 'Tecnologias & Competências',
+    'skills.section_heading': 'Domínio Técnico & Áreas de Foco',
     'skills.subtitle': 'Classificação transparente do ecossistema tecnológico com base no grau de profundidade e aplicação prática.',
     'skills.core_title': 'Tecnologias nos Projetos Atuais da Sysotto',
     'skills.core_desc': 'Tecnologias centrais aplicadas na arquitetura e engenharia das plataformas da Sysotto Softwares (Sites, Industry Suite e FoodService).',
@@ -268,6 +334,7 @@ const translations = {
 
     // Education & Certifications
     'edu.title': 'Formação Acadêmica & Certificações',
+    'edu.section_heading': 'Qualificação & Aprendizado Contínuo',
     'edu.subtitle': 'Compromisso com o aprendizado contínuo, fundamentos da computação e especializações de classe mundial.',
     'edu.academic_title': 'Formação Acadêmica',
     'edu.degree_se': 'Bacharelado em Engenharia de Software',
@@ -297,6 +364,9 @@ const translations = {
     'cert.cisco_def_desc': 'Monitoramento de tráfego com Wireshark, políticas de controle de acesso (ACLs), AAA, TACACS+/RADIUS e análise de ameaças.',
 
     'cert.cisco_linux_title': 'NDG Linux Unhatched',
+    'cert.cisco_ds_badge': 'Badge de Ciência de Dados',
+    'cert.cisco_ds_title': 'Introdução à Ciência de Dados',
+    'cert.cisco_ds_desc': 'Análise e visualização de dados, modelos preditivos e fundamentos de ciência de dados aplicada a negócios.',
     'cert.cisco_linux_org': 'Cisco Networking Academy / NDG',
     'cert.cisco_linux_desc': 'Administração de sistemas Linux, automação em linha de comando, permissões e gerenciamento de arquivos e processos.',
 
@@ -328,6 +398,7 @@ const translations = {
 
     // Contact
     'contact.title': 'Entre em Contato',
+    'contact.headline': 'Vamos construir o futuro da tecnologia juntos.',
     'contact.subtitle': 'Aberto a oportunidades executivas, arquitetura de software corporativo e parcerias estratégicas.',
     'contact.email_label': 'E-mail:',
     'contact.phone_label': 'Telefone / WhatsApp:',
@@ -356,14 +427,26 @@ const translations = {
     // Page Metadata
     'meta.title': 'Otto David de Santana Freitag | Executive Leadership & Software Engineering',
     'meta.description': 'Executive portfolio of Otto David de Santana Freitag: 20+ years of executive leadership in major corporations (Gerdau, CSN, Servisan), Solutions Architect and founder of Sysotto Softwares.',
+    'meta.image_alt': 'Professional portrait of Otto Freitag',
+    'brand.monogram_alt': 'Otto Freitag monogram',
 
     // Navigation & Common Accessibility
     'nav.skip_to_content': 'Skip to main content',
     'nav.primary_label': 'Main Navigation',
     'nav.brand_aria': 'Otto Freitag - Home',
+    'nav.cv_aria': 'Download the resume as a PDF',
     'projects.filter_label': 'Filter projects by category',
+    'projects.repo_aria': 'View the project repository on GitHub',
+    'projects.showcase_aria': 'View the project showcase on GitHub',
+    'projects.video_aria': 'Watch the project demonstration on YouTube',
     'sysotto.tabs_label': 'Sysotto Platforms and Modules',
+    'sysotto.sites_video_aria': 'Watch the Sysotto Sites technical tour on YouTube',
     'modal.close': 'Close modal dialog',
+    'theme.enable_light': 'Enable light theme',
+    'theme.enable_dark': 'Enable dark theme',
+    'modal.cert_default': 'Official Certificate',
+    'modal.document_title': 'Certificate document',
+    'modal.badge_alt': 'Badge or certificate',
     'nav.home': 'Home',
     'nav.about': 'About',
     'nav.versatility': 'Expertise',
@@ -413,6 +496,22 @@ const translations = {
     'about.diff_2_desc': 'Proven ability to lead cross-functional teams, orchestrate high-stakes initiatives, and achieve concrete performance metrics.',
     'about.diff_3_title': 'Quality-Driven Engineering:',
     'about.diff_3_desc': 'Strict adherence to clean code, comprehensive automated testing, fail-closed security models, and resilient multi-tenant isolation.',
+    'timeline.title': 'Executive Milestones & Career',
+    'timeline.sysotto_role': 'CEO & Founding Architect',
+    'timeline.sysotto_date': '2022 – Present',
+    'timeline.sysotto_desc': 'End-to-end leadership in developing SaaS platforms for industrial ERP, food service, and multi-tenant site building with .NET 10 and Next.js.',
+    'timeline.servicon_role': 'Managing Partner',
+    'timeline.servicon_date': '2017 – 2021',
+    'timeline.servicon_desc': 'Commercial management of solar energy and infrastructure in the states of Piauí and Maranhão, alongside accounting and financial administration.',
+    'timeline.servisan_role': 'Regional General Manager',
+    'timeline.servisan_date': '2014 – 2016',
+    'timeline.servisan_desc': 'Responsible for a large outsourcing operation, business development, and retention of high-value corporate and public contracts.',
+    'timeline.csn_role': 'Commercial Manager',
+    'timeline.csn_date': '2011 – 2014',
+    'timeline.csn_desc': 'Managed industrial sales and downstream logistics across Ceará, Piauí, and Maranhão.',
+    'timeline.gerdau_role': 'Unit Manager / Fortaleza Branch',
+    'timeline.gerdau_date': '2004 – 2010',
+    'timeline.gerdau_desc': 'Led a Gerdau regional distribution center, delivering over 30% annual volume growth and strong profitability.',
 
     // Versatility & Multi-Sector Solutions
     'versatility.pill': 'Multi-Sector Solutions',
@@ -479,6 +578,42 @@ const translations = {
     'sysotto.mock_sites_footer_left': 'SSR Renderer / Static Snapshots',
     'sysotto.mock_sites_footer_right': 'Illustrative Mockup · Video Tour Available',
     'sysotto.mock_core_status': '[Demonstration Diagnostics]: Fail-closed JWT validation · Active RLS',
+    'sysotto.mock_table_lot': 'Lot / Code',
+    'sysotto.mock_table_product': 'Product',
+    'sysotto.mock_table_expiry': 'Expiry date',
+    'sysotto.mock_table_location': 'Warehouse location',
+    'sysotto.mock_table_status': 'Status',
+    'sysotto.mock_product_coil': 'Galvanized steel coil',
+    'sysotto.mock_location_b': 'Aisle B · Bay 04 · Level 2',
+    'sysotto.mock_status_fefo': 'Allocated by FEFO',
+    'sysotto.mock_product_profile': 'U-shaped structural section',
+    'sysotto.mock_location_a': 'Aisle A · Bay 01 · Level 1',
+    'sysotto.mock_status_fifo': 'Active by FIFO',
+    'sysotto.mock_product_chemical': 'Pickling chemical supply',
+    'sysotto.mock_location_quarantine': 'Quarantine Q-01',
+    'sysotto.mock_status_review': 'Under review',
+    'sysotto.mock_ticket_one': 'Table 07 · Order #1042',
+    'sysotto.mock_ticket_preparing': 'In preparation (04:12)',
+    'sysotto.mock_food_item_one': '1x Filet mignon au poivre',
+    'sysotto.mock_food_item_two': '1x Parmesan risotto',
+    'sysotto.mock_food_note': '* Note: gluten-free / sauce on the side',
+    'sysotto.mock_server_one': 'Server: Carlos R.',
+    'sysotto.mock_printed': '🖨️ Receipt printed',
+    'sysotto.mock_ticket_two': 'Table 12 · Order #1045',
+    'sysotto.mock_ticket_ready': 'Ready for delivery',
+    'sysotto.mock_food_item_three': '2x Grilled salmon with capers',
+    'sysotto.mock_food_item_four': '2x Fresh orange juice',
+    'sysotto.mock_server_two': 'Server: Luiza M.',
+    'sysotto.mock_total_time': 'Total time: 12 min',
+    'sysotto.mock_preset': 'Preset: Clean B2B Industry #08',
+    'sysotto.mock_device_desktop': 'Desktop',
+    'sysotto.mock_device_tablet': 'Tablet',
+    'sysotto.mock_device_mobile': 'Mobile',
+    'sysotto.mock_cta': 'CTA button: Connect',
+    'sysotto.mock_url_industry': 'industry.sysotto.com.br/dashboard/inventory/lots',
+    'sysotto.mock_url_food': 'foodservice.sysotto.com.br/kitchen',
+    'sysotto.mock_url_sites': 'sitebuilder.sysotto.com.br/editor?tenant=industrial-north',
+    'sysotto.mock_url_core': 'core.sysotto.internal/health/diagnostics',
 
     // Sysotto Industry
     'sysotto.ind_title': 'Sysotto ERP / Industry (IndSaaS)',
@@ -518,6 +653,7 @@ const translations = {
 
     // Academic & Impact Projects
     'projects.title': 'Featured Projects & Repositories',
+    'projects.section_heading': 'Software Engineering in Practice',
     'projects.subtitle': 'Curated open-source repositories from GitHub (OttoF77) highlighting computer science foundations, microservices, AI, and full-stack software development.',
     'projects.tab_all': 'All Projects',
     'projects.tab_sysotto': 'Enterprise Systems (Sysotto)',
@@ -581,6 +717,7 @@ const translations = {
 
     // Tech Stacks Section
     'skills.title': 'Tech Stacks & Competencies',
+    'skills.section_heading': 'Technical Focus Areas',
     'skills.subtitle': 'A structured, transparent taxonomy of technologies based on verified production contexts and academic applications.',
     'skills.core_title': 'Technologies in Current Sysotto Projects',
     'skills.core_desc': 'Core technologies applied in the architecture and engineering of Sysotto Softwares platforms (Sites, Industry Suite, and FoodService).',
@@ -616,6 +753,7 @@ const translations = {
 
     // Education & Certifications
     'edu.title': 'Academic Education & Certifications',
+    'edu.section_heading': 'Education & Continuous Learning',
     'edu.subtitle': 'Lifelong commitment to computer science fundamentals, engineering rigor, and international credentials.',
     'edu.academic_title': 'Higher Education',
     'edu.degree_se': 'B.S. in Software Engineering',
@@ -645,6 +783,9 @@ const translations = {
     'cert.cisco_def_desc': 'Wireshark packet analysis, Access Control Lists (ACLs), AAA security framework, TACACS+/RADIUS, and incident defense.',
 
     'cert.cisco_linux_title': 'NDG Linux Unhatched',
+    'cert.cisco_ds_badge': 'Data Science Badge',
+    'cert.cisco_ds_title': 'Introduction to Data Science',
+    'cert.cisco_ds_desc': 'Data analysis and visualization, predictive models, and business data science fundamentals.',
     'cert.cisco_linux_org': 'Cisco Networking Academy / NDG',
     'cert.cisco_linux_desc': 'Linux operating system fundamentals, terminal commands, permissions hierarchy, and process management.',
 
@@ -676,6 +817,7 @@ const translations = {
 
     // Contact
     'contact.title': 'Get In Touch',
+    'contact.headline': 'Let’s build the future of technology together.',
     'contact.subtitle': 'Open to executive leadership roles, corporate software architecture, and strategic advisory.',
     'contact.email_label': 'Email:',
     'contact.phone_label': 'Phone / WhatsApp:',
@@ -725,7 +867,7 @@ class I18nManager {
     if (!translations[lang]) return;
     this.currentLang = lang;
     localStorage.setItem(this.storageKey, lang);
-    document.documentElement.setAttribute('lang', lang.startsWith('pt') ? 'pt-BR' : 'en-US');
+    document.documentElement.setAttribute('lang', lang);
     this.applyTranslations();
     this.updateLanguageToggleUI();
   }
@@ -760,6 +902,14 @@ class I18nManager {
       }
     });
 
+    // 2b. Localized non-content attributes used by embedded documents and images
+    [['data-i18n-title', 'title'], ['data-i18n-alt', 'alt']].forEach(([dataAttr, targetAttr]) => {
+      document.querySelectorAll(`[${dataAttr}]`).forEach((el) => {
+        const text = this.t(el.getAttribute(dataAttr));
+        if (text) el.setAttribute(targetAttr, text);
+      });
+    });
+
     // 3. Document Title and Page Metadata
     const titleText = this.t('meta.title');
     if (titleText) {
@@ -784,6 +934,12 @@ class I18nManager {
     const twitterTitle = document.querySelector('meta[name="twitter:title"]');
     if (twitterTitle && titleText) twitterTitle.setAttribute('content', titleText);
 
+    const imageAlt = this.t('meta.image_alt');
+    const ogImageAlt = document.querySelector('meta[property="og:image:alt"]');
+    if (ogImageAlt && imageAlt) ogImageAlt.setAttribute('content', imageAlt);
+    const twitterImageAlt = document.querySelector('meta[name="twitter:image:alt"]');
+    if (twitterImageAlt && imageAlt) twitterImageAlt.setAttribute('content', imageAlt);
+
     const isPt = this.currentLang === 'pt-BR';
     const ogLocale = document.querySelector('meta[property="og:locale"]');
     if (ogLocale) ogLocale.setAttribute('content', isPt ? 'pt_BR' : 'en_US');
@@ -807,8 +963,8 @@ class I18nManager {
     buttons.forEach((btn) => {
       const langText = btn.querySelector('.lang-current-text');
       const isPt = this.currentLang === 'pt-BR';
-      const label = isPt ? 'Mudar para English (EN)' : 'Mudar para Português (PT)';
-      const title = isPt ? 'Switch to English' : 'Mudar para Português';
+      const label = isPt ? 'Alterar idioma para English (EN)' : 'Switch language to Portuguese (PT)';
+      const title = isPt ? 'Mudar para English' : 'Switch to Portuguese';
       btn.setAttribute('title', title);
       btn.setAttribute('aria-label', label);
       if (langText) {

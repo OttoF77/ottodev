@@ -60,6 +60,10 @@
     });
   }
 
+  window.addEventListener('languageChanged', () => {
+    updateThemeToggleUI(document.documentElement.getAttribute('data-theme') || 'dark');
+  });
+
   window.toggleTheme = function () {
     const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
