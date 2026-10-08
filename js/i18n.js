@@ -5,7 +5,17 @@
 
 const translations = {
   'pt-BR': {
-    // Navigation
+    // Page Metadata
+    'meta.title': 'Otto David de Santana Freitag | Liderança Executiva & Engenharia de Software',
+    'meta.description': 'Portfólio executivo de Otto David de Santana Freitag: mais de 20 anos de liderança executiva em grandes corporações (Gerdau, CSN, Servisan), Arquiteto de Soluções e fundador da Sysotto Softwares.',
+
+    // Navigation & Common Accessibility
+    'nav.skip_to_content': 'Pular para o conteúdo principal',
+    'nav.primary_label': 'Navegação Principal',
+    'nav.brand_aria': 'Otto Freitag - Início',
+    'projects.filter_label': 'Filtrar projetos por categoria',
+    'sysotto.tabs_label': 'Plataformas e Módulos Sysotto',
+    'modal.close': 'Fechar janela modal',
     'nav.home': 'Início',
     'nav.about': 'Sobre',
     'nav.versatility': 'Atuação',
@@ -20,14 +30,19 @@ const translations = {
 
     // Hero
     'hero.badge': 'Liderança Executiva · Arquiteto de Soluções · Engenheiro de Software',
-    'hero.title_start': 'Transformando visão estratégica de negócios em',
-    'hero.title_highlight': 'arquitetura & software',
-    'hero.title_end': 'de alto desempenho.',
-    'hero.subtitle': 'Mais de 20 anos de liderança em gestão de negócios e operações de grande porte (Gerdau, CSN, Servisan), com sólida transição para a computação e desenvolvimento de software corporativo moderno em C#, .NET 10, Next.js e baixo nível.',
-    'hero.cta_projects': 'Conhecer Soluções & Cases',
+    'hero.title_start': 'Liderança executiva aliada à',
+    'hero.title_highlight': 'engenharia de software',
+    'hero.title_end': 'e arquitetura de soluções.',
+    'hero.subtitle': 'Mais de 20 anos de gestão executiva em grandes operações industriais (Gerdau, CSN) integrados ao desenvolvimento de software corporativo. Como fundador da Sysotto Softwares, projeto sistemas e plataformas SaaS com foco em processos críticos, escalabilidade e resultado de negócio.',
+    'hero.cta_projects': 'Ver Projetos & Cases',
     'hero.cta_academic': 'Ver Projetos de Engenharia',
-    'hero.cta_cv': 'Baixar Currículo (PT-BR)',
-    'hero.role_location': 'Parnaíba & Teresina, PI — Brasil | Disponível para posições executivas e arquitetura de software (remoto e presencial)',
+    'hero.cta_cv': 'Baixar Currículo (PDF)',
+    'hero.cta_contact': 'Contato & Oportunidades',
+    'hero.audience_recruiters': 'Oportunidades profissionais:',
+    'hero.audience_recruiters_link': 'Liderança e engenharia sênior',
+    'hero.audience_clients': 'Soluções corporativas:',
+    'hero.audience_clients_link': 'Conhecer plataformas Sysotto',
+    'hero.role_location': 'Parnaíba & Teresina, PI — Brasil | Disponível para atuação remota',
     'hero.pill_experience': '20+ Anos em Gestão Executiva',
     'hero.pill_role': 'Arquiteto & Eng. de Software',
     'hero.stat_experience': '20+ Anos',
@@ -39,10 +54,10 @@ const translations = {
 
     // About Section
     'about.title': 'Sobre & Transição de Carreira',
-    'about.subtitle': 'A união entre solidez executiva de mercado e rigor técnico em engenharia de software.',
-    'about.p1': 'Com mais de duas décadas de trajetória como Gerente Geral e Gerente Comercial em líderes industriais e de distribuição nacional como a <strong>Gerdau S/A</strong> (onde liderou expansão com mais de 30% a.a. de crescimento e gestão logística regional), <strong>Companhia Siderúrgica Nacional (CSN)</strong>, <strong>Servisan</strong> e <strong>Servicon</strong>, trago uma bagagem executiva diferenciada para a indústria de software.',
-    'about.p2': 'Atualmente, atuo como <strong>CEO e Arquiteto de Soluções na Sysotto Softwares</strong>, liderando o design e a implementação de plataformas corporativas SaaS multi-tenant completas, orientadas a microsserviços e monólitos modulares resilientes com <strong>C#, .NET 10, PostgreSQL e Next.js</strong>.',
-    'about.p3': 'Graduando em <strong>Engenharia de Software (UNIFBV/Wyden)</strong>, com <strong>MBA em Gestão Empresarial pela FGV (Fundação Getúlio Vargas)</strong> e <strong>Bacharelado em Turismo pela UNIFOR</strong>, mantenho dedicação profunda aos fundamentos da Ciência da Computação, estruturas de dados em C, arquitetura distribuída e cibersegurança.',
+    'about.subtitle': 'Solidez executiva corporativa integrada a rigor técnico em engenharia de software.',
+    'about.p1': 'Construí uma carreira de mais de 20 anos como Gerente Geral e Gerente Comercial em grandes operações industriais e logísticas, incluindo <strong>Gerdau S/A</strong> (gestão de filial com crescimento superior a 30% a.a.), <strong>CSN</strong>, <strong>Servisan</strong> e <strong>Servicon</strong>. Essa vivência me confere domínio prático de processos de negócio, liderança de equipes e tomada de decisão orientada a resultados.',
+    'about.p2': 'Na transição para a tecnologia, uni essa bagagem executiva à computação aplicada. Como <strong>CEO e Arquiteto de Soluções na Sysotto Softwares</strong>, projeto e implemento plataformas SaaS multi-tenant e sistemas corporativos, com foco em arquiteturas escaláveis (.NET, C#, PostgreSQL e Next.js), segurança e confiabilidade operacional.',
+    'about.p3': 'Sou graduando em <strong>Engenharia de Software (UNIFBV/Wyden)</strong>, com <strong>MBA em Gestão Empresarial pela FGV</strong> e <strong>Bacharelado em Turismo pela UNIFOR</strong>, mantendo dedicação contínua aos fundamentos da computação, estruturas de dados, sistemas distribuídos e segurança defensiva.',
     'about.leadership_title': 'Diferenciais Estratégicos',
     'about.diff_1_title': 'Visão de Negócio & ROI:',
     'about.diff_1_desc': 'Capacidade comprovada de traduzir requisitos complexos de mercado em arquiteturas técnicas escaláveis e lucrativas.',
@@ -55,52 +70,102 @@ const translations = {
     'versatility.pill': 'Soluções Multissetoriais',
     'versatility.title': 'Versatilidade & Capacidade de Entrega por Segmento',
     'versatility.subtitle': 'Arquitetura técnica e visão executiva aplicadas a diferentes portes, necessidades operacionais e mercados.',
-    'versatility.ind_title': 'Grandes Indústrias & Logística (Enterprise)',
-    'versatility.ind_desc': 'Controle de estoques de alto volume com regras FEFO/FIFO, rastreabilidade GS1-128, endereçamento tridimensional de armazéns, conformidade regulatória e auditoria contábil.',
-    'versatility.sme_title': 'PMEs, Varejo & Serviços Alimentícios',
-    'versatility.sme_desc': 'Operação comercial ágil com controle de comandas/mesas, cardápio digital dinâmico via QR Code, Kitchen Display System (KDS) e agente nativo desktop de impressão térmica sem intermediários.',
+    'versatility.ind_title': 'Grandes Indústrias & Operações (Enterprise)',
+    'versatility.ind_desc': 'Modelagem de fluxos operacionais de alta complexidade, integração entre gestão executiva e chão de fábrica, auditoria contínua de processos e conformidade regulatória corporativa.',
+    'versatility.tag_gov': 'Governança de Processos',
+    'versatility.tag_audit': 'Auditoria & Compliance',
+    'versatility.tag_exec': 'Visão Executiva',
+    'versatility.tag_scale': 'Escalabilidade',
+    'versatility.sme_title': 'PMEs, Varejo & Serviços Comerciais',
+    'versatility.sme_desc': 'Automação de operações comerciais e de atendimento, eliminação de intermediários tecnológicos de alto custo, estabilidade operacional e foco direto em redução de custos operacionais.',
+    'versatility.tag_efficiency': 'Eficiência Operacional',
+    'versatility.tag_autonomy': 'Autonomia Técnica',
+    'versatility.tag_cost': 'Redução de Custos',
+    'versatility.tag_realtime': 'Fluxo em Tempo Real',
     'versatility.saas_title': 'Startups & Produtos Digitais (SaaS B2B)',
-    'versatility.saas_desc': 'Arquiteturas SaaS multi-tenant resilientes, isolamento de dados com PostgreSQL RLS, construtor de sites em Next.js com geração estática de snapshots e pipelines de alta performance.',
-    'versatility.critical_title': 'Sistemas Críticos & Cibersegurança',
-    'versatility.critical_desc': 'Engenharia de baixo nível em C/C++, eficiência algorítmica, gerenciamento direto de memória na heap, monitoramento ativo com Wireshark e segurança de redes com padrões Cisco.',
+    'versatility.saas_desc': 'Concepção de produtos escaláveis com isolamento rigoroso entre clientes, governança multi-tenant, estratégias modernas de provisionamento e visão orientada a retenção e ROI.',
+    'versatility.tag_tenant': 'Arquitetura Multi-Tenant',
+    'versatility.tag_failclosed': 'Segurança Fail-Closed',
+    'versatility.tag_product': 'Estratégia de Produto',
+    'versatility.tag_ha': 'Alta Disponibilidade',
+    'versatility.critical_title': 'Sistemas Críticos & Segurança Aplicada',
+    'versatility.critical_desc': 'Projetos que exigem integridade absoluta de dados, controle rigoroso de recursos computacionais, disciplina de segurança defensiva e tolerância zero a falhas silenciosas.',
+    'versatility.tag_integrity': 'Integridade de Dados',
+    'versatility.tag_defense': 'Defesa em Profundidade',
+    'versatility.tag_memory': 'Controle de Memória',
+    'versatility.tag_zerotrust': 'Zero-Trust',
 
     // Sysotto Section
-    'sysotto.pill': 'Sistemas Corporativos em Produção',
-    'sysotto.title': 'Case de Engenharia & Empreendedorismo',
-    'sysotto.subtitle': 'A união entre visão executiva corporativa e engenharia de software de ponta, com plataformas complexas projetadas para alta escala e resiliência.',
+    'sysotto.pill': 'Arquitetura & Engenharia de Software',
+    'sysotto.title': 'Case Sysotto: Engenharia & Plataformas SaaS',
+    'sysotto.subtitle': 'Plataformas modulares projetadas e arquitetadas por Otto David de Santana Freitag, demonstrando padrões corporativos, domínio rico e isolamento multi-tenant.',
     'sysotto.company_name': 'Sysotto Softwares',
     'sysotto.company_tagline': 'Ecossistema SaaS & Engenharia Corporativa',
-    'sysotto.role_badge': 'Otto Freitag — Fundador & Arquiteto',
-    'sysotto.lead': 'Fundada e arquitetada por Otto David de Santana Freitag, a Sysotto Softwares materializa a união entre visão de negócios corporativos e engenharia de software de ponta, com 4 plataformas corporativas complexas projetadas para alta escala, segurança e resiliência.',
-    'sysotto.functional_badge': 'Módulos Funcionais em Produção / Homologação',
-    'sysotto.upcoming_badge': 'Em Fase de Homologação & Próximos Lançamentos',
+    'sysotto.role_badge': 'Otto Freitag — Arquiteto Fundador & Engenheiro Principal',
+    'sysotto.lead': 'Criada e arquitetada por Otto David de Santana Freitag, a Sysotto Softwares desenvolve plataformas corporativas voltadas a processos críticos, gestão de estoques e presença web. Sysotto Sites encontra-se online e operacional, enquanto as soluções Industry e FoodService estão em fase final de preparação técnica.',
+    'sysotto.mockup_disclaimer': 'Demonstração visual · Dados ilustrativos',
+    'sysotto.mockup_terminal_disclaimer': 'Simulação de telemetria e diagnóstico',
+    'sysotto.repo_showcase_btn': 'Ver Repositório Showcase no GitHub',
+    'sysotto.internal_spec_note': 'Especificação arquitetural interna Sysotto',
+    'sysotto.tab_ind': 'Sysotto Industry',
+    'sysotto.tab_food': 'Sysotto FoodService',
+    'sysotto.tab_sites': 'Sysotto Sites',
+    'sysotto.tab_core': 'Multi-Tenant Core',
+    'sysotto.status_sites_online': '● Online & Em Operação',
+    'sysotto.status_industry_prep': '● Em Preparação',
+    'sysotto.status_food_prep': '● Em Preparação',
+    'sysotto.sites_status_tag': 'Plataforma Online · Versão Atual em Staging',
+    'sysotto.sites_video_btn': 'Assistir Tour Técnico (YouTube)',
+    'sysotto.mock_kpi_lots_title': 'Lotes na Demonstração',
+    'sysotto.mock_kpi_lots_val': '1.482',
+    'sysotto.mock_simulated_tag': '(Simulado)',
+    'sysotto.mock_kpi_rules_title': 'Regras de Alocação',
+    'sysotto.mock_kpi_rules_val': 'FEFO / FIFO / LIFO',
+    'sysotto.mock_kpi_acc_title': 'Meta de Acuracidade',
+    'sysotto.mock_kpi_acc_val': '99.8%',
+    'sysotto.mock_target_tag': '(Meta Teórica)',
+    'sysotto.mock_table_footer_note': '<strong>Rastreabilidade QR Code:</strong> Estrutura de etiqueta GS1-128 para conferência (Demonstração).',
+    'sysotto.mock_table_badge': 'Dados Ilustrativos',
+    'sysotto.mock_kds_footer_note': 'Painel KDS: Demonstração de fluxo com 14 comandas simuladas',
+    'sysotto.mock_kds_signalr': 'Stream SignalR (Simulado)',
+    'sysotto.mock_sites_footer_left': 'Renderizador SSR / Static Snapshots',
+    'sysotto.mock_sites_footer_right': 'Layout Ilustrativo · Tour em Vídeo Disponível',
+    'sysotto.mock_core_status': '[Diagnóstico de Demonstração]: Validação fail-closed de JWT · RLS Ativo',
     
     // Sysotto Industry
     'sysotto.ind_title': 'Sysotto ERP / Industry (IndSaaS)',
     'sysotto.ind_desc': 'Sistema integrado de gestão fabril e de estoques de alta precisão para médias e grandes operações industriais.',
-    'sysotto.ind_functional': '<strong>O que já está funcional:</strong> Gestão avançada de inventário com estratégias automatizadas FEFO (First-Expired, First-Out), FIFO e LIFO; controle completo de lotes com validade, status de quarentena, timeline de rastreabilidade e geração de etiquetas com QR Code; endereçamento tridimensional de armazéns (corredores, prateleiras, níveis); inventário rotativo passo a passo com conciliação auditada de divergências; gestão comercial e faturamento.',
-    'sysotto.ind_upcoming': '<strong>Próximos lançamentos:</strong> Pacote comercial Industry Lite para implantação ágil em pequenas indústrias, fechamento do portal de auto-assinatura e projeção em tempo real de produtos canônicos no catálogo digital B2B.',
+    'sysotto.ind_problem': '<strong>Problema de Negócio:</strong> Rastreabilidade deficiente em estoques perecíveis de alto volume, conciliações manuais com divergências contábeis e controle ineficiente de lotes e almoxarifados.',
+    'sysotto.ind_role': '<strong>Arquitetura & Implementação (Otto Freitag):</strong> Concepção e desenvolvimento autoral do modelo de domínio, algoritmos FEFO/FIFO/LIFO, rastreabilidade GS1-128 e isolamento com PostgreSQL RLS.',
+    'sysotto.ind_functional': '<strong>Escopo arquitetural implementado:</strong> Gestão avançada de inventário com estratégias automatizadas FEFO/FIFO/LIFO, controle de lotes com validade e quarentena, etiquetas GS1-128 QR Code, endereçamento tridimensional de armazéns e rotinas de conciliação de inventário rotativo.',
+    'sysotto.ind_upcoming': '<strong>Evolução técnica planejada:</strong> Pacote comercial Industry Lite e projeção de produtos no catálogo digital B2B.',
     'sysotto.ind_stack': 'Stack: C# .NET 10, ASP.NET Core, EF Core 10, PostgreSQL 17, FluentValidation, Next.js, TypeScript, Tailwind CSS.',
 
     // Sysotto FoodService
     'sysotto.food_title': 'Sysotto FoodService (RestSaaS)',
     'sysotto.food_desc': 'Plataforma especializada para restaurantes, bares e serviços alimentícios, unindo salão, cozinha e gestão de entregas.',
-    'sysotto.food_functional': '<strong>O que já está funcional:</strong> Módulo TableOrdersManager para controle simultâneo de mesas e comandas; cardápio digital dinâmico multi-tenant via QR Code; Kitchen Display System (KDS) em tempo real para produção na cozinha; módulo desktop autônomo de impressão térmica de cupons e comandas (<code>Sysotto.PrintingModule.Agent</code>) em .NET 10 com comunicação direta a impressoras de rede/USB sem dependência de drivers de terceiros.',
-    'sysotto.food_upcoming': '<strong>Próximos lançamentos:</strong> Integração bidirecional com gateways de entrega e roteirização inteligente de pedidos por rota de entrega.',
+    'sysotto.food_problem': '<strong>Problema de Negócio:</strong> Gargalos de comunicação entre salão e cozinha geram atrasos em comandas e perda de comandas térmicas por instabilidade de rede local.',
+    'sysotto.food_role': '<strong>Arquitetura & Implementação (Otto Freitag):</strong> Arquitetura orientada a eventos para o fluxo de pedidos (SignalR) e desenvolvimento do agente desktop autônomo em .NET 10 para comunicação direta com impressoras térmicas ESC/POS sem drivers externos.',
+    'sysotto.food_functional': '<strong>Escopo arquitetural implementado:</strong> Módulo TableOrdersManager para controle de mesas e comandas, cardápio digital dinâmico via QR Code, Kitchen Display System (KDS) em tempo real e agente desktop autônomo de impressão térmica (.NET 10 / ESC/POS).',
+    'sysotto.food_upcoming': '<strong>Evolução técnica planejada:</strong> Roteirização de entregas e integrações bidirecionais de pedidos.',
     'sysotto.food_stack': 'Stack: Next.js (App Router), React, SignalR, .NET 10 Desktop Agent, PostgreSQL, Tailwind CSS.',
 
-    // Sysotto SiteBuilder
-    'sysotto.site_title': 'Sysotto SiteBuilder & CMS (SitesSaaS)',
-    'sysotto.site_desc': 'Motor modular para criação, publicação e hospedagem dinâmica de landing pages institucionais e catálogos.',
-    'sysotto.site_functional': '<strong>O que já está funcional:</strong> Editor contextual visual com 25 presets profissionais prontos para uso em múltiplos segmentos; módulo de gestão e recorte dinâmico de mídias (<code>MediaAssets</code>) gerando variantes WebP otimizadas; Help Hub com micro-aulas integradas; arquitetura com 378 testes automatizados aprovados e métricas de desempenho Lighthouse otimizadas.',
-    'sysotto.site_upcoming': '<strong>Próximos lançamentos:</strong> Provisionamento automático de domínios personalizados e certificados SSL Let\'s Encrypt sob demanda.',
+    // Sysotto Sites
+    'sysotto.site_title': 'Sysotto Sites — Plataforma Web & CMS',
+    'sysotto.site_desc': 'Plataforma para criação, publicação e hospedagem dinâmica de landing pages e catálogos B2B com renderização otimizada.',
+    'sysotto.site_problem': '<strong>Problema de Negócio:</strong> Criação rápida de catálogos e sites B2B sem depender de equipes de TI para cada alteração de layout.',
+    'sysotto.site_role': '<strong>Arquitetura & Implementação (Otto Freitag):</strong> Motor de templates contextuais, pipeline de compressão e recorte de mídia em WebP (Sharp) e infraestrutura de componentes modulares.',
+    'sysotto.site_functional': '<strong>Escopo arquitetural implementado:</strong> Editor contextual visual com presets profissionais pré-configurados, módulo de gestão e recorte dinâmico de mídias (WebP), Help Hub e componentes SSR otimizados.',
+    'sysotto.site_upcoming': '<strong>Evolução técnica planejada:</strong> Provisionamento automático de domínios personalizados e certificados SSL Let\'s Encrypt sob demanda.',
     'sysotto.site_stack': 'Stack: Next.js App Router, React 19, TypeScript, Sharp/WebP, PostgreSQL, Turborepo.',
 
     // Sysotto Platform Core
     'sysotto.core_title': 'Sysotto Multi-Tenant Core & Security Engine',
     'sysotto.core_desc': 'Núcleo de infraestrutura compartilhada, segurança e orquestração de microsserviços.',
-    'sysotto.core_functional': '<strong>O que já está funcional:</strong> Resolução dinâmica de tenant via middleware unificado (<code>MonolithTenantProvider</code>) com proteção contra tenant injection; isolamento lógico com schemas dedicados e PostgreSQL Row Level Security (RLS); autorização OAuth2 / OpenID Connect com OpenIddict; autenticação JWT fail-closed; orquestrador de migrations de banco com advisory lock concorrente; cache distribuído Redis.',
-    'sysotto.core_upcoming': '<strong>Próximos lançamentos:</strong> Portal unificado SSO com dashboard centralizado de telemetria e métricas de faturamento por tenant.',
+    'sysotto.core_problem': '<strong>Problema de Negócio:</strong> Risco de vazamento de dados entre empresas clientes (cross-tenant data leak) e gargalos de autenticação em arquiteturas multi-tenant.',
+    'sysotto.core_role': '<strong>Arquitetura & Implementação (Otto Freitag):</strong> Middleware central de resolução de tenant fail-closed, orquestrador de migrations de banco com advisory lock concorrente e camada de autorização OpenIddict / JWT.',
+    'sysotto.core_functional': '<strong>Escopo arquitetural implementado:</strong> Resolução dinâmica de tenant via middleware (MonolithTenantProvider) com proteção contra tenant injection, isolamento lógico com PostgreSQL Row Level Security (RLS), autorização OAuth2 / OIDC via OpenIddict e cache distribuído Redis.',
+    'sysotto.core_upcoming': '<strong>Evolução técnica planejada:</strong> Portal unificado SSO com dashboard centralizado de telemetria e métricas de faturamento por tenant.',
     'sysotto.core_stack': 'Stack: C# .NET 10, OpenIddict, PostgreSQL 17, Redis, Docker Compose, Linux.',
 
     // Academic & Impact Projects
@@ -110,31 +175,53 @@ const translations = {
     'projects.tab_sysotto': 'Sistemas Corporativos (Sysotto)',
     'projects.tab_hackathons': 'Simulações & Hackathons',
     'projects.tab_academic': 'Ciência da Computação & Fundamentos',
+    'projects.featured_flag': '★ Destaque Técnico',
+    'projects.role_label': 'Contribuição de Otto:',
     
     // Project items
-    'proj.condotrack_title': 'CondoTrack — Gestão & Rastreabilidade 360°',
-    'proj.condotrack_desc': 'Plataforma corporativa de gestão operacional e rastreabilidade para condomínios. Controle de acesso por QR Code (<1.5s), custódia e baixa de encomendas, agendamentos atômicos sem conflito e documentação técnica C4/UML completa (Otto: Top Contributor e Líder Técnico).',
+    'proj.btn_view_showcase': 'Ver Showcase no GitHub',
+    'proj.btn_view_repo': 'Ver Repositório no GitHub',
+
+    'proj.sysotto_ind_badge': 'Sysotto · Em Preparação (Showcase)',
+    'proj.sysotto_ind_title': 'Sysotto ERP / Industry Suite',
+    'proj.sysotto_ind_desc': '<p><strong>Problema de Negócio:</strong> Rastreabilidade deficiente em estoques industriais de alto volume e perdas financeiras por alocação manual sem controle estrito de lotes perecíveis.</p><p><strong>Decisões Técnicas:</strong> Motor em C# .NET 10 / EF Core com alocação automática FEFO/FIFO/LIFO, geração de etiquetas QR Code GS1-128, endereçamento 3D de armazéns e isolamento lógico via PostgreSQL Row-Level Security (RLS).</p>',
+    'proj.sysotto_ind_role': 'Concepção autoral integral e arquitetura de software: modelagem do domínio industrial, implementação dos algoritmos de alocação de estoque e testes de conformidade.',
+
     'proj.condotrack_badge': 'No Country · Simulação S08',
+    'proj.condotrack_title': 'CondoTrack — Gestão & Rastreabilidade 360°',
+    'proj.condotrack_desc': '<p><strong>Problema de Negócio:</strong> Filas e lentidão em portarias condominiais por liberação manual, extravios na custódia de encomendas e conflitos de agendamento em áreas comuns.</p><p><strong>Decisões Técnicas:</strong> Backend em Java 21 / Spring Boot 3 com validação de QR Code indexado via B-Tree (&lt;400ms), reservas com locks atômicos (HTTP 409 em concorrência), auditoria imutável via triggers e 114 testes automatizados em &lt;9s.</p>',
+    'proj.condotrack_role': 'Desenvolvido em equipe internacional (No Country S08-26 / Team 17). Atuação como Líder Técnico e principal engenheiro backend: arquitetura da API, modelagem relacional, C4 Model e suíte de testes.',
+    'proj.condotrack_video_btn': 'Assistir Demonstração (YouTube)',
 
-    'proj.techmind_title': 'TechMind — Classificação com IA & OCI',
-    'proj.techmind_desc': 'Solução desenvolvida no Hackathon ONE unindo arquitetura de microsserviço backend em Java 17 / Spring Boot e inferência de Machine Learning (NLP) em Python / FastAPI, com esteira de deploy e persistência na Oracle Cloud Infrastructure (OCI).',
     'proj.techmind_badge': 'Hackathon ONE · Oracle + Alura',
+    'proj.techmind_title': 'TechMind — Classificação com IA & OCI',
+    'proj.techmind_desc': 'Solução de classificação inteligente unindo microsserviço backend em Java / Spring Boot e inferência de Machine Learning (NLP) em Python / FastAPI, com esteira de deploy e persistência na Oracle Cloud Infrastructure (OCI).',
+    'proj.techmind_role': 'Projeto em equipe desenvolvido no Hackathon ONE. Contribuição na integração entre backend Java 17, API de ML em Python/FastAPI e deploy na Oracle Cloud.',
 
+    'proj.sysotto_food_badge': 'Sysotto · Em Preparação',
+    'proj.sysotto_food_title': 'Sysotto FoodService & Agente de Impressão',
+    'proj.sysotto_food_desc': 'Sistema operacional para restaurantes e bares com Kitchen Display System em tempo real, gestão de comandas e mesas, e agente desktop nativo em .NET 10 para impressão térmica direta (ESC/POS).',
+    'proj.sysotto_food_role': 'Arquitetura do fluxo de pedidos via SignalR e desenvolvimento autoral do agente desktop em .NET 10 para comunicação térmica direta ESC/POS.',
+
+    'proj.c_ds_badge': 'Ciência da Computação',
     'proj.c_ds_title': 'Estruturas de Dados em C',
-    'proj.c_ds_desc': 'Implementação de baixo nível em linguagem C de algoritmos essenciais e estruturas de dados: listas encadeadas simples e duplas, pilhas, filas, árvores binárias de busca e algoritmos de ordenação, com gestão manual de ponteiros e desalocação de memória.',
-    'proj.c_ds_badge': 'Ciência da Computação & Baixo Nível',
+    'proj.c_ds_desc': '<p><strong>Problema Computacional:</strong> Dependência de abstrações de alto nível sem domínio de alocação de memória na heap, aritmética de ponteiros e custo assintótico de algoritmos essenciais.</p><p><strong>Decisões Técnicas:</strong> Implementação estrita em ANSI C de listas ligadas, pilhas, filas e árvores binárias de busca; desalocação com verificação de ponteiros nulos (zero memory leaks) e análise assintótica Big-O documentada.</p>',
+    'proj.c_ds_role': 'Desenvolvimento autoral integral focado em rigor de Ciência da Computação, gerenciamento manual de memória e testes de integridade estrutural.',
 
-    'proj.microservices_title': 'E-Commerce Microservices',
-    'proj.microservices_desc': 'Arquitetura orientada a microsserviços distribuídos em C# / .NET, abordando catálogo de produtos, carrinho, processamento de pedidos, mensageria assíncrona, resiliência e boas práticas de desacoplamento de serviços.',
     'proj.microservices_badge': 'Arquitetura Distribuída .NET',
+    'proj.microservices_title': 'E-Commerce Microservices',
+    'proj.microservices_desc': 'Arquitetura de microsserviços distribuídos em C# / .NET, abordando catálogo de produtos, carrinho de compras, orquestração de pedidos, mensageria assíncrona com RabbitMQ, padrões de resiliência e desacoplamento de serviços.',
+    'proj.microservices_role': 'Laboratório individual explorando mensageria assíncrona orientada a eventos, políticas de resiliência Polly, Docker Compose e desacoplamento de banco por serviço.',
 
-    'proj.literalura_title': 'Challenge LiterAlura & ONE Backend',
-    'proj.literalura_desc': 'Aplicação em Java 17 e Spring Boot 3 desenvolvida para o programa Oracle Next Education. Consome a API pública Gutendex, processa dados JSON via Jackson, e gerencia catálogo literário com consultas complexas e persistência em PostgreSQL.',
     'proj.literalura_badge': 'Java 17 & Spring Boot',
+    'proj.literalura_title': 'Challenge LiterAlura & ONE Backend',
+    'proj.literalura_desc': 'Aplicação em Java 17 e Spring Boot 3 desenvolvida no programa Oracle Next Education. Consome a API pública Gutendex, processa dados JSON complexos via Jackson e realiza consultas relacionais em PostgreSQL com Spring Data JPA.',
+    'proj.literalura_role': 'Implementação individual completa do desafio backend: modelagem de entidades JPA, consumo de API REST externa e consultas personalizadas.',
 
+    'proj.email_ai_badge': 'Python & PLN',
     'proj.email_ai_title': 'Classificador Inteligente de E-mails',
-    'proj.email_ai_desc': 'Aplicação em Python aplicando técnicas de Processamento de Linguagem Natural (NLP) e aprendizado supervisionado para classificação semântica, triagem automática e análise de sentimentos em caixas de mensagens corporativas.',
-    'proj.email_ai_badge': 'Python & Inteligência Artificial',
+    'proj.email_ai_desc': 'Solução em Python aplicando Processamento de Linguagem Natural (PLN) e aprendizado supervisionado para triagem de caixas de mensagens corporativas, detecção de sentimentos e categorização de chamados.',
+    'proj.email_ai_role': 'Implementação autoral aplicando pré-processamento de texto (vetorização TF-IDF) e modelos de classificação Scikit-Learn para triagem de e-mails.',
 
     'proj.dio_agent_title': 'Agentes Autônomos de IA & Voz',
     'proj.dio_agent_desc': 'Projetos desenvolvidos no ecossistema DIO / Suzano explorando modelos de IA generativa, processamento de linguagem natural e recursos de conversão de fala (Speech-to-Text / Text-to-Speech) integrados a fluxos automatizados.',
@@ -147,19 +234,44 @@ const translations = {
     // Tech Stacks Section
     'skills.title': 'Tecnologias & Competências',
     'skills.subtitle': 'Classificação transparente do ecossistema tecnológico com base no grau de profundidade e aplicação prática.',
-    'skills.core_title': 'Stacks Principais (Produção Sysotto)',
-    'skills.core_desc': 'Tecnologias utilizadas diariamente no desenvolvimento dos sistemas em produção da Sysotto Softwares, com domínio aprofundado de arquitetura, ciclo de vida e performance.',
-    'skills.interests_title': 'Interesses & Pesquisa Ativa (Baixo Nível & Segurança)',
-    'skills.interests_desc': 'Áreas de dedicação contínua em engenharia de sistemas, programação de baixo nível, controle rígido de memória e proteção de infraestrutura.',
+    'skills.core_title': 'Tecnologias nos Projetos Atuais da Sysotto',
+    'skills.core_desc': 'Tecnologias centrais aplicadas na arquitetura e engenharia das plataformas da Sysotto Softwares (Sites, Industry Suite e FoodService).',
+    'skills.demonstrated_title': 'Tecnologias Demonstradas em Projetos & Estudos',
+    'skills.demonstrated_desc': 'Linguagens, frameworks e ferramentas validados em projetos com código-fonte no repositório, simulações acadêmicas e hackathons.',
+    'skills.interests_title': 'Interesses & Áreas em Exploração',
+    'skills.interests_desc': 'Áreas de dedicação contínua em engenharia de sistemas, programação de baixo nível, controle de memória e segurança.',
     'skills.academic_title': 'Fundamentação Acadêmica & Formações Complementares',
     'skills.academic_desc': 'Tecnologias e linguagens exploradas no âmbito universitário, bootcamps de capacitação e desafios de desenvolvimento para consolidação de fundamentos.',
+    'skills.ref_industry': 'Sysotto Industry',
+    'skills.ref_industry_sites': 'Sysotto Industry / Sites',
+    'skills.ref_multitenant': 'Sysotto Multi-Tenant',
+    'skills.ref_sites': 'Sysotto Sites',
+    'skills.ref_sites_ui': 'Sysotto Sites / UI',
+    'skills.ref_infra': 'Sysotto Infra',
+    'skills.ref_auth': 'Sysotto Auth',
+    'skills.ref_core': 'Sysotto Core',
+    'skills.ref_deploy': 'Ambiente & Deploy',
+    'skills.ref_condotrack': 'CondoTrack',
+    'skills.ref_condotrack_one': 'CondoTrack / ONE',
+    'skills.ref_techmind_email': 'TechMind / Classificador',
+    'skills.ref_c_ds': 'Estruturas de Dados',
+    'skills.ref_sql': 'CondoTrack / TechMind',
+    'skills.ref_microservices': 'E-Commerce Microservices',
+    'skills.ref_cloud': 'Hackathon / OCI Cert',
+    'skills.ref_repos': 'Repositórios & CI/CD',
+    'skills.ref_systems': 'Sistemas de Alta Performance',
+    'skills.ref_concurrency': 'Memory Safety & Concorrência',
+    'skills.ref_sec_study': 'Trilha Cisco / Hackers do Bem',
+    'skills.ref_net_study': 'Defesa de Redes (Cisco)',
+    'skills.ref_crypto': 'Padrões Zero-Trust',
+    'skills.ref_ai_agents': 'Estudos LLM & Agentes',
 
     // Education & Certifications
     'edu.title': 'Formação Acadêmica & Certificações',
     'edu.subtitle': 'Compromisso com o aprendizado contínuo, fundamentos da computação e especializações de classe mundial.',
     'edu.academic_title': 'Formação Acadêmica',
     'edu.degree_se': 'Bacharelado em Engenharia de Software',
-    'edu.degree_se_inst': 'UNIFBV / Wyden (3º Período - Em andamento)',
+    'edu.degree_se_inst': 'UNIFBV / Wyden (4º Período - Em andamento · Conclusão prevista: 06/2029)',
     'edu.degree_se_desc': 'Fundamentos de computação, engenharia de requisitos, arquitetura de software, algoritmos, governança de TI e segurança.',
     'edu.degree_mba': 'MBA em Gestão Empresarial',
     'edu.degree_mba_inst': 'Fundação Getúlio Vargas (FGV)',
@@ -228,7 +340,10 @@ const translations = {
     'contact.channel_desc': 'Disponível para posições executivas de liderança, arquitetura técnica de software corporativo e parcerias estratégicas.',
     'contact.btn_whatsapp': 'Iniciar Conversa no WhatsApp',
     'contact.btn_email': 'Enviar E-mail Direto',
-    'contact.location_note': 'Base: Parnaíba / Teresina, PI — Atuação remota e presencial',
+    'contact.btn_cv': 'Baixar Currículo (PDF)',
+    'contact.cv_label': 'Currículo Profissional:',
+    'contact.cv_link_text': 'Baixar Versão Consolidada (PDF)',
+    'contact.location_note': 'Base: Parnaíba / Teresina, PI — Atuação remota',
     'contact.copy_email': 'Copiar E-mail',
     'contact.email_copied': 'E-mail copiado!',
 
@@ -238,7 +353,17 @@ const translations = {
   },
 
   'en-US': {
-    // Navigation
+    // Page Metadata
+    'meta.title': 'Otto David de Santana Freitag | Executive Leadership & Software Engineering',
+    'meta.description': 'Executive portfolio of Otto David de Santana Freitag: 20+ years of executive leadership in major corporations (Gerdau, CSN, Servisan), Solutions Architect and founder of Sysotto Softwares.',
+
+    // Navigation & Common Accessibility
+    'nav.skip_to_content': 'Skip to main content',
+    'nav.primary_label': 'Main Navigation',
+    'nav.brand_aria': 'Otto Freitag - Home',
+    'projects.filter_label': 'Filter projects by category',
+    'sysotto.tabs_label': 'Sysotto Platforms and Modules',
+    'modal.close': 'Close modal dialog',
     'nav.home': 'Home',
     'nav.about': 'About',
     'nav.versatility': 'Expertise',
@@ -253,14 +378,19 @@ const translations = {
 
     // Hero
     'hero.badge': 'Executive Leadership · Solutions Architect · Software Engineer',
-    'hero.title_start': 'Bridging executive business strategy with',
-    'hero.title_highlight': 'high-performance software',
-    'hero.title_end': 'and resilient architecture.',
-    'hero.subtitle': 'Over 20 years of executive leadership in business operations and regional distribution (Gerdau, CSN, Servisan), transitioning with technical depth into modern enterprise software engineering in C#, .NET 10, Next.js, and low-level computing.',
-    'hero.cta_projects': 'Explore Solutions & Cases',
+    'hero.title_start': 'Executive leadership integrated with',
+    'hero.title_highlight': 'software engineering',
+    'hero.title_end': 'and solutions architecture.',
+    'hero.subtitle': 'Over 20 years of executive leadership in major industrial operations (Gerdau, CSN) combined with enterprise software development. As founder of Sysotto Softwares, I architect SaaS platforms and systems focused on critical workflows, scalability, and measurable business impact.',
+    'hero.cta_projects': 'View Projects & Cases',
     'hero.cta_academic': 'View Engineering Projects',
-    'hero.cta_cv': 'Download Resume (EN-US)',
-    'hero.role_location': 'Parnaíba & Teresina, PI — Brazil | Open to executive and senior software architecture roles (remote & on-site)',
+    'hero.cta_cv': 'Download Resume (PDF)',
+    'hero.cta_contact': 'Contact & Opportunities',
+    'hero.audience_recruiters': 'Career opportunities:',
+    'hero.audience_recruiters_link': 'Executive & senior engineering roles',
+    'hero.audience_clients': 'Enterprise solutions:',
+    'hero.audience_clients_link': 'Explore Sysotto platforms',
+    'hero.role_location': 'Parnaíba & Teresina, PI — Brazil | Available for remote roles',
     'hero.pill_experience': '20+ Years in Executive Leadership',
     'hero.pill_role': 'Solutions Architect & Engineer',
     'hero.stat_experience': '20+ Years',
@@ -272,10 +402,10 @@ const translations = {
 
     // About Section
     'about.title': 'About & Career Migration',
-    'about.subtitle': 'A unique combination of boardroom executive maturity and modern software engineering discipline.',
-    'about.p1': 'With over two decades of experience as General Manager and Commercial Manager at major Brazilian industrial and distribution powerhouses such as <strong>Gerdau S/A</strong> (leading regional distribution centers with >30% annual sales growth), <strong>Companhia Siderúrgica Nacional (CSN)</strong>, <strong>Servisan</strong>, and <strong>Servicon</strong>, I offer a business-first perspective rarely found in software development.',
-    'about.p2': 'Currently, I serve as <strong>CEO and Solutions Architect at Sysotto Softwares</strong>, where I design and build full-featured multi-tenant B2B SaaS platforms with resilient modular monoliths and microservices using <strong>C#, .NET 10, PostgreSQL, and Next.js</strong>.',
-    'about.p3': 'Pursuing a <strong>B.S. in Software Engineering (UNIFBV/Wyden)</strong>, holding an <strong>MBA in Business Management from FGV</strong> and a <strong>Bachelor\'s degree in Tourism from UNIFOR</strong>, I am deeply committed to fundamental computer science principles, C data structures, distributed systems, and cybersecurity.',
+    'about.subtitle': 'Senior executive leadership combined with technical discipline in software engineering.',
+    'about.p1': 'Over a 20-year executive career, I served as General Manager and Commercial Manager in large-scale industrial and distribution operations, including <strong>Gerdau S/A</strong> (leading a regional branch with >30% annual growth), <strong>CSN</strong>, <strong>Servisan</strong>, and <strong>Servicon</strong>. This background gives me direct mastery of business workflows, team leadership, and ROI-driven decision-making.',
+    'about.p2': 'Transitioning into technology, I applied this executive background directly to computing. As <strong>CEO and Solutions Architect at Sysotto Softwares</strong>, I design and build multi-tenant SaaS platforms and enterprise architectures, prioritizing scalability (.NET, C#, PostgreSQL, Next.js), fail-closed security, and operational reliability.',
+    'about.p3': 'I am pursuing a <strong>B.S. in Software Engineering (UNIFBV/Wyden)</strong>, hold an <strong>MBA in Business Management from FGV</strong>, and a <strong>B.A. in Tourism from UNIFOR</strong>, with continuous focus on computer science fundamentals, data structures, distributed systems, and defensive security.',
     'about.leadership_title': 'Strategic Advantages',
     'about.diff_1_title': 'Business Acumen & ROI Focus:',
     'about.diff_1_desc': 'Proven track record of turning complex operational business needs into scalable, revenue-generating software architectures.',
@@ -288,52 +418,102 @@ const translations = {
     'versatility.pill': 'Multi-Sector Solutions',
     'versatility.title': 'Versatility & Multi-Sector Delivery Capabilities',
     'versatility.subtitle': 'Technical architecture and executive foresight tailored to diverse organizational scales and market demands.',
-    'versatility.ind_title': 'Enterprise Industry & Supply Chain',
-    'versatility.ind_desc': 'High-volume inventory governance with automated FEFO/FIFO rules, GS1-128 lot traceability, 3D warehouse address mapping, strict regulatory compliance, and audited reconciliation.',
-    'versatility.sme_title': 'SMBs, Retail & Food Service',
-    'versatility.sme_desc': 'Agile point-of-sale operations, concurrent table and tab management, dynamic QR menus, real-time Kitchen Display Systems, and autonomous native desktop thermal printing agents.',
+    'versatility.ind_title': 'Enterprise Industries & Operations',
+    'versatility.ind_desc': 'High-complexity operational workflows modeling, bridging executive governance with shop-floor operations, continuous auditing, and corporate regulatory compliance.',
+    'versatility.tag_gov': 'Process Governance',
+    'versatility.tag_audit': 'Audit & Compliance',
+    'versatility.tag_exec': 'Executive Oversight',
+    'versatility.tag_scale': 'Scalability',
+    'versatility.sme_title': 'SMBs, Retail & Commercial Services',
+    'versatility.sme_desc': 'Point-of-sale and customer service automation, eliminating expensive intermediaries, ensuring operational uptime, and delivering direct operational cost reduction.',
+    'versatility.tag_efficiency': 'Operational Efficiency',
+    'versatility.tag_autonomy': 'Technical Autonomy',
+    'versatility.tag_cost': 'Cost Reduction',
+    'versatility.tag_realtime': 'Real-Time Workflows',
     'versatility.saas_title': 'Startups & Digital B2B SaaS',
-    'versatility.saas_desc': 'Resilient multi-tenant architectures, row-level security isolation in PostgreSQL, Next.js dynamic site builders with static snapshot pipelines, and audited Lighthouse performance.',
-    'versatility.critical_title': 'Critical Systems & Cybersecurity',
-    'versatility.critical_desc': 'Low-level systems engineering in C/C++, algorithmic efficiency, direct heap memory control, active network traffic inspection with Wireshark, and Cisco network defense standards.',
+    'versatility.saas_desc': 'Scalable product design with strict tenant isolation, multi-tenant governance, modern provisioning workflows, and customer retention & ROI orientation.',
+    'versatility.tag_tenant': 'Multi-Tenant Architecture',
+    'versatility.tag_failclosed': 'Fail-Closed Security',
+    'versatility.tag_product': 'Product Strategy',
+    'versatility.tag_ha': 'High Availability',
+    'versatility.critical_title': 'Mission-Critical Systems & Applied Security',
+    'versatility.critical_desc': 'Engineering for absolute data integrity, stringent compute resource budgeting, defensive security discipline, and zero tolerance for silent failures.',
+    'versatility.tag_integrity': 'Data Integrity',
+    'versatility.tag_defense': 'Defense-in-Depth',
+    'versatility.tag_memory': 'Memory Control',
+    'versatility.tag_zerotrust': 'Zero-Trust',
 
     // Sysotto Section
-    'sysotto.pill': 'Enterprise Production Systems',
-    'sysotto.title': 'Case: Engineering & Entrepreneurship',
-    'sysotto.subtitle': 'The fusion of boardroom executive acumen and cutting-edge software engineering, featuring complex platforms built for scale and resilience.',
+    'sysotto.pill': 'Systems Architecture & Engineering',
+    'sysotto.title': 'Sysotto Case: Engineering & SaaS Platforms',
+    'sysotto.subtitle': 'Modular platforms designed and architected by Otto David de Santana Freitag, demonstrating enterprise patterns, rich domain logic, and multi-tenant isolation.',
     'sysotto.company_name': 'Sysotto Softwares',
     'sysotto.company_tagline': 'Multi-Tenant SaaS Ecosystem & Enterprise Engineering',
-    'sysotto.role_badge': 'Otto Freitag — Founder & Lead Architect',
-    'sysotto.lead': 'Founded and engineered by Otto David de Santana Freitag, Sysotto Softwares unites senior corporate business acumen with cutting-edge software architecture, featuring 4 full-scale enterprise platforms built for high throughput, security, and multi-tenant resilience.',
-    'sysotto.functional_badge': 'Live & Functional Production Modules',
-    'sysotto.upcoming_badge': 'In Final Staging & Upcoming Launches',
-    
+    'sysotto.role_badge': 'Otto Freitag — Founding Architect & Principal Engineer',
+    'sysotto.lead': 'Founded and architected by Otto David de Santana Freitag, Sysotto Softwares develops enterprise platforms for mission-critical operations, inventory governance, and web presence. Sysotto Sites is online and operational, while the Industry and FoodService solutions are in final technical preparation.',
+    'sysotto.mockup_disclaimer': 'Visual demo · Illustrative data',
+    'sysotto.mockup_terminal_disclaimer': 'Simulated telemetry and diagnostics',
+    'sysotto.repo_showcase_btn': 'View Showcase Repository on GitHub',
+    'sysotto.internal_spec_note': 'Internal Sysotto architectural specification',
+    'sysotto.tab_ind': 'Sysotto Industry',
+    'sysotto.tab_food': 'Sysotto FoodService',
+    'sysotto.tab_sites': 'Sysotto Sites',
+    'sysotto.tab_core': 'Multi-Tenant Core',
+    'sysotto.status_sites_online': '● Online & Operational',
+    'sysotto.status_industry_prep': '● In Preparation',
+    'sysotto.status_food_prep': '● In Preparation',
+    'sysotto.sites_status_tag': 'Online Platform · Latest Release in Staging',
+    'sysotto.sites_video_btn': 'Watch Technical Tour (YouTube)',
+    'sysotto.mock_kpi_lots_title': 'Tracked Lots (Mock)',
+    'sysotto.mock_kpi_lots_val': '1,482',
+    'sysotto.mock_simulated_tag': '(Simulated)',
+    'sysotto.mock_kpi_rules_title': 'Allocation Strategies',
+    'sysotto.mock_kpi_rules_val': 'FEFO / FIFO / LIFO',
+    'sysotto.mock_kpi_acc_title': 'Target Accuracy',
+    'sysotto.mock_kpi_acc_val': '99.8%',
+    'sysotto.mock_target_tag': '(Theoretical Target)',
+    'sysotto.mock_table_footer_note': '<strong>QR Code Traceability:</strong> GS1-128 compliant label payload structure (Demonstration).',
+    'sysotto.mock_table_badge': 'Illustrative Data',
+    'sysotto.mock_kds_footer_note': 'KDS Screen: Live flow demonstration with 14 simulated kitchen tickets',
+    'sysotto.mock_kds_signalr': 'SignalR Stream (Simulated)',
+    'sysotto.mock_sites_footer_left': 'SSR Renderer / Static Snapshots',
+    'sysotto.mock_sites_footer_right': 'Illustrative Mockup · Video Tour Available',
+    'sysotto.mock_core_status': '[Demonstration Diagnostics]: Fail-closed JWT validation · Active RLS',
+
     // Sysotto Industry
     'sysotto.ind_title': 'Sysotto ERP / Industry (IndSaaS)',
     'sysotto.ind_desc': 'High-precision manufacturing and inventory management ERP engineered for industrial plants and distribution centers.',
-    'sysotto.ind_functional': '<strong>Currently Functional:</strong> Advanced inventory engine with automated FEFO (First-Expired, First-Out), FIFO, and LIFO lot allocation strategies; complete lot lifecycle management with expiration monitoring, quarantine gates, traceability timelines, and QR code labeling; 3D warehouse address mapping (aisles, shelves, racks); rotary inventory wizard with automated discrepancy reconciliation; sales & billing workflows.',
-    'sysotto.ind_upcoming': '<strong>Upcoming Launches:</strong> Industry Lite turnkey package for fast-track SME onboarding, self-serve subscription checkout, and real-time canonical B2B digital catalog projection contract.',
+    'sysotto.ind_problem': '<strong>Business Problem:</strong> Severe material waste due to expiration of perishable inventory and warehouse discrepancies under manual lot control.',
+    'sysotto.ind_role': '<strong>Architecture & Implementation (Otto Freitag):</strong> Authorial domain modeling, FEFO/FIFO/LIFO automated allocation engine, GS1-128 QR code traceability, and PostgreSQL Row-Level Security (RLS) multi-tenant isolation.',
+    'sysotto.ind_functional': '<strong>Implemented architectural scope:</strong> Advanced inventory management with automated FEFO/FIFO/LIFO strategies, lot expiration and quarantine tracking, GS1-128 QR Code labels, 3D warehouse address mapping, and perpetual cycle count reconciliation routines.',
+    'sysotto.ind_upcoming': '<strong>Planned technical evolution:</strong> Turnkey Industry Lite package and B2B digital catalog projection.',
     'sysotto.ind_stack': 'Stack: C# .NET 10, ASP.NET Core, EF Core 10, PostgreSQL 17, FluentValidation, Next.js, TypeScript, Tailwind CSS.',
 
     // Sysotto FoodService
     'sysotto.food_title': 'Sysotto FoodService (RestSaaS)',
-    'sysotto.food_desc': 'All-in-one restaurant and bar operational suite integrating dining floor, kitchen production, and delivery logistics.',
-    'sysotto.food_functional': '<strong>Currently Functional:</strong> TableOrdersManager for concurrent table and individual tab management; dynamic multi-tenant QR code digital catalog; real-time Kitchen Display System (KDS) for production lines; autonomous desktop printing module agent (<code>Sysotto.PrintingModule.Agent</code>) built in .NET 10 providing direct ESC/POS hardware control for thermal receipt and label printers without third-party spooler dependencies.',
-    'sysotto.food_upcoming': '<strong>Upcoming Launches:</strong> Turnkey delivery gateway integrations and route-optimized dispatch algorithms.',
+    'sysotto.food_desc': 'Operational suite for restaurants and bars integrating dining floor, kitchen production, and delivery logistics.',
+    'sysotto.food_problem': '<strong>Business Problem:</strong> Communication bottlenecks between front-of-house and kitchen create order delays and lost paper tickets from network instability.',
+    'sysotto.food_role': '<strong>Architecture & Implementation (Otto Freitag):</strong> Event-driven order workflow architecture via SignalR and autonomous native .NET 10 desktop agent for direct ESC/POS thermal printing without third-party drivers.',
+    'sysotto.food_functional': '<strong>Implemented architectural scope:</strong> TableOrdersManager module for simultaneous tables and tabs, dynamic QR Code digital menu, real-time Kitchen Display System (KDS), and autonomous thermal print agent (.NET 10 / ESC/POS).',
+    'sysotto.food_upcoming': '<strong>Planned technical evolution:</strong> Dispatch route planning and two-way delivery aggregator webhooks.',
     'sysotto.food_stack': 'Stack: Next.js (App Router), React, SignalR, .NET 10 Desktop Agent, PostgreSQL, Tailwind CSS.',
 
-    // Sysotto SiteBuilder
-    'sysotto.site_title': 'Sysotto SiteBuilder & CMS (SitesSaaS)',
-    'sysotto.site_desc': 'Dynamic multi-tenant website creator and high-speed content delivery engine for commercial storefronts.',
-    'sysotto.site_functional': '<strong>Currently Functional:</strong> Contextual visual editor with 25 pre-built professional presets across diverse market verticals; media management pipeline (<code>MediaAssets</code>) with dynamic WebP cropping and optimization; interactive Help Hub with micro-lessons; complete suite of 378 passing automated tests and Lighthouse performance-audited architecture.',
-    'sysotto.site_upcoming': '<strong>Upcoming Launches:</strong> Automated custom domain mapping with instant on-demand Let\'s Encrypt SSL provisioning.',
+    // Sysotto Sites
+    'sysotto.site_title': 'Sysotto Sites — Web Platform & CMS',
+    'sysotto.site_desc': 'Web platform for dynamic creation, publishing, and hosting of landing pages and B2B catalogs with optimized rendering.',
+    'sysotto.site_problem': '<strong>Business Problem:</strong> High cost and slow turnaround for businesses maintaining marketing sites and B2B product catalogs without engineering dependency.',
+    'sysotto.site_role': '<strong>Architecture & Implementation (Otto Freitag):</strong> Contextual layout builder engine, media processing pipeline with on-the-fly WebP compression (Sharp), and modular component architecture.',
+    'sysotto.site_functional': '<strong>Implemented architectural scope:</strong> Visual contextual builder with pre-configured professional presets, media management with dynamic WebP resizing, Help Hub, and SSR-optimized components.',
+    'sysotto.site_upcoming': '<strong>Planned technical evolution:</strong> Automated custom domain routing and on-demand Let\'s Encrypt SSL certificate provisioning.',
     'sysotto.site_stack': 'Stack: Next.js App Router, React 19, TypeScript, Sharp/WebP, PostgreSQL, Turborepo.',
 
     // Sysotto Platform Core
     'sysotto.core_title': 'Sysotto Multi-Tenant Core & Security Engine',
     'sysotto.core_desc': 'Shared infrastructure spine, identity federation, and distributed microservices orchestration.',
-    'sysotto.core_functional': '<strong>Currently Functional:</strong> Dynamic tenant resolution middleware (<code>MonolithTenantProvider</code>) preventing tenant injection attacks; logical isolation through dedicated schemas and PostgreSQL Row Level Security (RLS); OAuth2 / OpenID Connect authorization powered by OpenIddict; fail-closed JWT authentication; advisory-lock concurrent database migration runner; distributed caching with Redis.',
-    'sysotto.core_upcoming': '<strong>Upcoming Launches:</strong> Unified SSO customer portal with tenant-level telemetry and aggregated billing metrics.',
+    'sysotto.core_problem': '<strong>Business Problem:</strong> Risk of cross-tenant data leakage in shared database architectures and authentication bottlenecks across microservices.',
+    'sysotto.core_role': '<strong>Architecture & Implementation (Otto Freitag):</strong> Fail-closed tenant resolution middleware, database migration runner with concurrent advisory locks, and OpenIddict / JWT authorization pipeline.',
+    'sysotto.core_functional': '<strong>Implemented architectural scope:</strong> Dynamic tenant resolution via middleware (MonolithTenantProvider) preventing tenant injection, PostgreSQL Row Level Security (RLS) data isolation, OAuth2 / OIDC authorization with OpenIddict, and Redis distributed caching.',
+    'sysotto.core_upcoming': '<strong>Planned technical evolution:</strong> Unified SSO identity portal with centralized tenant telemetry and billing usage dashboards.',
     'sysotto.core_stack': 'Stack: C# .NET 10, OpenIddict, PostgreSQL 17, Redis, Docker Compose, Linux.',
 
     // Academic & Impact Projects
@@ -343,31 +523,53 @@ const translations = {
     'projects.tab_sysotto': 'Enterprise Systems (Sysotto)',
     'projects.tab_hackathons': 'Simulations & Hackathons',
     'projects.tab_academic': 'Computer Science & Foundations',
+    'projects.featured_flag': '★ Technical Highlight',
+    'projects.role_label': 'Otto\'s Contribution:',
     
     // Project items
-    'proj.condotrack_title': 'CondoTrack — 360° Operations Platform',
-    'proj.condotrack_desc': 'Centralized operations and 360° traceability platform for condominiums. Fast QR Code visitor clearance (<1.5s), parcel custody timeline, conflict-free atomic bookings, and comprehensive C4/UML architectural docs (Otto: Top Contributor & Tech Lead).',
+    'proj.btn_view_showcase': 'View GitHub Showcase',
+    'proj.btn_view_repo': 'View GitHub Repository',
+
+    'proj.sysotto_ind_badge': 'Sysotto · In Preparation (Showcase)',
+    'proj.sysotto_ind_title': 'Sysotto ERP / Industry Suite',
+    'proj.sysotto_ind_desc': '<p><strong>Business Problem:</strong> Deficient lot traceability in high-volume industrial warehouses and financial write-offs resulting from manual allocation of perishable materials.</p><p><strong>Technical Decisions:</strong> C# .NET 10 / EF Core engine with automated FEFO/FIFO/LIFO allocation, GS1-128 QR Code label generation, 3D warehouse address mapping, and PostgreSQL Row-Level Security (RLS) tenant isolation.</p>',
+    'proj.sysotto_ind_role': 'Lead architecture and authorial implementation of the domain model, inventory allocation algorithms, and data consistency tests.',
+
     'proj.condotrack_badge': 'No Country · Simulation S08',
+    'proj.condotrack_title': 'CondoTrack — 360° Operations Platform',
+    'proj.condotrack_desc': '<p><strong>Business Problem:</strong> Bottlenecks at residential gates with manual check-in queues, parcel custody mishandling, and double-booking conflicts across shared condo amenities.</p><p><strong>Technical Decisions:</strong> Java 21 / Spring Boot 3 backend with B-Tree indexed QR validation (&lt;400ms), conflict-free atomic reservations (HTTP 409 on race conditions), immutable trigger-based audit trails, and 114 automated tests executed in &lt;9s.</p>',
+    'proj.condotrack_role': 'Developed within an international team (No Country S08-26 / Team 17). Served as Tech Lead and primary backend engineer: API architecture, relational schema, C4 Model, and test suite.',
+    'proj.condotrack_video_btn': 'Watch Demonstration (YouTube)',
 
-    'proj.techmind_title': 'TechMind — AI Classifier & OCI',
-    'proj.techmind_desc': 'Solution developed during the ONE Hackathon integrating Java 17 / Spring Boot backend microservice with Python / FastAPI Machine Learning (NLP) inference, deployed on Oracle Cloud Infrastructure (OCI).',
     'proj.techmind_badge': 'Hackathon ONE · Oracle + Alura',
+    'proj.techmind_title': 'TechMind — AI Classifier & OCI',
+    'proj.techmind_desc': 'Intelligent classification solution pairing a Java / Spring Boot backend microservice with Python / FastAPI Machine Learning (NLP) inference, deployed on Oracle Cloud Infrastructure (OCI).',
+    'proj.techmind_role': 'Team project developed during Hackathon ONE. Contributed to Java 17 backend integration, Python/FastAPI ML API communication, and Oracle Cloud deployment.',
 
+    'proj.sysotto_food_badge': 'Sysotto · In Preparation',
+    'proj.sysotto_food_title': 'Sysotto FoodService & Printing Agent',
+    'proj.sysotto_food_desc': 'Operational restaurant suite with real-time Kitchen Display System (KDS), table/tab management, and autonomous .NET 10 native desktop agent for direct ESC/POS thermal printing.',
+    'proj.sysotto_food_role': 'Architecture of the SignalR event-driven order stream and authorial development of the .NET 10 desktop agent for driverless ESC/POS printing.',
+
+    'proj.c_ds_badge': 'Computer Science',
     'proj.c_ds_title': 'Data Structures in C',
-    'proj.c_ds_desc': 'Low-level C implementations of core computer science algorithms and data structures: singly and doubly linked lists, stacks, queues, binary search trees, and sorting algorithms, focusing on manual pointer manipulation and heap memory management.',
-    'proj.c_ds_badge': 'Computer Science & Low-Level',
+    'proj.c_ds_desc': '<p><strong>Computational Problem:</strong> Heavy reliance on high-level language abstractions without mastery of heap memory management, pointer arithmetic, and asymptotic algorithmic complexity.</p><p><strong>Technical Decisions:</strong> Strict ANSI C implementation of linked lists, stacks, queues, and binary search trees; recursive deallocation with null-pointer checks (zero memory leaks) and documented Big-O asymptotic analysis.</p>',
+    'proj.c_ds_role': 'Authorial implementation focusing on Computer Science rigor, manual memory management, and structural integrity test routines.',
 
-    'proj.microservices_title': 'E-Commerce Microservices',
-    'proj.microservices_desc': 'Distributed microservices architecture built in C# / .NET, covering product catalogs, shopping carts, order orchestration, asynchronous event messaging, resilience patterns, and service decoupling.',
     'proj.microservices_badge': 'Distributed .NET Architecture',
+    'proj.microservices_title': 'E-Commerce Microservices',
+    'proj.microservices_desc': 'Distributed microservices architecture in C# / .NET, covering product catalog, shopping cart, order orchestration, asynchronous RabbitMQ messaging, and resilience patterns.',
+    'proj.microservices_role': 'Individual laboratory exploring event-driven messaging, Polly resilience policies, Docker Compose orchestration, and database-per-service isolation.',
 
-    'proj.literalura_title': 'LiterAlura & ONE Backend Challenge',
-    'proj.literalura_desc': 'Java 17 and Spring Boot 3 enterprise application created under the Oracle Next Education program. Ingests data from the public Gutendex API, parses complex JSON with Jackson, and executes relational queries in PostgreSQL with Spring Data JPA.',
     'proj.literalura_badge': 'Java 17 & Spring Boot',
+    'proj.literalura_title': 'LiterAlura & ONE Backend Challenge',
+    'proj.literalura_desc': 'Java 17 and Spring Boot 3 application developed for the Oracle Next Education program. Consumes the public Gutendex API, processes nested JSON via Jackson, and executes relational queries in PostgreSQL with Spring Data JPA.',
+    'proj.literalura_role': 'Complete individual implementation of the backend challenge: JPA entity modeling, external REST API integration, and custom JPQL queries.',
 
+    'proj.email_ai_badge': 'Python & NLP',
     'proj.email_ai_title': 'Intelligent Email Classifier',
-    'proj.email_ai_desc': 'Python AI solution utilizing Natural Language Processing (NLP) and supervised classification techniques to triage corporate email streams, detect sentiment, and route support tickets automatically.',
-    'proj.email_ai_badge': 'Python & Artificial Intelligence',
+    'proj.email_ai_desc': 'Python solution applying Natural Language Processing (NLP) and supervised learning for corporate mailbox triage, sentiment analysis, and ticket classification.',
+    'proj.email_ai_role': 'Authorial implementation applying text preprocessing (TF-IDF vectorization) and Scikit-Learn classification pipelines for automated email triage.',
 
     'proj.dio_agent_title': 'Autonomous AI Agents & Speech',
     'proj.dio_agent_desc': 'Experimental AI agents developed within the DIO / Suzano program leveraging generative LLMs, natural language reasoning, and Speech-to-Text audio transcription workflows.',
@@ -379,20 +581,45 @@ const translations = {
 
     // Tech Stacks Section
     'skills.title': 'Tech Stacks & Competencies',
-    'skills.subtitle': 'A structured, transparent taxonomy of technologies based on production mastery and academic application.',
-    'skills.core_title': 'Core Production Stacks (Sysotto)',
-    'skills.core_desc': 'Technologies used daily in active production and deployment at Sysotto Softwares, with deep architecture, lifecycle, and scalability mastery.',
-    'skills.interests_title': 'Active Focus & Low-Level Interests (Systems & Security)',
-    'skills.interests_desc': 'Continuous active research in systems engineering, low-level memory mechanics, and infrastructure cybersecurity defense.',
+    'skills.subtitle': 'A structured, transparent taxonomy of technologies based on verified production contexts and academic applications.',
+    'skills.core_title': 'Technologies in Current Sysotto Projects',
+    'skills.core_desc': 'Core technologies applied in the architecture and engineering of Sysotto Softwares platforms (Sites, Industry Suite, and FoodService).',
+    'skills.demonstrated_title': 'Technologies Demonstrated in Projects & Studies',
+    'skills.demonstrated_desc': 'Languages, frameworks, and tools validated in projects with repository source code, academic simulations, and hackathons.',
+    'skills.interests_title': 'Interests & Active Exploration Areas',
+    'skills.interests_desc': 'Continuous exploration in systems engineering, low-level programming, memory control, and cybersecurity.',
     'skills.academic_title': 'Academic Foundations & Complementary Technologies',
     'skills.academic_desc': 'Languages and toolsets mastered through university coursework, intensive coding bootcamps, and specialized challenges.',
+    'skills.ref_industry': 'Sysotto Industry',
+    'skills.ref_industry_sites': 'Sysotto Industry / Sites',
+    'skills.ref_multitenant': 'Sysotto Multi-Tenant',
+    'skills.ref_sites': 'Sysotto Sites',
+    'skills.ref_sites_ui': 'Sysotto Sites / UI',
+    'skills.ref_infra': 'Sysotto Infra',
+    'skills.ref_auth': 'Sysotto Auth',
+    'skills.ref_core': 'Sysotto Core',
+    'skills.ref_deploy': 'Environment & Deploy',
+    'skills.ref_condotrack': 'CondoTrack',
+    'skills.ref_condotrack_one': 'CondoTrack / ONE',
+    'skills.ref_techmind_email': 'TechMind / Classifier',
+    'skills.ref_c_ds': 'Data Structures',
+    'skills.ref_sql': 'CondoTrack / TechMind',
+    'skills.ref_microservices': 'E-Commerce Microservices',
+    'skills.ref_cloud': 'Hackathon / OCI Cert',
+    'skills.ref_repos': 'Repositories & CI/CD',
+    'skills.ref_systems': 'High-Performance Systems',
+    'skills.ref_concurrency': 'Memory Safety & Concurrency',
+    'skills.ref_sec_study': 'Cisco Track / Hackers do Bem',
+    'skills.ref_net_study': 'Network Defense (Cisco)',
+    'skills.ref_crypto': 'Zero-Trust Standards',
+    'skills.ref_ai_agents': 'LLM Studies & Agents',
 
     // Education & Certifications
     'edu.title': 'Academic Education & Certifications',
     'edu.subtitle': 'Lifelong commitment to computer science fundamentals, engineering rigor, and international credentials.',
     'edu.academic_title': 'Higher Education',
     'edu.degree_se': 'B.S. in Software Engineering',
-    'edu.degree_se_inst': 'UNIFBV / Wyden (3rd Period - In Progress)',
+    'edu.degree_se_inst': 'UNIFBV / Wyden (4th Period - In Progress · Expected: 06/2029)',
     'edu.degree_se_desc': 'Software architecture, algorithms, data structures, requirements engineering, IT governance, and cybersecurity.',
     'edu.degree_mba': 'MBA in Business Management',
     'edu.degree_mba_inst': 'Fundação Getúlio Vargas (FGV)',
@@ -461,7 +688,10 @@ const translations = {
     'contact.channel_desc': 'Available for executive leadership positions, enterprise software architecture, and strategic consulting.',
     'contact.btn_whatsapp': 'Start WhatsApp Conversation',
     'contact.btn_email': 'Send Direct Email',
-    'contact.location_note': 'Location: Parnaíba / Teresina, PI — Available worldwide (remote & on-site)',
+    'contact.btn_cv': 'Download Resume (PDF)',
+    'contact.cv_label': 'Professional Resume:',
+    'contact.cv_link_text': 'Download Consolidated Version (PDF)',
+    'contact.location_note': 'Location: Parnaíba / Teresina, PI — Available for remote roles',
     'contact.copy_email': 'Copy Email',
     'contact.email_copied': 'Email copied!',
 
@@ -495,7 +725,7 @@ class I18nManager {
     if (!translations[lang]) return;
     this.currentLang = lang;
     localStorage.setItem(this.storageKey, lang);
-    document.documentElement.setAttribute('lang', lang.startsWith('pt') ? 'pt-BR' : 'en');
+    document.documentElement.setAttribute('lang', lang.startsWith('pt') ? 'pt-BR' : 'en-US');
     this.applyTranslations();
     this.updateLanguageToggleUI();
   }
@@ -506,6 +736,7 @@ class I18nManager {
   }
 
   applyTranslations() {
+    // 1. Text elements with data-i18n
     const elements = document.querySelectorAll('[data-i18n]');
     elements.forEach((el) => {
       const key = el.getAttribute('data-i18n');
@@ -519,15 +750,55 @@ class I18nManager {
       }
     });
 
-    // Update dynamic CV download links according to language
+    // 2. Elements with data-i18n-aria-label
+    const ariaElements = document.querySelectorAll('[data-i18n-aria-label]');
+    ariaElements.forEach((el) => {
+      const key = el.getAttribute('data-i18n-aria-label');
+      const text = this.t(key);
+      if (text) {
+        el.setAttribute('aria-label', text);
+      }
+    });
+
+    // 3. Document Title and Page Metadata
+    const titleText = this.t('meta.title');
+    if (titleText) {
+      document.title = titleText;
+    }
+
+    const descText = this.t('meta.description');
+    if (descText) {
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) metaDesc.setAttribute('content', descText);
+
+      const ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc) ogDesc.setAttribute('content', descText);
+
+      const twitterDesc = document.querySelector('meta[name="twitter:description"]');
+      if (twitterDesc) twitterDesc.setAttribute('content', descText);
+    }
+
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle && titleText) ogTitle.setAttribute('content', titleText);
+
+    const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+    if (twitterTitle && titleText) twitterTitle.setAttribute('content', titleText);
+
+    const isPt = this.currentLang === 'pt-BR';
+    const ogLocale = document.querySelector('meta[property="og:locale"]');
+    if (ogLocale) ogLocale.setAttribute('content', isPt ? 'pt_BR' : 'en_US');
+
+    const ogLocaleAlt = document.querySelector('meta[property="og:locale:alternate"]');
+    if (ogLocaleAlt) ogLocaleAlt.setAttribute('content', isPt ? 'en_US' : 'pt_BR');
+
+    // 4. Update dynamic CV download links according to language
     const cvButtons = document.querySelectorAll('[data-dynamic-cv]');
     cvButtons.forEach((btn) => {
-      const isPt = this.currentLang === 'pt-BR';
       btn.setAttribute('href', isPt ? 'assets/docs/cv-otto-freitag-pt-br.pdf' : 'assets/docs/cv-otto-freitag-en-us.pdf');
       btn.setAttribute('download', isPt ? 'CV-Otto-David-Freitag-PT-BR.pdf' : 'CV-Otto-David-Freitag-EN-US.pdf');
     });
 
-    // Dispatch event in case other components need to react
+    // 5. Dispatch event in case other components need to react
     window.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang: this.currentLang } }));
   }
 
@@ -535,17 +806,18 @@ class I18nManager {
     const buttons = document.querySelectorAll('[data-action="toggle-lang"]');
     buttons.forEach((btn) => {
       const langText = btn.querySelector('.lang-current-text');
-      const nextLang = this.currentLang === 'pt-BR' ? 'en-US' : 'pt-BR';
-      const label = this.currentLang === 'pt-BR' ? 'English (EN)' : 'Português (PT)';
-      btn.setAttribute('title', `Mudar para ${label}`);
-      btn.setAttribute('aria-label', `Alterar idioma para ${label}`);
+      const isPt = this.currentLang === 'pt-BR';
+      const label = isPt ? 'Mudar para English (EN)' : 'Mudar para Português (PT)';
+      const title = isPt ? 'Switch to English' : 'Mudar para Português';
+      btn.setAttribute('title', title);
+      btn.setAttribute('aria-label', label);
       if (langText) {
-        langText.textContent = this.currentLang === 'pt-BR' ? 'PT' : 'EN';
+        langText.textContent = isPt ? 'PT' : 'EN';
       }
       
       const badge = btn.querySelector('.lang-badge');
       if (badge) {
-        badge.textContent = this.currentLang === 'pt-BR' ? 'BR' : 'US';
+        badge.textContent = isPt ? 'BR' : 'US';
       }
     });
   }

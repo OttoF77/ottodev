@@ -26,32 +26,56 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Open Graph / Social Media Metadata (Verified Local Assets) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Otto David de Santana Freitag | Liderança Executiva & Engenharia de Software">
+  <meta property="og:description" content="Portfólio executivo de Otto David de Santana Freitag: mais de 20 anos de liderança executiva em grandes corporações (Gerdau, CSN, Servisan), Arquiteto de Soluções e fundador da Sysotto Softwares.">
+  <meta property="og:image" content="assets/images/otto-freitag.jpg">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Otto David de Santana Freitag | Liderança Executiva & Engenharia de Software">
+  <meta name="twitter:description" content="Portfólio executivo de Otto David de Santana Freitag: mais de 20 anos de liderança executiva em grandes corporações (Gerdau, CSN, Servisan), Arquiteto de Soluções e fundador da Sysotto Softwares.">
+  <meta name="twitter:image" content="assets/images/otto-freitag.jpg">
 </head>
 <body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#home" class="skip-link" data-i18n="nav.skip_to_content">Pular para o conteúdo principal</a>
 
   <!-- Navigation Bar -->
   <header class="site-header" id="navbar">
     <div class="container nav-container">
-      <a href="#home" class="brand-wrapper" aria-label="Otto Freitag - Início">
+      <a href="#home" class="brand-wrapper" aria-label="Otto Freitag - Início" data-i18n-aria-label="nav.brand_aria">
         <img src="assets/images/monogram-of.svg" alt="Otto Freitag Monograma" width="40" height="40" class="brand-logo-img">
         <span class="brand-name">Otto Freitag</span>
       </a>
 
       <!-- Desktop & Mobile Navigation Links -->
-      <nav aria-label="Navegação Principal" class="site-nav">
-        <ul class="nav-links">
+      <nav aria-label="Navegação Principal" class="site-nav" data-i18n-aria-label="nav.primary_label">
+        <ul class="nav-links" id="primary-nav-list">
           <li><a href="#about" class="nav-link" data-i18n="nav.about">Sobre</a></li>
-          <li><a href="#versatility" class="nav-link" data-i18n="nav.versatility">Atuação</a></li>
           <li><a href="#sysotto" class="nav-link" data-i18n="nav.sysotto">Case Sysotto</a></li>
           <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projetos</a></li>
+          <li><a href="#versatility" class="nav-link" data-i18n="nav.versatility">Atuação</a></li>
           <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Tecnologias</a></li>
           <li><a href="#education" class="nav-link" data-i18n="nav.education">Formação</a></li>
           <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contato</a></li>
+          <li class="mobile-cv-item"><a href="assets/docs/cv-otto-freitag-pt-br.pdf" download="CV-Otto-David-Freitag-PT-BR.pdf" data-dynamic-cv class="nav-link" data-i18n="nav.cv">Currículo (PDF)</a></li>
         </ul>
       </nav>
 
       <!-- Action Controls (Language + Theme + Mobile Menu) -->
       <div class="nav-actions">
+        <!-- Direct CV Download in Navbar -->
+        <a href="assets/docs/cv-otto-freitag-pt-br.pdf" download="CV-Otto-David-Freitag-PT-BR.pdf" data-dynamic-cv class="action-btn nav-cv-btn" title="Baixar Currículo (PDF)" aria-label="Baixar Currículo (PDF)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span data-i18n="nav.cv">Currículo (PDF)</span>
+        </a>
+
         <!-- Language Switcher -->
         <button class="action-btn" data-action="toggle-lang" aria-label="Alterar idioma" title="Mudar Idioma (PT / EN)">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
@@ -68,7 +92,7 @@
         </button>
 
         <!-- Mobile Menu Toggle Button -->
-        <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-nav-list">
           <span></span>
           <span></span>
           <span></span>
@@ -91,29 +115,51 @@
           </div>
 
           <h1 class="hero-title">
-            <span data-i18n="hero.title_start">Transformando visão estratégica de negócios em</span>
-            <span class="hero-highlight" data-i18n="hero.title_highlight">arquitetura & software</span>
-            <span data-i18n="hero.title_end">de alto desempenho.</span>
+            <span data-i18n="hero.title_start">Liderança executiva aliada à</span>
+            <span class="hero-highlight" data-i18n="hero.title_highlight">engenharia de software</span>
+            <span data-i18n="hero.title_end">e arquitetura de soluções.</span>
           </h1>
 
           <p class="hero-subtitle" data-i18n="hero.subtitle">
-            Mais de 20 anos de liderança em gestão de negócios e operações de grande porte (Gerdau, CSN, Servisan), com sólida transição para a computação e desenvolvimento de software corporativo moderno em C#, .NET 10, Next.js e baixo nível.
+            Mais de 20 anos de gestão executiva em grandes operações industriais (Gerdau, CSN) integrados ao desenvolvimento de software corporativo. Como fundador da Sysotto Softwares, projeto sistemas e plataformas SaaS com foco em processos críticos, escalabilidade e resultado de negócio.
           </p>
 
           <div class="hero-actions">
-            <a href="#sysotto" class="btn btn-primary">
+            <a href="#projects" class="btn btn-primary">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-              <span data-i18n="hero.cta_projects">Conhecer Soluções & Cases</span>
+              <span data-i18n="hero.cta_projects">Ver Projetos & Cases</span>
             </a>
-            <a href="#versatility" class="btn btn-secondary">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-              <span data-i18n="versatility.title">Atuação Multissetorial</span>
+            <a href="assets/docs/cv-otto-freitag-pt-br.pdf" download="CV-Otto-David-Freitag-PT-BR.pdf" data-dynamic-cv class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span data-i18n="hero.cta_cv">Baixar Currículo (PDF)</span>
             </a>
+            <a href="#contact" class="btn btn-outline">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span data-i18n="hero.cta_contact">Contato & Oportunidades</span>
+            </a>
+          </div>
+
+          <!-- Audience Pathway Guidance (Recruiters & Potential Clients) -->
+          <div class="hero-audience-paths">
+            <div class="audience-path-item">
+              <span class="audience-path-label" data-i18n="hero.audience_recruiters">Oportunidades profissionais:</span>
+              <a href="#about" class="audience-path-link">
+                <span data-i18n="hero.audience_recruiters_link">Liderança e engenharia sênior</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+            <div class="audience-path-item">
+              <span class="audience-path-label" data-i18n="hero.audience_clients">Soluções corporativas:</span>
+              <a href="#sysotto" class="audience-path-link">
+                <span data-i18n="hero.audience_clients_link">Conhecer plataformas Sysotto</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
           </div>
 
           <div class="hero-location-text" style="justify-content: flex-start;">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-            <span data-i18n="hero.role_location">Parnaíba & Teresina, PI — Brasil | Disponível para posições executivas e arquitetura de software (remoto e presencial)</span>
+            <span data-i18n="hero.role_location">Parnaíba & Teresina, PI — Brasil | Disponível para atuação remota</span>
           </div>
         </div>
 
@@ -161,20 +207,20 @@
     <div class="container">
       <div class="section-header">
         <span class="section-pill" data-i18n="about.title">Sobre & Transição de Carreira</span>
-        <h2 class="section-title" data-i18n="about.subtitle">A união entre solidez executiva de mercado e rigor técnico em engenharia de software.</h2>
+        <h2 class="section-title" data-i18n="about.subtitle">Solidez executiva corporativa integrada a rigor técnico em engenharia de software.</h2>
       </div>
 
       <div class="about-grid">
         <!-- Bio Narrative & Strategic Advantages -->
         <div class="about-card">
           <p class="about-text" data-i18n="about.p1" data-i18n-html="true">
-            Com mais de duas décadas de trajetória como Gerente Geral e Gerente Comercial em líderes industriais e de distribuição nacional como a <strong>Gerdau S/A</strong> (onde liderou expansão com mais de 30% a.a. de crescimento e gestão logística regional), <strong>Companhia Siderúrgica Nacional (CSN)</strong>, <strong>Servisan</strong> e <strong>Servicon</strong>, trago uma bagagem executiva diferenciada para a indústria de software.
+            Construí uma carreira de mais de 20 anos como Gerente Geral e Gerente Comercial em grandes operações industriais e logísticas, incluindo <strong>Gerdau S/A</strong> (gestão de filial com crescimento superior a 30% a.a.), <strong>CSN</strong>, <strong>Servisan</strong> e <strong>Servicon</strong>. Essa vivência me confere domínio prático de processos de negócio, liderança de equipes e tomada de decisão orientada a resultados.
           </p>
           <p class="about-text" data-i18n="about.p2" data-i18n-html="true">
-            Atualmente, atuo como <strong>CEO e Arquiteto de Soluções na Sysotto Softwares</strong>, liderando o design e a implementação de plataformas corporativas SaaS multi-tenant completas, orientadas a microsserviços e monólitos modulares resilientes com <strong>C#, .NET 10, PostgreSQL e Next.js</strong>.
+            Na transição para a tecnologia, uni essa bagagem executiva à computação aplicada. Como <strong>CEO e Arquiteto de Soluções na Sysotto Softwares</strong>, projeto e implemento plataformas SaaS multi-tenant e sistemas corporativos, com foco em arquiteturas escaláveis (.NET, C#, PostgreSQL e Next.js), segurança e confiabilidade operacional.
           </p>
           <p class="about-text" data-i18n="about.p3" data-i18n-html="true">
-            Graduando em <strong>Engenharia de Software (UNIFBV/Wyden)</strong>, com <strong>MBA em Gestão Empresarial pela FGV (Fundação Getúlio Vargas)</strong> e <strong>Bacharelado em Turismo pela UNIFOR</strong>, mantenho dedicação profunda aos fundamentos da Ciência da Computação, estruturas de dados em C, arquitetura distribuída e cibersegurança.
+            Sou graduando em <strong>Engenharia de Software (UNIFBV/Wyden)</strong>, com <strong>MBA em Gestão Empresarial pela FGV</strong> e <strong>Bacharelado em Turismo pela UNIFOR</strong>, mantendo dedicação contínua aos fundamentos da computação, estruturas de dados, sistemas distribuídos e segurança defensiva.
           </p>
 
           <h3 class="diff-title" style="margin-top: 1.75rem; font-size: 1.125rem;" data-i18n="about.leadership_title">Diferenciais Estratégicos</h3>
@@ -277,15 +323,15 @@
           <div class="versatility-icon-box ind">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path></svg>
           </div>
-          <h3 class="versatility-title" data-i18n="versatility.ind_title">Grandes Indústrias & Logística (Enterprise)</h3>
+          <h3 class="versatility-title" data-i18n="versatility.ind_title">Grandes Indústrias & Operações (Enterprise)</h3>
           <p class="versatility-desc" data-i18n="versatility.ind_desc">
-            Controle de estoques de alto volume com regras FEFO/FIFO, rastreabilidade GS1-128, endereçamento tridimensional de armazéns, conformidade regulatória e auditoria contábil.
+            Modelagem de fluxos operacionais de alta complexidade, integração entre gestão executiva e chão de fábrica, auditoria contínua de processos e conformidade regulatória corporativa.
           </p>
           <div class="versatility-tags">
-            <span class="versatility-tag">ERP Modular</span>
-            <span class="versatility-tag">PostgreSQL RLS</span>
-            <span class="versatility-tag">Lotes & FEFO</span>
-            <span class="versatility-tag">Auditoria</span>
+            <span class="versatility-tag" data-i18n="versatility.tag_gov">Governança de Processos</span>
+            <span class="versatility-tag" data-i18n="versatility.tag_audit">Auditoria & Compliance</span>
+            <span class="versatility-tag" data-i18n="versatility.tag_exec">Visão Executiva</span>
+            <span class="versatility-tag" data-i18n="versatility.tag_scale">Escalabilidade</span>
           </div>
         </div>
 
@@ -294,15 +340,15 @@
           <div class="versatility-icon-box retail">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
           </div>
-          <h3 class="versatility-title" data-i18n="versatility.sme_title">PMEs, Varejo & Serviços Alimentícios</h3>
+          <h3 class="versatility-title" data-i18n="versatility.sme_title">PMEs, Varejo & Serviços Comerciais</h3>
           <p class="versatility-desc" data-i18n="versatility.sme_desc">
-            Operação comercial ágil com controle de comandas/mesas, cardápio digital dinâmico via QR Code, Kitchen Display System (KDS) e agente nativo desktop de impressão térmica sem intermediários.
+            Automação de operações comerciais e de atendimento, eliminação de intermediários tecnológicos de alto custo, estabilidade operacional e foco direto em redução de custos operacionais.
           </p>
           <div class="versatility-tags">
-            <span class="versatility-tag">KDS em Tempo Real</span>
-            <span class="versatility-tag">Impressão ESC/POS</span>
-            <span class="versatility-tag">Cardápio QR</span>
-            <span class="versatility-tag">Mesas/Comandas</span>
+            <span class="versatility-tag" data-i18n="versatility.tag_efficiency">Eficiência Operacional</span>
+            <span class="versatility-tag" data-i18n="versatility.tag_autonomy">Autonomia Técnica</span>
+            <span class="versatility-tag" data-i18n="versatility.tag_cost">Redução de Custos</span>
+            <span class="versatility-tag" data-i18n="versatility.tag_realtime">Fluxo em Tempo Real</span>
           </div>
         </div>
 
@@ -313,13 +359,13 @@
           </div>
           <h3 class="versatility-title" data-i18n="versatility.saas_title">Startups & Produtos Digitais (SaaS B2B)</h3>
           <p class="versatility-desc" data-i18n="versatility.saas_desc">
-            Arquiteturas SaaS multi-tenant resilientes, isolamento de dados com PostgreSQL RLS, construtor de sites em Next.js com geração estática de snapshots e pipelines de alta performance.
+            Concepção de produtos escaláveis com isolamento rigoroso entre clientes, governança multi-tenant, estratégias modernas de provisionamento e visão orientada a retenção e ROI.
           </p>
           <div class="versatility-tags">
-            <span class="versatility-tag">Multi-Tenant</span>
-            <span class="versatility-tag">Next.js App Router</span>
-            <span class="versatility-tag">OAuth2 / OIDC</span>
-            <span class="versatility-tag">Redis Cache</span>
+            <span class="versatility-tag" data-i18n="versatility.tag_tenant">Arquitetura Multi-Tenant</span>
+            <span class="versatility-tag" data-i18n="versatility.tag_failclosed">Segurança Fail-Closed</span>
+            <span class="versatility-tag" data-i18n="versatility.tag_product">Estratégia de Produto</span>
+            <span class="versatility-tag" data-i18n="versatility.tag_ha">Alta Disponibilidade</span>
           </div>
         </div>
 
@@ -328,15 +374,15 @@
           <div class="versatility-icon-box sec">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
           </div>
-          <h3 class="versatility-title" data-i18n="versatility.critical_title">Sistemas Críticos & Cibersegurança</h3>
+          <h3 class="versatility-title" data-i18n="versatility.critical_title">Sistemas Críticos & Segurança Aplicada</h3>
           <p class="versatility-desc" data-i18n="versatility.critical_desc">
-            Engenharia de baixo nível em C/C++, eficiência algorítmica, gerenciamento direto de memória na heap, monitoramento ativo com Wireshark e segurança de redes com padrões Cisco.
+            Projetos que exigem integridade absoluta de dados, controle rigoroso de recursos computacionais, disciplina de segurança defensiva e tolerância zero a falhas silenciosas.
           </p>
           <div class="versatility-tags">
-            <span class="versatility-tag">Linguagem C / C++</span>
-            <span class="versatility-tag">Defesa Cisco</span>
-            <span class="versatility-tag">Criptografia</span>
-            <span class="versatility-tag">Heap & Ponteiros</span>
+            <span class="versatility-tag" data-i18n="versatility.tag_integrity">Integridade de Dados</span>
+            <span class="versatility-tag" data-i18n="versatility.tag_defense">Defesa em Profundidade</span>
+            <span class="versatility-tag" data-i18n="versatility.tag_memory">Controle de Memória</span>
+            <span class="versatility-tag" data-i18n="versatility.tag_zerotrust">Zero-Trust</span>
           </div>
         </div>
 
@@ -349,10 +395,10 @@
     <div class="container">
       
       <div class="section-header">
-        <span class="section-pill" data-i18n="sysotto.pill">Sistemas Corporativos em Produção</span>
-        <h2 class="section-title" data-i18n="sysotto.title">Case de Engenharia & Empreendedorismo</h2>
+        <span class="section-pill" data-i18n="sysotto.pill">Sistemas Corporativos & Arquitetura SaaS</span>
+        <h2 class="section-title" data-i18n="sysotto.title">Arquitetura de Sistemas & Casos Técnicos (Sysotto)</h2>
         <p class="section-subtitle" data-i18n="sysotto.subtitle">
-          A união entre visão executiva corporativa e engenharia de software de ponta, com plataformas complexas projetadas para alta escala e resiliência.
+          Projetos de software concebidos e implementados com foco em processos críticos, integridade de dados e escalabilidade empresarial.
         </p>
       </div>
 
@@ -374,55 +420,69 @@
           </div>
         </div>
         <p class="sysotto-lead-text" data-i18n="sysotto.lead">
-          Fundada e arquitetada por Otto David de Santana Freitag, a Sysotto Softwares materializa a união entre visão de negócios corporativos e engenharia de software de ponta, com 4 plataformas corporativas complexas projetadas para alta escala, segurança e resiliência.
+          Fundada e arquitetada por Otto David de Santana Freitag, a Sysotto Softwares desenvolve plataformas corporativas voltadas a operações críticas, controle de estoques e serviços. Abaixo estão os escopos técnicos já modelados, os módulos implementados e as demonstrações de arquitetura.
         </p>
       </div>
 
       <!-- Navigation Tabs between Sysotto Systems -->
-      <div class="sysotto-tabs-nav" role="tablist">
-        <button class="sysotto-tab-btn active" data-target="preview-industry" role="tab">
+      <div class="sysotto-tabs-nav" role="tablist" aria-label="Plataformas e Módulos Sysotto" data-i18n-aria-label="sysotto.tabs_label">
+        <button class="sysotto-tab-btn active" data-target="preview-industry" role="tab" id="tab-industry" aria-selected="true" aria-controls="preview-industry">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path></svg>
-          <span>Sysotto ERP / Industry</span>
+          <span data-i18n="sysotto.tab_ind">Sysotto Industry</span>
         </button>
-        <button class="sysotto-tab-btn" data-target="preview-foodservice" role="tab">
+        <button class="sysotto-tab-btn" data-target="preview-foodservice" role="tab" id="tab-foodservice" aria-selected="false" aria-controls="preview-foodservice">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
-          <span>Sysotto FoodService</span>
+          <span data-i18n="sysotto.tab_food">Sysotto FoodService</span>
         </button>
-        <button class="sysotto-tab-btn" data-target="preview-sitebuilder" role="tab">
+        <button class="sysotto-tab-btn" data-target="preview-sitebuilder" role="tab" id="tab-sitebuilder" aria-selected="false" aria-controls="preview-sitebuilder">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
-          <span>Sysotto SiteBuilder</span>
+          <span data-i18n="sysotto.tab_sites">Sysotto Sites</span>
         </button>
-        <button class="sysotto-tab-btn" data-target="preview-core" role="tab">
+        <button class="sysotto-tab-btn" data-target="preview-core" role="tab" id="tab-core" aria-selected="false" aria-controls="preview-core">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-          <span>Multi-Tenant Core Engine</span>
+          <span data-i18n="sysotto.tab_core">Multi-Tenant Core</span>
         </button>
       </div>
 
       <!-- PANEL 1: Sysotto Industry (IndSaaS) -->
-      <div class="preview-panel active" id="preview-industry">
+      <div class="preview-panel active" id="preview-industry" role="tabpanel" aria-labelledby="tab-industry" tabindex="0">
         <div class="system-card">
           <div class="system-info-col">
             <div class="system-title-row">
               <h3 class="system-title" data-i18n="sysotto.ind_title">Sysotto ERP / Industry (IndSaaS)</h3>
+              <span class="system-status-badge badge-prep" data-i18n="sysotto.status_industry_prep">● Em Preparação</span>
             </div>
             <p class="system-description" data-i18n="sysotto.ind_desc">
               Sistema integrado de gestão fabril e de estoques de alta precisão para médias e grandes operações industriais.
             </p>
 
             <div class="system-status-box">
+              <div class="status-entry" data-i18n="sysotto.ind_problem" data-i18n-html="true">
+                <strong>Problema de Negócio:</strong> Indústrias enfrentam perdas severas por vencimento de insumos perecíveis e divergências de almoxarifado sem controle estrito de lotes.
+              </div>
+              <div class="status-entry" data-i18n="sysotto.ind_role" data-i18n-html="true">
+                <strong>Arquitetura & Implementação (Otto Freitag):</strong> Modelagem do domínio de estoque, motor de alocação automática FEFO/FIFO/LIFO, estrutura de rastreabilidade GS1-128 e isolamento multi-tenant com Row-Level Security no PostgreSQL.
+              </div>
               <div class="status-entry" data-i18n="sysotto.ind_functional" data-i18n-html="true">
-                <strong>O que já está funcional:</strong> Gestão avançada de inventário com estratégias automatizadas FEFO (First-Expired, First-Out), FIFO e LIFO; controle completo de lotes com validade, status de quarentena, timeline de rastreabilidade e geração de etiquetas com QR Code; endereçamento tridimensional de armazéns (corredores, prateleiras, níveis); inventário rotativo passo a passo com conciliação auditada de divergências; gestão comercial e faturamento.
+                <strong>Escopo arquitetural implementado:</strong> Gestão avançada de inventário com estratégias automatizadas FEFO/FIFO/LIFO, controle de lotes com validade e quarentena, etiquetas GS1-128 QR Code, endereçamento tridimensional de armazéns e rotinas de conciliação de inventário rotativo.
               </div>
             </div>
 
             <div class="system-status-box upcoming-focus">
               <div class="status-entry" data-i18n="sysotto.ind_upcoming" data-i18n-html="true">
-                <strong>Próximos lançamentos:</strong> Pacote comercial Industry Lite para implantação ágil em pequenas indústrias, fechamento do portal de auto-assinatura e projeção em tempo real de produtos canônicos no catálogo digital B2B.
+                <strong>Evolução técnica planejada:</strong> Pacote comercial Industry Lite e projeção de produtos no catálogo digital B2B.
               </div>
             </div>
 
             <div class="system-stack-tag" data-i18n="sysotto.ind_stack">
               Stack: C# .NET 10, ASP.NET Core, EF Core 10, PostgreSQL 17, FluentValidation, Next.js, TypeScript, Tailwind CSS.
+            </div>
+
+            <div class="system-action-row">
+              <a href="https://github.com/OttoF77/Sysotto.Inventory.Showcase" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span data-i18n="sysotto.repo_showcase_btn">Ver Repositório Showcase no GitHub</span>
+              </a>
             </div>
           </div>
 
@@ -435,21 +495,21 @@
                 <span class="mockup-dot green"></span>
               </div>
               <div class="mockup-url-bar">industry.sysotto.com.br/dashboard/estoque/lotes</div>
-              <span class="mock-badge badge-fefo">FEFO Engine: ATIVO</span>
+              <span class="mockup-illustrative-tag" data-i18n="sysotto.mockup_disclaimer">Demonstração visual · Dados ilustrativos</span>
             </div>
             <div class="mockup-body">
               <div class="mock-kpi-grid">
                 <div class="mock-kpi">
-                  <div class="mock-kpi-title">Lotes Monitorados</div>
-                  <div class="mock-kpi-value">1.482</div>
+                  <div class="mock-kpi-title" data-i18n="sysotto.mock_kpi_lots_title">Lotes na Demonstração</div>
+                  <div class="mock-kpi-value"><span data-i18n="sysotto.mock_kpi_lots_val">1.482</span> <span class="mock-subnote" data-i18n="sysotto.mock_simulated_tag">(Simulado)</span></div>
                 </div>
                 <div class="mock-kpi">
-                  <div class="mock-kpi-title">Estratégia Alocação</div>
-                  <div class="mock-kpi-value">FEFO / FIFO</div>
+                  <div class="mock-kpi-title" data-i18n="sysotto.mock_kpi_rules_title">Regras de Alocação</div>
+                  <div class="mock-kpi-value" data-i18n="sysotto.mock_kpi_rules_val">FEFO / FIFO / LIFO</div>
                 </div>
                 <div class="mock-kpi">
-                  <div class="mock-kpi-title">Acuracidade Estoque</div>
-                  <div class="mock-kpi-value">99.8%</div>
+                  <div class="mock-kpi-title" data-i18n="sysotto.mock_kpi_acc_title">Meta de Acuracidade</div>
+                  <div class="mock-kpi-value"><span data-i18n="sysotto.mock_kpi_acc_val">99.8%</span> <span class="mock-subnote" data-i18n="sysotto.mock_target_tag">(Meta Teórica)</span></div>
                 </div>
               </div>
 
@@ -490,8 +550,8 @@
               </table>
 
               <div style="margin-top: 1rem; padding: 0.75rem; background: rgba(56, 189, 248, 0.08); border-radius: 6px; display: flex; align-items: center; justify-content: space-between; font-size: 0.75rem;">
-                <span><strong>Rastreabilidade QR Code:</strong> Etiqueta padronizada GS1-128 emitida com sucesso.</span>
-                <span class="mock-badge badge-fifo">Conferência Auditada</span>
+                <span data-i18n="sysotto.mock_table_footer_note" data-i18n-html="true"><strong>Rastreabilidade QR Code:</strong> Estrutura de etiqueta GS1-128 para conferência (Demonstração).</span>
+                <span class="mock-badge badge-fifo" data-i18n="sysotto.mock_table_badge">Dados Ilustrativos</span>
               </div>
             </div>
           </div>
@@ -499,30 +559,44 @@
       </div>
 
       <!-- PANEL 2: Sysotto FoodService (RestSaaS) -->
-      <div class="preview-panel" id="preview-foodservice">
+      <div class="preview-panel" id="preview-foodservice" role="tabpanel" aria-labelledby="tab-foodservice" tabindex="0">
         <div class="system-card">
           <div class="system-info-col">
             <div class="system-title-row">
               <h3 class="system-title" data-i18n="sysotto.food_title">Sysotto FoodService (RestSaaS)</h3>
+              <span class="system-status-badge badge-prep" data-i18n="sysotto.status_food_prep">● Em Preparação</span>
             </div>
             <p class="system-description" data-i18n="sysotto.food_desc">
               Plataforma especializada para restaurantes, bares e serviços alimentícios, unindo salão, cozinha e gestão de entregas.
             </p>
 
             <div class="system-status-box">
+              <div class="status-entry" data-i18n="sysotto.food_problem" data-i18n-html="true">
+                <strong>Problema de Negócio:</strong> Gargalos de comunicação entre salão e cozinha geram atrasos em comandas e perda de comandas térmicas por instabilidade de rede local.
+              </div>
+              <div class="status-entry" data-i18n="sysotto.food_role" data-i18n-html="true">
+                <strong>Arquitetura & Implementação (Otto Freitag):</strong> Arquitetura orientada a eventos para o fluxo de pedidos (SignalR) e desenvolvimento do agente desktop autônomo em .NET 10 para comunicação direta com impressoras térmicas ESC/POS sem drivers externos.
+              </div>
               <div class="status-entry" data-i18n="sysotto.food_functional" data-i18n-html="true">
-                <strong>O que já está funcional:</strong> Módulo TableOrdersManager para controle simultâneo de mesas e comandas; cardápio digital dinâmico multi-tenant via QR Code; Kitchen Display System (KDS) em tempo real para produção na cozinha; módulo desktop autônomo de impressão térmica de cupons e comandas (<code>Sysotto.PrintingModule.Agent</code>) em .NET 10 com comunicação direta a impressoras de rede/USB sem dependência de drivers de terceiros.
+                <strong>Escopo arquitetural implementado:</strong> Módulo TableOrdersManager para controle de mesas e comandas, cardápio digital dinâmico via QR Code, Kitchen Display System (KDS) em tempo real e agente desktop autônomo de impressão térmica (.NET 10 / ESC/POS).
               </div>
             </div>
 
             <div class="system-status-box upcoming-focus">
               <div class="status-entry" data-i18n="sysotto.food_upcoming" data-i18n-html="true">
-                <strong>Próximos lançamentos:</strong> Integração bidirecional com gateways de entrega e roteirização inteligente de pedidos por rota de entrega.
+                <strong>Evolução técnica planejada:</strong> Roteirização de entregas e integrações bidirecionais de pedidos.
               </div>
             </div>
 
             <div class="system-stack-tag" data-i18n="sysotto.food_stack">
               Stack: Next.js (App Router), React, SignalR, .NET 10 Desktop Agent, PostgreSQL, Tailwind CSS.
+            </div>
+
+            <div class="system-action-row">
+              <a href="https://github.com/OttoF77/Sysotto.Routing.Showcase" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span data-i18n="sysotto.repo_showcase_btn">Ver Repositório Showcase no GitHub</span>
+              </a>
             </div>
           </div>
 
@@ -535,7 +609,7 @@
                 <span class="mockup-dot green"></span>
               </div>
               <div class="mockup-url-bar">foodservice.sysotto.com.br/kitchen</div>
-              <span class="mock-badge badge-kds-ready">Agente Impressão: Conectado</span>
+              <span class="mockup-illustrative-tag" data-i18n="sysotto.mockup_disclaimer">Demonstração visual · Dados ilustrativos</span>
             </div>
             <div class="mockup-body">
               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 0.75rem;">
@@ -576,39 +650,54 @@
               </div>
 
               <div style="padding: 0.6rem; background: rgba(16, 185, 129, 0.1); border-radius: 6px; font-size: 0.75rem; color: #34d399; display: flex; align-items: center; justify-content: space-between;">
-                <span>Status da Produção: 14 comandas ativas · Fila estabilizada</span>
-                <span>WebSockets SignalR Ativo</span>
+                <span data-i18n="sysotto.mock_kds_footer_note">Painel KDS: Demonstração de fluxo com 14 comandas simuladas</span>
+                <span data-i18n="sysotto.mock_kds_signalr">Stream SignalR (Simulado)</span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- PANEL 3: Sysotto SiteBuilder (SitesSaaS) -->
-      <div class="preview-panel" id="preview-sitebuilder">
+      <!-- PANEL 3: Sysotto Sites -->
+      <div class="preview-panel" id="preview-sitebuilder" role="tabpanel" aria-labelledby="tab-sitebuilder" tabindex="0">
         <div class="system-card">
           <div class="system-info-col">
             <div class="system-title-row">
-              <h3 class="system-title" data-i18n="sysotto.site_title">Sysotto SiteBuilder & CMS (SitesSaaS)</h3>
+              <h3 class="system-title" data-i18n="sysotto.site_title">Sysotto Sites — Plataforma Web & CMS</h3>
+              <span class="system-status-badge badge-online" data-i18n="sysotto.status_sites_online">● Online & Em Operação</span>
             </div>
             <p class="system-description" data-i18n="sysotto.site_desc">
-              Motor modular para criação, publicação e hospedagem dinâmica de landing pages institucionais e catálogos.
+              Plataforma para criação, publicação e hospedagem dinâmica de landing pages e catálogos B2B com renderização otimizada.
             </p>
 
             <div class="system-status-box">
+              <div class="status-entry" data-i18n="sysotto.site_problem" data-i18n-html="true">
+                <strong>Problema de Negócio:</strong> Criação rápida de catálogos e sites B2B sem depender de equipes de TI para cada alteração de layout.
+              </div>
+              <div class="status-entry" data-i18n="sysotto.site_role" data-i18n-html="true">
+                <strong>Arquitetura & Implementação (Otto Freitag):</strong> Motor de templates contextuais, pipeline de compressão e recorte de mídia em WebP (Sharp) e infraestrutura de componentes modulares.
+              </div>
               <div class="status-entry" data-i18n="sysotto.site_functional" data-i18n-html="true">
-                <strong>O que já está funcional:</strong> Editor contextual visual com 25 presets profissionais prontos para uso em múltiplos segmentos; módulo de gestão e recorte dinâmico de mídias (<code>MediaAssets</code>) gerando variantes WebP otimizadas; Help Hub com micro-aulas integradas; arquitetura com 378 testes automatizados aprovados e métricas de desempenho Lighthouse otimizadas.
+                <strong>Escopo arquitetural implementado:</strong> Editor contextual visual com presets profissionais pré-configurados, módulo de gestão e recorte dinâmico de mídias (WebP), Help Hub e componentes SSR otimizados.
               </div>
             </div>
 
             <div class="system-status-box upcoming-focus">
               <div class="status-entry" data-i18n="sysotto.site_upcoming" data-i18n-html="true">
-                <strong>Próximos lançamentos:</strong> Provisionamento automático de domínios personalizados e certificados SSL Let's Encrypt sob demanda.
+                <strong>Evolução técnica planejada:</strong> Provisionamento automático de domínios personalizados e certificados SSL Let's Encrypt sob demanda.
               </div>
             </div>
 
             <div class="system-stack-tag" data-i18n="sysotto.site_stack">
               Stack: Next.js App Router, React 19, TypeScript, Sharp/WebP, PostgreSQL, Turborepo.
+            </div>
+
+            <div class="system-action-row">
+              <span class="project-tag" data-i18n="sysotto.sites_status_tag">Plataforma Online · Versão Atual em Staging</span>
+              <a href="https://youtu.be/hRQJS_e0xpU" target="_blank" rel="noopener" class="project-video-btn" aria-label="Assistir tour técnico em vídeo no YouTube">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                <span data-i18n="sysotto.sites_video_btn">Assistir Tour Técnico (YouTube)</span>
+              </a>
             </div>
           </div>
 
@@ -621,7 +710,7 @@
                 <span class="mockup-dot green"></span>
               </div>
               <div class="mockup-url-bar">sitebuilder.sysotto.com.br/editor?tenant=ind-norte</div>
-              <span class="mock-badge badge-fefo">378 Testes Aprovados</span>
+              <span class="mockup-illustrative-tag" data-i18n="sysotto.mockup_disclaimer">Demonstração visual · Dados ilustrativos</span>
             </div>
             <div class="mockup-body">
               <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 0.85rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.08);">
@@ -642,8 +731,8 @@
               </div>
 
               <div style="margin-top: 0.85rem; font-size: 0.6875rem; color: #94a3b8; display:flex; justify-content:space-between;">
-                <span>Renderizador SSR / Static Snapshots</span>
-                <span style="color:#34d399;">Lighthouse Score: 98/100</span>
+                <span data-i18n="sysotto.mock_sites_footer_left">Renderizador SSR / Static Snapshots</span>
+                <span style="color:#38bdf8;" data-i18n="sysotto.mock_sites_footer_right">Layout Ilustrativo · Tour em Vídeo Disponível</span>
               </div>
             </div>
           </div>
@@ -651,7 +740,7 @@
       </div>
 
       <!-- PANEL 4: Sysotto Platform Core -->
-      <div class="preview-panel" id="preview-core">
+      <div class="preview-panel" id="preview-core" role="tabpanel" aria-labelledby="tab-core" tabindex="0">
         <div class="system-card">
           <div class="system-info-col">
             <div class="system-title-row">
@@ -662,19 +751,29 @@
             </p>
 
             <div class="system-status-box">
+              <div class="status-entry" data-i18n="sysotto.core_problem" data-i18n-html="true">
+                <strong>Problema de Negócio:</strong> Risco de vazamento de dados entre empresas clientes (cross-tenant data leak) e gargalos de autenticação em arquiteturas multi-tenant.
+              </div>
+              <div class="status-entry" data-i18n="sysotto.core_role" data-i18n-html="true">
+                <strong>Arquitetura & Implementação (Otto Freitag):</strong> Middleware central de resolução de tenant fail-closed, orquestrador de migrations de banco com advisory lock concorrente e camada de autorização OpenIddict / JWT.
+              </div>
               <div class="status-entry" data-i18n="sysotto.core_functional" data-i18n-html="true">
-                <strong>O que já está funcional:</strong> Resolução dinâmica de tenant via middleware unificado (<code>MonolithTenantProvider</code>) com proteção contra tenant injection; isolamento lógico com schemas dedicados e PostgreSQL Row Level Security (RLS); autorização OAuth2 / OpenID Connect com OpenIddict; autenticação JWT fail-closed; orquestrador de migrations de banco com advisory lock concorrente; cache distribuído Redis.
+                <strong>Escopo arquitetural implementado:</strong> Resolução dinâmica de tenant via middleware (MonolithTenantProvider) com proteção contra tenant injection, isolamento lógico com PostgreSQL Row Level Security (RLS), autorização OAuth2 / OIDC via OpenIddict e cache distribuído Redis.
               </div>
             </div>
 
             <div class="system-status-box upcoming-focus">
               <div class="status-entry" data-i18n="sysotto.core_upcoming" data-i18n-html="true">
-                <strong>Próximos lançamentos:</strong> Portal unificado SSO com dashboard centralizado de telemetria e métricas de faturamento por tenant.
+                <strong>Evolução técnica planejada:</strong> Portal unificado SSO com dashboard centralizado de telemetria e métricas de faturamento por tenant.
               </div>
             </div>
 
             <div class="system-stack-tag" data-i18n="sysotto.core_stack">
               Stack: C# .NET 10, OpenIddict, PostgreSQL 17, Redis, Docker Compose, Linux.
+            </div>
+
+            <div class="system-action-row">
+              <span class="project-tag" data-i18n="sysotto.internal_spec_note">Especificação & Arquitetura Interna Sysotto</span>
             </div>
           </div>
 
@@ -687,7 +786,7 @@
                 <span class="mockup-dot green"></span>
               </div>
               <div class="mockup-url-bar">core.sysotto.internal/health/diagnostics</div>
-              <span class="mock-badge badge-fifo">OAuth2 OIDC</span>
+              <span class="mockup-illustrative-tag" data-i18n="sysotto.mockup_terminal_disclaimer">Simulação de ambiente interno de diagnóstico</span>
             </div>
             <div class="mockup-body" style="font-family: var(--font-mono); font-size: 0.75rem;">
               <div style="color: #38bdf8; margin-bottom: 0.5rem;">[Sysotto.Identity.Host] Initialized Security Pipeline...</div>
@@ -695,7 +794,9 @@
               <div style="color: #34d399; margin-bottom: 0.35rem;">✔ PostgreSQL RLS: Session Context set to 'tenant_ind_br_01'</div>
               <div style="color: #34d399; margin-bottom: 0.35rem;">✔ DB Migration Engine: Advisory Lock acquired (migration applied clean)</div>
               <div style="color: #34d399; margin-bottom: 0.35rem;">✔ Redis Distributed Cache: L1/L2 Invalidation Mesh Connected (Cluster OK)</div>
-              <div style="color: #fbbf24; margin-top: 0.75rem;">[Security Sandbox Status]: Fail-closed JWT Validation · ZERO leakage detected</div>
+              <div style="color: #fbbf24; margin-top: 0.75rem;" data-i18n="sysotto.mock_core_status">
+                [Diagnóstico de Demonstração]: Validação fail-closed de JWT · RLS Ativo
+              </div>
             </div>
           </div>
         </div>
@@ -716,43 +817,21 @@
       </div>
 
       <!-- Filter Buttons -->
-      <div class="projects-filter-bar">
-        <button class="filter-btn active" data-filter="all" data-i18n="projects.tab_all">Todos os Projetos</button>
-        <button class="filter-btn" data-filter="sysotto" data-i18n="projects.tab_sysotto">Sistemas Corporativos (Sysotto)</button>
-        <button class="filter-btn" data-filter="hackathon" data-i18n="projects.tab_hackathons">Simulações & Hackathons</button>
-        <button class="filter-btn" data-filter="academic" data-i18n="projects.tab_academic">Ciência da Computação & Fundamentos</button>
+      <div class="projects-filter-bar" role="group" aria-label="Filtrar projetos por categoria" data-i18n-aria-label="projects.filter_label">
+        <button class="filter-btn active" data-filter="all" aria-pressed="true" data-i18n="projects.tab_all">Todos os Projetos</button>
+        <button class="filter-btn" data-filter="sysotto" aria-pressed="false" data-i18n="projects.tab_sysotto">Sistemas Corporativos (Sysotto)</button>
+        <button class="filter-btn" data-filter="hackathon" aria-pressed="false" data-i18n="projects.tab_hackathons">Simulações & Hackathons</button>
+        <button class="filter-btn" data-filter="academic" aria-pressed="false" data-i18n="projects.tab_academic">Ciência da Computação & Fundamentos</button>
       </div>
 
       <!-- Projects Grid -->
       <div class="projects-grid">
         
-        <!-- CARD 1: Sysotto Industry (Real) -->
-        <div class="project-card" data-category="sysotto">
-          <div class="project-card-header">
-            <span class="project-cat-badge">Sysotto · Produção</span>
-          </div>
-          <h3 class="project-title">
-            <a href="https://github.com/OttoF77/Sysotto.Inventory.Showcase" target="_blank" rel="noopener" class="project-repo-link" aria-label="Ver showcase no GitHub">
-              <span>Sysotto ERP / Industry Suite</span>
-              <svg class="project-gh-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-            </a>
-          </h3>
-          <p class="project-desc">
-            Motor de inventário industrial avançado com regras FEFO/FIFO/LIFO, rastreabilidade de lotes com etiquetas QR Code, endereçamento 3D de armazéns e conciliação auditada de estoque.
-          </p>
-          <div class="project-tags">
-            <span class="project-tag">C# .NET 10</span>
-            <span class="project-tag">PostgreSQL 17</span>
-            <span class="project-tag">EF Core 10</span>
-            <span class="project-tag">Next.js</span>
-            <span class="project-tag">Docker</span>
-          </div>
-        </div>
-
-        <!-- CARD 2: CondoTrack (No Country Simulation) -->
-        <div class="project-card" data-category="hackathon">
+        <!-- CARD 1 (Featured #1): CondoTrack (No Country Simulation) -->
+        <div class="project-card featured-case" data-category="hackathon">
           <div class="project-card-header">
             <span class="project-cat-badge" data-i18n="proj.condotrack_badge">No Country · Simulação S08</span>
+            <span class="project-featured-flag" data-i18n="projects.featured_flag">★ Destaque Técnico</span>
           </div>
           <h3 class="project-title">
             <a href="https://github.com/No-Country-simulation/S08-26-equipo-17" target="_blank" rel="noopener" class="project-repo-link" aria-label="Ver repositório no GitHub">
@@ -760,9 +839,14 @@
               <svg class="project-gh-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
             </a>
           </h3>
-          <p class="project-desc" data-i18n="proj.condotrack_desc">
-            Plataforma corporativa de gestão operacional e rastreabilidade para condomínios. Controle de acesso por QR Code (&lt;1.5s), custódia e baixa de encomendas, agendamentos atômicos sem conflito e documentação técnica C4/UML completa (Otto: Top Contributor e Líder Técnico).
-          </p>
+          <div class="project-desc" data-i18n="proj.condotrack_desc" data-i18n-html="true">
+            <p><strong>Problema de Negócio:</strong> Filas e lentidão em portarias condominiais por liberação manual, extravios na custódia de encomendas e conflitos de agendamento em áreas comuns.</p>
+            <p><strong>Decisões Técnicas:</strong> Backend em Java 21 / Spring Boot 3 com validação de QR Code indexado via B-Tree (&lt;400ms), reservas com locks atômicos (HTTP 409 em concorrência), auditoria imutável via triggers e 114 testes automatizados em &lt;9s.</p>
+          </div>
+          <div class="project-role-note">
+            <strong data-i18n="projects.role_label">Contribuição de Otto:</strong>
+            <span data-i18n="proj.condotrack_role">Desenvolvido em equipe internacional (No Country S08-26 / Team 17). Atuação como Líder Técnico e principal engenheiro backend: arquitetura da API, modelagem relacional, C4 Model e suíte de testes.</span>
+          </div>
           <div class="project-tags">
             <span class="project-tag">Java 21</span>
             <span class="project-tag">Spring Boot 3</span>
@@ -771,9 +855,120 @@
             <span class="project-tag">PostgreSQL 16</span>
             <span class="project-tag">Docker</span>
           </div>
+          <div class="project-action-row">
+            <a href="https://youtu.be/hsFRhAHKpkE" target="_blank" rel="noopener" class="project-video-btn" aria-label="Assistir demonstração em vídeo no YouTube">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              <span data-i18n="proj.condotrack_video_btn">Assistir Demonstração (YouTube)</span>
+            </a>
+            <a href="https://github.com/No-Country-simulation/S08-26-equipo-17" target="_blank" rel="noopener" class="project-btn-link" aria-label="Ver repositório no GitHub">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span data-i18n="proj.btn_view_repo">Ver Repositório no GitHub</span>
+            </a>
+          </div>
         </div>
 
-        <!-- CARD 3: TechMind (Hackathon ONE) -->
+        <!-- CARD 2 (Featured #2): Sysotto ERP / Industry Suite -->
+        <div class="project-card featured-case" data-category="sysotto">
+          <div class="project-card-header">
+            <span class="project-cat-badge" data-i18n="proj.sysotto_ind_badge">Sysotto · Em Preparação (Showcase)</span>
+            <span class="project-featured-flag" data-i18n="projects.featured_flag">★ Destaque Técnico</span>
+          </div>
+          <h3 class="project-title">
+            <a href="https://github.com/OttoF77/Sysotto.Inventory.Showcase" target="_blank" rel="noopener" class="project-repo-link" aria-label="Ver showcase no GitHub">
+              <span data-i18n="proj.sysotto_ind_title">Sysotto ERP / Industry Suite</span>
+              <svg class="project-gh-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </h3>
+          <div class="project-desc" data-i18n="proj.sysotto_ind_desc" data-i18n-html="true">
+            <p><strong>Problema de Negócio:</strong> Rastreabilidade deficiente em estoques industriais de alto volume e perdas financeiras por alocação manual sem controle estrito de lotes perecíveis.</p>
+            <p><strong>Decisões Técnicas:</strong> Motor em C# .NET 10 / EF Core com alocação automática FEFO/FIFO/LIFO, geração de etiquetas QR Code GS1-128, endereçamento 3D de armazéns e isolamento lógico via PostgreSQL Row-Level Security (RLS).</p>
+          </div>
+          <div class="project-role-note">
+            <strong data-i18n="projects.role_label">Contribuição de Otto:</strong>
+            <span data-i18n="proj.sysotto_ind_role">Concepção autoral integral e arquitetura de software: modelagem do domínio industrial, implementação dos algoritmos de alocação de estoque e testes de conformidade.</span>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">C# .NET 10</span>
+            <span class="project-tag">PostgreSQL 17</span>
+            <span class="project-tag">EF Core 10</span>
+            <span class="project-tag">GS1-128</span>
+            <span class="project-tag">Docker</span>
+          </div>
+          <div class="project-action-row">
+            <a href="https://github.com/OttoF77/Sysotto.Inventory.Showcase" target="_blank" rel="noopener" class="project-btn-link" aria-label="Ver showcase no GitHub">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span data-i18n="proj.btn_view_showcase">Ver Showcase no GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 3 (Featured #3): C Data Structures (Academic Impact) -->
+        <div class="project-card featured-case" data-category="academic">
+          <div class="project-card-header">
+            <span class="project-cat-badge" data-i18n="proj.c_ds_badge">Ciência da Computação</span>
+            <span class="project-featured-flag" data-i18n="projects.featured_flag">★ Destaque Técnico</span>
+          </div>
+          <h3 class="project-title">
+            <a href="https://github.com/OttoF77/estruturas-de-dados-em-C" target="_blank" rel="noopener" class="project-repo-link" aria-label="Ver repositório no GitHub">
+              <span data-i18n="proj.c_ds_title">Estruturas de Dados em C</span>
+              <svg class="project-gh-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </h3>
+          <div class="project-desc" data-i18n="proj.c_ds_desc" data-i18n-html="true">
+            <p><strong>Problema Computacional:</strong> Dependência de abstrações de alto nível sem domínio de alocação de memória na heap, aritmética de ponteiros e custo assintótico de algoritmos essenciais.</p>
+            <p><strong>Decisões Técnicas:</strong> Implementação estrita em ANSI C de listas ligadas, pilhas, filas e árvores binárias de busca; desalocação com verificação de ponteiros nulos (zero memory leaks) e análise assintótica Big-O documentada.</p>
+          </div>
+          <div class="project-role-note">
+            <strong data-i18n="projects.role_label">Contribuição de Otto:</strong>
+            <span data-i18n="proj.c_ds_role">Desenvolvimento autoral integral focado em rigor de Ciência da Computação, gerenciamento manual de memória e testes de integridade estrutural.</span>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Linguagem C</span>
+            <span class="project-tag">Ponteiros & Heap</span>
+            <span class="project-tag">Árvores Binárias</span>
+            <span class="project-tag">Algoritmos</span>
+          </div>
+          <div class="project-action-row">
+            <a href="https://github.com/OttoF77/estruturas-de-dados-em-C" target="_blank" rel="noopener" class="project-btn-link" aria-label="Ver repositório no GitHub">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span data-i18n="proj.btn_view_repo">Ver Repositório no GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 4: Sysotto FoodService & Desktop Printing Agent -->
+        <div class="project-card" data-category="sysotto">
+          <div class="project-card-header">
+            <span class="project-cat-badge" data-i18n="proj.sysotto_food_badge">Sysotto · Em Preparação</span>
+          </div>
+          <h3 class="project-title">
+            <a href="https://github.com/OttoF77/Sysotto.Routing.Showcase" target="_blank" rel="noopener" class="project-repo-link" aria-label="Ver showcase no GitHub">
+              <span data-i18n="proj.sysotto_food_title">Sysotto FoodService & Agente de Impressão</span>
+              <svg class="project-gh-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </h3>
+          <p class="project-desc" data-i18n="proj.sysotto_food_desc">
+            Sistema operacional para restaurantes e bares com Kitchen Display System em tempo real, gestão de comandas e mesas, e agente desktop nativo em .NET 10 para impressão térmica direta (ESC/POS).
+          </p>
+          <div class="project-role-note">
+            <strong data-i18n="projects.role_label">Contribuição de Otto:</strong>
+            <span data-i18n="proj.sysotto_food_role">Arquitetura do fluxo de pedidos via SignalR e desenvolvimento autoral do agente desktop em .NET 10 para comunicação térmica direta ESC/POS.</span>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Next.js App Router</span>
+            <span class="project-tag">.NET 10 Desktop Agent</span>
+            <span class="project-tag">SignalR</span>
+            <span class="project-tag">ESC/POS</span>
+          </div>
+          <div class="project-action-row">
+            <a href="https://github.com/OttoF77/Sysotto.Routing.Showcase" target="_blank" rel="noopener" class="project-btn-link" aria-label="Ver showcase no GitHub">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span data-i18n="proj.btn_view_showcase">Ver Showcase no GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 5: TechMind (Hackathon ONE) -->
         <div class="project-card" data-category="hackathon">
           <div class="project-card-header">
             <span class="project-cat-badge" data-i18n="proj.techmind_badge">Hackathon ONE · Oracle + Alura</span>
@@ -785,8 +980,12 @@
             </a>
           </h3>
           <p class="project-desc" data-i18n="proj.techmind_desc">
-            Solução desenvolvida no Hackathon ONE unindo arquitetura de microsserviço backend em Java 17 / Spring Boot e inferência de Machine Learning (NLP) em Python / FastAPI, com esteira de deploy e persistência na Oracle Cloud Infrastructure (OCI).
+            Solução de classificação inteligente unindo microsserviço backend em Java / Spring Boot e inferência de Machine Learning (NLP) em Python / FastAPI, com esteira de deploy e persistência na Oracle Cloud Infrastructure (OCI).
           </p>
+          <div class="project-role-note">
+            <strong data-i18n="projects.role_label">Contribuição de Otto:</strong>
+            <span data-i18n="proj.techmind_role">Projeto em equipe desenvolvido no Hackathon ONE. Contribuição na integração entre backend Java 17, API de ML em Python/FastAPI e deploy na Oracle Cloud.</span>
+          </div>
           <div class="project-tags">
             <span class="project-tag">Java 17</span>
             <span class="project-tag">Spring Boot 3</span>
@@ -796,56 +995,18 @@
             <span class="project-tag">Oracle Cloud (OCI)</span>
             <span class="project-tag">Docker</span>
           </div>
-        </div>
-
-        <!-- CARD 4: Sysotto FoodService & Desktop Printing Agent -->
-        <div class="project-card" data-category="sysotto">
-          <div class="project-card-header">
-            <span class="project-cat-badge">Sysotto · Produção</span>
-          </div>
-          <h3 class="project-title">
-            <a href="https://github.com/OttoF77/Sysotto.Routing.Showcase" target="_blank" rel="noopener" class="project-repo-link" aria-label="Ver showcase no GitHub">
-              <span>Sysotto FoodService & Printing Agent</span>
-              <svg class="project-gh-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          <div class="project-action-row">
+            <a href="https://github.com/No-Country-simulation/G9-BR-Team-13" target="_blank" rel="noopener" class="project-btn-link" aria-label="Ver repositório no GitHub">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span data-i18n="proj.btn_view_repo">Ver Repositório no GitHub</span>
             </a>
-          </h3>
-          <p class="project-desc">
-            Sistema operacional para restaurantes e bares com Kitchen Display System em tempo real, gestão de comandas e mesas, e agente desktop nativo em .NET 10 para impressão térmica direta (ESC/POS).
-          </p>
-          <div class="project-tags">
-            <span class="project-tag">Next.js App Router</span>
-            <span class="project-tag">.NET 10 Desktop Agent</span>
-            <span class="project-tag">SignalR</span>
-            <span class="project-tag">ESC/POS</span>
-          </div>
-        </div>
-
-        <!-- CARD 5: C Data Structures (Academic Impact) -->
-        <div class="project-card" data-category="academic">
-          <div class="project-card-header">
-            <span class="project-cat-badge" data-i18n="proj.c_ds_badge">Ciência da Computação</span>
-          </div>
-          <h3 class="project-title">
-            <a href="https://github.com/OttoF77/estruturas-de-dados-em-C" target="_blank" rel="noopener" class="project-repo-link" aria-label="Ver repositório no GitHub">
-              <span data-i18n="proj.c_ds_title">Estruturas de Dados em C</span>
-              <svg class="project-gh-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-            </a>
-          </h3>
-          <p class="project-desc" data-i18n="proj.c_ds_desc">
-            Implementação de baixo nível em linguagem C de algoritmos essenciais e estruturas de dados: listas encadeadas simples e duplas, pilhas, filas, árvores binárias de busca e algoritmos de ordenação, com gestão manual de ponteiros e desalocação de memória.
-          </p>
-          <div class="project-tags">
-            <span class="project-tag">Linguagem C</span>
-            <span class="project-tag">Ponteiros & Heap</span>
-            <span class="project-tag">Árvores Binárias</span>
-            <span class="project-tag">Algoritmos</span>
           </div>
         </div>
 
         <!-- CARD 6: E-Commerce Microservices (.NET C#) -->
         <div class="project-card" data-category="academic">
           <div class="project-card-header">
-            <span class="project-cat-badge" data-i18n="proj.microservices_badge">Microsserviços .NET</span>
+            <span class="project-cat-badge" data-i18n="proj.microservices_badge">Arquitetura Distribuída .NET</span>
           </div>
           <h3 class="project-title">
             <a href="https://github.com/OttoF77/ecommerce-microservices" target="_blank" rel="noopener" class="project-repo-link" aria-label="Ver repositório no GitHub">
@@ -854,20 +1015,30 @@
             </a>
           </h3>
           <p class="project-desc" data-i18n="proj.microservices_desc">
-            Arquitetura orientada a microsserviços distribuídos em C# / .NET, abordando catálogo de produtos, carrinho, processamento de pedidos, mensageria assíncrona, resiliência e boas práticas de desacoplamento de serviços.
+            Arquitetura de microsserviços distribuídos em C# / .NET, abordando catálogo de produtos, carrinho de compras, orquestração de pedidos, mensageria assíncrona com RabbitMQ, padrões de resiliência e desacoplamento de serviços.
           </p>
+          <div class="project-role-note">
+            <strong data-i18n="projects.role_label">Contribuição de Otto:</strong>
+            <span data-i18n="proj.microservices_role">Laboratório individual explorando mensageria assíncrona orientada a eventos, políticas de resiliência Polly, Docker Compose e desacoplamento de banco por serviço.</span>
+          </div>
           <div class="project-tags">
             <span class="project-tag">C# .NET</span>
             <span class="project-tag">Microservices</span>
             <span class="project-tag">RabbitMQ</span>
             <span class="project-tag">Docker</span>
           </div>
+          <div class="project-action-row">
+            <a href="https://github.com/OttoF77/ecommerce-microservices" target="_blank" rel="noopener" class="project-btn-link" aria-label="Ver repositório no GitHub">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span data-i18n="proj.btn_view_repo">Ver Repositório no GitHub</span>
+            </a>
+          </div>
         </div>
 
         <!-- CARD 7: LiterAlura & Challenge Backend ONE -->
         <div class="project-card" data-category="academic">
           <div class="project-card-header">
-            <span class="project-cat-badge" data-i18n="proj.literalura_badge">Java & Spring Boot</span>
+            <span class="project-cat-badge" data-i18n="proj.literalura_badge">Java 17 & Spring Boot</span>
           </div>
           <h3 class="project-title">
             <a href="https://github.com/OttoF77/challenge-literalura" target="_blank" rel="noopener" class="project-repo-link" aria-label="Ver repositório no GitHub">
@@ -876,20 +1047,30 @@
             </a>
           </h3>
           <p class="project-desc" data-i18n="proj.literalura_desc">
-            Aplicação em Java 17 e Spring Boot 3 desenvolvida para o programa Oracle Next Education. Consome a API pública Gutendex, processa dados JSON via Jackson, e gerencia catálogo literário com consultas complexas e persistência em PostgreSQL.
+            Aplicação em Java 17 e Spring Boot 3 desenvolvida no programa Oracle Next Education. Consome a API pública Gutendex, processa dados JSON complexos via Jackson e realiza consultas relacionais em PostgreSQL com Spring Data JPA.
           </p>
+          <div class="project-role-note">
+            <strong data-i18n="projects.role_label">Contribuição de Otto:</strong>
+            <span data-i18n="proj.literalura_role">Implementação individual completa do desafio backend: modelagem de entidades JPA, consumo de API REST externa e consultas personalizadas.</span>
+          </div>
           <div class="project-tags">
             <span class="project-tag">Java 17</span>
             <span class="project-tag">Spring Boot 3</span>
             <span class="project-tag">Spring Data JPA</span>
             <span class="project-tag">PostgreSQL</span>
           </div>
+          <div class="project-action-row">
+            <a href="https://github.com/OttoF77/challenge-literalura" target="_blank" rel="noopener" class="project-btn-link" aria-label="Ver repositório no GitHub">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span data-i18n="proj.btn_view_repo">Ver Repositório no GitHub</span>
+            </a>
+          </div>
         </div>
 
         <!-- CARD 8: Intelligent Email Classifier -->
         <div class="project-card" data-category="academic">
           <div class="project-card-header">
-            <span class="project-cat-badge" data-i18n="proj.email_ai_badge">Python & IA</span>
+            <span class="project-cat-badge" data-i18n="proj.email_ai_badge">Python & PLN</span>
           </div>
           <h3 class="project-title">
             <a href="https://github.com/OttoF77/email-classifier" target="_blank" rel="noopener" class="project-repo-link" aria-label="Ver repositório no GitHub">
@@ -898,13 +1079,23 @@
             </a>
           </h3>
           <p class="project-desc" data-i18n="proj.email_ai_desc">
-            Aplicação em Python aplicando técnicas de Processamento de Linguagem Natural (NLP) e aprendizado supervisionado para classificação semântica, triagem automática e análise de sentimentos em caixas de mensagens corporativas.
+            Solução em Python aplicando Processamento de Linguagem Natural (PLN) e aprendizado supervisionado para triagem de caixas de mensagens corporativas, detecção de sentimentos e categorização de chamados.
           </p>
+          <div class="project-role-note">
+            <strong data-i18n="projects.role_label">Contribuição de Otto:</strong>
+            <span data-i18n="proj.email_ai_role">Implementação autoral aplicando pré-processamento de texto (vetorização TF-IDF) e modelos de classificação Scikit-Learn para triagem de e-mails.</span>
+          </div>
           <div class="project-tags">
             <span class="project-tag">Python</span>
             <span class="project-tag">NLP</span>
             <span class="project-tag">Scikit-learn</span>
             <span class="project-tag">Automação</span>
+          </div>
+          <div class="project-action-row">
+            <a href="https://github.com/OttoF77/email-classifier" target="_blank" rel="noopener" class="project-btn-link" aria-label="Ver repositório no GitHub">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span data-i18n="proj.btn_view_repo">Ver Repositório no GitHub</span>
+            </a>
           </div>
         </div>
 
@@ -925,76 +1116,74 @@
 
       <div class="stacks-container">
         
-        <!-- Category 1: Stacks Principais (Produção Sysotto) -->
+        <!-- Category 1: Tecnologias nos Projetos Atuais da Sysotto -->
         <div class="stack-category-card">
           <div class="stack-cat-header">
             <div class="stack-cat-icon core">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
             </div>
             <div>
-              <h3 class="stack-cat-title" data-i18n="skills.core_title">Stacks Principais (Produção Sysotto)</h3>
-              <p class="stack-cat-desc" data-i18n="skills.core_desc">Tecnologias utilizadas diariamente no desenvolvimento dos sistemas em produção da Sysotto Softwares, com domínio aprofundado de arquitetura, ciclo de vida e performance.</p>
+              <h3 class="stack-cat-title" data-i18n="skills.core_title">Tecnologias nos Projetos Atuais da Sysotto</h3>
+              <p class="stack-cat-desc" data-i18n="skills.core_desc">Tecnologias centrais aplicadas na arquitetura e engenharia das plataformas da Sysotto Softwares (Sites, Industry Suite e FoodService).</p>
             </div>
           </div>
           <div class="stack-items-grid">
-            <div class="stack-item"><span class="stack-dot dot-core"></span> C# & .NET 10</div>
-            <div class="stack-item"><span class="stack-dot dot-core"></span> ASP.NET Core API</div>
-            <div class="stack-item"><span class="stack-dot dot-core"></span> Entity Framework Core</div>
-            <div class="stack-item"><span class="stack-dot dot-core"></span> PostgreSQL 17 & RLS</div>
-            <div class="stack-item"><span class="stack-dot dot-core"></span> Next.js (App Router)</div>
-            <div class="stack-item"><span class="stack-dot dot-core"></span> React & TypeScript</div>
-            <div class="stack-item"><span class="stack-dot dot-core"></span> Docker & Compose</div>
-            <div class="stack-item"><span class="stack-dot dot-core"></span> Redis Cache</div>
-            <div class="stack-item"><span class="stack-dot dot-core"></span> OpenIddict OAuth2/OIDC</div>
-            <div class="stack-item"><span class="stack-dot dot-core"></span> Arquitetura Multi-Tenant</div>
-            <div class="stack-item"><span class="stack-dot dot-core"></span> Linux & Shell (macOS/zsh)</div>
-            <div class="stack-item"><span class="stack-dot dot-core"></span> Tailwind CSS</div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">C# & .NET 10</span> <span class="stack-ref" data-i18n="skills.ref_industry">Sysotto Industry</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">ASP.NET Core Web API</span> <span class="stack-ref" data-i18n="skills.ref_industry_sites">Sysotto Industry / Sites</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Entity Framework Core</span> <span class="stack-ref" data-i18n="skills.ref_industry">Sysotto Industry</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">PostgreSQL 17 & RLS</span> <span class="stack-ref" data-i18n="skills.ref_multitenant">Sysotto Multi-Tenant</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Next.js (App Router)</span> <span class="stack-ref" data-i18n="skills.ref_sites">Sysotto Sites</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">React & TypeScript</span> <span class="stack-ref" data-i18n="skills.ref_sites_ui">Sysotto Sites / UI</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Docker & Compose</span> <span class="stack-ref" data-i18n="skills.ref_infra">Sysotto Infra</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Redis Cache</span> <span class="stack-ref" data-i18n="skills.ref_industry">Sysotto Industry</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">OpenIddict OAuth2/OIDC</span> <span class="stack-ref" data-i18n="skills.ref_auth">Sysotto Auth</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Arquitetura Multi-Tenant</span> <span class="stack-ref" data-i18n="skills.ref_core">Sysotto Core</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Tailwind CSS</span> <span class="stack-ref" data-i18n="skills.ref_sites">Sysotto Sites</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Linux & Shell Scripting</span> <span class="stack-ref" data-i18n="skills.ref_deploy">Ambiente & Deploy</span></div>
           </div>
         </div>
 
-        <!-- Category 2: Interesses & Pesquisa Ativa (Baixo Nível & Segurança) -->
-        <div class="stack-category-card">
-          <div class="stack-cat-header">
-            <div class="stack-cat-icon research">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-            </div>
-            <div>
-              <h3 class="stack-cat-title" data-i18n="skills.interests_title">Interesses & Pesquisa Ativa (Baixo Nível & Segurança)</h3>
-              <p class="stack-cat-desc" data-i18n="skills.interests_desc">Áreas de dedicação contínua em engenharia de sistemas, programação de baixo nível, controle rígido de memória e proteção de infraestrutura.</p>
-            </div>
-          </div>
-          <div class="stack-items-grid">
-            <div class="stack-item"><span class="stack-dot dot-research"></span> Linguagem C</div>
-            <div class="stack-item"><span class="stack-dot dot-research"></span> C++</div>
-            <div class="stack-item"><span class="stack-dot dot-research"></span> Rust</div>
-            <div class="stack-item"><span class="stack-dot dot-research"></span> Cibersegurança Defensiva</div>
-            <div class="stack-item"><span class="stack-dot dot-research"></span> Defesa de Redes (Cisco)</div>
-            <div class="stack-item"><span class="stack-dot dot-research"></span> Análise de Tráfego Wireshark</div>
-            <div class="stack-item"><span class="stack-dot dot-research"></span> Criptografia Aplicada</div>
-            <div class="stack-item"><span class="stack-dot dot-research"></span> Gestão Manual de Memória</div>
-          </div>
-        </div>
-
-        <!-- Category 3: Fundamentação Acadêmica & Formações Complementares -->
+        <!-- Category 2: Tecnologias Demonstradas em Projetos & Estudos -->
         <div class="stack-category-card">
           <div class="stack-cat-header">
             <div class="stack-cat-icon academic">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
             </div>
             <div>
-              <h3 class="stack-cat-title" data-i18n="skills.academic_title">Fundamentação Acadêmica & Formações Complementares</h3>
-              <p class="stack-cat-desc" data-i18n="skills.academic_desc">Tecnologias e linguagens exploradas no âmbito universitário, bootcamps de capacitação e desafios de desenvolvimento para consolidação de fundamentos.</p>
+              <h3 class="stack-cat-title" data-i18n="skills.demonstrated_title">Tecnologias Demonstradas em Projetos & Estudos</h3>
+              <p class="stack-cat-desc" data-i18n="skills.demonstrated_desc">Linguagens, frameworks e ferramentas validados em projetos com código-fonte no repositório, simulações acadêmicas e hackathons.</p>
             </div>
           </div>
           <div class="stack-items-grid">
-            <div class="stack-item"><span class="stack-dot dot-academic"></span> Java (Spring Boot 3)</div>
-            <div class="stack-item"><span class="stack-dot dot-academic"></span> Python (FastAPI / Flask)</div>
-            <div class="stack-item"><span class="stack-dot dot-academic"></span> T-SQL & SQL Server</div>
-            <div class="stack-item"><span class="stack-dot dot-academic"></span> Oracle Cloud (OCI)</div>
-            <div class="stack-item"><span class="stack-dot dot-academic"></span> Microsoft Azure Basics</div>
-            <div class="stack-item"><span class="stack-dot dot-academic"></span> IA Generativa & Agentes</div>
-            <div class="stack-item"><span class="stack-dot dot-academic"></span> HTML5, CSS3, JS Vanilla</div>
-            <div class="stack-item"><span class="stack-dot dot-academic"></span> Git, GitHub & CI/CD</div>
+            <div class="stack-item"><span class="stack-dot dot-academic"></span> <span class="stack-name">Java & Spring Boot 3</span> <span class="stack-ref" data-i18n="skills.ref_condotrack_one">CondoTrack / ONE</span></div>
+            <div class="stack-item"><span class="stack-dot dot-academic"></span> <span class="stack-name">Python & FastAPI / Flask</span> <span class="stack-ref" data-i18n="skills.ref_techmind_email">TechMind / Classificador</span></div>
+            <div class="stack-item"><span class="stack-dot dot-academic"></span> <span class="stack-name">Linguagem C (ANSI C)</span> <span class="stack-ref" data-i18n="skills.ref_c_ds">Estruturas de Dados</span></div>
+            <div class="stack-item"><span class="stack-dot dot-academic"></span> <span class="stack-name">T-SQL & SQL Server</span> <span class="stack-ref" data-i18n="skills.ref_sql">CondoTrack / TechMind</span></div>
+            <div class="stack-item"><span class="stack-dot dot-academic"></span> <span class="stack-name">RabbitMQ & Event-Driven</span> <span class="stack-ref" data-i18n="skills.ref_microservices">E-Commerce Microservices</span></div>
+            <div class="stack-item"><span class="stack-dot dot-academic"></span> <span class="stack-name">Oracle Cloud (OCI) & Azure</span> <span class="stack-ref" data-i18n="skills.ref_cloud">Hackathon / OCI Cert</span></div>
+            <div class="stack-item"><span class="stack-dot dot-academic"></span> <span class="stack-name">JUnit 5 & Mockito (114 Testes)</span> <span class="stack-ref" data-i18n="skills.ref_condotrack">CondoTrack</span></div>
+            <div class="stack-item"><span class="stack-dot dot-academic"></span> <span class="stack-name">Git & GitHub CI/CD</span> <span class="stack-ref" data-i18n="skills.ref_repos">Repositórios & CI/CD</span></div>
+          </div>
+        </div>
+
+        <!-- Category 3: Interesses & Áreas em Exploração -->
+        <div class="stack-category-card">
+          <div class="stack-cat-header">
+            <div class="stack-cat-icon research">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <div>
+              <h3 class="stack-cat-title" data-i18n="skills.interests_title">Interesses & Áreas em Exploração</h3>
+              <p class="stack-cat-desc" data-i18n="skills.interests_desc">Áreas de dedicação contínua em engenharia de sistemas, programação de baixo nível, controle de memória e segurança.</p>
+            </div>
+          </div>
+          <div class="stack-items-grid">
+            <div class="stack-item"><span class="stack-dot dot-research"></span> <span class="stack-name">C++ Moderno</span> <span class="stack-ref" data-i18n="skills.ref_systems">Sistemas de Alta Performance</span></div>
+            <div class="stack-item"><span class="stack-dot dot-research"></span> <span class="stack-name">Rust</span> <span class="stack-ref" data-i18n="skills.ref_concurrency">Memory Safety & Concorrência</span></div>
+            <div class="stack-item"><span class="stack-dot dot-research"></span> <span class="stack-name">Cibersegurança Defensiva</span> <span class="stack-ref" data-i18n="skills.ref_sec_study">Trilha Cisco / Hackers do Bem</span></div>
+            <div class="stack-item"><span class="stack-dot dot-research"></span> <span class="stack-name">Análise de Tráfego Wireshark</span> <span class="stack-ref" data-i18n="skills.ref_net_study">Defesa de Redes (Cisco)</span></div>
+            <div class="stack-item"><span class="stack-dot dot-research"></span> <span class="stack-name">Criptografia Aplicada</span> <span class="stack-ref" data-i18n="skills.ref_crypto">Padrões Zero-Trust</span></div>
+            <div class="stack-item"><span class="stack-dot dot-research"></span> <span class="stack-name">IA Generativa & Agentes Autônomos</span> <span class="stack-ref" data-i18n="skills.ref_ai_agents">Estudos LLM & Agentes</span></div>
           </div>
         </div>
 
@@ -1013,6 +1202,44 @@
         </p>
       </div>
 
+      <!-- Executive CV Download Banner -->
+      <div class="edu-cv-banner">
+        <div class="edu-cv-content">
+          <div class="edu-cv-header">
+            <span class="section-pill" style="margin-bottom: 0.5rem;" data-i18n="edu.cv_pill">Dossiê Executivo & Currículo</span>
+            <h3 class="edu-cv-title" data-i18n="edu.cv_title">Documentação Profissional & Histórico Consolidado</h3>
+            <p class="edu-cv-desc" data-i18n="edu.cv_desc">
+              Acesse o currículo consolidado com mais de 20 anos de liderança em gestão de grandes operações, arquitetura de software corporativo e stack de engenharia.
+            </p>
+          </div>
+          <div class="edu-cv-cards-grid">
+            <a href="assets/docs/cv-otto-freitag-pt-br.pdf" download="CV-Otto-David-Freitag-PT-BR.pdf" class="cv-download-card">
+              <div class="cv-card-info">
+                <div class="cv-card-badge">PDF · Português (Brasil)</div>
+                <h4 data-i18n="edu.cv_pt_title">Currículo Profissional (PT-BR)</h4>
+                <p data-i18n="edu.cv_pt_desc">Histórico executivo completo, métricas de gestão, formação acadêmica e stack de software.</p>
+              </div>
+              <div class="btn btn-primary" style="padding: 0.65rem 1.25rem; font-size: 0.875rem; white-space: nowrap;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span data-i18n="edu.cv_btn_download">Baixar PDF</span>
+              </div>
+            </a>
+
+            <a href="assets/docs/cv-otto-freitag-en-us.pdf" download="CV-Otto-David-Freitag-EN-US.pdf" class="cv-download-card">
+              <div class="cv-card-info">
+                <div class="cv-card-badge">PDF · English (US)</div>
+                <h4 data-i18n="edu.cv_en_title">Executive Resume (EN-US)</h4>
+                <p data-i18n="edu.cv_en_desc">Full executive leadership history, business turnaround metrics, and software architecture stack.</p>
+              </div>
+              <div class="btn btn-secondary" style="padding: 0.65rem 1.25rem; font-size: 0.875rem; white-space: nowrap;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span data-i18n="edu.cv_btn_download">Download PDF</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
       <!-- Higher Education Degrees Grid -->
       <h3 style="font-size: 1.375rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1.5rem;" data-i18n="edu.academic_title">Formação Acadêmica</h3>
       <div class="edu-degrees-grid">
@@ -1022,7 +1249,7 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
           </div>
           <h4 class="degree-title" data-i18n="edu.degree_se">Bacharelado em Engenharia de Software</h4>
-          <div class="degree-inst" data-i18n="edu.degree_se_inst">UNIFBV / Wyden (3º Período - Em andamento)</div>
+          <div class="degree-inst" data-i18n="edu.degree_se_inst">UNIFBV / Wyden (4º Período - Em andamento · Conclusão prevista: 06/2029)</div>
           <p class="degree-desc" data-i18n="edu.degree_se_desc">
             Fundamentos de computação, engenharia de requisitos, arquitetura de software, algoritmos, governança de TI e segurança.
           </p>
@@ -1264,44 +1491,6 @@
         </div>
 
       </div>
-
-      <!-- Executive CV Download Banner -->
-      <div class="edu-cv-banner">
-        <div class="edu-cv-content">
-          <div class="edu-cv-header">
-            <span class="section-pill" style="margin-bottom: 0.5rem;" data-i18n="edu.cv_pill">Dossiê Executivo & Currículo</span>
-            <h3 class="edu-cv-title" data-i18n="edu.cv_title">Documentação Profissional & Histórico Consolidado</h3>
-            <p class="edu-cv-desc" data-i18n="edu.cv_desc">
-              Acesse o currículo consolidado com mais de 20 anos de liderança em gestão de grandes operações, arquitetura de software corporativo e stack de engenharia.
-            </p>
-          </div>
-          <div class="edu-cv-cards-grid">
-            <a href="assets/docs/cv-otto-freitag-pt-br.pdf" download="CV-Otto-David-Freitag-PT-BR.pdf" class="cv-download-card">
-              <div class="cv-card-info">
-                <div class="cv-card-badge">PDF · Português (Brasil)</div>
-                <h4 data-i18n="edu.cv_pt_title">Currículo Profissional (PT-BR)</h4>
-                <p data-i18n="edu.cv_pt_desc">Histórico executivo completo, métricas de gestão, formação acadêmica e stack de software.</p>
-              </div>
-              <div class="btn btn-primary" style="padding: 0.65rem 1.25rem; font-size: 0.875rem; white-space: nowrap;">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                <span data-i18n="edu.cv_btn_download">Baixar PDF</span>
-              </div>
-            </a>
-
-            <a href="assets/docs/cv-otto-freitag-en-us.pdf" download="CV-Otto-David-Freitag-EN-US.pdf" class="cv-download-card">
-              <div class="cv-card-info">
-                <div class="cv-card-badge">PDF · English (US)</div>
-                <h4 data-i18n="edu.cv_en_title">Executive Resume (EN-US)</h4>
-                <p data-i18n="edu.cv_en_desc">Full executive leadership history, business turnaround metrics, and software architecture stack.</p>
-              </div>
-              <div class="btn btn-secondary" style="padding: 0.65rem 1.25rem; font-size: 0.875rem; white-space: nowrap;">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                <span data-i18n="edu.cv_btn_download">Download PDF</span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -1328,23 +1517,11 @@
               <div>
                 <div class="contact-label" data-i18n="contact.email_label">E-mail:</div>
                 <div class="contact-val">
-                  <a href="mailto:ottofreitag@uol.com.br">ottofreitag@uol.com.br</a>
-                  <button class="action-btn" data-action="copy-email" data-email="ottofreitag@uol.com.br" style="margin-left: 0.5rem; height: 1.8rem; font-size: 0.75rem;">
+                  <a href="mailto:otto@sysotto.com">otto@sysotto.com</a>
+                  <button class="action-btn copy-email-btn" data-action="copy-email" data-email="otto@sysotto.com">
                     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
                     <span data-i18n="contact.copy_email">Copiar</span>
                   </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-              </div>
-              <div>
-                <div class="contact-label" data-i18n="contact.phone_label">Telefone / WhatsApp:</div>
-                <div class="contact-val">
-                  <a href="tel:+5586988846478">+55 (86) 98884-6478</a>
                 </div>
               </div>
             </div>
@@ -1373,6 +1550,18 @@
               </div>
             </div>
 
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              </div>
+              <div>
+                <div class="contact-label" data-i18n="contact.cv_label">Currículo Profissional:</div>
+                <div class="contact-val">
+                  <a href="assets/docs/cv-otto-freitag-pt-br.pdf" download="CV-Otto-David-Freitag-PT-BR.pdf" data-dynamic-cv data-i18n="contact.cv_link_text">Baixar Versão Consolidada (PDF)</a>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -1384,19 +1573,19 @@
             <p data-i18n="contact.channel_desc">Disponível para posições executivas de liderança, arquitetura técnica de software corporativo e parcerias estratégicas.</p>
             
             <div class="channel-btns">
-              <a href="https://wa.me/5586988846478" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%;">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                <span data-i18n="contact.btn_whatsapp">Iniciar Conversa no WhatsApp</span>
-              </a>
-              <a href="mailto:ottofreitag@uol.com.br" class="btn btn-secondary" style="width: 100%;">
+              <a href="mailto:otto@sysotto.com" class="btn btn-primary">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                 <span data-i18n="contact.btn_email">Enviar E-mail Direto</span>
+              </a>
+              <a href="assets/docs/cv-otto-freitag-pt-br.pdf" download="CV-Otto-David-Freitag-PT-BR.pdf" data-dynamic-cv class="btn btn-secondary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span data-i18n="contact.btn_cv">Baixar Currículo (PDF)</span>
               </a>
             </div>
 
             <div class="channel-location-note">
               <span>📍</span>
-              <span data-i18n="contact.location_note">Base: Parnaíba / Teresina, PI — Atuação remota e presencial</span>
+              <span data-i18n="contact.location_note">Base: Parnaíba / Teresina, PI — Atuação remota</span>
             </div>
           </div>
         </div>
@@ -1409,26 +1598,26 @@
   <footer class="site-footer">
     <div class="container footer-content">
       <p>© 2026 Otto David de Santana Freitag. <span data-i18n="footer.rights">Todos os direitos reservados.</span></p>
-      <p style="font-size: 0.8125rem;" data-i18n="footer.built_with">Construído com padrões modernos web, hospedado no GitHub Pages.</p>
+      <p class="footer-built-with" data-i18n="footer.built_with">Construído com padrões modernos web, hospedado no GitHub Pages.</p>
     </div>
   </footer>
 
   <!-- Certificate Viewer Modal Dialog -->
-  <div class="modal-overlay" id="cert-modal" role="dialog" aria-modal="true" aria-labelledby="modal-cert-title">
+  <div class="modal-overlay" id="cert-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-cert-title">
     <div class="modal-container">
       <div class="modal-header">
         <div class="modal-title-block">
           <h3 id="modal-cert-title">Certificado Oficial</h3>
           <p id="modal-cert-issuer">Emissor</p>
         </div>
-        <button class="modal-close" aria-label="Fechar janela modal">&times;</button>
+        <button class="modal-close" aria-label="Fechar janela modal" data-i18n-aria-label="modal.close">&times;</button>
       </div>
       <div class="modal-body">
         <iframe id="modal-cert-frame" class="modal-frame" src="about:blank" title="Documento do Certificado"></iframe>
         <img id="modal-cert-image" class="modal-img" src="" alt="Badge ou Certificado">
       </div>
       <div class="modal-footer">
-        <a id="modal-cert-download" href="#" download class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">
+        <a id="modal-cert-download" href="#" download class="btn btn-primary modal-download-btn">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
           <span data-i18n="edu.cert_download">Baixar PDF</span>
         </a>

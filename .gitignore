@@ -4,3 +4,14 @@ node_modules/
 dist/
 .vscode/
 .idea/
+
+# Local temporary files and videos (do not push to git)
+temp/
+/temp
+*.mp4
+*.m4v
+*.aiff
+
+# Environment variables
+.env
+.env.*

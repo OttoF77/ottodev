@@ -41,8 +41,15 @@
     const toggleBtns = document.querySelectorAll('[data-action="toggle-theme"]');
     toggleBtns.forEach((btn) => {
       const isDark = theme === 'dark';
-      btn.setAttribute('aria-label', isDark ? 'Ativar modo claro' : 'Ativar modo escuro');
-      btn.setAttribute('title', isDark ? 'Modo Claro' : 'Modo Escuro');
+      const isEn = window.i18n && window.i18n.currentLang === 'en-US';
+      const label = isDark
+        ? (isEn ? 'Switch to light mode' : 'Ativar modo claro')
+        : (isEn ? 'Switch to dark mode' : 'Ativar modo escuro');
+      const title = isDark
+        ? (isEn ? 'Light Mode' : 'Modo Claro')
+        : (isEn ? 'Dark Mode' : 'Modo Escuro');
+      btn.setAttribute('aria-label', label);
+      btn.setAttribute('title', title);
       
       const sunIcon = btn.querySelector('.theme-icon-sun');
       const moonIcon = btn.querySelector('.theme-icon-moon');
@@ -73,6 +80,10 @@
   // Initialize theme as early as possible
   const initialTheme = getPreferredTheme();
   applyTheme(initialTheme, false);
+
+  window.addEventListener('languageChanged', () => {
+    updateThemeToggleUI(document.documentElement.getAttribute('data-theme') || initialTheme);
+  });
 
   document.addEventListener('DOMContentLoaded', () => {
     updateThemeToggleUI(document.documentElement.getAttribute('data-theme') || initialTheme);
