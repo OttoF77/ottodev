@@ -5,7 +5,8 @@ Reproduces the site's design language: obsidian background (#090d16),
 gold monogram gradient (#D97706 -> #FDE68A), executive typography.
 Run from the repo root:
     python3 tools/make-og-cover.py
-Writes assets/images/og-cover.png and assets/images/og-cover.jpg (1200x630).
+Writes assets/images/og-cover.jpg (1200x630). Falls back to DejaVu
+fonts when Montserrat is not installed, so it runs in any Pillow env.
 """
 import os
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
@@ -24,7 +25,16 @@ BG_BOTTOM = (9, 13, 22)        # #090d16
 
 
 def font(name, size):
-    return ImageFont.truetype(os.path.join(FONTS, name), size)
+    path = os.path.join(FONTS, name)
+    if not os.path.exists(path):
+        # Portable fallback (DejaVu ships with most Pillow installs)
+        preferred = {
+            "Montserrat-ExtraBold.ttf": "DejaVuSerif-Bold.ttf",
+            "Montserrat-SemiBold.ttf": "DejaVuSans-Bold.ttf",
+            "Montserrat-Regular.ttf": "DejaVuSans.ttf",
+        }.get(name, "DejaVuSans.ttf")
+        path = os.path.join("/usr/share/fonts/truetype/dejavu", preferred)
+    return ImageFont.truetype(path, size)
 
 
 def fit_font(name, text, max_w, start=64, min_=24):
@@ -133,11 +143,8 @@ def main():
     draw.text((tx, 566), "ottof77.github.io/ottodev", font=font("Montserrat-SemiBold.ttf", 17),
               fill=(102, 113, 136))
 
-    out_png = os.path.join(ROOT, "assets/images/og-cover.png")
     out_jpg = os.path.join(ROOT, "assets/images/og-cover.jpg")
-    bg.save(out_png, "PNG")
     bg.convert("RGB").save(out_jpg, "JPEG", quality=92)
-    print("wrote", out_png, bg.size)
     print("wrote", out_jpg, bg.size)
 
 
