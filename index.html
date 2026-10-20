@@ -227,7 +227,11 @@
             </div>
 
             <div class="hero-photo-frame">
-              <img src="assets/images/otto-freitag.jpg" alt="Otto David de Santana Freitag" class="hero-photo-img" loading="eager">
+              <picture>
+                <source srcset="assets/images/otto-freitag.avif" type="image/avif">
+                <source srcset="assets/images/otto-freitag.webp" type="image/webp">
+                <img src="assets/images/otto-freitag.jpg" alt="Otto David de Santana Freitag" data-i18n-alt="hero.photo_alt" width="800" height="800" class="hero-photo-img" loading="eager" fetchpriority="high" decoding="async">
+              </picture>
             </div>
 
             <div class="hero-floating-pill pill-bottom-left">

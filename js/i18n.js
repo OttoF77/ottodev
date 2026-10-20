@@ -42,6 +42,7 @@ const translations = {
 
     // Hero
     'hero.badge': 'Liderança Executiva · Arquiteto de Soluções · Engenheiro de Software',
+    'hero.photo_alt': 'Otto David de Santana Freitag - Retrato Profissional',
     'hero.title_start': 'Liderança executiva aliada à',
     'hero.title_highlight': 'engenharia de software',
     'hero.title_end': 'e arquitetura de soluções.',
@@ -462,6 +463,7 @@ const translations = {
 
     // Hero
     'hero.badge': 'Executive Leadership · Solutions Architect · Software Engineer',
+    'hero.photo_alt': 'Otto David de Santana Freitag - Professional Portrait',
     'hero.title_start': 'Executive leadership integrated with',
     'hero.title_highlight': 'software engineering',
     'hero.title_end': 'and solutions architecture.',

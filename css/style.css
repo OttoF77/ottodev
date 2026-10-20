@@ -441,6 +441,11 @@ textarea:focus:not(:focus-visible),
   border-color: var(--border-focus);
 }
 
+.hero-photo-frame picture {
+  display: block;
+  width: 100%;
+}
+
 .hero-photo-img {
   width: 100%;
   height: auto;
