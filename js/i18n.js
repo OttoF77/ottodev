@@ -8,7 +8,7 @@ const translations = {
     // Page Metadata
     'meta.title': 'Otto David de Santana Freitag | Liderança Executiva & Engenharia de Software',
     'meta.description': 'Portfólio executivo de Otto David de Santana Freitag: mais de 20 anos de liderança executiva em grandes corporações (Gerdau, CSN, Servisan), Arquiteto de Soluções e fundador da Sysotto Softwares.',
-    'meta.image_alt': 'Retrato profissional de Otto Freitag',
+    'meta.image_alt': 'Card executivo de Otto Freitag',
     'brand.monogram_alt': 'Monograma de Otto Freitag',
 
     // Navigation & Common Accessibility
@@ -45,7 +45,8 @@ const translations = {
     'hero.title_start': 'Liderança executiva aliada à',
     'hero.title_highlight': 'engenharia de software',
     'hero.title_end': 'e arquitetura de soluções.',
-    'hero.subtitle': 'Mais de 20 anos de gestão executiva em grandes operações industriais (Gerdau, CSN) integrados ao desenvolvimento de software corporativo. Como fundador da Sysotto Softwares, projeto sistemas e plataformas SaaS com foco em processos críticos, escalabilidade e resultado de negócio.',
+    'hero.subtitle': 'Mais de 20 anos de gestão executiva em grandes operações industriais (Gerdau, CSN, Servisan) integrados ao desenvolvimento de software corporativo. Como fundador da Sysotto Softwares, projeto sistemas e plataformas SaaS com foco em processos críticos, escalabilidade e resultado de negócio.',
+    'hero.description': 'Mais de 20 anos de gestão executiva em grandes operações industriais (Gerdau, CSN, Servisan) integrados ao desenvolvimento de software corporativo. Como fundador da Sysotto Softwares, projeto sistemas e plataformas SaaS com foco em processos críticos, escalabilidade e resultado de negócio.',
     'hero.cta_projects': 'Ver Projetos & Cases',
     'hero.cta_academic': 'Ver Projetos de Engenharia',
     'hero.cta_cv': 'Baixar Currículo (PDF)',
@@ -427,7 +428,7 @@ const translations = {
     // Page Metadata
     'meta.title': 'Otto David de Santana Freitag | Executive Leadership & Software Engineering',
     'meta.description': 'Executive portfolio of Otto David de Santana Freitag: 20+ years of executive leadership in major corporations (Gerdau, CSN, Servisan), Solutions Architect and founder of Sysotto Softwares.',
-    'meta.image_alt': 'Professional portrait of Otto Freitag',
+    'meta.image_alt': 'Executive card of Otto Freitag',
     'brand.monogram_alt': 'Otto Freitag monogram',
 
     // Navigation & Common Accessibility
@@ -464,7 +465,8 @@ const translations = {
     'hero.title_start': 'Executive leadership integrated with',
     'hero.title_highlight': 'software engineering',
     'hero.title_end': 'and solutions architecture.',
-    'hero.subtitle': 'Over 20 years of executive leadership in major industrial operations (Gerdau, CSN) combined with enterprise software development. As founder of Sysotto Softwares, I architect SaaS platforms and systems focused on critical workflows, scalability, and measurable business impact.',
+    'hero.subtitle': 'Over 20 years of executive leadership in major industrial operations (Gerdau, CSN, Servisan) combined with enterprise software development. As founder of Sysotto Softwares, I architect SaaS platforms and systems focused on critical workflows, scalability, and measurable business impact.',
+    'hero.description': 'Over 20 years of executive leadership in major industrial operations (Gerdau, CSN, Servisan) combined with enterprise software development. As founder of Sysotto Softwares, I architect SaaS platforms and systems focused on critical workflows, scalability, and measurable business impact.',
     'hero.cta_projects': 'View Projects & Cases',
     'hero.cta_academic': 'View Engineering Projects',
     'hero.cta_cv': 'Download Resume (PDF)',
