@@ -331,6 +331,20 @@ textarea:focus:not(:focus-visible),
   transform: translateY(-1px);
 }
 
+/* Theme Toggle Icons */
+[data-theme="dark"] .theme-icon-sun {
+  display: block;
+}
+[data-theme="dark"] .theme-icon-moon {
+  display: none;
+}
+[data-theme="light"] .theme-icon-sun {
+  display: none;
+}
+[data-theme="light"] .theme-icon-moon {
+  display: block;
+}
+
 .nav-cv-btn {
   background-color: var(--brand-pill-bg);
   color: var(--brand-primary);
@@ -664,7 +678,7 @@ textarea:focus:not(:focus-visible),
   color: var(--text-muted);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.4rem;
   margin-bottom: 1rem;
 }
@@ -703,6 +717,10 @@ textarea:focus:not(:focus-visible),
    ========================================================================== */
 .section-padding {
   padding: 5rem 0;
+}
+
+.section-bg-alt {
+  background-color: var(--bg-tertiary);
 }
 
 .section-header {
@@ -798,6 +816,11 @@ textarea:focus:not(:focus-visible),
   font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 0.2rem;
+}
+
+h3.diff-title {
+  margin-top: 1.75rem;
+  font-size: 1.125rem;
 }
 
 .diff-desc {
@@ -972,6 +995,30 @@ textarea:focus:not(:focus-visible),
   display: flex;
   align-items: center;
   gap: 1.25rem;
+}
+
+.sysotto-company-name {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.sysotto-company-tagline {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.sysotto-role-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sysotto-role-badge {
+  font-size: 0.8125rem;
+  padding: 0.35rem 0.75rem;
 }
 
 .sysotto-main-logo {
@@ -1259,6 +1306,168 @@ textarea:focus:not(:focus-visible),
 .badge-quarantine { background-color: rgba(245, 158, 11, 0.2); color: #fbbf24; }
 .badge-kds-prep { background-color: rgba(245, 158, 11, 0.2); color: #fbbf24; }
 .badge-kds-ready { background-color: rgba(16, 185, 129, 0.2); color: #34d399; }
+.mock-badge.badge-neutral { background-color: rgba(255, 255, 255, 0.1); color: #94a3b8; }
+
+/* Sysotto ERP Mockup Footer */
+.mockup-table-footer {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: rgba(56, 189, 248, 0.08);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75rem;
+}
+
+/* Sysotto FoodService KDS Mockup */
+.mockup-tickets-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.mockup-ticket-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  padding: 0.85rem;
+}
+
+.mockup-ticket-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.mockup-ticket-items {
+  font-size: 0.75rem;
+  padding-left: 1.1rem;
+  color: #cbd5e1;
+  margin-bottom: 0.5rem;
+}
+
+.mockup-ticket-footer {
+  font-size: 0.6875rem;
+  color: #94a3b8;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mockup-kds-footer {
+  padding: 0.6rem;
+  background: rgba(16, 185, 129, 0.1);
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  color: #34d399;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Sysotto Sites Builder Mockup */
+.mockup-toolbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mockup-preset-title {
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+.mockup-device-badges {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.mockup-canvas-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px dashed rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.mockup-skeleton-hero {
+  height: 14px;
+  width: 60%;
+  background: rgba(56, 189, 248, 0.4);
+  margin: 0 auto 0.6rem;
+  border-radius: 4px;
+}
+
+.mockup-skeleton-text-1 {
+  height: 10px;
+  width: 85%;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0 auto 0.5rem;
+  border-radius: 3px;
+}
+
+.mockup-skeleton-text-2 {
+  height: 10px;
+  width: 45%;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0 auto 1.25rem;
+  border-radius: 3px;
+}
+
+.mockup-cta-btn {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  background: #0284c7;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 0.6875rem;
+}
+
+.mockup-sites-footer {
+  margin-top: 0.85rem;
+  font-size: 0.6875rem;
+  color: #94a3b8;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Sysotto Core Terminal Mockup */
+.mockup-terminal-body {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.terminal-log-info {
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+}
+
+.terminal-log-success {
+  color: #34d399;
+  margin-bottom: 0.35rem;
+}
+
+.terminal-log-warning {
+  color: #fbbf24;
+  margin-top: 0.75rem;
+}
+
+/* Semantic Color Utilities for Mockups */
+.text-amber {
+  color: #f59e0b;
+}
+
+.text-emerald {
+  color: #34d399;
+}
+
+.text-sky {
+  color: #38bdf8;
+}
 
 /* ==========================================================================
    PROJECTS SECTION (ACADEMIC & IMPACT)
@@ -1854,6 +2063,28 @@ textarea:focus:not(:focus-visible),
   margin-bottom: 0.25rem;
 }
 
+.edu-cv-header .section-pill {
+  margin-bottom: 0.5rem;
+}
+
+.cv-download-card .btn {
+  padding: 0.65rem 1.25rem;
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.edu-section-title {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.cert-duration {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
 .cv-card-info p {
   font-size: 0.8125rem;
   color: var(--text-muted);
@@ -1879,6 +2110,30 @@ textarea:focus:not(:focus-visible),
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+.contact-info-col .section-pill {
+  align-self: flex-start;
+}
+
+.contact-headline {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.contact-subtitle {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .contact-item {
@@ -2264,5 +2519,10 @@ textarea:focus:not(:focus-visible),
     animation: none !important;
     transition: none !important;
   }
+}
+
+/* Generic Visibility Utility */
+.is-hidden {
+  display: none !important;
 }
 

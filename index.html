@@ -142,7 +142,7 @@
           <!-- Sun icon (for dark mode) -->
           <svg class="theme-icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
           <!-- Moon icon (for light mode) -->
-          <svg class="theme-icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="theme-icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
         </button>
 
         <!-- Mobile Menu Toggle Button -->
@@ -212,7 +212,7 @@
             </div>
           </div>
 
-          <div class="hero-location-text" style="justify-content: flex-start;">
+          <div class="hero-location-text">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
             <span data-i18n="hero.role_location">Parnaíba & Teresina, PI — Brasil | Disponível para atuação remota</span>
           </div>
@@ -282,7 +282,7 @@
             Sou graduando em <strong>Engenharia de Software (UNIFBV/Wyden)</strong>, com <strong>MBA em Gestão Empresarial pela FGV</strong> e <strong>Bacharelado em Turismo pela UNIFOR</strong>, mantendo dedicação contínua aos fundamentos da computação, estruturas de dados, sistemas distribuídos e segurança defensiva.
           </p>
 
-          <h3 class="diff-title" style="margin-top: 1.75rem; font-size: 1.125rem;" data-i18n="about.leadership_title">Diferenciais Estratégicos</h3>
+          <h3 class="diff-title" data-i18n="about.leadership_title">Diferenciais Estratégicos</h3>
           <div class="diff-list">
             <div class="diff-item">
               <div class="diff-icon">
@@ -450,7 +450,7 @@
   </section>
 
   <!-- Sysotto Softwares & Real-World Systems Showcase -->
-  <section class="section-padding" id="sysotto" style="background-color: var(--bg-tertiary);">
+  <section class="section-padding section-bg-alt" id="sysotto">
     <div class="container">
       
       <div class="section-header">
@@ -470,12 +470,12 @@
               <path d="M52 20 C52 12, 18 12, 18 22 C18 32, 52 32, 52 42 C52 52, 18 52, 18 42" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
             </svg>
             <div>
-              <h3 style="font-size: 1.75rem; font-weight: 800; color: var(--text-primary); margin: 0;" data-i18n="sysotto.company_name">Sysotto Softwares</h3>
-              <span style="font-size: 0.875rem; color: var(--text-muted); font-weight: 500;" data-i18n="sysotto.company_tagline">Ecossistema SaaS & Engenharia Corporativa</span>
+              <h3 class="sysotto-company-name" data-i18n="sysotto.company_name">Sysotto Softwares</h3>
+              <span class="sysotto-company-tagline" data-i18n="sysotto.company_tagline">Ecossistema SaaS & Engenharia Corporativa</span>
             </div>
           </div>
-          <div style="display:flex; align-items:center; gap: 0.5rem;">
-            <span class="mock-badge badge-fifo" style="font-size: 0.8125rem; padding: 0.35rem 0.75rem;" data-i18n="sysotto.role_badge">Otto Freitag — Fundador & Arquiteto</span>
+          <div class="sysotto-role-wrapper">
+            <span class="mock-badge badge-fifo sysotto-role-badge" data-i18n="sysotto.role_badge">Otto Freitag — Fundador & Arquiteto</span>
           </div>
         </div>
         <p class="sysotto-lead-text" data-i18n="sysotto.lead">
@@ -608,7 +608,7 @@
                 </tbody>
               </table>
 
-              <div style="margin-top: 1rem; padding: 0.75rem; background: rgba(56, 189, 248, 0.08); border-radius: 6px; display: flex; align-items: center; justify-content: space-between; font-size: 0.75rem;">
+              <div class="mockup-table-footer">
                 <span data-i18n="sysotto.mock_table_footer_note" data-i18n-html="true"><strong>Rastreabilidade QR Code:</strong> Estrutura de etiqueta GS1-128 para conferência (Demonstração).</span>
                 <span class="mock-badge badge-fifo" data-i18n="sysotto.mock_table_badge">Dados Ilustrativos</span>
               </div>
@@ -671,44 +671,44 @@
               <span class="mockup-illustrative-tag" data-i18n="sysotto.mockup_disclaimer">Demonstração visual · Dados ilustrativos</span>
             </div>
             <div class="mockup-body">
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 0.75rem;">
+              <div class="mockup-tickets-grid">
                 
                 <!-- Ticket 1 -->
-                <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 0.85rem;">
-                  <div style="display:flex; justify-content:space-between; margin-bottom: 0.5rem;">
+                <div class="mockup-ticket-card">
+                  <div class="mockup-ticket-header">
                     <strong data-i18n="sysotto.mock_ticket_one">Mesa 07 · Comanda #1042</strong>
                     <span class="mock-badge badge-kds-prep" data-i18n="sysotto.mock_ticket_preparing">Preparo (04:12)</span>
                   </div>
-                  <ul style="font-size: 0.75rem; padding-left: 1.1rem; color: #cbd5e1; margin-bottom: 0.5rem;">
+                  <ul class="mockup-ticket-items">
                     <li data-i18n="sysotto.mock_food_item_one">1x Filé Mignon ao Poivre</li>
                     <li data-i18n="sysotto.mock_food_item_two">1x Risoto de Parmesão</li>
-                    <li style="color:#f59e0b;" data-i18n="sysotto.mock_food_note">* Obs: Sem glúten / molho à parte</li>
+                    <li class="text-amber" data-i18n="sysotto.mock_food_note">* Obs: Sem glúten / molho à parte</li>
                   </ul>
-                  <div style="font-size: 0.6875rem; color: #94a3b8; display:flex; justify-content:space-between;">
+                  <div class="mockup-ticket-footer">
                     <span data-i18n="sysotto.mock_server_one">Garçom: Carlos R.</span>
-                    <span style="color:#34d399;" data-i18n="sysotto.mock_printed">🖨️ Cupom Impresso</span>
+                    <span class="text-emerald" data-i18n="sysotto.mock_printed">🖨️ Cupom Impresso</span>
                   </div>
                 </div>
 
                 <!-- Ticket 2 -->
-                <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 0.85rem;">
-                  <div style="display:flex; justify-content:space-between; margin-bottom: 0.5rem;">
+                <div class="mockup-ticket-card">
+                  <div class="mockup-ticket-header">
                     <strong data-i18n="sysotto.mock_ticket_two">Mesa 12 · Comanda #1045</strong>
                     <span class="mock-badge badge-kds-ready" data-i18n="sysotto.mock_ticket_ready">Pronto p/ Entrega</span>
                   </div>
-                  <ul style="font-size: 0.75rem; padding-left: 1.1rem; color: #cbd5e1; margin-bottom: 0.5rem;">
+                  <ul class="mockup-ticket-items">
                     <li data-i18n="sysotto.mock_food_item_three">2x Salmão Grelhado c/ Alcaparras</li>
                     <li data-i18n="sysotto.mock_food_item_four">2x Suco Natural de Laranja</li>
                   </ul>
-                  <div style="font-size: 0.6875rem; color: #94a3b8; display:flex; justify-content:space-between;">
+                  <div class="mockup-ticket-footer">
                     <span data-i18n="sysotto.mock_server_two">Garçom: Luiza M.</span>
-                    <span style="color:#38bdf8;" data-i18n="sysotto.mock_total_time">Tempo Total: 12 min</span>
+                    <span class="text-sky" data-i18n="sysotto.mock_total_time">Tempo Total: 12 min</span>
                   </div>
                 </div>
 
               </div>
 
-              <div style="padding: 0.6rem; background: rgba(16, 185, 129, 0.1); border-radius: 6px; font-size: 0.75rem; color: #34d399; display: flex; align-items: center; justify-content: space-between;">
+              <div class="mockup-kds-footer">
                 <span data-i18n="sysotto.mock_kds_footer_note">Painel KDS: Demonstração de fluxo com 14 comandas simuladas</span>
                 <span data-i18n="sysotto.mock_kds_signalr">Stream SignalR (Simulado)</span>
               </div>
@@ -772,26 +772,26 @@
               <span class="mockup-illustrative-tag" data-i18n="sysotto.mockup_disclaimer">Demonstração visual · Dados ilustrativos</span>
             </div>
             <div class="mockup-body">
-              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 0.85rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.08);">
-                <div style="font-size: 0.8125rem; font-weight: 700;" data-i18n="sysotto.mock_preset">Preset: Indústria B2B Clean #08</div>
-                <div style="display:flex; gap: 0.4rem;">
+              <div class="mockup-toolbar-header">
+                <div class="mockup-preset-title" data-i18n="sysotto.mock_preset">Preset: Indústria B2B Clean #08</div>
+                <div class="mockup-device-badges">
                   <span class="mock-badge badge-fifo" data-i18n="sysotto.mock_device_desktop">Desktop</span>
-                  <span class="mock-badge" style="background:rgba(255,255,255,0.1); color:#94a3b8;" data-i18n="sysotto.mock_device_tablet">Tablet</span>
-                  <span class="mock-badge" style="background:rgba(255,255,255,0.1); color:#94a3b8;" data-i18n="sysotto.mock_device_mobile">Mobile</span>
+                  <span class="mock-badge badge-neutral" data-i18n="sysotto.mock_device_tablet">Tablet</span>
+                  <span class="mock-badge badge-neutral" data-i18n="sysotto.mock_device_mobile">Mobile</span>
                 </div>
               </div>
 
               <!-- Canvas simulation -->
-              <div style="background: rgba(255,255,255,0.03); border: 1px dashed rgba(255,255,255,0.15); border-radius: 8px; padding: 1.5rem; text-align: center;">
-                <div style="height: 14px; width: 60%; background: rgba(56, 189, 248, 0.4); margin: 0 auto 0.6rem; border-radius: 4px;"></div>
-                <div style="height: 10px; width: 85%; background: rgba(255, 255, 255, 0.1); margin: 0 auto 0.5rem; border-radius: 3px;"></div>
-                <div style="height: 10px; width: 45%; background: rgba(255, 255, 255, 0.1); margin: 0 auto 1.25rem; border-radius: 3px;"></div>
-                <div style="display:inline-block; padding: 0.35rem 1rem; background: #0284c7; color: white; border-radius: 4px; font-size: 0.6875rem;" data-i18n="sysotto.mock_cta">Botão CTA Conectar</div>
+              <div class="mockup-canvas-box">
+                <div class="mockup-skeleton-hero"></div>
+                <div class="mockup-skeleton-text-1"></div>
+                <div class="mockup-skeleton-text-2"></div>
+                <div class="mockup-cta-btn" data-i18n="sysotto.mock_cta">Botão CTA Conectar</div>
               </div>
 
-              <div style="margin-top: 0.85rem; font-size: 0.6875rem; color: #94a3b8; display:flex; justify-content:space-between;">
+              <div class="mockup-sites-footer">
                 <span data-i18n="sysotto.mock_sites_footer_left">Renderizador SSR / Static Snapshots</span>
-                <span style="color:#38bdf8;" data-i18n="sysotto.mock_sites_footer_right">Layout Ilustrativo · Tour em Vídeo Disponível</span>
+                <span class="text-sky" data-i18n="sysotto.mock_sites_footer_right">Layout Ilustrativo · Tour em Vídeo Disponível</span>
               </div>
             </div>
           </div>
@@ -847,13 +847,13 @@
               <div class="mockup-url-bar" data-i18n="sysotto.mock_url_core">core.sysotto.internal/health/diagnostics</div>
               <span class="mockup-illustrative-tag" data-i18n="sysotto.mockup_terminal_disclaimer">Simulação de ambiente interno de diagnóstico</span>
             </div>
-            <div class="mockup-body" style="font-family: var(--font-mono); font-size: 0.75rem;">
-              <div style="color: #38bdf8; margin-bottom: 0.5rem;">[Sysotto.Identity.Host] Initialized Security Pipeline...</div>
-              <div style="color: #34d399; margin-bottom: 0.35rem;">✔ TenantResolver: Verified Host Header & JWT Claims (tenant_id: ind_br_01)</div>
-              <div style="color: #34d399; margin-bottom: 0.35rem;">✔ PostgreSQL RLS: Session Context set to 'tenant_ind_br_01'</div>
-              <div style="color: #34d399; margin-bottom: 0.35rem;">✔ DB Migration Engine: Advisory Lock acquired (migration applied clean)</div>
-              <div style="color: #34d399; margin-bottom: 0.35rem;">✔ Redis Distributed Cache: L1/L2 Invalidation Mesh Connected (Cluster OK)</div>
-              <div style="color: #fbbf24; margin-top: 0.75rem;" data-i18n="sysotto.mock_core_status">
+            <div class="mockup-body mockup-terminal-body">
+              <div class="terminal-log-info">[Sysotto.Identity.Host] Initialized Security Pipeline...</div>
+              <div class="terminal-log-success">✔ TenantResolver: Verified Host Header & JWT Claims (tenant_id: ind_br_01)</div>
+              <div class="terminal-log-success">✔ PostgreSQL RLS: Session Context set to 'tenant_ind_br_01'</div>
+              <div class="terminal-log-success">✔ DB Migration Engine: Advisory Lock acquired (migration applied clean)</div>
+              <div class="terminal-log-success">✔ Redis Distributed Cache: L1/L2 Invalidation Mesh Connected (Cluster OK)</div>
+              <div class="terminal-log-warning" data-i18n="sysotto.mock_core_status">
                 [Diagnóstico de Demonstração]: Validação fail-closed de JWT · RLS Ativo
               </div>
             </div>
@@ -1163,7 +1163,7 @@
   </section>
 
   <!-- Technical Stacks & Competencies -->
-  <section class="section-padding" id="skills" style="background-color: var(--bg-tertiary);">
+  <section class="section-padding section-bg-alt" id="skills">
     <div class="container">
       <div class="section-header">
         <span class="section-pill" data-i18n="skills.title">Tecnologias & Competências</span>
@@ -1265,7 +1265,7 @@
       <div class="edu-cv-banner">
         <div class="edu-cv-content">
           <div class="edu-cv-header">
-            <span class="section-pill" style="margin-bottom: 0.5rem;" data-i18n="edu.cv_pill">Dossiê Executivo & Currículo</span>
+            <span class="section-pill" data-i18n="edu.cv_pill">Dossiê Executivo & Currículo</span>
             <h3 class="edu-cv-title" data-i18n="edu.cv_title">Documentação Profissional & Histórico Consolidado</h3>
             <p class="edu-cv-desc" data-i18n="edu.cv_desc">
               Acesse o currículo consolidado com mais de 20 anos de liderança em gestão de grandes operações, arquitetura de software corporativo e stack de engenharia.
@@ -1278,7 +1278,7 @@
                 <h4 data-i18n="edu.cv_pt_title">Currículo Profissional (PT-BR)</h4>
                 <p data-i18n="edu.cv_pt_desc">Histórico executivo completo, métricas de gestão, formação acadêmica e stack de software.</p>
               </div>
-              <div class="btn btn-primary" style="padding: 0.65rem 1.25rem; font-size: 0.875rem; white-space: nowrap;">
+              <div class="btn btn-primary">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
                 <span data-i18n="edu.cv_btn_download">Baixar PDF</span>
               </div>
@@ -1290,7 +1290,7 @@
                 <h4 data-i18n="edu.cv_en_title">Executive Resume (EN-US)</h4>
                 <p data-i18n="edu.cv_en_desc">Full executive leadership history, business turnaround metrics, and software architecture stack.</p>
               </div>
-              <div class="btn btn-secondary" style="padding: 0.65rem 1.25rem; font-size: 0.875rem; white-space: nowrap;">
+              <div class="btn btn-secondary">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
                 <span data-i18n="edu.cv_btn_download">Download PDF</span>
               </div>
@@ -1300,7 +1300,7 @@
       </div>
 
       <!-- Higher Education Degrees Grid -->
-      <h3 style="font-size: 1.375rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1.5rem;" data-i18n="edu.academic_title">Formação Acadêmica</h3>
+      <h3 class="edu-section-title" data-i18n="edu.academic_title">Formação Acadêmica</h3>
       <div class="edu-degrees-grid">
         
         <div class="degree-card">
@@ -1339,14 +1339,14 @@
       </div>
 
       <!-- Certifications & Bootcamps Grid -->
-      <h3 style="font-size: 1.375rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1.5rem;" data-i18n="edu.certs_title">Principais Certificados & Bootcamps</h3>
+      <h3 class="edu-section-title" data-i18n="edu.certs_title">Principais Certificados & Bootcamps</h3>
       <div class="certs-grid">
         
         <!-- CERT 1: Harvard CS50 -->
         <div class="cert-card">
           <div class="cert-badge-row">
             <span class="cert-issuer-badge">Harvard University</span>
-            <span style="font-size:0.75rem; color:var(--text-muted);">70 Horas</span>
+            <span class="cert-duration">70 Horas</span>
           </div>
           <h4 class="cert-title" data-i18n="cert.cs50_title">CC50: Introdução à Ciência da Computação</h4>
           <div class="cert-org" data-i18n="cert.cs50_org">Harvard University / David J. Malan</div>
@@ -1369,7 +1369,7 @@
         <div class="cert-card">
           <div class="cert-badge-row">
             <span class="cert-issuer-badge">Cisco Networking Academy</span>
-            <span style="font-size:0.75rem; color:var(--text-muted);">SENAI-SC / CDI</span>
+            <span class="cert-duration">SENAI-SC / CDI</span>
           </div>
           <h4 class="cert-title" data-i18n="cert.cisco_sec_title">Cisco Network Security</h4>
           <div class="cert-org" data-i18n="cert.cisco_sec_org">Cisco Networking Academy / SENAI-SC</div>
@@ -1392,7 +1392,7 @@
         <div class="cert-card">
           <div class="cert-badge-row">
             <span class="cert-issuer-badge">Cisco Networking Academy</span>
-            <span style="font-size:0.75rem; color:var(--text-muted);">YDUQS-Wyden</span>
+            <span class="cert-duration">YDUQS-Wyden</span>
           </div>
           <h4 class="cert-title" data-i18n="cert.cisco_def_title">Cisco Defesa de Rede (CyberOps)</h4>
           <div class="cert-org" data-i18n="cert.cisco_def_org">Cisco Networking Academy / YDUQS-Wyden</div>
@@ -1415,7 +1415,7 @@
         <div class="cert-card">
           <div class="cert-badge-row">
             <span class="cert-issuer-badge">Oracle Brasil & Alura</span>
-            <span style="font-size:0.75rem; color:var(--text-muted);">348 Horas · 7 Formações</span>
+            <span class="cert-duration">348 Horas · 7 Formações</span>
           </div>
           <h4 class="cert-title" data-i18n="cert.oracle_one_title">Programa Oracle Next Education (ONE)</h4>
           <div class="cert-org" data-i18n="cert.oracle_one_org">Oracle Brasil & Alura</div>
@@ -1438,7 +1438,7 @@
         <div class="cert-card">
           <div class="cert-badge-row">
             <span class="cert-issuer-badge">Cisco / NDG</span>
-            <span style="font-size:0.75rem; color:var(--text-muted);">Linux Essentials</span>
+            <span class="cert-duration">Linux Essentials</span>
           </div>
           <h4 class="cert-title" data-i18n="cert.cisco_linux_title">NDG Linux Unhatched</h4>
           <div class="cert-org" data-i18n="cert.cisco_linux_org">Cisco Networking Academy / NDG</div>
@@ -1461,7 +1461,7 @@
         <div class="cert-card">
           <div class="cert-badge-row">
             <span class="cert-issuer-badge">Hackers do Bem / RNP</span>
-            <span style="font-size:0.75rem; color:var(--text-muted);">MCTI / Softex</span>
+            <span class="cert-duration">MCTI / Softex</span>
           </div>
           <h4 class="cert-title" data-i18n="cert.hackers_title">Hackers do Bem: Cibersegurança</h4>
           <div class="cert-org" data-i18n="cert.hackers_org">RNP / Softex / Ministério da Ciência e Tecnologia</div>
@@ -1484,7 +1484,7 @@
         <div class="cert-card">
           <div class="cert-badge-row">
             <span class="cert-issuer-badge">Oracle University</span>
-            <span style="font-size:0.75rem; color:var(--text-muted);">Cloud Associate Badge</span>
+            <span class="cert-duration">Cloud Associate Badge</span>
           </div>
           <h4 class="cert-title" data-i18n="cert.oracle_oci_title">Oracle Cloud Infrastructure (OCI)</h4>
           <div class="cert-org" data-i18n="cert.oracle_oci_org">Oracle University</div>
@@ -1507,7 +1507,7 @@
         <div class="cert-card">
           <div class="cert-badge-row">
             <span class="cert-issuer-badge">Digital Innovation One</span>
-            <span style="font-size:0.75rem; color:var(--text-muted);">Turma 13</span>
+            <span class="cert-duration">Turma 13</span>
           </div>
           <h4 class="cert-title" data-i18n="cert.dio_expert_title">Campus Expert & Bootcamps Corporativos</h4>
           <div class="cert-org" data-i18n="cert.dio_expert_org">Digital Innovation One (DIO)</div>
@@ -1530,7 +1530,7 @@
         <div class="cert-card">
           <div class="cert-badge-row">
             <span class="cert-issuer-badge">Cisco Networking Academy</span>
-            <span style="font-size:0.75rem; color:var(--text-muted);" data-i18n="cert.cisco_ds_badge">Data Science Badge</span>
+            <span class="cert-duration" data-i18n="cert.cisco_ds_badge">Data Science Badge</span>
           </div>
           <h4 class="cert-title" data-i18n="cert.cisco_ds_title">Introduction to Data Science</h4>
           <div class="cert-org">Cisco Networking Academy</div>
@@ -1554,20 +1554,20 @@
   </section>
 
   <!-- Contact & CV Downloads -->
-  <section class="section-padding" id="contact" style="background-color: var(--bg-tertiary);">
+  <section class="section-padding section-bg-alt" id="contact">
     <div class="container">
       <div class="contact-card">
         
         <div class="contact-info-col">
-          <span class="section-pill" style="align-self: flex-start;" data-i18n="contact.title">Entre em Contato</span>
-          <h2 style="font-size: 2rem; font-weight: 800; color: var(--text-primary); line-height: 1.2;" data-i18n="contact.headline">
+          <span class="section-pill" data-i18n="contact.title">Entre em Contato</span>
+          <h2 class="contact-headline" data-i18n="contact.headline">
             Vamos construir o futuro da tecnologia juntos.
           </h2>
-          <p style="font-size: 1rem; color: var(--text-secondary); line-height: 1.6;" data-i18n="contact.subtitle">
+          <p class="contact-subtitle" data-i18n="contact.subtitle">
             Aberto a oportunidades profissionais, contratação corporativa de soluções Sysotto e parcerias estratégicas.
           </p>
 
-          <div style="display:flex; flex-direction:column; gap: 1rem; margin-top: 1rem;">
+          <div class="contact-list">
             
             <div class="contact-item">
               <div class="contact-icon">
