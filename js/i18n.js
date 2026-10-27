@@ -178,7 +178,7 @@ const translations = {
     'sysotto.mock_food_item_two': '1x Risoto de parmesão',
     'sysotto.mock_food_note': '* Obs.: sem glúten / molho à parte',
     'sysotto.mock_server_one': 'Garçom: Carlos R.',
-    'sysotto.mock_printed': '🖨️ Comprovante impresso',
+    'sysotto.mock_printed': 'Comprovante impresso',
     'sysotto.mock_ticket_two': 'Mesa 12 · Comanda #1045',
     'sysotto.mock_ticket_ready': 'Pronto para entrega',
     'sysotto.mock_food_item_three': '2x Salmão grelhado com alcaparras',
@@ -239,7 +239,7 @@ const translations = {
     'projects.tab_sysotto': 'Sistemas Corporativos (Sysotto)',
     'projects.tab_hackathons': 'Simulações & Hackathons',
     'projects.tab_academic': 'Ciência da Computação & Fundamentos',
-    'projects.featured_flag': '★ Destaque Técnico',
+    'projects.featured_flag': 'Destaque Técnico',
     'projects.role_label': 'Contribuição de Otto:',
     
     // Project items
@@ -596,7 +596,7 @@ const translations = {
     'sysotto.mock_food_item_two': '1x Parmesan risotto',
     'sysotto.mock_food_note': '* Note: gluten-free / sauce on the side',
     'sysotto.mock_server_one': 'Server: Carlos R.',
-    'sysotto.mock_printed': '🖨️ Receipt printed',
+    'sysotto.mock_printed': 'Receipt printed',
     'sysotto.mock_ticket_two': 'Table 12 · Order #1045',
     'sysotto.mock_ticket_ready': 'Ready for delivery',
     'sysotto.mock_food_item_three': '2x Grilled salmon with capers',
@@ -657,7 +657,7 @@ const translations = {
     'projects.tab_sysotto': 'Enterprise Systems (Sysotto)',
     'projects.tab_hackathons': 'Simulations & Hackathons',
     'projects.tab_academic': 'Computer Science & Foundations',
-    'projects.featured_flag': '★ Technical Highlight',
+    'projects.featured_flag': 'Technical Highlight',
     'projects.role_label': 'Otto\'s Contribution:',
     
     // Project items

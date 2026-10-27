@@ -494,6 +494,11 @@ textarea:focus:not(:focus-visible),
   border-color: var(--border-focus);
 }
 
+.hero-floating-pill svg {
+  flex-shrink: 0;
+  color: var(--brand-primary);
+}
+
 .pill-top-right {
   top: -12px;
   right: -15px;
@@ -1295,6 +1300,17 @@ h3.diff-title {
   color: #94a3b8;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.mockup-printed-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.mockup-printed-badge svg {
+  flex-shrink: 0;
 }
 
 .mockup-kds-footer {
@@ -1391,6 +1407,13 @@ h3.diff-title {
 .terminal-log-success {
   color: #34d399;
   margin-bottom: 0.35rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.terminal-log-success svg {
+  flex-shrink: 0;
 }
 
 .terminal-log-warning {
@@ -1505,6 +1528,9 @@ h3.diff-title {
 }
 
 .project-featured-flag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
   font-size: 0.6875rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -1515,6 +1541,10 @@ h3.diff-title {
   color: var(--brand-primary);
   border: 1px solid rgba(14, 165, 233, 0.35);
   margin-left: auto;
+}
+
+.project-featured-flag svg {
+  flex-shrink: 0;
 }
 
 .project-github-link {
@@ -2189,6 +2219,10 @@ h3.diff-title {
   font-size: 0.8125rem;
   color: var(--text-muted);
   margin-top: 0.25rem;
+}
+
+.channel-location-note svg {
+  flex-shrink: 0;
 }
 
 /* Site Footer */
