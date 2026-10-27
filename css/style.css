@@ -556,12 +556,13 @@ textarea:focus:not(:focus-visible),
   line-height: 1.7;
 }
 
-.hero-actions {
+.hero-actions,
+.hero-cta-group {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.5rem;
 }
 
 .btn {
@@ -612,65 +613,6 @@ textarea:focus:not(:focus-visible),
   background: var(--brand-pill-bg);
   border-color: var(--brand-secondary);
   transform: translateY(-2px);
-}
-
-/* Hero Audience Pathways (Recruiters & Clients) */
-.hero-audience-paths {
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-  background-color: var(--bg-secondary);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 0.85rem 1.15rem;
-  margin-bottom: 1.25rem;
-  width: 100%;
-  max-width: 580px;
-  box-shadow: var(--shadow-sm);
-  transition: border-color var(--transition-fast), background-color var(--transition-fast);
-}
-
-.hero-audience-paths:hover {
-  border-color: var(--border-medium);
-}
-
-.audience-path-item {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-  font-size: 0.8125rem;
-  line-height: 1.4;
-}
-
-.audience-path-label {
-  color: var(--text-muted);
-  font-weight: 500;
-}
-
-.audience-path-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
-  color: var(--brand-primary);
-  font-weight: 600;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  transition: color var(--transition-fast), transform var(--transition-fast);
-}
-
-.audience-path-link:hover {
-  color: var(--brand-secondary);
-  transform: translateX(2px);
-}
-
-.audience-path-link svg {
-  flex-shrink: 0;
-  transition: transform var(--transition-fast);
-}
-
-.audience-path-link:hover svg {
-  transform: translateX(2px);
 }
 
 .hero-location-text {
@@ -2418,14 +2360,9 @@ h3.diff-title {
     align-items: center;
   }
 
-  .hero-actions {
+  .hero-actions,
+  .hero-cta-group {
     justify-content: center;
-  }
-
-  .hero-audience-paths {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
   }
 
   .hero-stats-grid {
@@ -2472,12 +2409,14 @@ h3.diff-title {
 }
 
 @media (max-width: 576px) {
-  .hero-actions {
+  .hero-actions,
+  .hero-cta-group {
     flex-direction: column;
     width: 100%;
   }
 
-  .hero-actions .btn {
+  .hero-actions .btn,
+  .hero-cta-group .btn {
     width: 100%;
     justify-content: center;
   }
