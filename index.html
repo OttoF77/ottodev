@@ -247,6 +247,32 @@
         <h2 class="section-title" data-i18n="about.subtitle">Solidez executiva corporativa integrada a rigor técnico em engenharia de software.</h2>
       </div>
 
+      <div class="executive-impact" aria-labelledby="executive-impact-title">
+        <h3 id="executive-impact-title" data-i18n="about.impact_title">Impacto executivo em números</h3>
+        <dl class="executive-impact-grid">
+          <div class="executive-impact-card">
+            <dt data-i18n="about.impact_gerdau_growth_desc">Crescimento no volume de vendas da filial Fortaleza.</dt>
+            <dd class="executive-impact-value" data-i18n="about.impact_gerdau_growth_value">&gt;30% a.a.</dd>
+            <dd class="executive-impact-context" data-i18n="about.impact_gerdau_context">Gerdau · Gerente de Unidade · 2004–2010</dd>
+          </div>
+          <div class="executive-impact-card">
+            <dt data-i18n="about.impact_sales_desc">Vendedores e representantes, mais um supervisor de vendas na força comercial acompanhada.</dt>
+            <dd class="executive-impact-value" data-i18n="about.impact_sales_value">12 + 1</dd>
+            <dd class="executive-impact-context" data-i18n="about.impact_gerdau_context">Gerdau · Gerente de Unidade · 2004–2010</dd>
+          </div>
+          <div class="executive-impact-card">
+            <dt data-i18n="about.impact_operations_desc">Colaboradores operacionais coordenados na logística da filial.</dt>
+            <dd class="executive-impact-value" data-i18n="about.impact_operations_value">Cerca de 15</dd>
+            <dd class="executive-impact-context" data-i18n="about.impact_gerdau_context">Gerdau · Gerente de Unidade · 2004–2010</dd>
+          </div>
+          <div class="executive-impact-card">
+            <dt data-i18n="about.impact_todeschini_desc">Crescimento nas vendas em um período de um ano.</dt>
+            <dd class="executive-impact-value" data-i18n="about.impact_todeschini_value">+150%</dd>
+            <dd class="executive-impact-context" data-i18n="about.impact_todeschini_context">Todeschini Manaus · Gerente de Vendas · 2002–2003</dd>
+          </div>
+        </dl>
+      </div>
+
       <div class="about-grid">
         <!-- Bio Narrative & Strategic Advantages -->
         <div class="about-card">
@@ -712,13 +738,13 @@
 
             <div class="system-status-box">
               <div class="status-entry" data-i18n="sysotto.site_problem" data-i18n-html="true">
-                <strong>Problema de Negócio:</strong> Criação rápida de catálogos e sites B2B sem depender de equipes de TI para cada alteração de layout.
+                <strong>Problema / Contexto:</strong> Criação rápida de catálogos e sites B2B sem depender de equipes de TI para cada alteração de layout.
               </div>
               <div class="status-entry" data-i18n="sysotto.site_role" data-i18n-html="true">
-                <strong>Arquitetura & Implementação (Otto Freitag):</strong> Motor de templates contextuais, pipeline de compressão e recorte de mídia em WebP (Sharp) e infraestrutura de componentes modulares.
+                <strong>Papel &amp; Decisões de Arquitetura:</strong> Motor de templates contextuais, pipeline de compressão e recorte de mídia em WebP (Sharp) e infraestrutura de componentes modulares.
               </div>
               <div class="status-entry" data-i18n="sysotto.site_functional" data-i18n-html="true">
-                <strong>Escopo arquitetural implementado:</strong> Editor contextual visual com presets profissionais pré-configurados, módulo de gestão e recorte dinâmico de mídias (WebP), Help Hub e componentes SSR otimizados.
+                <strong>Resultados &amp; Métricas Técnicas:</strong> Editor contextual visual com presets profissionais pré-configurados, módulo de gestão e recorte dinâmico de mídias (WebP), Help Hub e componentes SSR otimizados.
               </div>
             </div>
 
@@ -894,14 +920,20 @@
               <svg class="project-gh-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
             </a>
           </h3>
-          <div class="project-desc" data-i18n="proj.condotrack_desc" data-i18n-html="true">
-            <p><strong>Problema de Negócio:</strong> Filas e lentidão em portarias condominiais por liberação manual, extravios na custódia de encomendas e conflitos de agendamento em áreas comuns.</p>
-            <p><strong>Decisões Técnicas:</strong> Backend em Java 21 / Spring Boot 3 com validação de QR Code indexado via B-Tree (&lt;400ms), reservas com locks atômicos (HTTP 409 em concorrência), auditoria imutável via triggers e 114 testes automatizados em &lt;9s.</p>
-          </div>
-          <div class="project-role-note">
-            <strong data-i18n="projects.role_label">Contribuição de Otto:</strong>
-            <span data-i18n="proj.condotrack_role">Desenvolvido em equipe internacional (No Country S08-26 / Team 17). Atuação como Líder Técnico e principal engenheiro backend: arquitetura da API, modelagem relacional, C4 Model e suíte de testes.</span>
-          </div>
+          <dl class="case-summary">
+            <div class="case-summary-item">
+              <dt data-i18n="projects.case_0">Problema / Contexto</dt>
+              <dd data-i18n="proj.condotrack_case_0">Filas na portaria, extravios de encomendas e conflitos de reservas em condomínios.</dd>
+            </div>
+            <div class="case-summary-item">
+              <dt data-i18n="projects.case_1">Papel &amp; Decisões de Arquitetura</dt>
+              <dd data-i18n="proj.condotrack_case_1">Líder Técnico e principal engenheiro backend em equipe internacional: Java 21 / Spring Boot 3, modelagem relacional, locks atômicos e auditoria por triggers.</dd>
+            </div>
+            <div class="case-summary-item">
+              <dt data-i18n="projects.case_2">Resultados &amp; Métricas Técnicas</dt>
+              <dd data-i18n="proj.condotrack_case_2">Validação de QR Code via B-Tree em &lt;400ms; 114 testes automatizados em &lt;9s; HTTP 409 em reservas concorrentes.</dd>
+            </div>
+          </dl>
           <div class="project-tags">
             <span class="project-tag">Java 21</span>
             <span class="project-tag">Spring Boot 3</span>
@@ -937,14 +969,20 @@
               <svg class="project-gh-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
             </a>
           </h3>
-          <div class="project-desc" data-i18n="proj.sysotto_ind_desc" data-i18n-html="true">
-            <p><strong>Problema de Negócio:</strong> Rastreabilidade deficiente em estoques industriais de alto volume e perdas financeiras por alocação manual sem controle estrito de lotes perecíveis.</p>
-            <p><strong>Decisões Técnicas:</strong> Motor em C# .NET 10 / EF Core com alocação automática FEFO/FIFO/LIFO, geração de etiquetas QR Code GS1-128, endereçamento 3D de armazéns e isolamento lógico via PostgreSQL Row-Level Security (RLS).</p>
-          </div>
-          <div class="project-role-note">
-            <strong data-i18n="projects.role_label">Contribuição de Otto:</strong>
-            <span data-i18n="proj.sysotto_ind_role">Concepção autoral integral e arquitetura de software: modelagem do domínio industrial, implementação dos algoritmos de alocação de estoque e testes de conformidade.</span>
-          </div>
+          <dl class="case-summary">
+            <div class="case-summary-item">
+              <dt data-i18n="projects.case_0">Problema / Contexto</dt>
+              <dd data-i18n="proj.sysotto_ind_case_0">Rastreabilidade de estoques industriais e controle de lotes perecíveis.</dd>
+            </div>
+            <div class="case-summary-item">
+              <dt data-i18n="projects.case_1">Papel &amp; Decisões de Arquitetura</dt>
+              <dd data-i18n="proj.sysotto_ind_case_1">Concepção autoral e arquitetura do domínio industrial em C# .NET 10 / EF Core, com alocação FEFO/FIFO/LIFO e isolamento PostgreSQL RLS.</dd>
+            </div>
+            <div class="case-summary-item">
+              <dt data-i18n="projects.case_2">Resultados &amp; Métricas Técnicas</dt>
+              <dd data-i18n="proj.sysotto_ind_case_2">Escopo técnico: etiquetas GS1-128 e endereçamento 3D de armazéns. Showcase em preparação; sem métricas de produção publicadas.</dd>
+            </div>
+          </dl>
           <div class="project-tags">
             <span class="project-tag">C# .NET 10</span>
             <span class="project-tag">PostgreSQL 17</span>
@@ -975,14 +1013,20 @@
               <svg class="project-gh-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
             </a>
           </h3>
-          <div class="project-desc" data-i18n="proj.c_ds_desc" data-i18n-html="true">
-            <p><strong>Problema Computacional:</strong> Dependência de abstrações de alto nível sem domínio de alocação de memória na heap, aritmética de ponteiros e custo assintótico de algoritmos essenciais.</p>
-            <p><strong>Decisões Técnicas:</strong> Implementação estrita em ANSI C de listas ligadas, pilhas, filas e árvores binárias de busca; desalocação com verificação de ponteiros nulos (zero memory leaks) e análise assintótica Big-O documentada.</p>
-          </div>
-          <div class="project-role-note">
-            <strong data-i18n="projects.role_label">Contribuição de Otto:</strong>
-            <span data-i18n="proj.c_ds_role">Desenvolvimento autoral integral focado em rigor de Ciência da Computação, gerenciamento manual de memória e testes de integridade estrutural.</span>
-          </div>
+          <dl class="case-summary">
+            <div class="case-summary-item">
+              <dt data-i18n="projects.case_0">Problema / Contexto</dt>
+              <dd data-i18n="proj.c_ds_case_0">Compreender alocação de memória, ponteiros e custo assintótico de algoritmos.</dd>
+            </div>
+            <div class="case-summary-item">
+              <dt data-i18n="projects.case_1">Papel &amp; Decisões de Arquitetura</dt>
+              <dd data-i18n="proj.c_ds_case_1">Desenvolvimento autoral em ANSI C de listas ligadas, pilhas, filas e árvores binárias, com gerenciamento manual de memória.</dd>
+            </div>
+            <div class="case-summary-item">
+              <dt data-i18n="projects.case_2">Resultados &amp; Métricas Técnicas</dt>
+              <dd data-i18n="proj.c_ds_case_2">Estruturas implementadas e análise Big-O documentada; verificação de ponteiros nulos na desalocação.</dd>
+            </div>
+          </dl>
           <div class="project-tags">
             <span class="project-tag">Linguagem C</span>
             <span class="project-tag">Ponteiros & Heap</span>
@@ -1040,13 +1084,20 @@
               <svg class="project-gh-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
             </a>
           </h3>
-          <p class="project-desc" data-i18n="proj.techmind_desc">
-            Solução de classificação inteligente unindo microsserviço backend em Java / Spring Boot e inferência de Machine Learning (NLP) em Python / FastAPI, com esteira de deploy e persistência na Oracle Cloud Infrastructure (OCI).
-          </p>
-          <div class="project-role-note">
-            <strong data-i18n="projects.role_label">Contribuição de Otto:</strong>
-            <span data-i18n="proj.techmind_role">Projeto em equipe desenvolvido no Hackathon ONE. Contribuição na integração entre backend Java 17, API de ML em Python/FastAPI e deploy na Oracle Cloud.</span>
-          </div>
+          <dl class="case-summary">
+            <div class="case-summary-item">
+              <dt data-i18n="projects.case_0">Problema / Contexto</dt>
+              <dd data-i18n="proj.techmind_case_0">Classificação inteligente de textos com inferência de Machine Learning (NLP).</dd>
+            </div>
+            <div class="case-summary-item">
+              <dt data-i18n="projects.case_1">Papel &amp; Decisões de Arquitetura</dt>
+              <dd data-i18n="proj.techmind_case_1">Contribuição em equipe no Hackathon ONE: integração do backend Java 17 / Spring Boot com a API de ML em Python / FastAPI e deploy na Oracle Cloud.</dd>
+            </div>
+            <div class="case-summary-item">
+              <dt data-i18n="projects.case_2">Resultados &amp; Métricas Técnicas</dt>
+              <dd data-i18n="proj.techmind_case_2">Integração entre os serviços de classificação e deploy em Oracle Cloud Infrastructure (OCI); sem métricas quantitativas publicadas.</dd>
+            </div>
+          </dl>
           <div class="project-tags">
             <span class="project-tag">Java 17</span>
             <span class="project-tag">Spring Boot 3</span>
