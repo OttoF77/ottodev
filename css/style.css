@@ -2545,6 +2545,7 @@ h3.diff-title {
 .executive-impact-card dt { color: var(--text-secondary); line-height: 1.6; }
 .executive-impact-card dd { margin: 0; }
 .executive-impact-value {
+  overflow-wrap: anywhere;
   order: -1;
   color: var(--brand-primary);
   font-size: 2rem;
