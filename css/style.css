@@ -2559,3 +2559,13 @@ h3.diff-title {
   line-height: 1.6;
   padding-top: 0.75rem;
 }
+
+/* Keep the Metalmecânica Maia headline within its card. */
+.executive-impact-value.executive-impact-value-compact {
+  font-size: 1.5rem;
+  line-height: 1.35;
+  min-width: 0;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
