@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en-US" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Otto David de Santana Freitag | Executive Leadership &amp; Software Engineering</title>
+  <meta name="description" content="Executive portfolio of Otto David de Santana Freitag: 20+ years of executive leadership in major corporations (Gerdau, CSN, Servisan), Solutions Architect and founder of Sysotto Softwares.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#090d16">
+  <link rel="canonical" href="https://ottof77.github.io/ottodev/en/">
+  <link rel="alternate" hreflang="pt-BR" href="https://ottof77.github.io/ottodev/">
+  <link rel="alternate" hreflang="en-US" href="https://ottof77.github.io/ottodev/en/">
+  <link rel="alternate" hreflang="x-default" href="https://ottof77.github.io/ottodev/">
+
+  <!-- Anti-FOUC Theme Initialization (Modern Web Guidance) -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('otto_portfolio_theme');
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = (savedTheme === 'dark' || savedTheme === 'light') ? savedTheme : (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+      document.documentElement.style.colorScheme = theme;
+      const meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute('content', theme === 'dark' ? '#090d16' : '#fcfbf9');
+    })();
+  </script>
+
+  <!-- Personal Favicon (Monogram OF) -->
+  <link rel="icon" type="image/svg+xml" href="../assets/images/monogram-of.svg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Open Graph / Social Media Metadata (Verified Local Assets) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Otto David de Santana Freitag | Executive Leadership &amp; Software Engineering">
+  <meta property="og:description" content="Executive portfolio of Otto David de Santana Freitag: 20+ years of executive leadership in major corporations (Gerdau, CSN, Servisan), Solutions Architect and founder of Sysotto Softwares.">
+  <meta property="og:url" content="https://ottof77.github.io/ottodev/en/">
+  <meta property="og:image" content="https://ottof77.github.io/ottodev/assets/images/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:alt" content="Executive card of Otto Freitag">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="pt_BR">
+
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Otto David de Santana Freitag | Executive Leadership &amp; Software Engineering">
+  <meta name="twitter:description" content="Executive portfolio of Otto David de Santana Freitag: 20+ years of executive leadership in major corporations (Gerdau, CSN, Servisan), Solutions Architect and founder of Sysotto Softwares.">
+  <meta name="twitter:image" content="https://ottof77.github.io/ottodev/assets/images/og-cover.jpg">
+  <meta name="twitter:image:alt" content="Executive card of Otto Freitag">
+
+  <!-- Structured Data (Schema.org / JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "name": "Otto David de Santana Freitag",
+        "jobTitle": "CEO & Software Engineer",
+        "url": "https://ottof77.github.io/ottodev/",
+        "image": "https://ottof77.github.io/ottodev/assets/images/otto-freitag.jpg",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Sysotto Softwares"
+        },
+        "alumniOf": [
+          {
+            "@type": "EducationalOrganization",
+            "name": "FGV (MBA em Gestão Empresarial)"
+          },
+          {
+            "@type": "EducationalOrganization",
+            "name": "UNIFBV / Wyden (Engenharia de Software)"
+          },
+          {
+            "@type": "EducationalOrganization",
+            "name": "UNIFOR (Turismo)"
+          }
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/otto-freitag-60912031",
+          "https://github.com/OttoF77"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "name": "Otto Freitag — Professional Portfolio",
+        "url": "https://ottof77.github.io/ottodev/en/",
+        "inLanguage": [
+          "en-US",
+          "pt-BR"
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link" data-i18n="nav.skip_to_content">Skip to main content</a>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-wrapper" aria-label="Otto Freitag - Home" data-i18n-aria-label="nav.brand_aria">
+        <img src="../assets/images/monogram-of.svg" alt="Otto Freitag monogram" data-i18n-alt="brand.monogram_alt" width="40" height="40" class="brand-logo-img">
+        <span class="brand-name">Otto Freitag</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav aria-label="Main Navigation" class="site-nav" data-i18n-aria-label="nav.primary_label">
+        <ul class="nav-links" id="primary-nav-list">
+          <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="#sysotto" class="nav-link" data-i18n="nav.sysotto">Case Sysotto</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+          <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Tech Stack</a></li>
+          <li><a href="#education" class="nav-link" data-i18n="nav.education">Education</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+          <li class="mobile-cv-item"><a href="../assets/docs/cv-otto-freitag-en-us.pdf" download="CV-Otto-David-Freitag-EN-US.pdf" data-dynamic-cv class="nav-link" data-i18n="nav.cv">Resume (PDF)</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Controls (Language + Theme + Mobile Menu) -->
+      <div class="nav-actions">
+        <!-- Direct CV Download in Navbar -->
+        <a href="../assets/docs/cv-otto-freitag-en-us.pdf" download="CV-Otto-David-Freitag-EN-US.pdf" data-dynamic-cv class="action-btn nav-cv-btn" data-i18n-aria-label="Download the resume as a PDF">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span data-i18n="nav.cv">Resume (PDF)</span>
+        </a>
+
+        <!-- Language Switcher -->
+        <button class="action-btn" data-action="toggle-lang" aria-label="Switch language to Portuguese (PT)" title="Switch to Portuguese">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          <span class="lang-current-text">EN</span>
+          <span class="lang-badge">US</span>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button class="action-btn" data-action="toggle-theme" aria-label="Alternar tema de cores" title="Modo Claro / Escuro">
+          <!-- Sun icon (for dark mode) -->
+          <svg class="theme-icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <!-- Moon icon (for light mode) -->
+          <svg class="theme-icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-nav-list">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-backdrop-glow"></div>
+    <div class="container">
+      
+      <div class="hero-grid-2col">
+        <!-- Left: Narrative & Actions -->
+        <div class="hero-text-col">
+          <div class="hero-badge-pill">
+            <span class="pulse-dot"></span>
+            <span data-i18n="hero.badge">Solutions Architect · Software Engineer · Sysotto Founder</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span data-i18n="hero.title_start">Software engineering and</span>
+            <span class="hero-highlight" data-i18n="hero.title_highlight">solutions architecture</span>
+            <span data-i18n="hero.title_end">backed by 20+ years of executive leadership.</span>
+          </h1>
+
+          <p class="hero-subtitle" data-i18n="hero.subtitle">Over 20 years of executive leadership across major corporate and industrial operations (Gerdau, CSN, Servisan) integrated with mission-critical software engineering. As a Software Engineer and Solutions Architect, I combine strategic business acumen, team leadership, and rigorous engineering to build distributed, scalable, and highly reliable systems.</p>
+
+          <div class="hero-actions hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              <span data-i18n="hero.cta_projects">View Projects &amp; Cases</span>
+            </a>
+            <a href="../assets/docs/cv-otto-freitag-en-us.pdf" download="CV-Otto-David-Freitag-EN-US.pdf" data-dynamic-cv class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span data-i18n="hero.cta_cv">Download Resume (PDF)</span>
+            </a>
+          </div>
+
+          <div class="hero-location-text">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span data-i18n="hero.location">Piauí, Brazil · Available for remote work</span>
+          </div>
+        </div>
+
+        <!-- Right: Executive Photo & Status Pills -->
+        <div class="hero-photo-col">
+          <div class="hero-photo-container">
+            <div class="hero-floating-pill pill-top-right">
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="22" x2="21" y2="22"></line><line x1="6" y1="18" x2="6" y2="11"></line><line x1="10" y1="18" x2="10" y2="11"></line><line x1="14" y1="18" x2="14" y2="11"></line><line x1="18" y1="18" x2="18" y2="11"></line><polygon points="12 2 20 7 4 7"></polygon></svg>
+              <span data-i18n="hero.pill_experience">20+ Years in Executive Leadership</span>
+            </div>
+
+            <div class="hero-photo-frame">
+              <picture>
+                <source srcset="assets/images/otto-freitag.avif" type="image/avif">
+                <source srcset="assets/images/otto-freitag.webp" type="image/webp">
+                <img src="../assets/images/otto-freitag.jpg" alt="Otto David de Santana Freitag - Professional Portrait" data-i18n-alt="hero.photo_alt" width="800" height="800" class="hero-photo-img" loading="eager" fetchpriority="high" decoding="async">
+              </picture>
+            </div>
+
+            <div class="hero-floating-pill pill-bottom-left">
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              <span data-i18n="hero.pill_role">Solutions Architect &amp; Engineer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Statistics Bar -->
+      <div class="hero-stats-grid">
+        <div class="stat-item">
+          <div class="stat-value" data-i18n="hero.stat_experience">20+ Years</div>
+          <div class="stat-label" data-i18n="hero.stat_experience_desc">Executive leadership &amp; business growth</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" data-i18n="hero.stat_academic">Software Eng.</div>
+          <div class="stat-label" data-i18n="hero.stat_academic_desc">UNIFBV/Wyden + FGV MBA</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" data-i18n="hero.stat_sysotto">Solutions Engineering</div>
+          <div class="stat-label" data-i18n="hero.stat_sysotto_desc">Sysotto Founder &amp; SaaS Architect</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Featured Projects & Repositories (OttoF77 GitHub) -->
+  <section class="section-padding" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill" data-i18n="projects.title">Featured Projects &amp; Repositories</span>
+        <h2 class="section-title" data-i18n="projects.section_heading">Software Engineering in Practice</h2>
+        <p class="section-subtitle" data-i18n="projects.subtitle">Curated open-source repositories from GitHub (OttoF77) highlighting computer science foundations, microservices, AI, and full-stack software development.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="projects-filter-bar" role="group" aria-label="Filter projects by category" data-i18n-aria-label="projects.filter_label">
+        <button class="filter-btn active" data-filter="all" aria-pressed="true" data-i18n="projects.tab_all">All Projects</button>
+        <button class="filter-btn" data-filter="sysotto" aria-pressed="false" data-i18n="projects.tab_sysotto">Enterprise Systems (Sysotto)</button>
+        <button class="filter-btn" data-filter="hackathon" aria-pressed="false" data-i18n="projects.tab_hackathons">Simulations &amp; Hackathons</button>
+        <button class="filter-btn" data-filter="academic" aria-pressed="false" data-i18n="projects.tab_academic">Computer Science &amp; Foundations</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        
+        <!-- CARD 1 (Featured #1): CondoTrack (No Country Simulation) -->
+        <div class="project-card featured-case" data-category="hackathon">
+          <div class="project-card-header">
+            <span class="project-cat-badge" data-i18n="proj.condotrack_badge">No Country · Simulation S08</span>
+            <span class="project-featured-flag">
+              <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <span data-i18n="projects.featured_flag">Technical Highlight</span>
+            </span>
+          </div>
+          <h3 class="project-title">
+            <a href="https://github.com/No-Country-simulation/S08-26-equipo-17" target="_blank" rel="noopener" class="project-repo-link" data-i18n-aria-label="View the project repository on GitHub">
+              <span data-i18n="proj.condotrack_title">CondoTrack — 360° Operations Platform</span>
+              <svg class="project-gh-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </h3>
+          <dl class="case-summary">
+            <div class="case-summary-item">
+              <dt data-i18n="projects.case_0">Problem / Context</dt>
+              <dd data-i18n="proj.condotrack_case_0">Gate check-in queues, lost parcels, and conflicting condo amenity bookings.</dd>
+            </div>
+            <div class="case-summary-item">
+              <dt data-i18n="projects.case_1">Role &amp; Architecture Decisions</dt>
+              <dd data-i18n="proj.condotrack_case_1">Tech Lead and primary backend engineer on an international team: Java 21 / Spring Boot 3, relational modeling, atomic locks, and trigger-based auditing.</dd>
+            </div>
+            <div class="case-summary-item">
+              <dt data-i18n="projects.case_2">Results &amp; Technical Metrics</dt>
+              <dd data-i18n="proj.condotrack_case_2">B-Tree QR validation in &lt;400ms; 114 automated tests in &lt;9s; HTTP 409 for concurrent reservation conflicts.</dd>
+            </div>
+          </dl>
+          <div class="project-tags">
+            <span class="project-tag">Java 21</span>
+            <span class="project-tag">Spring Boot 3</span>
+            <span class="project-tag">Next.js 14</span>
+            <span class="project-tag">TypeScript</span>
+            <span class="project-tag">PostgreSQL 16</span>
+            <span class="project-tag">Docker</span>
+          </div>
+          <div class="project-action-row">
+            <a href="https://youtu.be/hsFRhAHKpkE" target="_blank" rel="noopener" class="project-video-btn" data-video-id="hsFRhAHKpkE" data-video-title-key="proj.condotrack_video_title" data-i18n-aria-label="Watch the project demonstration on YouTube">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              <span data-i18n="proj.condotrack_video_btn">Watch Demonstration (YouTube)</span>
+            </a>
+            <a href="https://github.com/No-Country-simulation/S08-26-equipo-17" target="_blank" rel="noopener" class="project-btn-link" data-i18n-aria-label="View the project repository on GitHub">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span data-i18n="proj.btn_view_repo">View GitHub Repository</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 2 (Featured #2): Sysotto ERP / Industry Suite -->
+        <div class="project-card featured-case" data-category="sysotto">
+          <div class="project-card-header">
+            <span class="project-cat-badge" data-i18n="proj.sysotto_ind_badge">Sysotto · In Preparation (Showcase)</span>
+            <span class="project-featured-flag">
+              <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <span data-i18n="projects.featured_flag">Technical Highlight</span>
+            </span>
+          </div>
+          <h3 class="project-title">
+            <a href="https://github.com/OttoF77/Sysotto.Inventory.Showcase" target="_blank" rel="noopener" class="project-repo-link" data-i18n-aria-label="View the project showcase on GitHub">
+              <span data-i18n="proj.sysotto_ind_title">Sysotto ERP / Industry Suite</span>
+              <svg class="project-gh-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </h3>
+          <dl class="case-summary">
+            <div class="case-summary-item">
+              <dt data-i18n="projects.case_0">Problem / Context</dt>
+              <dd data-i18n="proj.sysotto_ind_case_0">Industrial inventory traceability and perishable lot control.</dd>
+            </div>
+            <div class="case-summary-item">
+              <dt data-i18n="projects.case_1">Role &amp; Architecture Decisions</dt>
+              <dd data-i18n="proj.sysotto_ind_case_1">Sole author and industrial domain architect using C# .NET 10 / EF Core, FEFO/FIFO/LIFO allocation, and PostgreSQL RLS isolation.</dd>
+            </div>
+            <div class="case-summary-item">
+              <dt data-i18n="projects.case_2">Results &amp; Technical Metrics</dt>
+              <dd data-i18n="proj.sysotto_ind_case_2">Technical scope: GS1-128 labels and 3D warehouse addressing. Showcase in preparation; no published production metrics.</dd>
+            </div>
+          </dl>
+          <div class="project-tags">
+            <span class="project-tag">C# .NET 10</span>
+            <span class="project-tag">PostgreSQL 17</span>
+            <span class="project-tag">EF Core 10</span>
+            <span class="project-tag">GS1-128</span>
+            <span class="project-tag">Docker</span>
+          </div>
+          <div class="project-action-row">
+            <a href="https://github.com/OttoF77/Sysotto.Inventory.Showcase" target="_blank" rel="noopener" class="project-btn-link" data-i18n-aria-label="View the project showcase on GitHub">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span data-i18n="proj.btn_view_showcase">View GitHub Showcase</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 3 (Featured #3): C Data Structures (Academic Impact) -->
+        <div class="project-card featured-case" data-category="academic">
+          <div class="project-card-header">
+            <span class="project-cat-badge" data-i18n="proj.c_ds_badge">Computer Science</span>
+            <span class="project-featured-flag">
+              <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <span data-i18n="projects.featured_flag">Technical Highlight</span>
+            </span>
+          </div>
+          <h3 class="project-title">
+            <a href="https://github.com/OttoF77/estruturas-de-dados-em-C" target="_blank" rel="noopener" class="project-repo-link" data-i18n-aria-label="View the project repository on GitHub">
+              <span data-i18n="proj.c_ds_title">Data Structures in C</span>
+              <svg class="project-gh-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </h3>
+          <dl class="case-summary">
+            <div class="case-summary-item">
+              <dt data-i18n="projects.case_0">Problem / Context</dt>
+              <dd data-i18n="proj.c_ds_case_0">Understand memory allocation, pointers, and asymptotic algorithm costs.</dd>
+            </div>
+            <div class="case-summary-item">
+              <dt data-i18n="projects.case_1">Role &amp; Architecture Decisions</dt>
+              <dd data-i18n="proj.c_ds_case_1">Sole author of ANSI C linked lists, stacks, queues, and binary search trees with manual memory management.</dd>
+            </div>
+            <div class="case-summary-item">
+              <dt data-i18n="projects.case_2">Results &amp; Technical Metrics</dt>
+              <dd data-i18n="proj.c_ds_case_2">Implemented data structures and documented Big-O analysis; null-pointer checks during deallocation.</dd>
+            </div>
+          </dl>
+          <div class="project-tags">
+            <span class="project-tag">Linguagem C</span>
+            <span class="project-tag">Ponteiros & Heap</span>
+            <span class="project-tag">Árvores Binárias</span>
+            <span class="project-tag">Algoritmos</span>
+          </div>
+          <div class="project-action-row">
+            <a href="https://github.com/OttoF77/estruturas-de-dados-em-C" target="_blank" rel="noopener" class="project-btn-link" data-i18n-aria-label="View the project repository on GitHub">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span data-i18n="proj.btn_view_repo">View GitHub Repository</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 4: Sysotto FoodService & Desktop Printing Agent -->
+        <div class="project-card" data-category="sysotto">
+          <div class="project-card-header">
+            <span class="project-cat-badge" data-i18n="proj.sysotto_food_badge">Sysotto · In Preparation</span>
+          </div>
+          <h3 class="project-title">
+            <a href="https://github.com/OttoF77/Sysotto.Routing.Showcase" target="_blank" rel="noopener" class="project-repo-link" data-i18n-aria-label="View the project showcase on GitHub">
+              <span data-i18n="proj.sysotto_food_title">Sysotto FoodService &amp; Printing Agent</span>
+              <svg class="project-gh-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </h3>
+          <p class="project-desc" data-i18n="proj.sysotto_food_desc">Operational restaurant suite with real-time Kitchen Display System (KDS), table/tab management, and autonomous .NET 10 native desktop agent for direct ESC/POS thermal printing.</p>
+          <div class="project-role-note">
+            <strong data-i18n="projects.role_label">Otto's Contribution:</strong>
+            <span data-i18n="proj.sysotto_food_role">Architecture of the SignalR event-driven order stream and authorial development of the .NET 10 desktop agent for driverless ESC/POS printing.</span>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Next.js App Router</span>
+            <span class="project-tag">.NET 10 Desktop Agent</span>
+            <span class="project-tag">SignalR</span>
+            <span class="project-tag">ESC/POS</span>
+          </div>
+          <div class="project-action-row">
+            <a href="https://github.com/OttoF77/Sysotto.Routing.Showcase" target="_blank" rel="noopener" class="project-btn-link" data-i18n-aria-label="View the project showcase on GitHub">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span data-i18n="proj.btn_view_showcase">View GitHub Showcase</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 5: TechMind (Hackathon ONE) -->
+        <div class="project-card" data-category="hackathon">
+          <div class="project-card-header">
+            <span class="project-cat-badge" data-i18n="proj.techmind_badge">Hackathon ONE · Oracle + Alura</span>
+          </div>
+          <h3 class="project-title">
+            <a href="https://github.com/No-Country-simulation/G9-BR-Team-13" target="_blank" rel="noopener" class="project-repo-link" data-i18n-aria-label="View the project repository on GitHub">
+              <span data-i18n="proj.techmind_title">TechMind — AI Classifier &amp; OCI</span>
+              <svg class="project-gh-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </h3>
+          <dl class="case-summary">
+            <div class="case-summary-item">
+              <dt data-i18n="projects.case_0">Problem / Context</dt>
+              <dd data-i18n="proj.techmind_case_0">Intelligent text classification using Machine Learning (NLP) inference.</dd>
+            </div>
+            <div class="case-summary-item">
+              <dt data-i18n="projects.case_1">Role &amp; Architecture Decisions</dt>
+              <dd data-i18n="proj.techmind_case_1">Hackathon ONE team contribution: integrated the Java 17 / Spring Boot backend with the Python / FastAPI ML API and deployed to Oracle Cloud.</dd>
+            </div>
+            <div class="case-summary-item">
+              <dt data-i18n="projects.case_2">Results &amp; Technical Metrics</dt>
+              <dd data-i18n="proj.techmind_case_2">Classification service integration and deployment on Oracle Cloud Infrastructure (OCI); no published quantitative metrics.</dd>
+            </div>
+          </dl>
+          <div class="project-tags">
+            <span class="project-tag">Java 17</span>
+            <span class="project-tag">Spring Boot 3</span>
+            <span class="project-tag">Python FastAPI</span>
+            <span class="project-tag">Scikit-Learn</span>
+            <span class="project-tag">React 19</span>
+            <span class="project-tag">Oracle Cloud (OCI)</span>
+            <span class="project-tag">Docker</span>
+          </div>
+          <div class="project-action-row">
+            <a href="https://github.com/No-Country-simulation/G9-BR-Team-13" target="_blank" rel="noopener" class="project-btn-link" data-i18n-aria-label="View the project repository on GitHub">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span data-i18n="proj.btn_view_repo">View GitHub Repository</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 6: E-Commerce Microservices (.NET C#) -->
+        <div class="project-card" data-category="academic">
+          <div class="project-card-header">
+            <span class="project-cat-badge" data-i18n="proj.microservices_badge">Distributed .NET Architecture</span>
+          </div>
+          <h3 class="project-title">
+            <a href="https://github.com/OttoF77/ecommerce-microservices" target="_blank" rel="noopener" class="project-repo-link" data-i18n-aria-label="View the project repository on GitHub">
+              <span data-i18n="proj.microservices_title">E-Commerce Microservices</span>
+              <svg class="project-gh-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </h3>
+          <p class="project-desc" data-i18n="proj.microservices_desc">Distributed microservices architecture in C# / .NET, covering product catalog, shopping cart, order orchestration, asynchronous RabbitMQ messaging, and resilience patterns.</p>
+          <div class="project-role-note">
+            <strong data-i18n="projects.role_label">Otto's Contribution:</strong>
+            <span data-i18n="proj.microservices_role">Individual laboratory exploring event-driven messaging, Polly resilience policies, Docker Compose orchestration, and database-per-service isolation.</span>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">C# .NET</span>
+            <span class="project-tag">Microservices</span>
+            <span class="project-tag">RabbitMQ</span>
+            <span class="project-tag">Docker</span>
+          </div>
+          <div class="project-action-row">
+            <a href="https://github.com/OttoF77/ecommerce-microservices" target="_blank" rel="noopener" class="project-btn-link" data-i18n-aria-label="View the project repository on GitHub">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span data-i18n="proj.btn_view_repo">View GitHub Repository</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 7: LiterAlura & Challenge Backend ONE -->
+        <div class="project-card" data-category="academic">
+          <div class="project-card-header">
+            <span class="project-cat-badge" data-i18n="proj.literalura_badge">Java 17 &amp; Spring Boot</span>
+          </div>
+          <h3 class="project-title">
+            <a href="https://github.com/OttoF77/challenge-literalura" target="_blank" rel="noopener" class="project-repo-link" data-i18n-aria-label="View the project repository on GitHub">
+              <span data-i18n="proj.literalura_title">LiterAlura &amp; ONE Backend Challenge</span>
+              <svg class="project-gh-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </h3>
+          <p class="project-desc" data-i18n="proj.literalura_desc">Java 17 and Spring Boot 3 application developed for the Oracle Next Education program. Consumes the public Gutendex API, processes nested JSON via Jackson, and executes relational queries in PostgreSQL with Spring Data JPA.</p>
+          <div class="project-role-note">
+            <strong data-i18n="projects.role_label">Otto's Contribution:</strong>
+            <span data-i18n="proj.literalura_role">Complete individual implementation of the backend challenge: JPA entity modeling, external REST API integration, and custom JPQL queries.</span>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Java 17</span>
+            <span class="project-tag">Spring Boot 3</span>
+            <span class="project-tag">Spring Data JPA</span>
+            <span class="project-tag">PostgreSQL</span>
+          </div>
+          <div class="project-action-row">
+            <a href="https://github.com/OttoF77/challenge-literalura" target="_blank" rel="noopener" class="project-btn-link" data-i18n-aria-label="View the project repository on GitHub">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span data-i18n="proj.btn_view_repo">View GitHub Repository</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CARD 8: Intelligent Email Classifier -->
+        <div class="project-card" data-category="academic">
+          <div class="project-card-header">
+            <span class="project-cat-badge" data-i18n="proj.email_ai_badge">Python &amp; NLP</span>
+          </div>
+          <h3 class="project-title">
+            <a href="https://github.com/OttoF77/email-classifier" target="_blank" rel="noopener" class="project-repo-link" data-i18n-aria-label="View the project repository on GitHub">
+              <span data-i18n="proj.email_ai_title">Intelligent Email Classifier</span>
+              <svg class="project-gh-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+          </h3>
+          <p class="project-desc" data-i18n="proj.email_ai_desc">Python solution applying Natural Language Processing (NLP) and supervised learning for corporate mailbox triage, sentiment analysis, and ticket classification.</p>
+          <div class="project-role-note">
+            <strong data-i18n="projects.role_label">Otto's Contribution:</strong>
+            <span data-i18n="proj.email_ai_role">Authorial implementation applying text preprocessing (TF-IDF vectorization) and Scikit-Learn classification pipelines for automated email triage.</span>
+          </div>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">NLP</span>
+            <span class="project-tag">Scikit-learn</span>
+            <span class="project-tag">Automação</span>
+          </div>
+          <div class="project-action-row">
+            <a href="https://github.com/OttoF77/email-classifier" target="_blank" rel="noopener" class="project-btn-link" data-i18n-aria-label="View the project repository on GitHub">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span data-i18n="proj.btn_view_repo">View GitHub Repository</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sysotto Softwares & Real-World Systems Showcase -->
+  <section class="section-padding section-bg-alt" id="sysotto">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-pill" data-i18n="sysotto.pill">Systems Architecture &amp; Engineering</span>
+        <h2 class="section-title" data-i18n="sysotto.title">Sysotto Case: Engineering &amp; SaaS Platforms</h2>
+        <p class="section-subtitle" data-i18n="sysotto.subtitle">Modular platforms designed and architected by Otto David de Santana Freitag, demonstrating enterprise patterns, rich domain logic, and multi-tenant isolation.</p>
+      </div>
+
+      <!-- Sysotto Header Banner -->
+      <div class="sysotto-hero-banner">
+        <div class="sysotto-header-flex">
+          <div class="sysotto-branding-block">
+            <svg width="48" height="48" viewBox="0 0 70 70">
+              <rect width="70" height="70" rx="18" fill="var(--brand-primary)"/>
+              <path d="M52 20 C52 12, 18 12, 18 22 C18 32, 52 32, 52 42 C52 52, 18 52, 18 42" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+            <div>
+              <h3 class="sysotto-company-name" data-i18n="sysotto.company_name">Sysotto Softwares</h3>
+              <span class="sysotto-company-tagline" data-i18n="sysotto.company_tagline">Multi-Tenant SaaS Ecosystem &amp; Enterprise Engineering</span>
+            </div>
+          </div>
+          <div class="sysotto-role-wrapper">
+            <span class="mock-badge badge-fifo sysotto-role-badge" data-i18n="sysotto.role_badge">Otto Freitag — Founding Architect &amp; Principal Engineer</span>
+          </div>
+        </div>
+        <p class="sysotto-lead-text" data-i18n="sysotto.lead">Founded and architected by Otto David de Santana Freitag, Sysotto Softwares develops enterprise platforms for mission-critical operations, inventory governance, and web presence. Sysotto Sites is online and operational, while the Industry and FoodService solutions are in final technical preparation.</p>
+      </div>
+
+      <!-- Navigation Tabs between Sysotto Systems -->
+      <div class="sysotto-tabs-nav" role="tablist" aria-label="Sysotto Platforms and Modules" data-i18n-aria-label="sysotto.tabs_label">
+        <button class="sysotto-tab-btn active" data-target="preview-sitebuilder" role="tab" id="tab-sitebuilder" aria-selected="true" aria-controls="preview-sitebuilder">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+          <span data-i18n="sysotto.tab_sites">Sysotto Sites</span>
+        </button>
+        <button class="sysotto-tab-btn" data-target="preview-core" role="tab" id="tab-core" aria-selected="false" aria-controls="preview-core">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          <span data-i18n="sysotto.tab_core">Multi-Tenant Core</span>
+        </button>
+        <button class="sysotto-tab-btn" data-target="preview-industry" role="tab" id="tab-industry" aria-selected="false" aria-controls="preview-industry">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path></svg>
+          <span data-i18n="sysotto.tab_ind">Sysotto Industry</span>
+        </button>
+        <button class="sysotto-tab-btn" data-target="preview-foodservice" role="tab" id="tab-foodservice" aria-selected="false" aria-controls="preview-foodservice">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+          <span data-i18n="sysotto.tab_food">Sysotto FoodService</span>
+        </button>
+      </div>
+
+      <!-- PANEL 3: Sysotto Sites -->
+      <div class="preview-panel active" id="preview-sitebuilder" role="tabpanel" aria-labelledby="tab-sitebuilder" tabindex="0">
+        <div class="system-card">
+          <div class="system-info-col">
+            <div class="system-title-row">
+              <h3 class="system-title" data-i18n="sysotto.site_title">Sysotto Sites — Web Platform &amp; CMS</h3>
+              <span class="system-status-badge badge-online" data-i18n="sysotto.status_sites_online">● Online &amp; Operational</span>
+            </div>
+            <p class="system-description" data-i18n="sysotto.site_desc">Web platform for dynamic creation, publishing, and hosting of landing pages and B2B catalogs with optimized rendering.</p>
+
+            <div class="system-status-box">
+              <div class="status-entry" data-i18n="sysotto.site_problem" data-i18n-html="true"><strong>Problem / Context:</strong> High cost and slow turnaround for businesses maintaining marketing sites and B2B product catalogs without engineering dependency.</div>
+              <div class="status-entry" data-i18n="sysotto.site_role" data-i18n-html="true"><strong>Role & Architecture Decisions:</strong> Contextual layout builder engine, media processing pipeline with on-the-fly WebP compression (Sharp), and modular component architecture.</div>
+              <div class="status-entry" data-i18n="sysotto.site_functional" data-i18n-html="true"><strong>Results & Technical Metrics:</strong> Visual contextual builder with pre-configured professional presets, media management with dynamic WebP resizing, Help Hub, and SSR-optimized components.</div>
+            </div>
+
+            <div class="system-status-box upcoming-focus">
+              <div class="status-entry" data-i18n="sysotto.site_upcoming" data-i18n-html="true"><strong>Planned technical evolution:</strong> Automated custom domain routing and on-demand Let's Encrypt SSL certificate provisioning.</div>
+            </div>
+
+            <div class="system-stack-tag" data-i18n="sysotto.site_stack">Stack: Next.js App Router, React 19, TypeScript, Sharp/WebP, PostgreSQL, Turborepo.</div>
+
+            <div class="system-action-row">
+              <span class="project-tag" data-i18n="sysotto.sites_status_tag">Online Platform · Latest Release in Staging</span>
+              <a href="https://youtu.be/hRQJS_e0xpU" target="_blank" rel="noopener" class="project-video-btn" data-video-id="hRQJS_e0xpU" data-video-title-key="sysotto.sites_video_title" data-i18n-aria-label="Watch the Sysotto Sites technical tour on YouTube">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                <span data-i18n="sysotto.sites_video_btn">Watch Technical Tour (YouTube)</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- UI Mockup: SiteBuilder Workspace -->
+          <div class="mockup-window">
+            <div class="mockup-header-bar">
+              <div class="mockup-dots">
+                <span class="mockup-dot red"></span>
+                <span class="mockup-dot yellow"></span>
+                <span class="mockup-dot green"></span>
+              </div>
+              <div class="mockup-url-bar" data-i18n="sysotto.mock_url_sites">sitebuilder.sysotto.com.br/editor?tenant=industrial-north</div>
+              <span class="mockup-illustrative-tag" data-i18n="sysotto.mockup_disclaimer">Visual demo · Illustrative data</span>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-toolbar-header">
+                <div class="mockup-preset-title" data-i18n="sysotto.mock_preset">Preset: Clean B2B Industry #08</div>
+                <div class="mockup-device-badges">
+                  <span class="mock-badge badge-fifo" data-i18n="sysotto.mock_device_desktop">Desktop</span>
+                  <span class="mock-badge badge-neutral" data-i18n="sysotto.mock_device_tablet">Tablet</span>
+                  <span class="mock-badge badge-neutral" data-i18n="sysotto.mock_device_mobile">Mobile</span>
+                </div>
+              </div>
+
+              <!-- Canvas simulation -->
+              <div class="mockup-canvas-box">
+                <div class="mockup-skeleton-hero"></div>
+                <div class="mockup-skeleton-text-1"></div>
+                <div class="mockup-skeleton-text-2"></div>
+                <div class="mockup-cta-btn" data-i18n="sysotto.mock_cta">CTA button: Connect</div>
+              </div>
+
+              <div class="mockup-sites-footer">
+                <span data-i18n="sysotto.mock_sites_footer_left">SSR Renderer / Static Snapshots</span>
+                <span class="text-sky" data-i18n="sysotto.mock_sites_footer_right">Illustrative Mockup · Video Tour Available</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PANEL 4: Sysotto Platform Core -->
+      <div class="preview-panel" id="preview-core" role="tabpanel" aria-labelledby="tab-core" tabindex="0">
+        <div class="system-card">
+          <div class="system-info-col">
+            <div class="system-title-row">
+              <h3 class="system-title" data-i18n="sysotto.core_title">Sysotto Multi-Tenant Core &amp; Security Engine</h3>
+            </div>
+            <p class="system-description" data-i18n="sysotto.core_desc">Shared infrastructure spine, identity federation, and distributed microservices orchestration.</p>
+
+            <div class="system-status-box">
+              <div class="status-entry" data-i18n="sysotto.core_problem" data-i18n-html="true"><strong>Business Problem:</strong> Risk of cross-tenant data leakage in shared database architectures and authentication bottlenecks across microservices.</div>
+              <div class="status-entry" data-i18n="sysotto.core_role" data-i18n-html="true"><strong>Architecture & Implementation (Otto Freitag):</strong> Fail-closed tenant resolution middleware, database migration runner with concurrent advisory locks, and OpenIddict / JWT authorization pipeline.</div>
+              <div class="status-entry" data-i18n="sysotto.core_functional" data-i18n-html="true"><strong>Implemented architectural scope:</strong> Dynamic tenant resolution via middleware (MonolithTenantProvider) preventing tenant injection, PostgreSQL Row Level Security (RLS) data isolation, OAuth2 / OIDC authorization with OpenIddict, and Redis distributed caching.</div>
+            </div>
+
+            <div class="system-status-box upcoming-focus">
+              <div class="status-entry" data-i18n="sysotto.core_upcoming" data-i18n-html="true"><strong>Planned technical evolution:</strong> Unified SSO identity portal with centralized tenant telemetry and billing usage dashboards.</div>
+            </div>
+
+            <div class="system-stack-tag" data-i18n="sysotto.core_stack">Stack: C# .NET 10, OpenIddict, PostgreSQL 17, Redis, Docker Compose, Linux.</div>
+
+            <div class="system-action-row">
+              <span class="project-tag" data-i18n="sysotto.internal_spec_note">Internal Sysotto architectural specification</span>
+            </div>
+          </div>
+
+          <!-- UI Mockup: Architecture Terminal / Security Diagnostics -->
+          <div class="mockup-window">
+            <div class="mockup-header-bar">
+              <div class="mockup-dots">
+                <span class="mockup-dot red"></span>
+                <span class="mockup-dot yellow"></span>
+                <span class="mockup-dot green"></span>
+              </div>
+              <div class="mockup-url-bar" data-i18n="sysotto.mock_url_core">core.sysotto.internal/health/diagnostics</div>
+              <span class="mockup-illustrative-tag" data-i18n="sysotto.mockup_terminal_disclaimer">Simulated telemetry and diagnostics</span>
+            </div>
+            <div class="mockup-body mockup-terminal-body">
+              <div class="terminal-log-info">[Sysotto.Identity.Host] Initialized Security Pipeline...</div>
+              <div class="terminal-log-success">
+                <svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>TenantResolver: Verified Host Header & JWT Claims (tenant_id: ind_br_01)</span>
+              </div>
+              <div class="terminal-log-success">
+                <svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>PostgreSQL RLS: Session Context set to 'tenant_ind_br_01'</span>
+              </div>
+              <div class="terminal-log-success">
+                <svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>DB Migration Engine: Advisory Lock acquired (migration applied clean)</span>
+              </div>
+              <div class="terminal-log-success">
+                <svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Redis Distributed Cache: L1/L2 Invalidation Mesh Connected (Cluster OK)</span>
+              </div>
+              <div class="terminal-log-warning" data-i18n="sysotto.mock_core_status">[Demonstration Diagnostics]: Fail-closed JWT validation · Active RLS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PANEL 1: Sysotto Industry (IndSaaS) -->
+      <div class="preview-panel" id="preview-industry" role="tabpanel" aria-labelledby="tab-industry" tabindex="0">
+        <div class="system-card system-card-compact">
+          <div class="system-info-col">
+            <div class="system-title-row">
+              <h3 class="system-title" data-i18n="sysotto.ind_title">Sysotto ERP / Industry (IndSaaS)</h3>
+              <span class="system-status-badge badge-prep" data-i18n="sysotto.status_industry_prep">● In Preparation</span>
+            </div>
+            <p class="system-description" data-i18n="sysotto.ind_desc">High-precision manufacturing and inventory management ERP engineered for industrial plants and distribution centers.</p>
+
+            <div class="system-status-box">
+              <div class="status-entry" data-i18n="sysotto.ind_problem" data-i18n-html="true"><strong>Business Problem:</strong> Severe material waste due to expiration of perishable inventory and warehouse discrepancies under manual lot control.</div>
+              <div class="status-entry" data-i18n="sysotto.ind_role" data-i18n-html="true"><strong>Architecture & Implementation (Otto Freitag):</strong> Authorial domain modeling, FEFO/FIFO/LIFO automated allocation engine, GS1-128 QR code traceability, and PostgreSQL Row-Level Security (RLS) multi-tenant isolation.</div>
+              <div class="status-entry" data-i18n="sysotto.ind_functional" data-i18n-html="true"><strong>Implemented architectural scope:</strong> Advanced inventory management with automated FEFO/FIFO/LIFO strategies, lot expiration and quarantine tracking, GS1-128 QR Code labels, 3D warehouse address mapping, and perpetual cycle count reconciliation routines.</div>
+            </div>
+
+            <div class="system-status-box upcoming-focus">
+              <div class="status-entry" data-i18n="sysotto.ind_upcoming" data-i18n-html="true"><strong>Planned technical evolution:</strong> Turnkey Industry Lite package and B2B digital catalog projection.</div>
+            </div>
+
+            <div class="system-stack-tag" data-i18n="sysotto.ind_stack">Stack: C# .NET 10, ASP.NET Core, EF Core 10, PostgreSQL 17, FluentValidation, Next.js, TypeScript, Tailwind CSS.</div>
+
+            <div class="system-action-row">
+              <a href="https://github.com/OttoF77/Sysotto.Inventory.Showcase" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span data-i18n="sysotto.repo_showcase_btn">View Showcase Repository on GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PANEL 2: Sysotto FoodService (RestSaaS) -->
+      <div class="preview-panel" id="preview-foodservice" role="tabpanel" aria-labelledby="tab-foodservice" tabindex="0">
+        <div class="system-card system-card-compact">
+          <div class="system-info-col">
+            <div class="system-title-row">
+              <h3 class="system-title" data-i18n="sysotto.food_title">Sysotto FoodService (RestSaaS)</h3>
+              <span class="system-status-badge badge-prep" data-i18n="sysotto.status_food_prep">● In Preparation</span>
+            </div>
+            <p class="system-description" data-i18n="sysotto.food_desc">Operational suite for restaurants and bars integrating dining floor, kitchen production, and delivery logistics.</p>
+
+            <div class="system-status-box">
+              <div class="status-entry" data-i18n="sysotto.food_problem" data-i18n-html="true"><strong>Business Problem:</strong> Communication bottlenecks between front-of-house and kitchen create order delays and lost paper tickets from network instability.</div>
+              <div class="status-entry" data-i18n="sysotto.food_role" data-i18n-html="true"><strong>Architecture & Implementation (Otto Freitag):</strong> Event-driven order workflow architecture via SignalR and autonomous native .NET 10 desktop agent for direct ESC/POS thermal printing without third-party drivers.</div>
+              <div class="status-entry" data-i18n="sysotto.food_functional" data-i18n-html="true"><strong>Implemented architectural scope:</strong> TableOrdersManager module for simultaneous tables and tabs, dynamic QR Code digital menu, real-time Kitchen Display System (KDS), and autonomous thermal print agent (.NET 10 / ESC/POS).</div>
+            </div>
+
+            <div class="system-status-box upcoming-focus">
+              <div class="status-entry" data-i18n="sysotto.food_upcoming" data-i18n-html="true"><strong>Planned technical evolution:</strong> Dispatch route planning and two-way delivery aggregator webhooks.</div>
+            </div>
+
+            <div class="system-stack-tag" data-i18n="sysotto.food_stack">Stack: Next.js (App Router), React, SignalR, .NET 10 Desktop Agent, PostgreSQL, Tailwind CSS.</div>
+
+            <div class="system-action-row">
+              <a href="https://github.com/OttoF77/Sysotto.Routing.Showcase" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span data-i18n="sysotto.repo_showcase_btn">View Showcase Repository on GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About & Leadership Career Migration -->
+  <section class="section-padding" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill" data-i18n="about.title">About &amp; Career Migration</span>
+        <h2 class="section-title" data-i18n="about.subtitle">Senior executive leadership combined with technical discipline in software engineering.</h2>
+      </div>
+
+      <div class="executive-impact" aria-labelledby="executive-impact-title">
+        <h3 id="executive-impact-title" data-i18n="about.impact_title">Leadership that delivers results</h3>
+        <dl class="executive-impact-grid">
+          <div class="executive-impact-card">
+            <dt data-i18n="about.impact_todeschini_desc">150% sales growth in one year through new market development and improved sales management.</dt>
+            <dd class="executive-impact-value" data-i18n="about.impact_todeschini_value">Sales Success</dd>
+            <dd class="executive-impact-context" data-i18n="about.impact_todeschini_context">Todeschini Manaus · Sales Manager · 2002–2003</dd>
+          </div>
+          <div class="executive-impact-card">
+            <dt data-i18n="about.impact_gerdau_growth_desc">Annual sales volume growth above 30% at the Fortaleza branch, alongside increased profitability.</dt>
+            <dd class="executive-impact-value" data-i18n="about.impact_gerdau_growth_value">Business Expansion</dd>
+            <dd class="executive-impact-context" data-i18n="about.impact_gerdau_context">Gerdau · Branch Manager · 2004–2010</dd>
+          </div>
+          <div class="executive-impact-card">
+            <dt data-i18n="about.impact_operations_desc">Fourfold growth in sales volume over two years, with a key contribution to commercial repositioning, improved profitability, and increased market share in downstream operations.</dt>
+            <dd class="executive-impact-value" data-i18n="about.impact_operations_value">Sales Acceleration</dd>
+            <dd class="executive-impact-context" data-i18n="about.impact_operations_context">Metalmecânica Maia · Commercial Manager · 2012–2014</dd>
+          </div>
+          <div class="executive-impact-card">
+            <dt data-i18n="about.impact_sales_desc">Responsibility for operations in Piauí, including public and private contract acquisition and retention, operations, finance, and personnel management.</dt>
+            <dd class="executive-impact-value" data-i18n="about.impact_sales_value">Operational Leadership</dd>
+            <dd class="executive-impact-context" data-i18n="about.impact_sales_context">Servisan · General Manager · 2014–2016</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="about-grid">
+        <!-- Bio Narrative & Strategic Advantages -->
+        <div class="about-card">
+          <p class="about-text" data-i18n="about.p1" data-i18n-html="true">Over a 20-year executive career, I served as General Manager and Commercial Manager in large-scale industrial and distribution operations, including <strong>Gerdau S/A</strong> (leading a regional branch with >30% annual growth), <strong>CSN</strong>, <strong>Servisan</strong>, and <strong>Servicon</strong>. This background gives me direct mastery of business workflows, team leadership, and ROI-driven decision-making.</p>
+          <p class="about-text" data-i18n="about.p2" data-i18n-html="true">Transitioning into technology, I applied this executive background directly to computing. As <strong>CEO and Solutions Architect at Sysotto Softwares</strong>, I design and build multi-tenant SaaS platforms and enterprise architectures, prioritizing scalability (.NET, C#, PostgreSQL, Next.js), fail-closed security, and operational reliability.</p>
+          <p class="about-text" data-i18n="about.p3" data-i18n-html="true">I am pursuing a <strong>B.S. in Software Engineering (UNIFBV/Wyden)</strong>, hold an <strong>MBA in Business Management from FGV</strong>, and a <strong>B.A. in Tourism from UNIFOR</strong>, with continuous focus on computer science fundamentals, data structures, distributed systems, and defensive security.</p>
+
+          <h3 class="diff-title" data-i18n="about.leadership_title">Strategic Advantages</h3>
+          <div class="diff-list">
+            <div class="diff-item">
+              <div class="diff-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div>
+                <h4 class="diff-title" data-i18n="about.diff_1_title">Business Acumen &amp; ROI Focus:</h4>
+                <p class="diff-desc" data-i18n="about.diff_1_desc">Proven track record of turning complex operational business needs into scalable, revenue-generating software architectures.</p>
+              </div>
+            </div>
+
+            <div class="diff-item">
+              <div class="diff-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <div>
+                <h4 class="diff-title" data-i18n="about.diff_2_title">Executive Team Leadership:</h4>
+                <p class="diff-desc" data-i18n="about.diff_2_desc">Proven ability to lead cross-functional teams, orchestrate high-stakes initiatives, and achieve concrete performance metrics.</p>
+              </div>
+            </div>
+
+            <div class="diff-item">
+              <div class="diff-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <div>
+                <h4 class="diff-title" data-i18n="about.diff_3_title">Quality-Driven Engineering:</h4>
+                <p class="diff-desc" data-i18n="about.diff_3_desc">Strict adherence to clean code, comprehensive automated testing, fail-closed security models, and resilient multi-tenant isolation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Career Milestones Timeline -->
+        <div class="timeline-card">
+          <h3 class="timeline-header" data-i18n="timeline.title">Executive Milestones &amp; Career</h3>
+          
+          <div class="timeline-step">
+            <span class="timeline-bullet"></span>
+            <div class="timeline-role" data-i18n="timeline.sysotto_role">CEO &amp; Founding Architect</div>
+            <div class="timeline-company">Sysotto Softwares</div>
+            <div class="timeline-date" data-i18n="timeline.sysotto_date">2022 – Present</div>
+            <p class="timeline-desc" data-i18n="timeline.sysotto_desc">End-to-end leadership in developing SaaS platforms for industrial ERP, food service, and multi-tenant site building with .NET 10 and Next.js.</p>
+          </div>
+
+          <div class="timeline-step">
+            <span class="timeline-bullet"></span>
+            <div class="timeline-role" data-i18n="timeline.servicon_role">Managing Partner</div>
+            <div class="timeline-company">Servicon Comércio e Serviços LTDA</div>
+            <div class="timeline-date" data-i18n="timeline.servicon_date">2017 – 2021</div>
+            <p class="timeline-desc" data-i18n="timeline.servicon_desc">Commercial management of solar energy and infrastructure in the states of Piauí and Maranhão, alongside accounting and financial administration.</p>
+          </div>
+
+          <div class="timeline-step">
+            <span class="timeline-bullet"></span>
+            <div class="timeline-role" data-i18n="timeline.servisan_role">Regional General Manager</div>
+            <div class="timeline-company">Servisan Vigilância e Transporte de Valores</div>
+            <div class="timeline-date" data-i18n="timeline.servisan_date">2014 – 2016</div>
+            <p class="timeline-desc" data-i18n="timeline.servisan_desc">Responsible for a large outsourcing operation, business development, and retention of high-value corporate and public contracts.</p>
+          </div>
+
+          <div class="timeline-step">
+            <span class="timeline-bullet"></span>
+            <div class="timeline-role" data-i18n="timeline.csn_role">Commercial Manager</div>
+            <div class="timeline-company">Metalmecânica Maia / CSN</div>
+            <div class="timeline-date" data-i18n="timeline.csn_date">2011 – 2014</div>
+            <p class="timeline-desc" data-i18n="timeline.csn_desc">Managed industrial sales and downstream logistics across Ceará, Piauí, and Maranhão.</p>
+          </div>
+
+          <div class="timeline-step">
+            <span class="timeline-bullet"></span>
+            <div class="timeline-role" data-i18n="timeline.gerdau_role">Unit Manager / Fortaleza Branch</div>
+            <div class="timeline-company">Gerdau S/A</div>
+            <div class="timeline-date" data-i18n="timeline.gerdau_date">2004 – 2010</div>
+            <p class="timeline-desc" data-i18n="timeline.gerdau_desc">Led a Gerdau regional distribution center, delivering over 30% annual volume growth and strong profitability.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pilares de atuação (antiga seção #versatility) -->
+      <div class="about-pillars">
+        <div class="about-pillars-header">
+          <h3 class="about-pillars-title" data-i18n="versatility.title">Versatility &amp; Multi-Sector Delivery Capabilities</h3>
+          <p class="about-pillars-desc" data-i18n="versatility.subtitle">Technical architecture and executive foresight tailored to diverse organizational scales and market demands.</p>
+        </div>
+        <div class="versatility-grid">
+          <div class="versatility-card">
+            <div class="versatility-icon-box ind"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path></svg></div>
+            <h3 class="versatility-title" data-i18n="versatility.ind_title">Enterprise Industries &amp; Operations</h3>
+            <p class="versatility-desc" data-i18n="versatility.ind_desc">High-complexity operational workflows modeling, bridging executive governance with shop-floor operations, continuous auditing, and corporate regulatory compliance.</p>
+          </div>
+          <div class="versatility-card">
+            <div class="versatility-icon-box retail"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg></div>
+            <h3 class="versatility-title" data-i18n="versatility.sme_title">SMBs, Retail &amp; Commercial Services</h3>
+            <p class="versatility-desc" data-i18n="versatility.sme_desc">Point-of-sale and customer service automation, eliminating expensive intermediaries, ensuring operational uptime, and delivering direct operational cost reduction.</p>
+          </div>
+          <div class="versatility-card">
+            <div class="versatility-icon-box saas"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path><path d="M12 9v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></svg></div>
+            <h3 class="versatility-title" data-i18n="versatility.saas_title">Startups &amp; Digital B2B SaaS</h3>
+            <p class="versatility-desc" data-i18n="versatility.saas_desc">Scalable product design with strict tenant isolation, multi-tenant governance, modern provisioning workflows, and customer retention &amp; ROI orientation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Stacks & Competencies -->
+  <section class="section-padding section-bg-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill" data-i18n="skills.title">Tech Stacks &amp; Competencies</span>
+        <h2 class="section-title" data-i18n="skills.section_heading">Technical Focus Areas</h2>
+        <p class="section-subtitle" data-i18n="skills.subtitle">A structured, transparent taxonomy of technologies based on verified production contexts and academic applications.</p>
+      </div>
+
+      <div class="stacks-container">
+        
+        <!-- Category 1: Tecnologias nos Projetos Atuais da Sysotto -->
+        <div class="stack-category-card">
+          <div class="stack-cat-header">
+            <div class="stack-cat-icon core">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <div>
+              <h3 class="stack-cat-title" data-i18n="skills.core_title">Technologies in Current Sysotto Projects</h3>
+              <p class="stack-cat-desc" data-i18n="skills.core_desc">Core technologies applied in the architecture and engineering of Sysotto Softwares platforms (Sites, Industry Suite, and FoodService).</p>
+            </div>
+          </div>
+          <div class="stack-items-grid">
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">C# & .NET 10</span> <span class="stack-ref" data-i18n="skills.ref_industry">Sysotto Industry</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">ASP.NET Core Web API</span> <span class="stack-ref" data-i18n="skills.ref_industry_sites">Sysotto Industry / Sites</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Entity Framework Core</span> <span class="stack-ref" data-i18n="skills.ref_industry">Sysotto Industry</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">PostgreSQL 17 & RLS</span> <span class="stack-ref" data-i18n="skills.ref_multitenant">Sysotto Multi-Tenant</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Next.js (App Router)</span> <span class="stack-ref" data-i18n="skills.ref_sites">Sysotto Sites</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">React & TypeScript</span> <span class="stack-ref" data-i18n="skills.ref_sites_ui">Sysotto Sites / UI</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Docker & Compose</span> <span class="stack-ref" data-i18n="skills.ref_infra">Sysotto Infra</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Redis Cache</span> <span class="stack-ref" data-i18n="skills.ref_industry">Sysotto Industry</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">OpenIddict OAuth2/OIDC</span> <span class="stack-ref" data-i18n="skills.ref_auth">Sysotto Auth</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Arquitetura Multi-Tenant</span> <span class="stack-ref" data-i18n="skills.ref_core">Sysotto Core</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Tailwind CSS</span> <span class="stack-ref" data-i18n="skills.ref_sites">Sysotto Sites</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Linux & Shell Scripting</span> <span class="stack-ref" data-i18n="skills.ref_deploy">Environment &amp; Deploy</span></div>
+          </div>
+        </div>
+
+        <!-- Category 2: Tecnologias Demonstradas em Projetos & Estudos -->
+        <div class="stack-category-card">
+          <div class="stack-cat-header">
+            <div class="stack-cat-icon academic">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            </div>
+            <div>
+              <h3 class="stack-cat-title" data-i18n="skills.demonstrated_title">Technologies Demonstrated in Projects &amp; Studies</h3>
+              <p class="stack-cat-desc" data-i18n="skills.demonstrated_desc">Languages, frameworks, and tools validated in projects with repository source code, academic simulations, and hackathons.</p>
+            </div>
+          </div>
+          <div class="stack-items-grid">
+            <div class="stack-item"><span class="stack-dot dot-academic"></span> <span class="stack-name">Java & Spring Boot 3</span> <span class="stack-ref" data-i18n="skills.ref_condotrack_one">CondoTrack / ONE</span></div>
+            <div class="stack-item"><span class="stack-dot dot-academic"></span> <span class="stack-name">Python & FastAPI / Flask</span> <span class="stack-ref" data-i18n="skills.ref_techmind_email">TechMind / Classifier</span></div>
+            <div class="stack-item"><span class="stack-dot dot-academic"></span> <span class="stack-name">Linguagem C (ANSI C)</span> <span class="stack-ref" data-i18n="skills.ref_c_ds">Data Structures</span></div>
+            <div class="stack-item"><span class="stack-dot dot-academic"></span> <span class="stack-name">T-SQL & SQL Server</span> <span class="stack-ref" data-i18n="skills.ref_sql">CondoTrack / TechMind</span></div>
+            <div class="stack-item"><span class="stack-dot dot-academic"></span> <span class="stack-name">RabbitMQ & Event-Driven</span> <span class="stack-ref" data-i18n="skills.ref_microservices">E-Commerce Microservices</span></div>
+            <div class="stack-item"><span class="stack-dot dot-academic"></span> <span class="stack-name">Oracle Cloud (OCI) & Azure</span> <span class="stack-ref" data-i18n="skills.ref_cloud">Hackathon / OCI Cert</span></div>
+            <div class="stack-item"><span class="stack-dot dot-academic"></span> <span class="stack-name">JUnit 5 & Mockito (114 Testes)</span> <span class="stack-ref" data-i18n="skills.ref_condotrack">CondoTrack</span></div>
+            <div class="stack-item"><span class="stack-dot dot-academic"></span> <span class="stack-name">Git & GitHub CI/CD</span> <span class="stack-ref" data-i18n="skills.ref_repos">Repositories &amp; CI/CD</span></div>
+          </div>
+        </div>
+
+        <!-- Category 3: Interesses & Áreas em Exploração -->
+        <div class="stack-category-card">
+          <div class="stack-cat-header">
+            <div class="stack-cat-icon research">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <div>
+              <h3 class="stack-cat-title" data-i18n="skills.interests_title">Interests &amp; Active Exploration Areas</h3>
+              <p class="stack-cat-desc" data-i18n="skills.interests_desc">Continuous exploration in systems engineering, low-level programming, memory control, and cybersecurity.</p>
+            </div>
+          </div>
+          <div class="stack-items-grid">
+            <div class="stack-item"><span class="stack-dot dot-research"></span> <span class="stack-name">C++ Moderno</span> <span class="stack-ref" data-i18n="skills.ref_systems">High-Performance Systems</span></div>
+            <div class="stack-item"><span class="stack-dot dot-research"></span> <span class="stack-name">Rust</span> <span class="stack-ref" data-i18n="skills.ref_concurrency">Memory Safety &amp; Concurrency</span></div>
+            <div class="stack-item"><span class="stack-dot dot-research"></span> <span class="stack-name">Cibersegurança Defensiva</span> <span class="stack-ref" data-i18n="skills.ref_sec_study">Cisco Track / Hackers do Bem</span></div>
+            <div class="stack-item"><span class="stack-dot dot-research"></span> <span class="stack-name">Análise de Tráfego Wireshark</span> <span class="stack-ref" data-i18n="skills.ref_net_study">Network Defense (Cisco)</span></div>
+            <div class="stack-item"><span class="stack-dot dot-research"></span> <span class="stack-name">Criptografia Aplicada</span> <span class="stack-ref" data-i18n="skills.ref_crypto">Zero-Trust Standards</span></div>
+            <div class="stack-item"><span class="stack-dot dot-research"></span> <span class="stack-name">IA Generativa & Agentes Autônomos</span> <span class="stack-ref" data-i18n="skills.ref_ai_agents">LLM Studies &amp; Agents</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education, Courses & Certifications -->
+  <section class="section-padding" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill" data-i18n="edu.title">Academic Education &amp; Certifications</span>
+        <h2 class="section-title" data-i18n="edu.section_heading">Education &amp; Continuous Learning</h2>
+        <p class="section-subtitle" data-i18n="edu.subtitle">Lifelong commitment to computer science fundamentals, engineering rigor, and international credentials.</p>
+      </div>
+
+      <!-- Executive CV Download Banner -->
+      <div class="edu-cv-banner">
+        <div class="edu-cv-content">
+          <div class="edu-cv-header">
+            <span class="section-pill" data-i18n="edu.cv_pill">Executive Dossier &amp; Resume</span>
+            <h3 class="edu-cv-title" data-i18n="edu.cv_title">Professional Credentials &amp; Career Dossier</h3>
+            <p class="edu-cv-desc" data-i18n="edu.cv_desc">Download the consolidated executive dossier featuring 20+ years of corporate leadership, enterprise software architecture, and complete technical stacks.</p>
+          </div>
+          <div class="edu-cv-cards-grid">
+            <a href="../assets/docs/cv-otto-freitag-en-us.pdf" download="CV-Otto-David-Freitag-EN-US.pdf" class="cv-download-card">
+              <div class="cv-card-info">
+                <div class="cv-card-badge">PDF · Português (Brasil)</div>
+                <h4 data-i18n="edu.cv_pt_title">Professional Resume (PT-BR)</h4>
+                <p data-i18n="edu.cv_pt_desc">Complete executive leadership history, management metrics, academic credentials, and software stack.</p>
+              </div>
+              <div class="btn btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span data-i18n="edu.cv_btn_download">Download PDF</span>
+              </div>
+            </a>
+
+            <a href="../assets/docs/cv-otto-freitag-en-us.pdf" download="CV-Otto-David-Freitag-EN-US.pdf" class="cv-download-card">
+              <div class="cv-card-info">
+                <div class="cv-card-badge">PDF · English (US)</div>
+                <h4 data-i18n="edu.cv_en_title">Executive Resume (EN-US)</h4>
+                <p data-i18n="edu.cv_en_desc">Full executive leadership history, business turnaround metrics, and software architecture stack.</p>
+              </div>
+              <div class="btn btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span data-i18n="edu.cv_btn_download">Download PDF</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Higher Education Degrees Grid -->
+      <h3 class="edu-section-title" data-i18n="edu.academic_title">Higher Education</h3>
+      <div class="edu-degrees-grid">
+        
+        <div class="degree-card">
+          <div class="degree-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+          </div>
+          <h4 class="degree-title" data-i18n="edu.degree_se">B.S. in Software Engineering</h4>
+          <div class="degree-inst" data-i18n="edu.degree_se_inst">UNIFBV / Wyden (4th Period - In Progress · Expected: 06/2029)</div>
+          <p class="degree-desc" data-i18n="edu.degree_se_desc">Software architecture, algorithms, data structures, requirements engineering, IT governance, and cybersecurity.</p>
+        </div>
+
+        <div class="degree-card">
+          <div class="degree-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          </div>
+          <h4 class="degree-title" data-i18n="edu.degree_mba">MBA in Business Management</h4>
+          <div class="degree-inst" data-i18n="edu.degree_mba_inst">Fundação Getúlio Vargas (FGV)</div>
+          <p class="degree-desc" data-i18n="edu.degree_mba_desc">Strategic planning, corporate finance, executive negotiation, and high-performance team leadership.</p>
+        </div>
+
+        <div class="degree-card">
+          <div class="degree-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </div>
+          <h4 class="degree-title" data-i18n="edu.degree_tourism">B.A. in Tourism</h4>
+          <div class="degree-inst" data-i18n="edu.degree_tourism_inst">Universidade de Fortaleza (UNIFOR)</div>
+          <p class="degree-desc" data-i18n="edu.degree_tourism_desc">Service operations management, interpersonal dynamics, and strategic market development.</p>
+        </div>
+
+      </div>
+
+      <!-- Certifications & Bootcamps Grid -->
+      <h3 class="edu-section-title" data-i18n="edu.certs_title">Key Certifications &amp; Bootcamps</h3>
+      <div class="certs-grid">
+
+        <!-- CERT 1: Harvard CS50 -->
+        <div class="cert-card">
+          <div class="cert-badge-row">
+            <span class="cert-issuer-badge">Harvard University</span>
+            <span class="cert-duration">70 Horas</span>
+          </div>
+          <h4 class="cert-title" data-i18n="cert.cs50_title">CC50 / CS50: Introduction to Computer Science</h4>
+          <div class="cert-org" data-i18n="cert.cs50_org">Harvard University (70 Hours)</div>
+          <p class="cert-desc" data-i18n="cert.cs50_desc">C, memory management &amp; pointers, algorithmic complexity, data structures, Python, SQL, Flask, and computational ethics.</p>
+          <div class="cert-actions">
+            <button class="cert-btn cert-btn-view" data-cert-view data-cert-file="../assets/certificates/cert-harvard-cc50.pdf">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              <span data-i18n="edu.cert_view">View Certificate</span>
+            </button>
+            <a href="../assets/certificates/cert-harvard-cc50.pdf" download="Certificado-Harvard-CC50.pdf" class="cert-btn cert-btn-download">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span data-i18n="edu.cert_download">Download PDF</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CERT 4: Oracle Next Education (ONE) -->
+        <div class="cert-card">
+          <div class="cert-badge-row">
+            <span class="cert-issuer-badge">Oracle Brasil & Alura</span>
+            <span class="cert-duration">348 Horas · 7 Formações</span>
+          </div>
+          <h4 class="cert-title" data-i18n="cert.oracle_one_title">Oracle Next Education Program (ONE)</h4>
+          <div class="cert-org" data-i18n="cert.oracle_one_org">Oracle Brasil &amp; Alura (348 Hours - 7 Tracks)</div>
+          <p class="cert-desc" data-i18n="cert.oracle_one_desc">Object-Oriented Java, Spring Boot 3, RESTful APIs, Relational DBs, Agile Methodologies, Generative AI, and Final Hackathon.</p>
+          <div class="cert-actions">
+            <button class="cert-btn cert-btn-view" data-cert-view data-cert-file="../assets/certificates/cert-oracle-one-program.pdf">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              <span data-i18n="edu.cert_view">View Certificate</span>
+            </button>
+            <a href="../assets/certificates/cert-oracle-one-program.pdf" download="Certificado-Oracle-ONE.pdf" class="cert-btn cert-btn-download">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span data-i18n="edu.cert_download">Download PDF</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CERT 7: Oracle Cloud Infrastructure (OCI) -->
+        <div class="cert-card">
+          <div class="cert-badge-row">
+            <span class="cert-issuer-badge">Oracle University</span>
+            <span class="cert-duration">Cloud Associate Badge</span>
+          </div>
+          <h4 class="cert-title" data-i18n="cert.oracle_oci_title">Oracle Cloud Infrastructure (OCI)</h4>
+          <div class="cert-org" data-i18n="cert.oracle_oci_org">Oracle University</div>
+          <p class="cert-desc" data-i18n="cert.oracle_oci_desc">Official OCI Foundations Associate badge: Cloud architecture, compute instances, object storage, and secure VCN networking.</p>
+          <div class="cert-actions">
+            <button class="cert-btn cert-btn-view" data-cert-view data-cert-file="../assets/certificates/cert-oracle-oci-badge.jpg">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              <span data-i18n="edu.cert_view">View Certificate</span>
+            </button>
+            <a href="../assets/certificates/cert-oracle-oci-badge.jpg" download="Oracle-OCI-Badge.jpg" class="cert-btn cert-btn-download">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span data-i18n="edu.cert_download">Download PDF</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CERT 2: Cisco Network Security -->
+        <div class="cert-card">
+          <div class="cert-badge-row">
+            <span class="cert-issuer-badge">Cisco Networking Academy</span>
+            <span class="cert-duration">SENAI-SC / CDI</span>
+          </div>
+          <h4 class="cert-title" data-i18n="cert.cisco_sec_title">Cisco Network Security</h4>
+          <div class="cert-org" data-i18n="cert.cisco_sec_org">Cisco Networking Academy / SENAI-SC</div>
+          <p class="cert-desc" data-i18n="cert.cisco_sec_desc">Network security principles, ASA firewall configuration, applied cryptography, site-to-site VPN tunnels, and threat mitigation.</p>
+          <div class="cert-actions">
+            <button class="cert-btn cert-btn-view" data-cert-view data-cert-file="../assets/certificates/cert-cisco-network-security.pdf">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              <span data-i18n="edu.cert_view">View Certificate</span>
+            </button>
+            <a href="../assets/certificates/cert-cisco-network-security.pdf" download="Certificado-Cisco-Network-Security.pdf" class="cert-btn cert-btn-download">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span data-i18n="edu.cert_download">Download PDF</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <details class="certs-more">
+        <summary class="certs-more-summary">
+          <span class="certs-more-open" data-i18n="edu.certs_more">View all 9 certifications</span>
+          <span class="certs-more-close" data-i18n="edu.certs_less">Show fewer certifications</span>
+        </summary>
+        <div class="certs-grid">
+
+        <!-- CERT 3: Cisco Defesa de Rede (CyberOps) -->
+        <div class="cert-card">
+          <div class="cert-badge-row">
+            <span class="cert-issuer-badge">Cisco Networking Academy</span>
+            <span class="cert-duration">YDUQS-Wyden</span>
+          </div>
+          <h4 class="cert-title" data-i18n="cert.cisco_def_title">Cisco Network Defense (CyberOps)</h4>
+          <div class="cert-org" data-i18n="cert.cisco_def_org">Cisco Networking Academy / YDUQS-Wyden</div>
+          <p class="cert-desc" data-i18n="cert.cisco_def_desc">Wireshark packet analysis, Access Control Lists (ACLs), AAA security framework, TACACS+/RADIUS, and incident defense.</p>
+          <div class="cert-actions">
+            <button class="cert-btn cert-btn-view" data-cert-view data-cert-file="../assets/certificates/cert-cisco-network-defense.pdf">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              <span data-i18n="edu.cert_view">View Certificate</span>
+            </button>
+            <a href="../assets/certificates/cert-cisco-network-defense.pdf" download="Certificado-Cisco-Defesa-Rede.pdf" class="cert-btn cert-btn-download">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span data-i18n="edu.cert_download">Download PDF</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CERT 5: Cisco NDG Linux Unhatched -->
+        <div class="cert-card">
+          <div class="cert-badge-row">
+            <span class="cert-issuer-badge">Cisco / NDG</span>
+            <span class="cert-duration">Linux Essentials</span>
+          </div>
+          <h4 class="cert-title" data-i18n="cert.cisco_linux_title">NDG Linux Unhatched</h4>
+          <div class="cert-org" data-i18n="cert.cisco_linux_org">Cisco Networking Academy / NDG</div>
+          <p class="cert-desc" data-i18n="cert.cisco_linux_desc">Linux operating system fundamentals, terminal commands, permissions hierarchy, and process management.</p>
+          <div class="cert-actions">
+            <button class="cert-btn cert-btn-view" data-cert-view data-cert-file="../assets/certificates/cert-cisco-ndg-linux.pdf">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              <span data-i18n="edu.cert_view">View Certificate</span>
+            </button>
+            <a href="../assets/certificates/cert-cisco-ndg-linux.pdf" download="Certificado-Cisco-Linux.pdf" class="cert-btn cert-btn-download">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span data-i18n="edu.cert_download">Download PDF</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CERT 6: Hackers do Bem Cibersegurança -->
+        <div class="cert-card">
+          <div class="cert-badge-row">
+            <span class="cert-issuer-badge">Hackers do Bem / RNP</span>
+            <span class="cert-duration">MCTI / Softex</span>
+          </div>
+          <h4 class="cert-title" data-i18n="cert.hackers_title">Hackers do Bem: Cybersecurity</h4>
+          <div class="cert-org" data-i18n="cert.hackers_org">RNP / Softex / Ministry of Science &amp; Technology</div>
+          <p class="cert-desc" data-i18n="cert.hackers_desc">Complete Leveling &amp; Basic Tracks: Information security pillars, encryption standards, network attack vectors, and GRC.</p>
+          <div class="cert-actions">
+            <button class="cert-btn cert-btn-view" data-cert-view data-cert-file="../assets/certificates/cert-hackers-do-bem-basico.pdf">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              <span data-i18n="edu.cert_view">View Certificate</span>
+            </button>
+            <a href="../assets/certificates/cert-hackers-do-bem-basico.pdf" download="Certificado-Hackers-do-Bem-Basico.pdf" class="cert-btn cert-btn-download">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span data-i18n="edu.cert_download">Download PDF</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CERT 8: DIO Campus Expert & Bootcamps -->
+        <div class="cert-card">
+          <div class="cert-badge-row">
+            <span class="cert-issuer-badge">Digital Innovation One</span>
+            <span class="cert-duration">Turma 13</span>
+          </div>
+          <h4 class="cert-title" data-i18n="cert.dio_expert_title">Campus Expert &amp; Corporate Bootcamps</h4>
+          <div class="cert-org" data-i18n="cert.dio_expert_org">Digital Innovation One (DIO)</div>
+          <p class="cert-desc" data-i18n="cert.dio_expert_desc">Technical leadership (Class 13), Santander Bootcamp (Java Back-end), WEX End-to-End (.NET), and Suzano AI Developer.</p>
+          <div class="cert-actions">
+            <button class="cert-btn cert-btn-view" data-cert-view data-cert-file="../assets/certificates/cert-dio-campus-expert.pdf">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              <span data-i18n="edu.cert_view">View Certificate</span>
+            </button>
+            <a href="../assets/certificates/cert-dio-campus-expert.pdf" download="Certificado-DIO-Campus-Expert.pdf" class="cert-btn cert-btn-download">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span data-i18n="edu.cert_download">Download PDF</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- CERT 9: Cisco Introduction to Data Science -->
+        <div class="cert-card">
+          <div class="cert-badge-row">
+            <span class="cert-issuer-badge">Cisco Networking Academy</span>
+            <span class="cert-duration" data-i18n="cert.cisco_ds_badge">Data Science Badge</span>
+          </div>
+          <h4 class="cert-title" data-i18n="cert.cisco_ds_title">Introduction to Data Science</h4>
+          <div class="cert-org">Cisco Networking Academy</div>
+          <p class="cert-desc" data-i18n="cert.cisco_ds_desc">Data analysis and visualization, predictive models, and business data science fundamentals.</p>
+          <div class="cert-actions">
+            <button class="cert-btn cert-btn-view" data-cert-view data-cert-file="../assets/certificates/cert-cisco-intro-data-science.pdf">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              <span data-i18n="edu.cert_view">View Certificate</span>
+            </button>
+            <a href="../assets/certificates/cert-cisco-intro-data-science.pdf" download="Certificado-Cisco-Data-Science.pdf" class="cert-btn cert-btn-download">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span data-i18n="edu.cert_download">Download PDF</span>
+            </a>
+          </div>
+        </div>
+
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section-padding" id="testimonials" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill" data-i18n="testimonials.title">Recommendations</span>
+        <h2 id="testimonials-heading" class="section-title" data-i18n="testimonials.headline">What colleagues and leaders say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <figure class="testimonial-card">
+          <blockquote>
+            <p data-i18n="testimonials.t1.text">At the General Management of the Teresina (PI) Branch of Grupo SERVI-SAN, Otto performed his duties firmly and efficiently, generating significant value for the organization. He is dynamic, has excellent interpersonal skills, and always pursues results.</p>
+          </blockquote>
+          <figcaption>
+            <strong data-i18n="testimonials.t1.name">Gladston Lages</strong>
+            <span data-i18n="testimonials.t1.role">Chief Financial &amp; Controllership Officer — Otto’s manager</span>
+            <a href="https://www.linkedin.com/in/gladston-lages-5545b420/" target="_blank" rel="noopener noreferrer" data-i18n-aria-label="LinkedIn profile of Gladston Lages" aria-label="Perfil no LinkedIn de Gladston Lages">
+              <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & CV Downloads -->
+  <section class="section-padding section-bg-alt" id="contact">
+    <div class="container">
+      <div class="contact-card">
+        
+        <div class="contact-info-col">
+          <span class="section-pill" data-i18n="contact.title">Get In Touch</span>
+          <h2 class="contact-headline" data-i18n="contact.headline">Let’s build the future of technology together.</h2>
+          <p class="contact-subtitle" data-i18n="contact.subtitle">Open to executive leadership roles, corporate software architecture, and strategic advisory.</p>
+
+          <div class="contact-list">
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <div class="contact-label" data-i18n="contact.email_label">Email:</div>
+                <div class="contact-val">
+                  <a href="mailto:otto@sysotto.com">otto@sysotto.com</a>
+                  <button class="action-btn copy-email-btn" data-action="copy-email" data-email="otto@sysotto.com">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                    <span data-i18n="contact.copy_email">Copy Email</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </div>
+              <div>
+                <div class="contact-label" data-i18n="contact.linkedin_label">LinkedIn:</div>
+                <div class="contact-val">
+                  <a href="https://www.linkedin.com/in/otto-freitag-60912031" target="_blank" rel="noopener">linkedin.com/in/otto-freitag-60912031</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </div>
+              <div>
+                <div class="contact-label" data-i18n="contact.github_label">GitHub:</div>
+                <div class="contact-val">
+                  <a href="https://github.com/OttoF77" target="_blank" rel="noopener">github.com/OttoF77</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              </div>
+              <div>
+                <div class="contact-label" data-i18n="contact.cv_label">Professional Resume:</div>
+                <div class="contact-val">
+                  <a href="../assets/docs/cv-otto-freitag-en-us.pdf" download="CV-Otto-David-Freitag-EN-US.pdf" data-dynamic-cv data-i18n="contact.cv_link_text">Download Consolidated Version (PDF)</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Direct Executive Contact Channels -->
+        <div class="contact-actions-col">
+          <div class="contact-channel-card">
+            <span class="channel-badge" data-i18n="contact.fast_response">Direct &amp; Fast Communication</span>
+            <h3 data-i18n="contact.channel_title">Ready to discuss your project or opportunity?</h3>
+            <p data-i18n="contact.channel_desc">Available for executive leadership positions, enterprise software architecture, and strategic consulting.</p>
+            
+            <div class="channel-btns">
+              <a href="mailto:otto@sysotto.com" class="btn btn-primary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span data-i18n="contact.btn_email">Send Direct Email</span>
+              </a>
+              <a href="../assets/docs/cv-otto-freitag-en-us.pdf" download="CV-Otto-David-Freitag-EN-US.pdf" data-dynamic-cv class="btn btn-secondary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span data-i18n="contact.btn_cv">Download Resume (PDF)</span>
+              </a>
+            </div>
+
+            <div class="channel-location-note">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span data-i18n="contact.location_note">Location: Parnaíba / Teresina, PI — Available for remote roles</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 Otto David de Santana Freitag. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <p class="footer-built-with" data-i18n="footer.built_with">Built with modern web standards, hosted on GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <!-- Certificate Viewer Modal Dialog -->
+  <dialog id="cert-modal" class="cert-dialog" aria-labelledby="modal-cert-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title-block">
+          <h3 id="modal-cert-title" data-i18n="modal.cert_default">Official Certificate</h3>
+          <p id="modal-cert-issuer">Emissor</p>
+        </div>
+        <button class="modal-close" aria-label="Close modal dialog" data-i18n-aria-label="modal.close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <iframe id="modal-cert-frame" class="modal-frame" src="about:blank" title="Certificate document" data-i18n-title="modal.document_title"></iframe>
+        <img id="modal-cert-image" class="modal-img" src="" alt="Badge or certificate" data-i18n-alt="modal.badge_alt">
+      </div>
+      <div class="modal-footer">
+        <a id="modal-cert-download" href="#" download class="btn btn-primary modal-download-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span data-i18n="edu.cert_download">Download PDF</span>
+        </a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Video Player Modal Dialog (YouTube Facade) -->
+  <dialog id="video-modal" class="cert-dialog video-dialog" aria-labelledby="modal-video-title">
+    <div class="modal-container video-modal-container">
+      <div class="modal-header">
+        <div class="modal-title-block">
+          <h3 id="modal-video-title" data-i18n="modal.video_default">Video Demonstration</h3>
+          <p id="modal-video-subtitle" data-i18n="modal.video_subtitle">On-demand player · Privacy-Enhanced Mode</p>
+        </div>
+        <button class="modal-close" aria-label="Close modal dialog" data-i18n-aria-label="modal.close">&times;</button>
+      </div>
+      <div class="modal-body video-modal-body">
+        <div class="video-responsive-wrapper">
+          <iframe
+            id="modal-video-frame"
+            class="video-frame"
+            src="about:blank"
+            title="YouTube video player"
+            data-i18n-title="modal.video_player_title"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div class="modal-footer video-modal-footer">
+        <a id="modal-video-external" href="#" target="_blank" rel="noopener" class="btn btn-secondary video-external-btn" data-i18n-aria-label="Open original video on YouTube in a new tab">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          <span data-i18n="modal.video_external">Open in YouTube</span>
+        </a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Scripts -->
+  <script src="../js/theme.js"></script>
+  <script src="../js/i18n.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -8,6 +8,9 @@
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#090d16">
   <link rel="canonical" href="https://ottof77.github.io/ottodev/">
+  <link rel="alternate" hreflang="pt-BR" href="https://ottof77.github.io/ottodev/">
+  <link rel="alternate" hreflang="en-US" href="https://ottof77.github.io/ottodev/en/">
+  <link rel="alternate" hreflang="x-default" href="https://ottof77.github.io/ottodev/">
 
   <!-- Anti-FOUC Theme Initialization (Modern Web Guidance) -->
   <script>
@@ -130,7 +133,7 @@
         </a>
 
         <!-- Language Switcher -->
-        <button class="action-btn" data-action="toggle-lang" aria-label="Alterar idioma" title="Mudar Idioma (PT / EN)">
+        <button class="action-btn" data-action="toggle-lang" aria-label="Alterar idioma para English (EN)" title="Mudar para English">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
           <span class="lang-current-text">PT</span>
           <span class="lang-badge">BR</span>
@@ -298,7 +301,7 @@
             <span class="project-tag">Docker</span>
           </div>
           <div class="project-action-row">
-            <a href="https://youtu.be/hsFRhAHKpkE" target="_blank" rel="noopener" class="project-video-btn" data-i18n-aria-label="projects.video_aria">
+            <a href="https://youtu.be/hsFRhAHKpkE" target="_blank" rel="noopener" class="project-video-btn" data-video-id="hsFRhAHKpkE" data-video-title-key="proj.condotrack_video_title" data-i18n-aria-label="projects.video_aria">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
               <span data-i18n="proj.condotrack_video_btn">Assistir Demonstração (YouTube)</span>
             </a>
@@ -660,7 +663,7 @@
 
             <div class="system-action-row">
               <span class="project-tag" data-i18n="sysotto.sites_status_tag">Plataforma Online · Versão Atual em Staging</span>
-              <a href="https://youtu.be/hRQJS_e0xpU" target="_blank" rel="noopener" class="project-video-btn" data-i18n-aria-label="sysotto.sites_video_aria">
+              <a href="https://youtu.be/hRQJS_e0xpU" target="_blank" rel="noopener" class="project-video-btn" data-video-id="hRQJS_e0xpU" data-video-title-key="sysotto.sites_video_title" data-i18n-aria-label="sysotto.sites_video_aria">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                 <span data-i18n="sysotto.sites_video_btn">Assistir Tour Técnico (YouTube)</span>
               </a>
@@ -1563,7 +1566,7 @@
   </footer>
 
   <!-- Certificate Viewer Modal Dialog -->
-  <div class="modal-overlay" id="cert-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-cert-title">
+  <dialog id="cert-modal" class="cert-dialog" aria-labelledby="modal-cert-title">
     <div class="modal-container">
       <div class="modal-header">
         <div class="modal-title-block">
@@ -1583,7 +1586,39 @@
         </a>
       </div>
     </div>
-  </div>
+  </dialog>
+
+  <!-- Video Player Modal Dialog (YouTube Facade) -->
+  <dialog id="video-modal" class="cert-dialog video-dialog" aria-labelledby="modal-video-title">
+    <div class="modal-container video-modal-container">
+      <div class="modal-header">
+        <div class="modal-title-block">
+          <h3 id="modal-video-title" data-i18n="modal.video_default">Demonstração em Vídeo</h3>
+          <p id="modal-video-subtitle" data-i18n="modal.video_subtitle">Player sob demanda · Modo Privacidade</p>
+        </div>
+        <button class="modal-close" aria-label="Fechar janela modal" data-i18n-aria-label="modal.close">&times;</button>
+      </div>
+      <div class="modal-body video-modal-body">
+        <div class="video-responsive-wrapper">
+          <iframe
+            id="modal-video-frame"
+            class="video-frame"
+            src="about:blank"
+            title="Reprodutor de vídeo do YouTube"
+            data-i18n-title="modal.video_player_title"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div class="modal-footer video-modal-footer">
+        <a id="modal-video-external" href="#" target="_blank" rel="noopener" class="btn btn-secondary video-external-btn" data-i18n-aria-label="modal.video_external_aria">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          <span data-i18n="modal.video_external">Abrir no YouTube</span>
+        </a>
+      </div>
+    </div>
+  </dialog>
 
   <!-- Scripts -->
   <script src="js/theme.js"></script>

@@ -2242,24 +2242,37 @@ h3.diff-title {
 }
 
 /* ==========================================================================
-   CERTIFICATE VIEWER MODAL
+   CERTIFICATE VIEWER MODAL (<dialog>)
    ========================================================================== */
-.modal-overlay {
+.modal-overlay,
+.cert-dialog {
   display: none;
   position: fixed;
   inset: 0;
   z-index: 2000;
+  border: none;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  width: calc(100% - 3rem);
+  max-width: 900px;
+  height: 85vh;
+  max-height: 85vh;
+  margin: auto;
+  overflow: visible;
+}
+
+.modal-overlay.active,
+.cert-dialog[open] {
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.2s ease;
+}
+
+.cert-dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem;
-}
-
-.modal-overlay.active {
-  display: flex;
-  animation: fadeIn 0.2s ease;
 }
 
 .modal-container {
@@ -2344,6 +2357,58 @@ h3.diff-title {
 .modal-download-btn {
   padding: 0.5rem 1.25rem;
   font-size: 0.875rem;
+}
+
+/* Video Modal Player (YouTube Facade) */
+.video-dialog {
+  max-width: 960px;
+}
+
+.video-modal-container {
+  height: auto;
+  max-height: 90vh;
+}
+
+.video-modal-body {
+  background-color: #000000;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-responsive-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.video-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.video-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.875rem 1.75rem;
+}
+
+.video-external-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  padding: 0.45rem 1rem;
+}
+
+.video-external-btn svg {
+  flex-shrink: 0;
 }
 
 /* ==========================================================================
@@ -2453,6 +2518,12 @@ h3.diff-title {
   .hero-cta-group .btn {
     width: 100%;
     justify-content: center;
+  }
+
+  .cert-dialog {
+    width: calc(100% - 1.5rem);
+    height: 92vh;
+    max-height: 92vh;
   }
 
   .modal-container {

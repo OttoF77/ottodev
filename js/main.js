@@ -8,6 +8,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initProjectFilters();
   initCertificateModal();
+  initVideoModal();
   initSystemPreviews();
   initMobileMenu();
   initSmoothScroll();
@@ -57,11 +58,11 @@ function initProjectFilters() {
 
 /**
  * Certificate Viewer Modal
- * Compliant with WAI-ARIA Modal Dialog:
- * - Traps Tab navigation inside modal
- * - Closes on Escape or Backdrop click
- * - Sets aria-hidden="false" on open and "true" on close
- * - Restores focus to the triggering element on close
+ * Migrated to native HTML <dialog>:
+ * - Native top-layer & inert background (eliminating manual Tab trap)
+ * - Native Escape key dismissal
+ * - Centralized cleanup and focus restoration on 'close' event
+ * - Native ::backdrop click detection
  */
 function initCertificateModal() {
   const modal = document.getElementById('cert-modal');
@@ -97,9 +98,12 @@ function initCertificateModal() {
       }
     }
 
-    modal.setAttribute('aria-hidden', 'false');
-    modal.classList.add('active');
     document.body.style.overflow = 'hidden';
+    if (typeof modal.showModal === 'function') {
+      modal.showModal();
+    } else {
+      modal.setAttribute('open', '');
+    }
 
     // Focus close button on open for instant keyboard access
     if (closeBtn) {
@@ -108,16 +112,42 @@ function initCertificateModal() {
   }
 
   function closeModal() {
-    modal.classList.remove('active');
-    modal.setAttribute('aria-hidden', 'true');
+    if (modal.open) {
+      if (frameEl) frameEl.src = 'about:blank';
+      if (imgEl) imgEl.src = '';
+      modal.close();
+    }
+  }
+
+  // Cleanup & focus restoration via native 'close' event
+  modal.addEventListener('close', () => {
     document.body.style.overflow = '';
     if (frameEl) frameEl.src = 'about:blank';
     if (imgEl) imgEl.src = '';
 
-    // Restore focus to trigger button
     if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
       lastFocusedElement.focus();
     }
+  });
+
+  // Backdrop click dismissal
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      const rect = modal.getBoundingClientRect();
+      const isInside = (
+        e.clientX >= rect.left &&
+        e.clientX <= rect.right &&
+        e.clientY >= rect.top &&
+        e.clientY <= rect.bottom
+      );
+      if (!isInside) {
+        closeModal();
+      }
+    }
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeModal);
   }
 
   document.querySelectorAll('[data-cert-view]').forEach((btn) => {
@@ -128,54 +158,121 @@ function initCertificateModal() {
 
       const title = card.querySelector('.cert-title')?.textContent || 'Certificado';
       const issuer = card.querySelector('.cert-org')?.textContent || '';
-      const fileUrl = btn.getAttribute('data-cert-file') || '';
+      let fileUrl = btn.getAttribute('data-cert-file') || '';
+      const isEnRoute = typeof window !== 'undefined' && window.location && /\/en(?:\/|\/index\.html)?$/.test(window.location.pathname);
+      const isEnDoc = document.documentElement.getAttribute('lang') === 'en-US';
+      if ((isEnRoute || isEnDoc) && !fileUrl.startsWith('../') && !fileUrl.startsWith('/') && !fileUrl.startsWith('http')) {
+        fileUrl = '../' + fileUrl;
+      } else if (!isEnRoute && !isEnDoc && fileUrl.startsWith('../')) {
+        fileUrl = fileUrl.replace(/^\.\.\//, '');
+      }
       const isImage = fileUrl.endsWith('.jpg') || fileUrl.endsWith('.png');
 
       openModal(title, issuer, fileUrl, isImage);
     });
   });
+}
 
-  if (closeBtn) {
-    closeBtn.addEventListener('click', closeModal);
+/**
+ * Video Demonstration Modal (YouTube Facade)
+ * Opens YouTube videos on demand via https://www.youtube-nocookie.com/embed/{ID}
+ * Zero network requests to YouTube on initial page load.
+ * Native <dialog> with autoplay, focus trap, Escape key, backdrop click, and focus return.
+ */
+function initVideoModal() {
+  const modal = document.getElementById('video-modal');
+  if (!modal) return;
+
+  let lastFocusedElement = null;
+  const closeBtn = modal.querySelector('.modal-close');
+  const titleEl = document.getElementById('modal-video-title');
+  const frameEl = document.getElementById('modal-video-frame');
+  const externalLink = document.getElementById('modal-video-external');
+
+  function openVideoModal(videoId, title, rawUrl) {
+    lastFocusedElement = document.activeElement;
+
+    if (titleEl && title) {
+      titleEl.textContent = title;
+    }
+    if (externalLink && rawUrl) {
+      externalLink.setAttribute('href', rawUrl);
+    }
+    if (frameEl && videoId) {
+      frameEl.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
+    }
+
+    document.body.style.overflow = 'hidden';
+    if (typeof modal.showModal === 'function') {
+      modal.showModal();
+    } else {
+      modal.setAttribute('open', '');
+    }
+
+    if (closeBtn) {
+      setTimeout(() => closeBtn.focus(), 50);
+    }
   }
 
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal || e.target.classList.contains('modal-backdrop')) {
-      closeModal();
+  function closeVideoModal() {
+    if (modal.open) {
+      if (frameEl) {
+        frameEl.src = 'about:blank';
+      }
+      modal.close();
+    }
+  }
+
+  // Cleanup & stop video playback when dialog closes
+  modal.addEventListener('close', () => {
+    document.body.style.overflow = '';
+    if (frameEl) {
+      frameEl.src = 'about:blank';
+    }
+    if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+      lastFocusedElement.focus();
     }
   });
 
-  // Keyboard navigation & Focus Trap
-  modal.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      closeModal();
-      return;
-    }
-
-    if (e.key === 'Tab') {
-      const focusable = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
-      if (!focusable.length) return;
-      const firstFocusable = focusable[0];
-      const lastFocusable = focusable[focusable.length - 1];
-
-      if (e.shiftKey) {
-        if (document.activeElement === firstFocusable) {
-          e.preventDefault();
-          lastFocusable.focus();
-        }
-      } else {
-        if (document.activeElement === lastFocusable) {
-          e.preventDefault();
-          firstFocusable.focus();
-        }
+  // Backdrop click dismissal
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      const rect = modal.getBoundingClientRect();
+      const isInside = (
+        e.clientX >= rect.left &&
+        e.clientX <= rect.right &&
+        e.clientY >= rect.top &&
+        e.clientY <= rect.bottom
+      );
+      if (!isInside) {
+        closeVideoModal();
       }
     }
   });
 
-  window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('active')) {
-      closeModal();
-    }
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeVideoModal);
+  }
+
+  document.querySelectorAll('.project-video-btn').forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      const videoId = btn.getAttribute('data-video-id');
+      const href = btn.getAttribute('href');
+      const match = href ? href.match(/(?:youtu\.be\/|youtube(?:-nocookie)?\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([\w-]{11})/) : null;
+      const id = videoId || (match ? match[1] : null);
+      if (!id) return;
+
+      e.preventDefault();
+      const titleKey = btn.getAttribute('data-video-title-key');
+      let title = '';
+      if (titleKey && window.i18n && typeof window.i18n.t === 'function') {
+        title = window.i18n.t(titleKey);
+      } else {
+        title = btn.getAttribute('data-video-title') || btn.textContent.trim();
+      }
+
+      openVideoModal(id, title, href || `https://youtu.be/${id}`);
+    });
   });
 }
 

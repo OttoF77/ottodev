@@ -28,6 +28,13 @@ const translations = {
     'modal.cert_default': 'Certificado Oficial',
     'modal.document_title': 'Documento do certificado',
     'modal.badge_alt': 'Badge ou certificado',
+    'modal.video_default': 'Demonstração em Vídeo',
+    'modal.video_subtitle': 'Player sob demanda · Modo Privacidade',
+    'modal.video_external': 'Abrir no YouTube',
+    'modal.video_external_aria': 'Abrir vídeo original no YouTube em nova aba',
+    'modal.video_player_title': 'Reprodutor de vídeo do YouTube',
+    'proj.condotrack_video_title': 'CondoTrack — Gestão & Rastreabilidade 360° (Demonstração)',
+    'sysotto.sites_video_title': 'Sysotto Sites — Tour Técnico & Demonstração',
     'nav.home': 'Início',
     'nav.about': 'Sobre',
     'nav.sysotto': 'Case Sysotto',
@@ -424,6 +431,13 @@ const translations = {
     'modal.cert_default': 'Official Certificate',
     'modal.document_title': 'Certificate document',
     'modal.badge_alt': 'Badge or certificate',
+    'modal.video_default': 'Video Demonstration',
+    'modal.video_subtitle': 'On-demand player · Privacy-Enhanced Mode',
+    'modal.video_external': 'Open in YouTube',
+    'modal.video_external_aria': 'Open original video on YouTube in a new tab',
+    'modal.video_player_title': 'YouTube video player',
+    'proj.condotrack_video_title': 'CondoTrack — 360° Management & Traceability (Demo)',
+    'sysotto.sites_video_title': 'Sysotto Sites — Technical Tour & Demo',
     'nav.home': 'Home',
     'nav.about': 'About',
     'nav.sysotto': 'Case Sysotto',
@@ -805,25 +819,69 @@ class I18nManager {
   }
 
   getInitialLang() {
-    const saved = localStorage.getItem(this.storageKey);
+    // 1. If explicitly on the /en route or document is pre-rendered in en-US
+    const isEnDoc = typeof document !== 'undefined' && document.documentElement && document.documentElement.getAttribute('lang') === 'en-US';
+    const isEnRoute = typeof window !== 'undefined' && window.location && /\/en(?:\/|\/index\.html)?$/.test(window.location.pathname);
+    if (isEnDoc || isEnRoute) {
+      return 'en-US';
+    }
+
+    // 2. Check saved preference
+    const saved = typeof localStorage !== 'undefined' ? localStorage.getItem(this.storageKey) : null;
     if (saved && (saved === 'pt-BR' || saved === 'en-US')) {
       return saved;
     }
-    // Detect browser language
-    const browserLang = navigator.language || navigator.userLanguage || '';
+
+    // 3. Detect browser language
+    const browserLang = (typeof navigator !== 'undefined' && (navigator.language || navigator.userLanguage)) || '';
     if (browserLang.startsWith('pt')) {
       return 'pt-BR';
     }
     return 'en-US';
   }
 
-  setLanguage(lang) {
+  syncUrl(lang) {
+    if (typeof window === 'undefined' || !window.location || window.location.protocol === 'file:') return;
+    try {
+      const path = window.location.pathname;
+      const isEn = lang === 'en-US';
+      const hasEn = /\/en(?:\/|\/index\.html)?$/.test(path);
+
+      let newPath = path;
+      if (isEn && !hasEn) {
+        if (newPath.endsWith('/index.html')) {
+          newPath = newPath.replace(/\/index\.html$/, '/en/');
+        } else if (newPath.endsWith('/')) {
+          newPath = newPath + 'en/';
+        } else {
+          newPath = newPath + '/en/';
+        }
+      } else if (!isEn && hasEn) {
+        newPath = newPath.replace(/\/en(?:\/index\.html|\/)?$/, '/');
+      }
+
+      if (newPath !== path) {
+        window.history.replaceState(null, '', newPath + window.location.search + window.location.hash);
+      }
+    } catch (_) {
+      // Safe fallback if history.replaceState is restricted
+    }
+  }
+
+  setLanguage(lang, syncHistory = true) {
     if (!translations[lang]) return;
     this.currentLang = lang;
-    localStorage.setItem(this.storageKey, lang);
-    document.documentElement.setAttribute('lang', lang);
+    if (typeof localStorage !== 'undefined') {
+      localStorage.setItem(this.storageKey, lang);
+    }
+    if (typeof document !== 'undefined' && document.documentElement) {
+      document.documentElement.setAttribute('lang', lang);
+    }
     this.applyTranslations();
     this.updateLanguageToggleUI();
+    if (syncHistory) {
+      this.syncUrl(lang);
+    }
   }
 
   t(key) {
@@ -901,15 +959,20 @@ class I18nManager {
     const ogLocaleAlt = document.querySelector('meta[property="og:locale:alternate"]');
     if (ogLocaleAlt) ogLocaleAlt.setAttribute('content', isPt ? 'en_US' : 'pt_BR');
 
-    // 4. Update dynamic CV download links according to language
+    // 4. Update dynamic CV download links according to language and route depth
     const cvButtons = document.querySelectorAll('[data-dynamic-cv]');
+    const isEnRoute = typeof window !== 'undefined' && window.location && /\/en(?:\/|\/index\.html)?$/.test(window.location.pathname);
+    const isEnDoc = typeof document !== 'undefined' && document.documentElement && document.documentElement.getAttribute('lang') === 'en-US';
+    const assetPrefix = (isEnRoute || isEnDoc) ? '../' : '';
     cvButtons.forEach((btn) => {
-      btn.setAttribute('href', isPt ? 'assets/docs/cv-otto-freitag-pt-br.pdf' : 'assets/docs/cv-otto-freitag-en-us.pdf');
+      btn.setAttribute('href', isPt ? `${assetPrefix}assets/docs/cv-otto-freitag-pt-br.pdf` : `${assetPrefix}assets/docs/cv-otto-freitag-en-us.pdf`);
       btn.setAttribute('download', isPt ? 'CV-Otto-David-Freitag-PT-BR.pdf' : 'CV-Otto-David-Freitag-EN-US.pdf');
     });
 
     // 5. Dispatch event in case other components need to react
-    window.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang: this.currentLang } }));
+    if (typeof window !== 'undefined' && typeof window.dispatchEvent === 'function' && typeof CustomEvent !== 'undefined') {
+      window.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang: this.currentLang } }));
+    }
   }
 
   updateLanguageToggleUI() {
@@ -933,21 +996,29 @@ class I18nManager {
   }
 
   init() {
-    this.setLanguage(this.currentLang);
+    this.setLanguage(this.currentLang, false);
 
-    document.addEventListener('DOMContentLoaded', () => {
-      this.applyTranslations();
-      this.updateLanguageToggleUI();
+    if (typeof document !== 'undefined') {
+      document.addEventListener('DOMContentLoaded', () => {
+        this.applyTranslations();
+        this.updateLanguageToggleUI();
 
-      document.querySelectorAll('[data-action="toggle-lang"]').forEach((btn) => {
-        btn.addEventListener('click', (e) => {
-          e.preventDefault();
-          const targetLang = this.currentLang === 'pt-BR' ? 'en-US' : 'pt-BR';
-          this.setLanguage(targetLang);
+        document.querySelectorAll('[data-action="toggle-lang"]').forEach((btn) => {
+          btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetLang = this.currentLang === 'pt-BR' ? 'en-US' : 'pt-BR';
+            this.setLanguage(targetLang, true);
+          });
         });
       });
-    });
+    }
   }
 }
 
-window.i18n = new I18nManager();
+if (typeof window !== 'undefined') {
+  window.i18n = new I18nManager();
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { translations, I18nManager };
+}

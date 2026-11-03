@@ -27,6 +27,12 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Build static i18n English route
+        run: node scripts/build-i18n-static.mjs
+
+      - name: Audit repository integrity & quality
+        run: python3 scripts/verify.py
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
