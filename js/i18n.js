@@ -54,6 +54,7 @@ const translations = {
     'hero.title_end': 'aliadas a mais de 20 anos de liderança executiva.',
     'hero.subtitle': 'Mais de 20 anos de gestão executiva em grandes operações corporativas e industriais (Gerdau, CSN, Servisan) integrados ao desenvolvimento de software crítico e plataformas SaaS. Como Engenheiro de Software e Arquiteto de Soluções, uno visão de negócio, liderança e engenharia sólida para construir sistemas distribuídos, escaláveis e de alta confiabilidade.',
     'hero.description': 'Mais de 20 anos de gestão executiva em grandes operações corporativas e industriais (Gerdau, CSN, Servisan) integrados ao desenvolvimento de software crítico e plataformas SaaS. Como Engenheiro de Software e Arquiteto de Soluções, uno visão de negócio, liderança e engenharia sólida para construir sistemas distribuídos, escaláveis e de alta confiabilidade.',
+
     'hero.cta_projects': 'Ver Projetos & Cases',
     'hero.cta_academic': 'Ver Projetos de Engenharia',
     'hero.cta_cv': 'Baixar Currículo (PDF)',
@@ -457,6 +458,7 @@ const translations = {
     'hero.title_end': 'backed by 20+ years of executive leadership.',
     'hero.subtitle': 'Over 20 years of executive leadership across major corporate and industrial operations (Gerdau, CSN, Servisan) integrated with mission-critical software engineering. As a Software Engineer and Solutions Architect, I combine strategic business acumen, team leadership, and rigorous engineering to build distributed, scalable, and highly reliable systems.',
     'hero.description': 'Over 20 years of executive leadership across major corporate and industrial operations (Gerdau, CSN, Servisan) integrated with mission-critical software engineering. As a Software Engineer and Solutions Architect, I combine strategic business acumen, team leadership, and rigorous engineering to build distributed, scalable, and highly reliable systems.',
+
     'hero.cta_projects': 'View Projects & Cases',
     'hero.cta_academic': 'View Engineering Projects',
     'hero.cta_cv': 'Download Resume (PDF)',
