@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSystemPreviews();
   initMobileMenu();
   initSmoothScroll();
+  initCtaTracking();
   initCopyEmail();
 });
 
@@ -400,6 +401,11 @@ function initSmoothScroll() {
         const isSkipLink = this.classList.contains('skip-link');
         if (isSkipLink && typeof target.focus === 'function') {
           target.focus({ preventScroll: true });
+        } else if (targetId === '#contact' && this.hasAttribute('data-cta-source')) {
+          const contactHeading = document.getElementById('contact-heading');
+          if (contactHeading && typeof contactHeading.focus === 'function') {
+            contactHeading.focus({ preventScroll: true });
+          }
         }
 
         const headerOffset = 80;
@@ -414,6 +420,265 @@ function initSmoothScroll() {
         });
       }
     });
+  });
+}
+
+/**
+ * Lightweight, PII-free CTA Click Instrumentation & Contact Origin Propagation
+ * Tracks anonymous CTA source counts in sessionStorage and propagates the
+ * selected origin (utm_source / utm_content / data-cta-source) to #contact.
+ */
+function initCtaTracking() {
+  const STORAGE_KEY = 'ottodev_cta_metrics';
+
+  const CTA_ORIGINS = {
+    'hero-primary': {
+      utmSource: 'ottodev',
+      utmContent: 'hero_cta',
+      label: {
+        'pt-BR': 'Orçamento / Diagnóstico Técnico (Hero)',
+        'en-US': 'Quote / Technical Assessment (Hero)'
+      },
+      subject: {
+        'pt-BR': '[Orçamento / Diagnóstico] Contato via Portfólio ottodev',
+        'en-US': '[Quote / Assessment] Contact via ottodev Portfolio'
+      },
+      body: {
+        'pt-BR': 'Olá Otto,\n\nGostaria de conversar sobre um projeto ou solicitar um diagnóstico técnico.\n\n[Origem: Portfólio ottodev — CTA Principal do Hero | utm_content=hero_cta]',
+        'en-US': 'Hi Otto,\n\nI would like to discuss a project or request a technical assessment.\n\n[Source: ottodev Portfolio — Hero Primary CTA | utm_content=hero_cta]'
+      }
+    },
+    'hero-projects': {
+      utmSource: 'ottodev',
+      utmContent: 'hero_projects',
+      label: {
+        'pt-BR': 'Projetos em Produção (Hero)',
+        'en-US': 'Production Projects (Hero)'
+      },
+      subject: {
+        'pt-BR': '[Projetos & Cases] Contato via Portfólio ottodev',
+        'en-US': '[Projects & Cases] Contact via ottodev Portfolio'
+      },
+      body: {
+        'pt-BR': 'Olá Otto,\n\nVi seus projetos em produção no portfólio e gostaria de conversar.\n\n[Origem: Portfólio ottodev — CTA Projetos do Hero | utm_content=hero_projects]',
+        'en-US': 'Hi Otto,\n\nI reviewed your production projects on your portfolio and would like to connect.\n\n[Source: ottodev Portfolio — Hero Projects CTA | utm_content=hero_projects]'
+      }
+    },
+    'hero-cv': {
+      utmSource: 'ottodev',
+      utmContent: 'hero_cv',
+      label: {
+        'pt-BR': 'Download do Currículo (Hero)',
+        'en-US': 'Resume Download (Hero)'
+      },
+      subject: {
+        'pt-BR': '[Oportunidade / Currículo] Contato via Portfólio ottodev',
+        'en-US': '[Opportunity / Resume] Contact via ottodev Portfolio'
+      },
+      body: {
+        'pt-BR': 'Olá Otto,\n\nBaixei seu currículo pelo portfólio e gostaria de conversar sobre uma oportunidade.\n\n[Origem: Portfólio ottodev — CTA Currículo do Hero | utm_content=hero_cv]',
+        'en-US': 'Hi Otto,\n\nI downloaded your resume from your portfolio and would like to discuss an opportunity.\n\n[Source: ottodev Portfolio — Hero Resume CTA | utm_content=hero_cv]'
+      }
+    },
+    'service-sites': {
+      utmSource: 'ottodev',
+      utmContent: 'service_sites',
+      serviceInterest: 'sites',
+      label: {
+        'pt-BR': 'Serviço: Landing Pages & Sites (Sysotto Sites)',
+        'en-US': 'Service: Landing Pages & Websites (Sysotto Sites)'
+      },
+      subject: {
+        'pt-BR': '[Proposta: Landing Page / Site] Contato via Portfólio ottodev',
+        'en-US': '[Proposal: Landing Page / Website] Contact via ottodev Portfolio'
+      },
+      body: {
+        'pt-BR': 'Olá Otto,\n\nTenho interesse em contratar uma Landing Page ou Site de Alta Conversão (Sysotto Sites / projeto sob medida).\n\n[Origem: Portfólio ottodev — Serviço: sites | utm_content=service_sites]',
+        'en-US': 'Hi Otto,\n\nI am interested in hiring a high-converting Landing Page or Website (Sysotto Sites / custom build).\n\n[Source: ottodev Portfolio — Service: sites | utm_content=service_sites]'
+      }
+    },
+    'service-erp': {
+      utmSource: 'ottodev',
+      utmContent: 'service_erp',
+      serviceInterest: 'erp',
+      label: {
+        'pt-BR': 'Serviço: Sistemas Web, E-commerce & ERPs (Sysotto)',
+        'en-US': 'Service: Web Systems, E-Commerce & ERPs (Sysotto)'
+      },
+      subject: {
+        'pt-BR': '[Diagnóstico: Sistema Web / ERP Sysotto] Contato via Portfólio ottodev',
+        'en-US': '[Assessment: Web System / Sysotto ERP] Contact via ottodev Portfolio'
+      },
+      body: {
+        'pt-BR': 'Olá Otto,\n\nGostaria de solicitar um diagnóstico para implantação ou customização de Sistema Web, E-commerce ou ERP Vertical Sysotto.\n\n[Origem: Portfólio ottodev — Serviço: erp | utm_content=service_erp]',
+        'en-US': 'Hi Otto,\n\nI would like to request an assessment for deploying or customizing a Web System, E-Commerce, or Vertical Sysotto ERP.\n\n[Source: ottodev Portfolio — Service: erp | utm_content=service_erp]'
+      }
+    },
+    'service-custom': {
+      utmSource: 'ottodev',
+      utmContent: 'service_custom',
+      serviceInterest: 'custom',
+      label: {
+        'pt-BR': 'Serviço: Arquitetura, Hardening & Consultoria Sob Demanda',
+        'en-US': 'Service: Architecture, Hardening & On-Demand Consulting'
+      },
+      subject: {
+        'pt-BR': '[Consultoria / Projeto Sob Demanda] Contato via Portfólio ottodev',
+        'en-US': '[Consulting / Custom Project] Contact via ottodev Portfolio'
+      },
+      body: {
+        'pt-BR': 'Olá Otto,\n\nTenho interesse em consultoria técnica, hardening ou projeto de arquitetura de software sob demanda.\n\n[Origem: Portfólio ottodev — Serviço: custom | utm_content=service_custom]',
+        'en-US': 'Hi Otto,\n\nI am interested in technical consulting, hardening, or an on-demand software architecture project.\n\n[Source: ottodev Portfolio — Service: custom | utm_content=service_custom]'
+      }
+    }
+  };
+
+  const UTM_TO_SOURCE = {};
+  const SERVICE_TO_SOURCE = {};
+  Object.entries(CTA_ORIGINS).forEach(([source, cfg]) => {
+    UTM_TO_SOURCE[cfg.utmContent] = source;
+    if (cfg.serviceInterest) {
+      SERVICE_TO_SOURCE[cfg.serviceInterest] = source;
+    }
+  });
+
+  function getActiveLang() {
+    if (window.i18n && (window.i18n.currentLang === 'pt-BR' || window.i18n.currentLang === 'en-US')) {
+      return window.i18n.currentLang;
+    }
+    return document.documentElement.getAttribute('lang') === 'en-US' ? 'en-US' : 'pt-BR';
+  }
+
+  function readCtaMetrics() {
+    const empty = { lastSource: null, lastUtmContent: null, lastServiceInterest: null, counts: {} };
+    try {
+      const raw = window.sessionStorage.getItem(STORAGE_KEY);
+      if (!raw) return empty;
+      const parsed = JSON.parse(raw);
+      return {
+        lastSource: parsed.lastSource || null,
+        lastUtmContent: parsed.lastUtmContent || null,
+        lastServiceInterest: parsed.lastServiceInterest || null,
+        counts: parsed.counts && typeof parsed.counts === 'object' ? parsed.counts : {}
+      };
+    } catch (_) {
+      return empty;
+    }
+  }
+
+  function writeCtaMetrics(metrics) {
+    try {
+      window.sessionStorage.setItem(STORAGE_KEY, JSON.stringify(metrics));
+    } catch (_) {
+      // Ignore storage quota/privacy restrictions
+    }
+  }
+
+  function syncUrlParams(utmSource, utmContent, targetHash) {
+    if (window.location.protocol === 'file:' || !window.history || typeof window.history.replaceState !== 'function') {
+      return;
+    }
+    try {
+      const url = new URL(window.location.href);
+      url.searchParams.set('utm_source', utmSource);
+      url.searchParams.set('utm_content', utmContent);
+      if (targetHash && targetHash.startsWith('#')) {
+        url.hash = targetHash;
+      }
+      window.history.replaceState(null, '', url.pathname + url.search + url.hash);
+    } catch (_) {
+      // Safe no-op if history API is restricted
+    }
+  }
+
+  function applyContactOrigin(source) {
+    const origin = CTA_ORIGINS[source];
+    const contactSection = document.getElementById('contact');
+    if (!origin || !contactSection) return;
+
+    const lang = getActiveLang();
+    contactSection.setAttribute('data-active-cta-source', source);
+    contactSection.setAttribute('data-utm-source', origin.utmSource);
+    contactSection.setAttribute('data-utm-content', origin.utmContent);
+    if (origin.serviceInterest) {
+      contactSection.setAttribute('data-service-interest', origin.serviceInterest);
+    } else {
+      contactSection.removeAttribute('data-service-interest');
+    }
+
+    const subject = encodeURIComponent(origin.subject[lang]);
+    const body = encodeURIComponent(origin.body[lang]);
+    contactSection.querySelectorAll('[data-contact-mailto]').forEach((link) => {
+      const baseEmail = link.getAttribute('data-base-email') || 'otto@sysotto.com';
+      link.setAttribute('href', `mailto:${baseEmail}?subject=${subject}&body=${body}`);
+      link.setAttribute('data-cta-origin', source);
+      link.setAttribute('data-utm-content', origin.utmContent);
+      if (origin.serviceInterest) {
+        link.setAttribute('data-service-interest', origin.serviceInterest);
+      } else {
+        link.removeAttribute('data-service-interest');
+      }
+    });
+
+    const contextBanner = document.getElementById('contact-origin-context');
+    const contextLabel = document.getElementById('contact-origin-label');
+    if (contextBanner && contextLabel) {
+      contextLabel.textContent = origin.label[lang];
+      contextBanner.classList.remove('is-hidden');
+    }
+  }
+
+  window.ottodevTracking = {
+    getMetrics: () => readCtaMetrics(),
+    getLastSource: () => readCtaMetrics().lastSource
+  };
+
+  document.querySelectorAll('[data-cta-source]').forEach((el) => {
+    el.addEventListener('click', () => {
+      const source = el.getAttribute('data-cta-source');
+      if (!source) return;
+
+      const cfg = CTA_ORIGINS[source];
+      const utmSource = el.getAttribute('data-utm-source') || (cfg && cfg.utmSource) || 'ottodev';
+      const utmContent = el.getAttribute('data-utm-content') || (cfg && cfg.utmContent) || source;
+      const serviceInterest = el.getAttribute('data-service-interest') || (cfg && cfg.serviceInterest) || null;
+
+      const metrics = readCtaMetrics();
+      metrics.lastSource = source;
+      metrics.lastUtmContent = utmContent;
+      metrics.lastServiceInterest = serviceInterest;
+      metrics.counts[source] = (metrics.counts[source] || 0) + 1;
+      writeCtaMetrics(metrics);
+
+      applyContactOrigin(source);
+
+      const href = el.getAttribute('href') || '';
+      syncUrlParams(utmSource, utmContent, href.startsWith('#') ? href : '');
+
+      window.dispatchEvent(new CustomEvent('ctaTracked', {
+        detail: { source, serviceInterest, utmSource, utmContent }
+      }));
+    });
+  });
+
+  // Restore context from URL UTM/service parameters or previous click in the session
+  const params = new URLSearchParams(window.location.search);
+  const utmContentParam = params.get('utm_content');
+  const serviceParam = params.get('service') || params.get('interest');
+  const initialSource =
+    (utmContentParam && UTM_TO_SOURCE[utmContentParam]) ||
+    (serviceParam && SERVICE_TO_SOURCE[serviceParam]) ||
+    readCtaMetrics().lastSource;
+  if (initialSource && CTA_ORIGINS[initialSource]) {
+    applyContactOrigin(initialSource);
+  }
+
+  window.addEventListener('languageChanged', () => {
+    const contactSection = document.getElementById('contact');
+    const activeSource = contactSection ? contactSection.getAttribute('data-active-cta-source') : null;
+    if (activeSource) {
+      applyContactOrigin(activeSource);
+    }
   });
 }
 
