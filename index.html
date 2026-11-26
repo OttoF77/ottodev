@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Otto David de Santana Freitag | Liderança Executiva & Engenharia de Software</title>
-  <meta name="description" content="Portfólio executivo de Otto David de Santana Freitag: mais de 20 anos de liderança executiva em grandes corporações (Gerdau, CSN, Servisan), Arquiteto de Soluções e fundador da Sysotto Softwares.">
+  <title>Otto Freitag | Engenharia de Software e Sysotto</title>
+  <meta name="description" content="Otto Freitag, fundador da Sysotto Softwares. Sites e landing pages sob medida, sistemas modulares e projetos enterprise com consultoria técnica.">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#090d16">
   <link rel="canonical" href="https://ottof77.github.io/ottodev/">
@@ -33,8 +33,8 @@
 
   <!-- Open Graph / Social Media Metadata (Verified Local Assets) -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Otto David de Santana Freitag | Liderança Executiva & Engenharia de Software">
-  <meta property="og:description" content="Portfólio executivo de Otto David de Santana Freitag: mais de 20 anos de liderança executiva em grandes corporações (Gerdau, CSN, Servisan), Arquiteto de Soluções e fundador da Sysotto Softwares.">
+  <meta property="og:title" content="Otto Freitag | Engenharia de Software e Sysotto">
+  <meta property="og:description" content="Otto Freitag, fundador da Sysotto Softwares. Sites e landing pages sob medida, sistemas modulares e projetos enterprise com consultoria técnica.">
   <meta property="og:url" content="https://ottof77.github.io/ottodev/">
   <meta property="og:image" content="https://ottof77.github.io/ottodev/assets/images/og-cover.jpg">
   <meta property="og:image:width" content="1200">
@@ -46,8 +46,8 @@
 
   <!-- Twitter Card Metadata -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Otto David de Santana Freitag | Liderança Executiva & Engenharia de Software">
-  <meta name="twitter:description" content="Portfólio executivo de Otto David de Santana Freitag: mais de 20 anos de liderança executiva em grandes corporações (Gerdau, CSN, Servisan), Arquiteto de Soluções e fundador da Sysotto Softwares.">
+  <meta name="twitter:title" content="Otto Freitag | Engenharia de Software e Sysotto">
+  <meta name="twitter:description" content="Otto Freitag, fundador da Sysotto Softwares. Sites e landing pages sob medida, sistemas modulares e projetos enterprise com consultoria técnica.">
   <meta name="twitter:image" content="https://ottof77.github.io/ottodev/assets/images/og-cover.jpg">
   <meta name="twitter:image:alt" content="Card executivo de Otto Freitag">
 
@@ -58,28 +58,35 @@
     "@graph": [
       {
         "@type": "Person",
+        "@id": "https://ottof77.github.io/ottodev/#otto-freitag",
         "name": "Otto David de Santana Freitag",
-        "jobTitle": "CEO & Software Engineer",
+        "jobTitle": "Fundador da Sysotto e engenheiro de software",
         "url": "https://ottof77.github.io/ottodev/",
         "image": "https://ottof77.github.io/ottodev/assets/images/otto-freitag.jpg",
+        "email": "otto@sysotto.com",
         "worksFor": {
-          "@type": "Organization",
-          "name": "Sysotto Softwares"
+          "@id": "https://www.sysotto.com/#organization"
         },
+        "knowsAbout": [
+          "Arquitetura de software modular",
+          "Isolamento de dados multi-tenant",
+          "Hardening de APIs",
+          "Consultoria técnica"
+        ],
         "alumniOf": [
           {
             "@type": "EducationalOrganization",
-            "name": "FGV (MBA em Gestão Empresarial)"
+            "name": "Fundação Getulio Vargas (FGV)"
           },
           {
             "@type": "EducationalOrganization",
-            "name": "UNIFBV / Wyden (Engenharia de Software)"
-          },
-          {
-            "@type": "EducationalOrganization",
-            "name": "UNIFOR (Turismo)"
+            "name": "Universidade de Fortaleza (UNIFOR)"
           }
         ],
+        "affiliation": {
+          "@type": "EducationalOrganization",
+          "name": "UNIFBV / Wyden"
+        },
         "sameAs": [
           "https://www.linkedin.com/in/otto-freitag-60912031",
           "https://github.com/OttoF77"
@@ -87,12 +94,93 @@
       },
       {
         "@type": "WebSite",
-        "name": "Otto Freitag — Portfólio Profissional",
+        "@id": "https://ottof77.github.io/ottodev/#website",
+        "name": "Otto Freitag",
         "url": "https://ottof77.github.io/ottodev/",
         "inLanguage": [
           "pt-BR",
           "en-US"
-        ]
+        ],
+        "creator": {
+          "@id": "https://ottof77.github.io/ottodev/#otto-freitag"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://ottof77.github.io/ottodev/#webpage",
+        "name": "Otto Freitag | Engenharia de Software e Sysotto",
+        "description": "Otto Freitag, fundador da Sysotto Softwares. Sites e landing pages sob medida, sistemas modulares e projetos enterprise com consultoria técnica.",
+        "url": "https://ottof77.github.io/ottodev/",
+        "inLanguage": "pt-BR",
+        "isPartOf": {
+          "@id": "https://ottof77.github.io/ottodev/#website"
+        },
+        "mainEntity": {
+          "@id": "https://ottof77.github.io/ottodev/#otto-freitag"
+        },
+        "about": {
+          "@id": "https://www.sysotto.com/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.sysotto.com/#organization",
+        "name": "Sysotto Softwares",
+        "url": "https://www.sysotto.com/",
+        "description": "Software house modular com três trilhas de contratação para desenvolvimento sob medida.",
+        "makesOffer": [
+          {
+            "@id": "https://ottof77.github.io/ottodev/#offer-websites"
+          },
+          {
+            "@id": "https://ottof77.github.io/ottodev/#offer-modular-systems"
+          },
+          {
+            "@id": "https://ottof77.github.io/ottodev/#offer-enterprise"
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Trilhas da Sysotto Software House",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "@id": "https://ottof77.github.io/ottodev/#offer-websites",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Sites e landing pages sob medida",
+                "description": "Projetos com identidade visual própria, build estático portável e hospedagem opcional.",
+                "provider": {
+                  "@id": "https://www.sysotto.com/#organization"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "@id": "https://ottof77.github.io/ottodev/#offer-modular-systems",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Sistemas corporativos modulares",
+                "description": "Implantação por contrato sobre Sysotto.Web e Sysotto.Api, com isolamento por tenant e extensões para operações como o Sysotto Commerce.",
+                "provider": {
+                  "@id": "https://www.sysotto.com/#organization"
+                }
+              }
+            },
+            {
+              "@type": "Offer",
+              "@id": "https://ottof77.github.io/ottodev/#offer-enterprise",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Projetos enterprise e consultoria técnica",
+                "description": "Engenharia sob medida, arquitetura, hardening de APIs e manutenção dedicada, com aplicação ou infraestrutura isolada quando o contrato exigir.",
+                "provider": {
+                  "@id": "https://www.sysotto.com/#organization"
+                }
+              }
+            }
+          ]
+        }
       }
     ]
   }
@@ -178,9 +266,7 @@
             <span data-i18n="hero.title_end">aliadas a mais de 20 anos de liderança executiva.</span>
           </h1>
 
-          <p class="hero-subtitle" data-i18n="hero.subtitle">
-            Desenvolvo sistemas sob medida, plataformas SaaS e arquiteturas escaláveis para empresas que precisam de software confiável em produção. Uno mais de 20 anos de gestão executiva (Gerdau, CSN, Servisan) e a engenharia da Sysotto Softwares para transformar demandas operacionais em resultados mensuráveis.
-          </p>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">Na Sysotto Softwares, desenvolvo sites autorais, sistemas modulares e projetos corporativos sob medida. Aplico mais de 20 anos de gestão executiva (Gerdau, CSN, Servisan) à engenharia de software para operações críticas.</p>
 
           <div class="hero-actions hero-cta-group">
             <a href="#contact" class="btn btn-primary hero-cta-primary" data-cta-source="hero-primary" data-utm-source="ottodev" data-utm-content="hero_cta">
@@ -189,7 +275,7 @@
             </a>
             <a href="#projects" class="btn btn-secondary hero-cta-secondary" data-cta-source="hero-projects" data-utm-source="ottodev" data-utm-content="hero_projects">
               <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-              <span data-i18n="hero.cta_projects">Ver Projetos em Produção</span>
+              <span data-i18n="hero.cta_projects">Ver cases e projetos</span>
             </a>
             <div class="hero-cv-action">
               <a href="assets/docs/cv-otto-freitag-pt-br.pdf" download="CV-Otto-David-Freitag-PT-BR.pdf" data-dynamic-cv data-cta-source="hero-cv" data-utm-source="ottodev" data-utm-content="hero_cv" class="hero-cv-link">
@@ -241,7 +327,7 @@
         </div>
         <div class="stat-item">
           <div class="stat-value" data-i18n="hero.stat_sysotto">Engenharia de Soluções</div>
-          <div class="stat-label" data-i18n="hero.stat_sysotto_desc">Fundador da Sysotto & Arquiteto SaaS</div>
+          <div class="stat-label" data-i18n="hero.stat_sysotto_desc">Fundador da Sysotto e arquiteto de software</div>
         </div>
       </div>
 
@@ -255,7 +341,7 @@
         <span class="section-pill" data-i18n="projects.title">Projetos em Destaque & Repositórios</span>
         <h2 class="section-title" data-i18n="projects.section_heading">Engenharia de Software em Prática</h2>
         <p class="section-subtitle" data-i18n="projects.subtitle">
-          Seleção de projetos do GitHub (OttoF77) demonstrando fundamentos de computação, microsserviços, inteligência artificial e desenvolvimento full-stack.
+          Seleção de cases e projetos de engenharia de software, design de produto, inteligência artificial e desenvolvimento full-stack.
         </p>
       </div>
 
@@ -263,6 +349,7 @@
       <div class="projects-filter-bar" role="group" aria-label="Filtrar projetos por categoria" data-i18n-aria-label="projects.filter_label">
         <button class="filter-btn active" data-filter="all" aria-pressed="true" data-i18n="projects.tab_all">Todos os Projetos</button>
         <button class="filter-btn" data-filter="sysotto" aria-pressed="false" data-i18n="projects.tab_sysotto">Sistemas Corporativos (Sysotto)</button>
+        <button class="filter-btn" data-filter="design" aria-pressed="false" data-i18n="projects.tab_design">Design &amp; Prototipagem</button>
         <button class="filter-btn" data-filter="hackathon" aria-pressed="false" data-i18n="projects.tab_hackathons">Simulações & Hackathons</button>
         <button class="filter-btn" data-filter="academic" aria-pressed="false" data-i18n="projects.tab_academic">Ciência da Computação & Fundamentos</button>
       </div>
@@ -319,10 +406,21 @@
           </div>
         </div>
 
-        <!-- CARD 2 (Featured #2): Sysotto ERP / Industry Suite -->
+        <article class="project-card" id="commerce-case" data-category="sysotto">
+          <div class="project-card-header">
+            <span class="project-cat-badge" data-i18n="sysotto.commerce_status">Implementado · Soft-launch não fiscal em implantação</span>
+          </div>
+          <h3 class="project-title" data-i18n="sysotto.commerce_title">Sysotto Commerce V2</h3>
+          <p class="project-desc" data-i18n="proj.commerce_desc">Case da Trilha 2 sobre Sysotto.Web e Sysotto.Api, com PDV, estoque multi-filial e conciliação bancária.</p>
+          <div class="project-action-row">
+            <a href="#sysotto" class="project-btn-link" data-i18n="proj.commerce_case_link">Ver case Sysotto</a>
+          </div>
+        </article>
+
+        <!-- CARD 2 (Featured #2): Industrial inventory showcase -->
         <div class="project-card featured-case" data-category="sysotto">
           <div class="project-card-header">
-            <span class="project-cat-badge" data-i18n="proj.sysotto_ind_badge">Sysotto · Em Preparação (Showcase)</span>
+            <span class="project-cat-badge" data-i18n="proj.sysotto_ind_badge">Sysotto · Acelerador interno</span>
             <span class="project-featured-flag">
               <svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
               <span data-i18n="projects.featured_flag">Destaque Técnico</span>
@@ -330,7 +428,7 @@
           </div>
           <h3 class="project-title">
             <a href="https://github.com/OttoF77/Sysotto.Inventory.Showcase" target="_blank" rel="noopener" class="project-repo-link" data-i18n-aria-label="projects.showcase_aria">
-              <span data-i18n="proj.sysotto_ind_title">Sysotto ERP / Industry Suite</span>
+              <span data-i18n="proj.sysotto_ind_title">Estoque e rastreabilidade industrial</span>
               <svg class="project-gh-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
             </a>
           </h3>
@@ -406,20 +504,46 @@
           </div>
         </div>
 
-        <!-- CARD 4: Sysotto FoodService & Desktop Printing Agent -->
+        <article class="project-card" id="lamarie" data-category="design" aria-labelledby="lamarie-title">
+          <div class="project-card-header">
+            <span class="project-cat-badge" data-i18n="proj.lamarie_badge">Design System &amp; Protótipo Interativo</span>
+          </div>
+          <h3 class="project-title" id="lamarie-title" data-i18n="proj.lamarie_title">LAMARIÊ — Vitrine editorial de moda</h3>
+          <figure class="case-preview project-preview">
+            <picture>
+              <source srcset="assets/images/previews/lamarie-hero.webp" type="image/webp">
+              <img src="assets/images/previews/lamarie-hero.jpg" width="1200" height="700" loading="lazy" decoding="async" alt="Página inicial do protótipo da LAMARIÊ, com chamada editorial e uma modelo vestindo uma peça da coleção" data-i18n-alt="previews.lamarie_alt">
+            </picture>
+            <figcaption data-i18n="previews.lamarie_caption">Protótipo editorial da LAMARIÊ · Fase 1</figcaption>
+          </figure>
+          <dl class="case-summary">
+            <div class="case-summary-item">
+              <dt data-i18n="projects.case_0">Problema / Contexto</dt>
+              <dd data-i18n="proj.lamarie_context">Criar uma vitrine digital para uma boutique de moda feminina de Mossoró (RN) e planejar sua evolução para uma loja integrada ao ERP.</dd>
+            </div>
+            <div class="case-summary-item">
+              <dt data-i18n="proj.lamarie_delivered_label">Fase 1 · Entregue e validada tecnicamente</dt>
+              <dd data-i18n="proj.lamarie_delivered">Design System completo no Figma Make, com tokens e componentes reutilizáveis, curadoria visual assistida por IA e protótipo editorial interativo validado em desktop e celular.</dd>
+            </div>
+            <div class="case-summary-item">
+              <dt data-i18n="proj.lamarie_concept_label">Fase 2 · Conceito de e-commerce e ERP</dt>
+              <dd data-i18n="proj.lamarie_concept">Carrinho, checkout, pagamentos e estoque foram simulados. A operação transacional e a integração de estoque, pedidos e pagamentos com o ERP Sysotto estão planejadas.</dd>
+            </div>
+          </dl>
+        </article>
+
+        <!-- CARD 4: Table orders and thermal printing showcase -->
         <div class="project-card" data-category="sysotto">
           <div class="project-card-header">
-            <span class="project-cat-badge" data-i18n="proj.sysotto_food_badge">Sysotto · Em Preparação</span>
+            <span class="project-cat-badge" data-i18n="proj.sysotto_food_badge">Sysotto · Acelerador interno</span>
           </div>
           <h3 class="project-title">
             <a href="https://github.com/OttoF77/Sysotto.Routing.Showcase" target="_blank" rel="noopener" class="project-repo-link" data-i18n-aria-label="projects.showcase_aria">
-              <span data-i18n="proj.sysotto_food_title">Sysotto FoodService & Agente de Impressão</span>
+              <span data-i18n="proj.sysotto_food_title">Comandas e impressão térmica</span>
               <svg class="project-gh-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
             </a>
           </h3>
-          <p class="project-desc" data-i18n="proj.sysotto_food_desc">
-            Sistema operacional para restaurantes e bares com Kitchen Display System em tempo real, gestão de comandas e mesas, e agente desktop nativo em .NET 10 para impressão térmica direta (ESC/POS).
-          </p>
+          <p class="project-desc" data-i18n="proj.sysotto_food_desc">Demonstração técnica de comandas e cozinha em tempo real, com agente desktop em .NET 10 para impressão térmica direta (ESC/POS).</p>
           <div class="project-role-note">
             <strong data-i18n="projects.role_label">Contribuição de Otto:</strong>
             <span data-i18n="proj.sysotto_food_role">Arquitetura do fluxo de pedidos via SignalR e desenvolvimento autoral do agente desktop em .NET 10 para comunicação térmica direta ESC/POS.</span>
@@ -580,167 +704,153 @@
     </div>
   </section>
 
-  <!-- Sysotto Softwares & Real-World Systems Showcase -->
+  <!-- Sysotto case -->
   <section class="section-padding section-bg-alt" id="sysotto">
     <div class="container">
       
       <div class="section-header">
-        <span class="section-pill" data-i18n="sysotto.pill">Sistemas Corporativos & Arquitetura SaaS</span>
-        <h2 class="section-title" data-i18n="sysotto.title">Arquitetura de Sistemas & Casos Técnicos (Sysotto)</h2>
-        <p class="section-subtitle" data-i18n="sysotto.subtitle">
-          Projetos de software concebidos e implementados com foco em processos críticos, integridade de dados e escalabilidade empresarial.
-        </p>
+        <span class="section-pill" data-i18n="sysotto.pill">Arquitetura &amp; Engenharia de Software</span>
+        <h2 class="section-title" data-i18n="sysotto.title">Case Sysotto · Software house modular</h2>
+        <p class="section-subtitle" data-i18n="sysotto.subtitle">Modelo comercial vigente, Commerce V2 em implantação e engenharia da plataforma compartilhada.</p>
       </div>
 
       <!-- Sysotto Header Banner -->
       <div class="sysotto-hero-banner">
         <div class="sysotto-header-flex">
           <div class="sysotto-branding-block">
-            <svg width="48" height="48" viewBox="0 0 70 70">
+            <svg aria-hidden="true" width="48" height="48" viewBox="0 0 70 70">
               <rect width="70" height="70" rx="18" fill="var(--brand-primary)"/>
               <path d="M52 20 C52 12, 18 12, 18 22 C18 32, 52 32, 52 42 C52 52, 18 52, 18 42" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
             </svg>
             <div>
               <h3 class="sysotto-company-name" data-i18n="sysotto.company_name">Sysotto Softwares</h3>
-              <span class="sysotto-company-tagline" data-i18n="sysotto.company_tagline">Ecossistema SaaS & Engenharia Corporativa</span>
+              <span class="sysotto-company-tagline" data-i18n="sysotto.company_tagline">Engenharia de software sob medida</span>
             </div>
           </div>
           <div class="sysotto-role-wrapper">
-            <span class="mock-badge badge-fifo sysotto-role-badge" data-i18n="sysotto.role_badge">Otto Freitag — Fundador & Arquiteto</span>
+            <span class="mock-badge badge-fifo sysotto-role-badge" data-i18n="sysotto.role_badge">Otto Freitag · Fundador e arquiteto</span>
           </div>
         </div>
-        <p class="sysotto-lead-text" data-i18n="sysotto.lead">
-          Fundada e arquitetada por Otto David de Santana Freitag, a Sysotto Softwares desenvolve plataformas corporativas voltadas a operações críticas, controle de estoques e serviços. Abaixo estão os escopos técnicos já modelados, os módulos implementados e as demonstrações de arquitetura.
-        </p>
+        <div class="sysotto-overview">
+          <div class="system-info-col">
+            <p class="sysotto-lead-text" data-i18n="sysotto.lead">O ADR 008 formalizou a atuação da Sysotto como software house modular em três trilhas.</p>
+            <dl class="system-status-box">
+              <div class="status-entry">
+                <dt><strong data-i18n="sysotto.track_1_title">Trilha 1 · Sites e landing pages autorais</strong></dt>
+                <dd data-i18n="sysotto.track_1_desc">Design sob medida por cliente, com build estático portável para Caddy ou Cloudflare Pages.</dd>
+              </div>
+              <div class="status-entry">
+                <dt><strong data-i18n="sysotto.track_2_title">Trilha 2 · Sistemas sobre o Core Sysotto</strong></dt>
+                <dd data-i18n="sysotto.track_2_desc">Portal único Sysotto.Web (app.sysotto.com) e monólito modular Sysotto.Api. A ativação é feita por contrato, com isolamento por TenantId e RLS no PostgreSQL e extensões por cliente.</dd>
+              </div>
+              <div class="status-entry">
+                <dt><strong data-i18n="sysotto.track_3_title">Trilha 3 · Projetos exclusivos e enterprise</strong></dt>
+                <dd data-i18n="sysotto.track_3_desc">Aplicação ou infraestrutura dedicada quando uma experiência exclusiva ou exigência de conformidade justificar a separação e o contrato cobrir o custo.</dd>
+              </div>
+            </dl>
+            <p class="system-description" data-i18n="sysotto.accelerators">Componentes de edição web, estoque industrial e operação de salão e cozinha são reutilizados em projetos sob medida, junto aos módulos compartilhados de vendas, estoque, financeiro e fiscal.</p>
+          </div>
+          <figure class="case-preview">
+            <picture>
+              <source srcset="assets/images/previews/sysotto-house.webp" type="image/webp">
+              <img src="assets/images/previews/sysotto-house.jpg" width="1200" height="700" loading="lazy" decoding="async" alt="Página inicial da Sysotto Software House com a apresentação dos serviços de engenharia e os botões de diagnóstico e contratação" data-i18n-alt="previews.sysotto_house_alt">
+            </picture>
+            <figcaption data-i18n="previews.sysotto_house_caption">Vitrine pública da Sysotto Software House</figcaption>
+          </figure>
+        </div>
       </div>
 
       <!-- Navigation Tabs between Sysotto Systems -->
-      <div class="sysotto-tabs-nav" role="tablist" aria-label="Plataformas e Módulos Sysotto" data-i18n-aria-label="sysotto.tabs_label">
-        <button class="sysotto-tab-btn active" data-target="preview-sitebuilder" role="tab" id="tab-sitebuilder" aria-selected="true" aria-controls="preview-sitebuilder">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
-          <span data-i18n="sysotto.tab_sites">Sysotto Sites</span>
+      <div class="sysotto-tabs-nav" role="tablist" aria-label="Visão técnica da Sysotto" data-i18n-aria-label="sysotto.tabs_label">
+        <button class="sysotto-tab-btn active" data-target="preview-commerce" role="tab" id="tab-commerce" aria-selected="true" aria-controls="preview-commerce">
+          <span data-i18n="sysotto.tab_commerce">Commerce V2</span>
         </button>
-        <button class="sysotto-tab-btn" data-target="preview-core" role="tab" id="tab-core" aria-selected="false" aria-controls="preview-core">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-          <span data-i18n="sysotto.tab_core">Multi-Tenant Core</span>
+        <button class="sysotto-tab-btn" data-target="preview-core" role="tab" id="tab-core" aria-selected="false" aria-controls="preview-core" tabindex="-1">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          <span data-i18n="sysotto.tab_core">Plataforma raiz</span>
         </button>
-        <button class="sysotto-tab-btn" data-target="preview-industry" role="tab" id="tab-industry" aria-selected="false" aria-controls="preview-industry">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path></svg>
-          <span data-i18n="sysotto.tab_ind">Sysotto Industry</span>
+        <button class="sysotto-tab-btn" data-target="preview-sitebuilder" role="tab" id="tab-sitebuilder" aria-selected="false" aria-controls="preview-sitebuilder" tabindex="-1">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+          <span data-i18n="sysotto.tab_sites">Componentes web</span>
         </button>
-        <button class="sysotto-tab-btn" data-target="preview-foodservice" role="tab" id="tab-foodservice" aria-selected="false" aria-controls="preview-foodservice">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
-          <span data-i18n="sysotto.tab_food">Sysotto FoodService</span>
+        <button class="sysotto-tab-btn" data-target="preview-industry" role="tab" id="tab-industry" aria-selected="false" aria-controls="preview-industry" tabindex="-1">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"></path></svg>
+          <span data-i18n="sysotto.tab_ind">Estoque industrial</span>
+        </button>
+        <button class="sysotto-tab-btn" data-target="preview-foodservice" role="tab" id="tab-foodservice" aria-selected="false" aria-controls="preview-foodservice" tabindex="-1">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+          <span data-i18n="sysotto.tab_food">Salão e cozinha</span>
         </button>
       </div>
 
-      <!-- PANEL 3: Sysotto Sites -->
-      <div class="preview-panel active" id="preview-sitebuilder" role="tabpanel" aria-labelledby="tab-sitebuilder" tabindex="0">
+      <div class="preview-panel active" id="preview-commerce" role="tabpanel" aria-labelledby="tab-commerce" tabindex="0">
         <div class="system-card">
           <div class="system-info-col">
             <div class="system-title-row">
-              <h3 class="system-title" data-i18n="sysotto.site_title">Sysotto Sites — Plataforma Web & CMS</h3>
-              <span class="system-status-badge badge-online" data-i18n="sysotto.status_sites_online">● Online & Em Operação</span>
+              <h3 class="system-title" data-i18n="sysotto.commerce_title">Sysotto Commerce V2</h3>
+              <span class="system-status-badge badge-prep" data-i18n="sysotto.commerce_status">Implementado · Soft-launch não fiscal em implantação</span>
             </div>
-            <p class="system-description" data-i18n="sysotto.site_desc">
-              Plataforma para criação, publicação e hospedagem dinâmica de landing pages e catálogos B2B com renderização otimizada.
-            </p>
+            <p class="system-description" data-i18n="sysotto.commerce_desc">Módulo da Trilha 2 para operações de varejo multi-filial no portal Sysotto.Web, com ativação por contrato.</p>
+            <div class="system-status-box">
+              <p class="status-entry" data-i18n="sysotto.commerce_features">A V2 reúne PDV de balcão, curva ABC de produtos e conciliação bancária com arquivos OFX e CSV.</p>
+            </div>
+            <div class="system-status-box upcoming-focus">
+              <p class="status-entry" data-i18n="sysotto.commerce_fiscal">A integração fiscal com Dados Jah está implementada. A emissão real de NFC-e e NF-e em produção depende da homologação com emitente autorizado e certificado A1.</p>
+            </div>
+          </div>
+          <figure class="case-preview">
+            <picture>
+              <source srcset="assets/images/previews/sysotto-commerce.webp" type="image/webp">
+              <img src="assets/images/previews/sysotto-commerce.jpg" width="1200" height="700" loading="lazy" decoding="async" alt="Tela de frente de caixa do Sysotto Commerce com seleção de filial, carrinho preenchido e formas de pagamento" data-i18n-alt="previews.sysotto_commerce_alt">
+            </picture>
+            <figcaption data-i18n="previews.sysotto_commerce_caption">PDV do Sysotto Commerce · Dados de demonstração</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- SiteBuilder -->
+      <div class="preview-panel" id="preview-sitebuilder" role="tabpanel" aria-labelledby="tab-sitebuilder" tabindex="0">
+        <div class="system-card system-card-compact">
+          <div class="system-info-col">
+            <div class="system-title-row">
+              <h3 class="system-title" data-i18n="sysotto.site_title">Editor visual e CMS</h3>
+              <span class="system-status-badge badge-prep" data-i18n="sysotto.status_internal">Acelerador interno</span>
+            </div>
+            <p class="system-description" data-i18n="sysotto.site_desc">Referência interna para sites autorais e catálogos B2B desenvolvidos sob contrato.</p>
 
             <div class="system-status-box">
-              <div class="status-entry" data-i18n="sysotto.site_problem" data-i18n-html="true">
-                <strong>Problema / Contexto:</strong> Criação rápida de catálogos e sites B2B sem depender de equipes de TI para cada alteração de layout.
-              </div>
+              <div class="status-entry" data-i18n="sysotto.site_problem" data-i18n-html="true"><strong>Contexto</strong> · Facilitar a criação e manutenção de sites e catálogos B2B.</div>
               <div class="status-entry" data-i18n="sysotto.site_role" data-i18n-html="true">
                 <strong>Papel &amp; Decisões de Arquitetura:</strong> Motor de templates contextuais, pipeline de compressão e recorte de mídia em WebP (Sharp) e infraestrutura de componentes modulares.
               </div>
-              <div class="status-entry" data-i18n="sysotto.site_functional" data-i18n-html="true">
-                <strong>Resultados &amp; Métricas Técnicas:</strong> Editor contextual visual com presets profissionais pré-configurados, módulo de gestão e recorte dinâmico de mídias (WebP), Help Hub e componentes SSR otimizados.
-              </div>
-            </div>
-
-            <div class="system-status-box upcoming-focus">
-              <div class="status-entry" data-i18n="sysotto.site_upcoming" data-i18n-html="true">
-                <strong>Evolução técnica planejada:</strong> Provisionamento automático de domínios personalizados e certificados SSL Let's Encrypt sob demanda.
-              </div>
+              <div class="status-entry" data-i18n="sysotto.site_functional" data-i18n-html="true"><strong>Componentes reutilizáveis</strong> · Editor visual com presets, gestão e recorte de mídia em WebP e componentes SSR.</div>
             </div>
 
             <div class="system-stack-tag" data-i18n="sysotto.site_stack">
               Stack: Next.js App Router, React 19, TypeScript, Sharp/WebP, PostgreSQL, Turborepo.
             </div>
-
-            <div class="system-action-row">
-              <span class="project-tag" data-i18n="sysotto.sites_status_tag">Plataforma Online · Versão Atual em Staging</span>
-              <a href="https://youtu.be/hRQJS_e0xpU" target="_blank" rel="noopener" class="project-video-btn" data-video-id="hRQJS_e0xpU" data-video-title-key="sysotto.sites_video_title" data-i18n-aria-label="sysotto.sites_video_aria">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                <span data-i18n="sysotto.sites_video_btn">Assistir Tour Técnico (YouTube)</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- UI Mockup: SiteBuilder Workspace -->
-          <div class="mockup-window">
-            <div class="mockup-header-bar">
-              <div class="mockup-dots">
-                <span class="mockup-dot red"></span>
-                <span class="mockup-dot yellow"></span>
-                <span class="mockup-dot green"></span>
-              </div>
-              <div class="mockup-url-bar" data-i18n="sysotto.mock_url_sites">sitebuilder.sysotto.com.br/editor?tenant=ind-norte</div>
-              <span class="mockup-illustrative-tag" data-i18n="sysotto.mockup_disclaimer">Demonstração visual · Dados ilustrativos</span>
-            </div>
-            <div class="mockup-body">
-              <div class="mockup-toolbar-header">
-                <div class="mockup-preset-title" data-i18n="sysotto.mock_preset">Preset: Indústria B2B Clean #08</div>
-                <div class="mockup-device-badges">
-                  <span class="mock-badge badge-fifo" data-i18n="sysotto.mock_device_desktop">Desktop</span>
-                  <span class="mock-badge badge-neutral" data-i18n="sysotto.mock_device_tablet">Tablet</span>
-                  <span class="mock-badge badge-neutral" data-i18n="sysotto.mock_device_mobile">Mobile</span>
-                </div>
-              </div>
-
-              <!-- Canvas simulation -->
-              <div class="mockup-canvas-box">
-                <div class="mockup-skeleton-hero"></div>
-                <div class="mockup-skeleton-text-1"></div>
-                <div class="mockup-skeleton-text-2"></div>
-                <div class="mockup-cta-btn" data-i18n="sysotto.mock_cta">Botão CTA Conectar</div>
-              </div>
-
-              <div class="mockup-sites-footer">
-                <span data-i18n="sysotto.mock_sites_footer_left">Renderizador SSR / Static Snapshots</span>
-                <span class="text-sky" data-i18n="sysotto.mock_sites_footer_right">Layout Ilustrativo · Tour em Vídeo Disponível</span>
-              </div>
-            </div>
           </div>
         </div>
       </div>
 
-      <!-- PANEL 4: Sysotto Platform Core -->
+      <!-- Sysotto Platform Core -->
       <div class="preview-panel" id="preview-core" role="tabpanel" aria-labelledby="tab-core" tabindex="0">
         <div class="system-card">
           <div class="system-info-col">
             <div class="system-title-row">
-              <h3 class="system-title" data-i18n="sysotto.core_title">Sysotto Multi-Tenant Core & Security Engine</h3>
+              <h3 class="system-title" data-i18n="sysotto.core_title">Plataforma raiz · Hardening e governança</h3>
+              <span class="system-status-badge badge-online" data-i18n="sysotto.core_status">Sprints 1 a 4 concluídas</span>
             </div>
-            <p class="system-description" data-i18n="sysotto.core_desc">
-              Núcleo de infraestrutura compartilhada, segurança e orquestração de microsserviços.
-            </p>
+            <p class="system-description" data-i18n="sysotto.core_desc">Núcleo compartilhado da Trilha 2 para identidade, isolamento de dados e controle de acesso.</p>
 
             <div class="system-status-box">
-              <div class="status-entry" data-i18n="sysotto.core_problem" data-i18n-html="true">
-                <strong>Problema de Negócio:</strong> Risco de vazamento de dados entre empresas clientes (cross-tenant data leak) e gargalos de autenticação em arquiteturas multi-tenant.
-              </div>
+              <div class="status-entry" data-i18n="sysotto.core_problem" data-i18n-html="true"><strong>Contexto</strong> · Isolar dados e permissões para cada cliente em uma plataforma compartilhada.</div>
               <div class="status-entry" data-i18n="sysotto.core_role" data-i18n-html="true">
                 <strong>Arquitetura & Implementação (Otto Freitag):</strong> Middleware central de resolução de tenant fail-closed, orquestrador de migrations de banco com advisory lock concorrente e camada de autorização OpenIddict / JWT.
               </div>
-              <div class="status-entry" data-i18n="sysotto.core_functional" data-i18n-html="true">
-                <strong>Escopo arquitetural implementado:</strong> Resolução dinâmica de tenant via middleware (MonolithTenantProvider) com proteção contra tenant injection, isolamento lógico com PostgreSQL Row Level Security (RLS), autorização OAuth2 / OIDC via OpenIddict e cache distribuído Redis.
-              </div>
-            </div>
-
-            <div class="system-status-box upcoming-focus">
-              <div class="status-entry" data-i18n="sysotto.core_upcoming" data-i18n-html="true">
-                <strong>Evolução técnica planejada:</strong> Portal unificado SSO com dashboard centralizado de telemetria e métricas de faturamento por tenant.
+              <div class="status-entry" data-i18n="sysotto.core_functional" data-i18n-html="true"><strong>Isolamento e auditoria</strong> · PostgreSQL RLS por tenant e 499 endpoints auditados na matriz Endpoint × Role × Plano.</div>
+              <div class="status-entry" data-i18n="sysotto.core_delivery" data-i18n-html="true">
+                <strong>Build e governança</strong> · SemVer 2.0.0 (VER-001), builds determinísticos 100% offline, containers OCI não root (UID 1654) e documentação conforme DOC-MOD-001.
               </div>
             </div>
 
@@ -751,6 +861,7 @@
             <div class="system-action-row">
               <span class="project-tag" data-i18n="sysotto.internal_spec_note">Especificação & Arquitetura Interna Sysotto</span>
             </div>
+            <p class="status-entry" data-i18n="sysotto.engineering_references">Outras iniciativas técnicas do ecossistema incluem Sysotto.VoIP e SecHub.</p>
           </div>
 
           <!-- UI Mockup: Architecture Terminal / Security Diagnostics -->
@@ -790,17 +901,15 @@
         </div>
       </div>
 
-      <!-- PANEL 1: Sysotto Industry (IndSaaS) -->
+      <!-- Industry -->
       <div class="preview-panel" id="preview-industry" role="tabpanel" aria-labelledby="tab-industry" tabindex="0">
         <div class="system-card system-card-compact">
           <div class="system-info-col">
             <div class="system-title-row">
-              <h3 class="system-title" data-i18n="sysotto.ind_title">Sysotto ERP / Industry (IndSaaS)</h3>
-              <span class="system-status-badge badge-prep" data-i18n="sysotto.status_industry_prep">● Em Preparação</span>
+              <h3 class="system-title" data-i18n="sysotto.ind_title">Estoque e rastreabilidade industrial</h3>
+              <span class="system-status-badge badge-prep" data-i18n="sysotto.status_internal">Acelerador interno</span>
             </div>
-            <p class="system-description" data-i18n="sysotto.ind_desc">
-              Sistema integrado de gestão fabril e de estoques de alta precisão para médias e grandes operações industriais.
-            </p>
+            <p class="system-description" data-i18n="sysotto.ind_desc">Blocos de gestão fabril e de estoque, com demonstração privada para projetos industriais sob medida.</p>
 
             <div class="system-status-box">
               <div class="status-entry" data-i18n="sysotto.ind_problem" data-i18n-html="true">
@@ -811,12 +920,6 @@
               </div>
               <div class="status-entry" data-i18n="sysotto.ind_functional" data-i18n-html="true">
                 <strong>Escopo arquitetural implementado:</strong> Gestão avançada de inventário com estratégias automatizadas FEFO/FIFO/LIFO, controle de lotes com validade e quarentena, etiquetas GS1-128 QR Code, endereçamento tridimensional de armazéns e rotinas de conciliação de inventário rotativo.
-              </div>
-            </div>
-
-            <div class="system-status-box upcoming-focus">
-              <div class="status-entry" data-i18n="sysotto.ind_upcoming" data-i18n-html="true">
-                <strong>Evolução técnica planejada:</strong> Pacote comercial Industry Lite e projeção de produtos no catálogo digital B2B.
               </div>
             </div>
 
@@ -834,17 +937,15 @@
         </div>
       </div>
 
-      <!-- PANEL 2: Sysotto FoodService (RestSaaS) -->
+      <!-- FoodService -->
       <div class="preview-panel" id="preview-foodservice" role="tabpanel" aria-labelledby="tab-foodservice" tabindex="0">
         <div class="system-card system-card-compact">
           <div class="system-info-col">
             <div class="system-title-row">
-              <h3 class="system-title" data-i18n="sysotto.food_title">Sysotto FoodService (RestSaaS)</h3>
-              <span class="system-status-badge badge-prep" data-i18n="sysotto.status_food_prep">● Em Preparação</span>
+              <h3 class="system-title" data-i18n="sysotto.food_title">Operação de salão e cozinha</h3>
+              <span class="system-status-badge badge-prep" data-i18n="sysotto.status_internal">Acelerador interno</span>
             </div>
-            <p class="system-description" data-i18n="sysotto.food_desc">
-              Plataforma especializada para restaurantes, bares e serviços alimentícios, unindo salão, cozinha e gestão de entregas.
-            </p>
+            <p class="system-description" data-i18n="sysotto.food_desc">Referência interna de experiência e módulos de salão, cozinha e impressão para projetos gastronômicos sob medida.</p>
 
             <div class="system-status-box">
               <div class="status-entry" data-i18n="sysotto.food_problem" data-i18n-html="true">
@@ -855,12 +956,6 @@
               </div>
               <div class="status-entry" data-i18n="sysotto.food_functional" data-i18n-html="true">
                 <strong>Escopo arquitetural implementado:</strong> Módulo TableOrdersManager para controle de mesas e comandas, cardápio digital dinâmico via QR Code, Kitchen Display System (KDS) em tempo real e agente desktop autônomo de impressão térmica (.NET 10 / ESC/POS).
-              </div>
-            </div>
-
-            <div class="system-status-box upcoming-focus">
-              <div class="status-entry" data-i18n="sysotto.food_upcoming" data-i18n-html="true">
-                <strong>Evolução técnica planejada:</strong> Roteirização de entregas e integrações bidirecionais de pedidos.
               </div>
             </div>
 
@@ -887,107 +982,99 @@
       <div class="section-header">
         <span class="section-pill" data-i18n="services.pill">Catálogo Comercial &amp; Contratação</span>
         <h2 id="services-heading" class="section-title" data-i18n="services.title">Serviços &amp; Formatos de Contratação</h2>
-        <p class="section-subtitle" data-i18n="services.subtitle">
-          Soluções prontas para produção e engenharia sob medida alinhadas à tabela oficial da Sysotto Softwares, com escopo transparente e foco em retorno operacional.
-        </p>
+        <p class="section-subtitle" data-i18n="services.subtitle">Sites autorais, sistemas modulares e projetos exclusivos com implantação por contrato.</p>
       </div>
 
       <div class="services-grid">
 
-        <!-- SERVICE 1: Landing Pages & Sites (Sysotto Sites) -->
+        <!-- SERVICE 1: Custom landing pages and websites -->
         <article class="service-card">
           <header class="service-card-header">
             <div class="service-card-top">
               <span class="service-icon-box" aria-hidden="true">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
               </span>
-              <span class="service-badge" data-i18n="services.sites_badge">Sysotto Sites · Presença Digital</span>
+              <span class="service-badge" data-i18n="services.sites_badge">Trilha 1 · Presença digital</span>
             </div>
-            <h3 class="service-title" data-i18n="services.sites_title">Landing Pages &amp; Sites de Alta Conversão</h3>
+            <h3 class="service-title" data-i18n="services.sites_title">Sites e landing pages sob medida</h3>
           </header>
 
           <div class="service-price-box">
-            <span class="service-price-label" data-i18n="services.sites_price">Planos mensais ou sob medida a partir de R$ 1.500</span>
+            <span class="service-price-label" data-i18n="services.sites_price">Orçamento por escopo</span>
           </div>
 
-          <p class="service-desc" data-i18n="services.sites_desc">
-            Páginas institucionais, landing pages comerciais e catálogos B2B sobre a plataforma Sysotto Sites ou em projeto personalizado com hospedagem opcional independente.
-          </p>
+          <p class="service-desc" data-i18n="services.sites_desc">Sites institucionais, landing pages e catálogos B2B com design próprio para cada cliente.</p>
           <ul class="service-deliverables">
-            <li data-i18n="services.sites_item_1">Planos mensais de prateleira na plataforma Sysotto Sites</li>
-            <li data-i18n="services.sites_item_2">Projeto personalizado sob medida a partir de R$ 1.500</li>
-            <li data-i18n="services.sites_item_3">Hospedagem opcional independente, SEO técnico e responsividade</li>
+            <li data-i18n="services.sites_item_1">Identidade visual exclusiva e build estático</li>
+            <li data-i18n="services.sites_item_2">Código-fonte entregue com portabilidade</li>
+            <li data-i18n="services.sites_item_3">Hospedagem independente opcional, SEO técnico e responsividade</li>
           </ul>
 
           <footer class="service-card-footer">
             <a href="#contact" class="btn btn-outline service-cta-btn" data-cta-source="service-sites" data-service-interest="sites" data-utm-source="ottodev" data-utm-content="service_sites">
-              <span data-i18n="services.sites_cta">Solicitar Proposta — Sites</span>
+              <span data-i18n="services.sites_cta">Solicitar proposta de site</span>
               <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </a>
           </footer>
         </article>
 
-        <!-- SERVICE 2: Sistemas Web, E-commerce & ERPs Verticais -->
+        <!-- SERVICE 2: Modular systems and e-commerce -->
         <article class="service-card service-card--featured">
           <header class="service-card-header">
             <div class="service-card-top">
               <span class="service-icon-box" aria-hidden="true">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
               </span>
-              <span class="service-badge" data-i18n="services.erp_badge">Sysotto Suite · Operação &amp; SaaS</span>
+              <span class="service-badge" data-i18n="services.erp_badge">Trilha 2 · Plataforma Sysotto</span>
             </div>
-            <h3 class="service-title" data-i18n="services.erp_title">Sistemas Web, E-commerce &amp; ERPs Verticais</h3>
+            <h3 class="service-title" data-i18n="services.erp_title">Sistemas corporativos e e-commerce modulares</h3>
           </header>
 
           <div class="service-price-box">
-            <span class="service-price-label" data-i18n="services.erp_price">Implantação &amp; customização sobre base modular Sysotto</span>
+            <span class="service-price-label" data-i18n="services.erp_price">Implantação e customização por contrato</span>
           </div>
 
-          <p class="service-desc" data-i18n="services.erp_desc">
-            Implantação e adaptação de sistemas operacionais sobre a arquitetura modular Sysotto (Commerce, Industry e Food Service), reduzindo prazo e risco de entrega.
-          </p>
+          <p class="service-desc" data-i18n="services.erp_desc">Sistemas sobre o portal unificado Sysotto.Web e o núcleo Sysotto.Api, com extensões reaproveitáveis conforme a operação de cada cliente.</p>
           <ul class="service-deliverables">
-            <li data-i18n="services.erp_item_1">Sysotto Industry: lotes FEFO/FIFO, GS1-128 e estoque 3D</li>
-            <li data-i18n="services.erp_item_2">Sysotto FoodService: KDS em tempo real, comandas e impressão térmica</li>
-            <li data-i18n="services.erp_item_3">Sysotto Commerce &amp; portais B2B com isolamento multi-tenant (RLS)</li>
+            <li data-i18n="services.erp_item_1">Portal único com isolamento por cliente via PostgreSQL RLS</li>
+            <li data-i18n="services.erp_item_2">Sysotto Commerce V2 em implantação para soft-launch não fiscal</li>
+            <li data-i18n="services.erp_item_3">Componentes reutilizáveis de vendas, estoque e financeiro</li>
           </ul>
 
           <footer class="service-card-footer">
             <a href="#contact" class="btn btn-primary service-cta-btn" data-cta-source="service-erp" data-service-interest="erp" data-utm-source="ottodev" data-utm-content="service_erp">
-              <span data-i18n="services.erp_cta">Solicitar Diagnóstico — Sistemas</span>
+              <span data-i18n="services.erp_cta">Solicitar diagnóstico de sistema</span>
               <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </a>
           </footer>
         </article>
 
-        <!-- SERVICE 3: Arquitetura de Software, Hardening & Consultoria -->
+        <!-- SERVICE 3: Bespoke projects, consulting and maintenance -->
         <article class="service-card">
           <header class="service-card-header">
             <div class="service-card-top">
               <span class="service-icon-box" aria-hidden="true">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
               </span>
-              <span class="service-badge" data-i18n="services.custom_badge">Sob Demanda · Engenharia Sênior</span>
+              <span class="service-badge" data-i18n="services.custom_badge">Trilha 3 · Engenharia dedicada</span>
             </div>
-            <h3 class="service-title" data-i18n="services.custom_title">Arquitetura, Hardening &amp; Consultoria Sob Demanda</h3>
+            <h3 class="service-title" data-i18n="services.custom_title">Projetos exclusivos e consultoria técnica</h3>
           </header>
 
           <div class="service-price-box">
-            <span class="service-price-label" data-i18n="services.custom_price">Escopo fechado ou hora técnica a R$ 250/h</span>
+            <span class="service-price-label" data-i18n="services.custom_price">Proposta sob medida</span>
           </div>
 
-          <p class="service-desc" data-i18n="services.custom_desc">
-            Projetos avulsos, auditoria arquitetural, segurança defensiva e consultoria técnica sênior com escopo fechado e entregas objetivas e auditáveis.
-          </p>
+          <p class="service-desc" data-i18n="services.custom_desc">Projetos enterprise com aplicação ou infraestrutura dedicada quando o contrato exigir, além de consultoria e sustentação de sistemas personalizados.</p>
           <ul class="service-deliverables">
-            <li data-i18n="services.custom_item_1">Projetos avulsos com escopo fechado e marcos auditáveis</li>
-            <li data-i18n="services.custom_item_2">Hardening de APIs, modelagem de dados e isolamento multi-tenant</li>
-            <li data-i18n="services.custom_item_3">Hora técnica sênior (R$ 250/h) para destravar arquitetura e entregas</li>
+            <li data-i18n="services.custom_item_1">Integrações críticas e engenharia de desempenho</li>
+            <li data-i18n="services.custom_item_2">Consultoria de arquitetura, hardening e isolamento de dados</li>
+            <li data-i18n="services.custom_item_3">Manutenção dedicada com escopo de sustentação contratado</li>
           </ul>
 
           <footer class="service-card-footer">
             <a href="#contact" class="btn btn-outline service-cta-btn" data-cta-source="service-custom" data-service-interest="custom" data-utm-source="ottodev" data-utm-content="service_custom">
-              <span data-i18n="services.custom_cta">Contratar Consultoria / Escopo</span>
+              <span data-i18n="services.custom_cta">Conversar sobre o escopo</span>
               <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </a>
           </footer>
@@ -995,9 +1082,7 @@
 
       </div>
 
-      <p class="services-footnote" data-i18n="services.note">
-        Valores de referência alinhados ao catálogo comercial Sysotto Softwares. Todo projeto inicia com alinhamento de escopo, prazos e critérios objetivos de entrega.
-      </p>
+      <p class="services-footnote" data-i18n="services.note">Escopo, prazos e condições são definidos na proposta para cada cliente.</p>
     </div>
   </section>
 
@@ -1091,7 +1176,7 @@
             <div class="timeline-role" data-i18n="timeline.sysotto_role">CEO & Arquiteto Fundador</div>
             <div class="timeline-company">Sysotto Softwares</div>
             <div class="timeline-date" data-i18n="timeline.sysotto_date">2022 – Presente</div>
-            <p class="timeline-desc" data-i18n="timeline.sysotto_desc">Liderança integral no desenvolvimento das plataformas SaaS de ERP Industrial, Food Service e SiteBuilder Multi-tenant em .NET 10 e Next.js.</p>
+            <p class="timeline-desc" data-i18n="timeline.sysotto_desc">Liderança técnica na Sysotto Softwares, com sites autorais, sistemas modulares sobre Sysotto.Web e Sysotto.Api e projetos sob medida em .NET e Next.js.</p>
           </div>
 
           <div class="timeline-step">
@@ -1176,21 +1261,21 @@
             </div>
             <div>
               <h3 class="stack-cat-title" data-i18n="skills.core_title">Tecnologias nos Projetos Atuais da Sysotto</h3>
-              <p class="stack-cat-desc" data-i18n="skills.core_desc">Tecnologias centrais aplicadas na arquitetura e engenharia das plataformas da Sysotto Softwares (Sites, Industry Suite e FoodService).</p>
+              <p class="stack-cat-desc" data-i18n="skills.core_desc">Tecnologias usadas na plataforma modular Sysotto.Web e Sysotto.Api, incluindo o Sysotto Commerce.</p>
             </div>
           </div>
           <div class="stack-items-grid">
-            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">C# & .NET 10</span> <span class="stack-ref" data-i18n="skills.ref_industry">Sysotto Industry</span></div>
-            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">ASP.NET Core Web API</span> <span class="stack-ref" data-i18n="skills.ref_industry_sites">Sysotto Industry / Sites</span></div>
-            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Entity Framework Core</span> <span class="stack-ref" data-i18n="skills.ref_industry">Sysotto Industry</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">C# & .NET 10</span> <span class="stack-ref" data-i18n="skills.ref_api">Sysotto.Api</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">ASP.NET Core Web API</span> <span class="stack-ref" data-i18n="skills.ref_api">Sysotto.Api</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Entity Framework Core</span> <span class="stack-ref" data-i18n="skills.ref_api">Sysotto.Api</span></div>
             <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">PostgreSQL 17 & RLS</span> <span class="stack-ref" data-i18n="skills.ref_multitenant">Sysotto Multi-Tenant</span></div>
-            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Next.js (App Router)</span> <span class="stack-ref" data-i18n="skills.ref_sites">Sysotto Sites</span></div>
-            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">React & TypeScript</span> <span class="stack-ref" data-i18n="skills.ref_sites_ui">Sysotto Sites / UI</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Next.js (App Router)</span> <span class="stack-ref" data-i18n="skills.ref_web">Sysotto.Web</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">React & TypeScript</span> <span class="stack-ref" data-i18n="skills.ref_web">Sysotto.Web</span></div>
             <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Docker & Compose</span> <span class="stack-ref" data-i18n="skills.ref_infra">Sysotto Infra</span></div>
-            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Redis Cache</span> <span class="stack-ref" data-i18n="skills.ref_industry">Sysotto Industry</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Redis Cache</span> <span class="stack-ref" data-i18n="skills.ref_api">Sysotto.Api</span></div>
             <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">OpenIddict OAuth2/OIDC</span> <span class="stack-ref" data-i18n="skills.ref_auth">Sysotto Auth</span></div>
-            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Arquitetura Multi-Tenant</span> <span class="stack-ref" data-i18n="skills.ref_core">Sysotto Core</span></div>
-            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Tailwind CSS</span> <span class="stack-ref" data-i18n="skills.ref_sites">Sysotto Sites</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Arquitetura Multi-Tenant</span> <span class="stack-ref" data-i18n="skills.ref_core">Plataforma Sysotto</span></div>
+            <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Tailwind CSS</span> <span class="stack-ref" data-i18n="skills.ref_web">Sysotto.Web</span></div>
             <div class="stack-item"><span class="stack-dot dot-core"></span> <span class="stack-name">Linux & Shell Scripting</span> <span class="stack-ref" data-i18n="skills.ref_deploy">Ambiente & Deploy</span></div>
           </div>
         </div>
@@ -1581,7 +1666,7 @@
     </div>
   </section>
 
-  <!-- Contact & CV Downloads -->
+  <!-- Contact -->
   <section class="section-padding section-bg-alt" id="contact">
     <div class="container">
       <div class="contact-card">
@@ -1612,52 +1697,14 @@
                 </div>
               </div>
             </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-              </div>
-              <div>
-                <div class="contact-label" data-i18n="contact.linkedin_label">LinkedIn:</div>
-                <div class="contact-val">
-                  <a href="https://www.linkedin.com/in/otto-freitag-60912031" target="_blank" rel="noopener">linkedin.com/in/otto-freitag-60912031</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-              </div>
-              <div>
-                <div class="contact-label" data-i18n="contact.github_label">GitHub:</div>
-                <div class="contact-val">
-                  <a href="https://github.com/OttoF77" target="_blank" rel="noopener">github.com/OttoF77</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-              </div>
-              <div>
-                <div class="contact-label" data-i18n="contact.cv_label">Currículo Profissional:</div>
-                <div class="contact-val">
-                  <a href="assets/docs/cv-otto-freitag-pt-br.pdf" download="CV-Otto-David-Freitag-PT-BR.pdf" data-dynamic-cv data-i18n="contact.cv_link_text">Baixar Versão Consolidada (PDF)</a>
-                </div>
-              </div>
-            </div>
-
           </div>
         </div>
 
-        <!-- Direct Executive Contact Channels -->
+        <!-- Email contact -->
         <div class="contact-actions-col">
           <div class="contact-channel-card">
-            <span class="channel-badge" data-i18n="contact.fast_response">Atendimento Direto & Ágil</span>
             <h3 data-i18n="contact.channel_title">Vamos conversar sobre seu projeto ou oportunidade?</h3>
-            <p data-i18n="contact.channel_desc">Disponível para posições executivas de liderança, arquitetura técnica de software corporativo e parcerias estratégicas.</p>
+            <p data-i18n="contact.channel_desc">Envie sua solicitação por e-mail.</p>
             <div id="contact-origin-context" class="contact-origin-note is-hidden" role="status" aria-live="polite">
               <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
               <span><span data-i18n="contact.origin_prefix">Contexto de contato:</span> <strong id="contact-origin-label"></strong></span>
@@ -1667,10 +1714,6 @@
               <a href="mailto:otto@sysotto.com" id="contact-email-cta" data-contact-mailto data-base-email="otto@sysotto.com" class="btn btn-primary">
                 <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                 <span data-i18n="contact.btn_email">Enviar E-mail Direto</span>
-              </a>
-              <a href="assets/docs/cv-otto-freitag-pt-br.pdf" download="CV-Otto-David-Freitag-PT-BR.pdf" data-dynamic-cv class="btn btn-secondary">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                <span data-i18n="contact.btn_cv">Baixar Currículo (PDF)</span>
               </a>
             </div>
 
@@ -1692,6 +1735,10 @@
   <footer class="site-footer">
     <div class="container footer-content">
       <p>© 2026 Otto David de Santana Freitag. <span data-i18n="footer.rights">Todos os direitos reservados.</span></p>
+      <div class="footer-profiles">
+        <a href="https://www.linkedin.com/in/otto-freitag-60912031" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/OttoF77" target="_blank" rel="noopener">GitHub</a>
+      </div>
       <p class="footer-built-with" data-i18n="footer.built_with">Construído com padrões modernos web, hospedado no GitHub Pages.</p>
     </div>
   </footer>

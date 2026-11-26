@@ -2,7 +2,7 @@
 """
 Integrity & Quality Audit Script for Otto Freitag Portfolio
 Checks:
-1. Relative asset & link integrity (src, href, data-cert-file) in index.html & en/index.html
+1. Relative asset & link integrity (src, srcset, href, data-cert-file) in index.html & en/index.html
 2. Full i18n key parity between HTML markup and js/i18n.js (pt-BR and en-US)
 3. Zero inline style="..." attributes in HTML files
 4. JSON-LD Schema.org validity
@@ -38,8 +38,16 @@ def log_fail(msg):
 def log_info(msg):
     print(f"{Colors.BOLD}{Colors.CYAN}{msg}{Colors.RESET}")
 
+def srcset_urls(candidates):
+    while parts := candidates.lstrip(' ,\t\r\n\f').split(maxsplit=1):
+        url, *remaining = parts
+        yield url.rstrip(',')
+        candidates = remaining[0] if remaining else ''
+        if not url.endswith(','):
+            candidates = candidates.partition(',')[2]
+
 def check_file_references(html_path, base_dir):
-    """Verify that all local files referenced in src, href, and data-cert-file exist on disk."""
+    """Verify that linked local files and responsive image candidates exist on disk."""
     errors = []
     with open(html_path, 'r', encoding='utf-8') as f:
         html = f.read()
@@ -47,12 +55,14 @@ def check_file_references(html_path, base_dir):
     # Match src, href, data-cert-file
     pattern = re.compile(r'(?:src|href|data-cert-file)=["\']([^"\']+)["\']', re.IGNORECASE)
     matches = pattern.findall(html)
+    for candidates in re.findall(r'\bsrcset=["\']([^"\']+)["\']', html, re.IGNORECASE):
+        matches.extend(srcset_urls(candidates))
 
     checked = 0
     for ref in matches:
         ref_clean = ref.strip()
         # Skip remote URLs, anchors, mailto, javascript, about:
-        if ref_clean.startswith(('http://', 'https://', 'mailto:', '#', 'about:', 'javascript:')) or not ref_clean:
+        if ref_clean.startswith(('http://', 'https://', 'mailto:', '#', 'about:', 'javascript:', 'data:')) or not ref_clean:
             continue
 
         # Strip query strings and hash anchors
@@ -212,7 +222,7 @@ def main():
     all_passed = True
 
     # 1. Check local file references
-    log_info("1. Local File References (src, href, data-cert-file)")
+    log_info("1. Local File References (src, srcset, href, data-cert-file)")
     idx_count, idx_errs = check_file_references(ROOT_DIR / 'index.html', ROOT_DIR)
     if idx_errs:
         all_passed = False

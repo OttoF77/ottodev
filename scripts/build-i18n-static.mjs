@@ -104,11 +104,21 @@ export function buildStaticI18n() {
   html = html.replace(/<meta\s+property="og:locale"\s+content="pt_BR"/i, '<meta property="og:locale" content="en_US"');
   html = html.replace(/<meta\s+property="og:locale:alternate"\s+content="en_US"/i, '<meta property="og:locale:alternate" content="pt_BR"');
 
-  // 9. Update Structured Data (Schema.org / JSON-LD)
-  html = html.replace(
-    /"@type":\s*"WebSite",\s*"name":\s*"Otto Freitag — Portfólio Profissional",\s*"url":\s*"https:\/\/ottof77\.github\.io\/ottodev\/",\s*"inLanguage":\s*\[\s*"pt-BR",\s*"en-US"\s*\]/,
-    '"@type": "WebSite",\n        "name": "Otto Freitag — Professional Portfolio",\n        "url": "https://ottof77.github.io/ottodev/en/",\n        "inLanguage": [\n          "en-US",\n          "pt-BR"\n        ]'
-  );
+  // 9. Translate JSON-LD copy while preserving identities shared by both pages.
+  const pt = allTranslations['pt-BR'];
+  const schemaText = new Map(Object.keys(pt)
+    .filter(key => key.startsWith('schema.') || key === 'meta.title' || key === 'meta.description')
+    .map(key => [pt[key], en[key]]));
+  html = html.replace(/(<script\s+type="application\/ld\+json">)([\s\S]*?)(<\/script>)/gi,
+    (_, openTag, block, closeTag) => {
+      const data = JSON.parse(block, (key, value) => schemaText.get(value) ?? value);
+      const page = data['@graph'].find(node => node['@type'] === 'WebPage');
+      page.url = new URL('en/', page.url).href;
+      page['@id'] = `${page.url}#webpage`;
+      page.inLanguage = 'en-US';
+      const localized = JSON.stringify(data, null, 2).replace(/</g, '\\u003c').replace(/^/gm, '  ');
+      return `${openTag}\n${localized}\n  ${closeTag}`;
+    });
 
   // 10. Update Language Switcher Button UI for English page
   html = html.replace(
@@ -211,6 +221,8 @@ export function buildStaticI18n() {
   html = html
     .replace(/\bhref="assets\//g, 'href="../assets/')
     .replace(/\bsrc="assets\//g, 'src="../assets/')
+    .replace(/\bsrcset="([^"]*)"/g, (_, candidates) =>
+      `srcset="${candidates.replace(/((?:^|,)\s*)assets\//g, '$1../assets/')}"`)
     .replace(/\bdata-cert-file="assets\//g, 'data-cert-file="../assets/')
     .replace(/\bhref="css\//g, 'href="../css/')
     .replace(/\bsrc="js\//g, 'src="../js/');

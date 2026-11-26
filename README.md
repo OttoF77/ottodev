@@ -27,19 +27,17 @@ Construído sobre padrões modernos da web sem dependências de frameworks exter
    - Script inline anti-FOUC (Flash of Unstyled Content) garantindo renderização instantânea no tema correto antes da pintura da página.
    - Persistência da escolha do usuário no `localStorage`.
 
-3. **Arquitetura Sysotto Softwares & Soluções Modulares:**
-   - Apresentação da **Sysotto Softwares** como ecossistema concebido e arquitetado por Otto David de Santana Freitag para resolver problemas operacionais e de presença corporativa.
-   - Demonstração transparente do estágio de maturidade técnica de cada frente:
-     - **Sysotto Sites (SitesSaaS):** Plataforma web e CMS contextual online em ambiente de homologação/staging, com tour técnico em vídeo e arquitetura documentada.
-     - **Sysotto ERP / Industry (IndSaaS):** Especificação de arquitetura para inventário de alta precisão (FEFO/FIFO), rastreabilidade de lotes e controle fabril em fase de preparação técnica.
-     - **Sysotto FoodService (RestSaaS):** Modelagem de controle de comandas, KDS e agente desktop de impressão térmica em fase de preparação técnica.
-     - **Sysotto Multi-Tenant Core:** Arquitetura de referência de isolamento lógico de banco com PostgreSQL RLS, OpenIddict OAuth2/OIDC e cache distribuído.
-   - Todos os mockups visuais acompanham sinalização explícita de "Demonstração visual · Dados ilustrativos".
+3. **Sysotto Softwares · Software house modular em três trilhas (ADR 008)**
+   - **Sites e landing pages autorais.** Identidade visual própria e build estático portável.
+   - **Sistemas corporativos modulares.** Implantação por contrato sobre `Sysotto.Web` e `Sysotto.Api`, com isolamento por tenant e extensões por cliente. O Sysotto Commerce V2 está em implantação para o soft-launch não fiscal.
+   - **Projetos exclusivos e consultoria técnica.** Engenharia sob medida, arquitetura e hardening, com aplicação ou infraestrutura dedicada quando o contrato exigir.
+   - O case documenta o hardening da plataforma compartilhada e o papel dos aceleradores internos. A seção de Serviços direciona propostas e diagnósticos para o contato por e-mail.
 
 4. **Casos Técnicos em Destaque & Projetos Relevantes:**
    - **CondoTrack (Destaque Técnico · Simulação No Country S08-26 / Equipe 17):** Plataforma de operações e rastreabilidade 360° em Java 21, Spring Boot 3, Next.js 14, TypeScript e Docker. Otto atuou como Líder Técnico e arquiteto backend, implementando validação de QR Code indexado via B-Tree (<400ms), reservas com locks atômicos concorrentes e suíte com 114 testes automatizados em <9s.
-   - **Sysotto Sites Showcase (Destaque Técnico · Sysotto Softwares):** Arquitetura SaaS multi-tenant em C#, .NET 10, PostgreSQL e Next.js com foco em autonomia de gestão web e isolamento corporativo.
    - **TechMind (Destaque Técnico · Hackathon ONE | Oracle + Alura):** Classificação inteligente com microsserviço Java 17 / Spring Boot, API de inferência Python / FastAPI, React 19 e deploy em Oracle Cloud (OCI).
+   - **LAMARIÊ.** Design system e protótipo editorial validados no Figma Make para desktop e celular. A etapa transacional e a integração com ERP são apresentadas como conceito.
+   - **Capturas reais.** Vitrine pública da Sysotto, PDV do Commerce com dados de demonstração e protótipo LAMARIÊ, em WebP com fallback JPG e textos alternativos bilíngues.
    - Demais projetos acessíveis via filtros por categoria: Estruturas de Dados em C (gestão manual de memória na heap), E-Commerce Microservices (.NET), Challenge LiterAlura (Java/Spring Boot) e Classificador Inteligente de E-mails (Python NLP).
 
 5. **Taxonomia Tecnológica em 3 Níveis de Maturidade:**
@@ -73,6 +71,10 @@ Construído sobre padrões modernos da web sem dependências de frameworks exter
 ```
 ottodev/
 ├── index.html                   # Estrutura semântica e acessível do portfólio
+├── en/
+│   └── index.html               # Página estática em inglês gerada pelo script de i18n
+├── robots.txt                   # Diretivas de indexação
+├── sitemap.xml                  # URLs canônicas e alternâncias de idioma
 ├── .nojekyll                    # Impede processamento Jekyll no GitHub Pages
 ├── .github/
 │   └── workflows/
@@ -83,6 +85,9 @@ ottodev/
 │   ├── theme.js                 # Gerenciamento de tema (OS preference, toggle, anti-FOUC, a11y)
 │   ├── i18n.js                  # Dicionários bilíngues (PT-BR / EN-US), metadados dinâmicos e CVs
 │   └── main.js                  # Modal acessível, filtros de projetos, abas WAI-ARIA, menu mobile
+├── scripts/
+│   ├── build-i18n-static.mjs     # Regenera a página em inglês e localiza seus metadados
+│   └── verify.py               # Audita referências, i18n, estilos inline, JSON-LD e SEO
 └── assets/
     ├── docs/
     │   ├── cv-otto-freitag-pt-br.pdf   # Currículo oficial em Português
@@ -100,12 +105,9 @@ ottodev/
     │   └── cert-cisco-intro-data-science.pdf
     └── images/
         ├── monogram-of.svg             # Favicon e monograma vetorial
-        ├── otto-freitag.jpg            # Retrato profissional e imagem Open Graph
-        ├── logolight.svg / logodark.svg
-        ├── indsaaslogolight.svg / indsaaslogodark.svg
-        ├── restsaaslogolight.svg / restsaaslogodark.svg
-        ├── siteslogolight.svg / siteslogodark.svg
-        └── sysottologolight.svg / sysottologodark.svg
+        ├── otto-freitag.jpg            # Retrato profissional de fallback
+        ├── og-cover.jpg                # Imagem Open Graph
+        └── previews/                   # Capturas dos cases em WebP e JPG
 ```
 
 ---
@@ -122,7 +124,16 @@ python3 -m http.server 8000
 npx serve .
 ```
 
-Abra `http://localhost:8000` no seu navegador.
+Abra `http://localhost:8000/` para português ou `http://localhost:8000/en/` para inglês.
+
+Estes comandos regeneram a rota em inglês e executam a auditoria após alterações na página principal ou nos dicionários.
+
+```bash
+node scripts/build-i18n-static.mjs
+python3 scripts/verify.py
+```
+
+As duas rotas incluem metadados de SEO localizados, URLs canônicas próprias e os dados estruturados do portfólio e do catálogo de serviços da Sysotto. Atualize o `lastmod` de cada rota no sitemap quando seu conteúdo mudar de forma relevante.
 
 ---
 
@@ -145,7 +156,12 @@ Para publicar:
 
 ## 📬 Contato
 
+O portfólio `ottodev` recebe solicitações exclusivamente por e-mail, sem WhatsApp, chatbot, VoIP ou uso de número pessoal. A decisão está registrada na [issue #21](https://github.com/OttoF77/ottodev/issues/21).
+
 - **E-mail:** [otto@sysotto.com](mailto:otto@sysotto.com)
+
+## Perfis profissionais
+
 - **LinkedIn:** [linkedin.com/in/otto-freitag-60912031](https://www.linkedin.com/in/otto-freitag-60912031)
 - **GitHub:** [github.com/OttoF77](https://github.com/OttoF77)
 - **Localização:** Parnaíba / Teresina - PI, Brasil (Disponível para atuação remota)

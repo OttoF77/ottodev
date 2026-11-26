@@ -452,16 +452,16 @@ function initCtaTracking() {
       utmSource: 'ottodev',
       utmContent: 'hero_projects',
       label: {
-        'pt-BR': 'Projetos em Produção (Hero)',
-        'en-US': 'Production Projects (Hero)'
+        'pt-BR': 'Cases e projetos (Hero)',
+        'en-US': 'Case Studies and Projects (Hero)'
       },
       subject: {
         'pt-BR': '[Projetos & Cases] Contato via Portfólio ottodev',
         'en-US': '[Projects & Cases] Contact via ottodev Portfolio'
       },
       body: {
-        'pt-BR': 'Olá Otto,\n\nVi seus projetos em produção no portfólio e gostaria de conversar.\n\n[Origem: Portfólio ottodev — CTA Projetos do Hero | utm_content=hero_projects]',
-        'en-US': 'Hi Otto,\n\nI reviewed your production projects on your portfolio and would like to connect.\n\n[Source: ottodev Portfolio — Hero Projects CTA | utm_content=hero_projects]'
+        'pt-BR': 'Olá Otto,\n\nVi os cases e projetos no seu portfólio e gostaria de conversar.\n\n[Origem: Portfólio ottodev — CTA Projetos do Hero | utm_content=hero_projects]',
+        'en-US': 'Hi Otto,\n\nI reviewed the case studies and projects in your portfolio and would like to connect.\n\n[Source: ottodev Portfolio — Hero Projects CTA | utm_content=hero_projects]'
       }
     },
     'hero-cv': {
@@ -485,16 +485,16 @@ function initCtaTracking() {
       utmContent: 'service_sites',
       serviceInterest: 'sites',
       label: {
-        'pt-BR': 'Serviço: Landing Pages & Sites (Sysotto Sites)',
-        'en-US': 'Service: Landing Pages & Websites (Sysotto Sites)'
+        'pt-BR': 'Trilha 1 · Sites e landing pages sob medida',
+        'en-US': 'Track 1 · Custom Websites and Landing Pages'
       },
       subject: {
-        'pt-BR': '[Proposta: Landing Page / Site] Contato via Portfólio ottodev',
-        'en-US': '[Proposal: Landing Page / Website] Contact via ottodev Portfolio'
+        'pt-BR': '[Trilha 1 · Proposta de site sob medida] Contato via Portfólio ottodev',
+        'en-US': '[Track 1 · Custom Website Quote] Contact via ottodev Portfolio'
       },
       body: {
-        'pt-BR': 'Olá Otto,\n\nTenho interesse em contratar uma Landing Page ou Site de Alta Conversão (Sysotto Sites / projeto sob medida).\n\n[Origem: Portfólio ottodev — Serviço: sites | utm_content=service_sites]',
-        'en-US': 'Hi Otto,\n\nI am interested in hiring a high-converting Landing Page or Website (Sysotto Sites / custom build).\n\n[Source: ottodev Portfolio — Service: sites | utm_content=service_sites]'
+        'pt-BR': 'Olá Otto,\n\nGostaria de solicitar uma proposta para um site ou landing page sob medida.\n\n[Origem: Portfólio ottodev — Trilha 1 · Presença digital | utm_content=service_sites]',
+        'en-US': 'Hi Otto,\n\nI would like a quote for a custom website or landing page.\n\n[Source: ottodev Portfolio — Track 1 · Digital Presence | utm_content=service_sites]'
       }
     },
     'service-erp': {
@@ -502,16 +502,16 @@ function initCtaTracking() {
       utmContent: 'service_erp',
       serviceInterest: 'erp',
       label: {
-        'pt-BR': 'Serviço: Sistemas Web, E-commerce & ERPs (Sysotto)',
-        'en-US': 'Service: Web Systems, E-Commerce & ERPs (Sysotto)'
+        'pt-BR': 'Trilha 2 · Sistemas corporativos e e-commerce modulares',
+        'en-US': 'Track 2 · Modular Enterprise Systems and E-Commerce'
       },
       subject: {
-        'pt-BR': '[Diagnóstico: Sistema Web / ERP Sysotto] Contato via Portfólio ottodev',
-        'en-US': '[Assessment: Web System / Sysotto ERP] Contact via ottodev Portfolio'
+        'pt-BR': '[Trilha 2 · Diagnóstico de sistema modular] Contato via Portfólio ottodev',
+        'en-US': '[Track 2 · Modular Systems Assessment] Contact via ottodev Portfolio'
       },
       body: {
-        'pt-BR': 'Olá Otto,\n\nGostaria de solicitar um diagnóstico para implantação ou customização de Sistema Web, E-commerce ou ERP Vertical Sysotto.\n\n[Origem: Portfólio ottodev — Serviço: erp | utm_content=service_erp]',
-        'en-US': 'Hi Otto,\n\nI would like to request an assessment for deploying or customizing a Web System, E-Commerce, or Vertical Sysotto ERP.\n\n[Source: ottodev Portfolio — Service: erp | utm_content=service_erp]'
+        'pt-BR': 'Olá Otto,\n\nGostaria de um diagnóstico para implantar ou adaptar um sistema corporativo ou e-commerce sobre a plataforma modular Sysotto.\n\n[Origem: Portfólio ottodev — Trilha 2 · Plataforma Sysotto | utm_content=service_erp]',
+        'en-US': 'Hi Otto,\n\nI would like an assessment for deploying or adapting an enterprise or e-commerce system on the modular Sysotto platform.\n\n[Source: ottodev Portfolio — Track 2 · Sysotto Platform | utm_content=service_erp]'
       }
     },
     'service-custom': {
@@ -519,16 +519,16 @@ function initCtaTracking() {
       utmContent: 'service_custom',
       serviceInterest: 'custom',
       label: {
-        'pt-BR': 'Serviço: Arquitetura, Hardening & Consultoria Sob Demanda',
-        'en-US': 'Service: Architecture, Hardening & On-Demand Consulting'
+        'pt-BR': 'Trilha 3 · Projetos exclusivos e consultoria técnica',
+        'en-US': 'Track 3 · Bespoke Projects and Technical Consulting'
       },
       subject: {
-        'pt-BR': '[Consultoria / Projeto Sob Demanda] Contato via Portfólio ottodev',
-        'en-US': '[Consulting / Custom Project] Contact via ottodev Portfolio'
+        'pt-BR': '[Trilha 3 · Projeto exclusivo ou consultoria] Contato via Portfólio ottodev',
+        'en-US': '[Track 3 · Bespoke Project or Consulting] Contact via ottodev Portfolio'
       },
       body: {
-        'pt-BR': 'Olá Otto,\n\nTenho interesse em consultoria técnica, hardening ou projeto de arquitetura de software sob demanda.\n\n[Origem: Portfólio ottodev — Serviço: custom | utm_content=service_custom]',
-        'en-US': 'Hi Otto,\n\nI am interested in technical consulting, hardening, or an on-demand software architecture project.\n\n[Source: ottodev Portfolio — Service: custom | utm_content=service_custom]'
+        'pt-BR': 'Olá Otto,\n\nGostaria de conversar sobre o escopo de um projeto exclusivo, consultoria de arquitetura ou manutenção dedicada.\n\n[Origem: Portfólio ottodev — Trilha 3 · Engenharia dedicada | utm_content=service_custom]',
+        'en-US': 'Hi Otto,\n\nI would like to discuss the scope of a bespoke project, architecture consulting, or dedicated maintenance.\n\n[Source: ottodev Portfolio — Track 3 · Dedicated Engineering | utm_content=service_custom]'
       }
     }
   };
