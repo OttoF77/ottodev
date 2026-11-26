@@ -112,8 +112,12 @@ const translations = {
     'about.diff_3_desc': 'Práticas rigorosas de arquitetura limpa, testes automatizados, segurança fail-closed e isolamento multi-tenant.',
     'timeline.title': 'Marcos Executivos & Trajetória',
     'timeline.sysotto_role': 'CEO & Arquiteto Fundador',
-    'timeline.sysotto_date': '2022 – Presente',
+    'timeline.sysotto_date': '2026 – Presente',
     'timeline.sysotto_desc': 'Liderança técnica na Sysotto Softwares, com sites autorais, sistemas modulares sobre Sysotto.Web e Sysotto.Api e projetos sob medida em .NET e Next.js.',
+    'timeline.builder_role': 'Construtor Residencial',
+    'timeline.builder_affiliation': 'Atuação autônoma',
+    'timeline.builder_date': '2021 – Presente',
+    'timeline.builder_desc': 'Atuação na execução de obras de construção civil, com acompanhamento das etapas de trabalho no canteiro.',
     'timeline.servicon_role': 'Sócio-Gerente',
     'timeline.servicon_date': '2017 – 2021',
     'timeline.servicon_desc': 'Gestão comercial de energia solar e infraestrutura nos estados do Piauí e Maranhão, além da administração contábil e financeira.',
@@ -145,7 +149,7 @@ const translations = {
     'sysotto.company_name': 'Sysotto Softwares',
     'sysotto.company_tagline': 'Engenharia de software sob medida',
     'sysotto.role_badge': 'Otto Freitag · Fundador e arquiteto',
-    'sysotto.lead': 'O ADR 008 formalizou a atuação da Sysotto como software house modular em três trilhas.',
+    'sysotto.lead': 'Sua empresa pode contratar a Sysotto para criar um site, implantar um sistema na plataforma Sysotto ou desenvolver um projeto sob medida.',
     'sysotto.track_1_title': 'Trilha 1 · Sites e landing pages autorais',
     'sysotto.track_1_desc': 'Design sob medida por cliente, com build estático portável para Caddy ou Cloudflare Pages.',
     'sysotto.track_2_title': 'Trilha 2 · Sistemas sobre o Core Sysotto',
@@ -452,8 +456,7 @@ const translations = {
     'contact.origin_prefix': 'Contexto de contato:',
 
     // Footer
-    'footer.rights': 'Todos os direitos reservados.',
-    'footer.built_with': 'Construído com padrões modernos web, hospedado no GitHub Pages.'
+    'footer.rights': 'Todos os direitos reservados.'
   },
 
   'en-US': {
@@ -564,8 +567,12 @@ const translations = {
     'about.diff_3_desc': 'Strict adherence to clean code, comprehensive automated testing, fail-closed security models, and resilient multi-tenant isolation.',
     'timeline.title': 'Executive Milestones & Career',
     'timeline.sysotto_role': 'CEO & Founding Architect',
-    'timeline.sysotto_date': '2022 – Present',
+    'timeline.sysotto_date': '2026 – Present',
     'timeline.sysotto_desc': 'Technical leadership at Sysotto Softwares across custom websites, modular systems built on Sysotto.Web and Sysotto.Api, and bespoke projects using .NET and Next.js.',
+    'timeline.builder_role': 'Residential Builder',
+    'timeline.builder_affiliation': 'Self-employed',
+    'timeline.builder_date': '2021 – Present',
+    'timeline.builder_desc': 'Carrying out construction work and tracking progress on site.',
     'timeline.servicon_role': 'Managing Partner',
     'timeline.servicon_date': '2017 – 2021',
     'timeline.servicon_desc': 'Commercial management of solar energy and infrastructure in the states of Piauí and Maranhão, alongside accounting and financial administration.',
@@ -597,7 +604,7 @@ const translations = {
     'sysotto.company_name': 'Sysotto Softwares',
     'sysotto.company_tagline': 'Custom software engineering',
     'sysotto.role_badge': 'Otto Freitag · Founder and architect',
-    'sysotto.lead': 'ADR 008 formalized Sysotto’s model as a modular software house with three engagement tracks.',
+    'sysotto.lead': 'Your business can hire Sysotto to build a website, implement a system on the Sysotto platform, or develop custom software.',
     'sysotto.track_1_title': 'Track 1 · Custom Websites and Landing Pages',
     'sysotto.track_1_desc': 'A design tailored to each customer, with a portable static build deployable via Caddy or Cloudflare Pages.',
     'sysotto.track_2_title': 'Track 2 · Systems Built on the Sysotto Core',
@@ -904,8 +911,7 @@ const translations = {
     'contact.origin_prefix': 'Contact context:',
 
     // Footer
-    'footer.rights': 'All rights reserved.',
-    'footer.built_with': 'Built with modern web standards, hosted on GitHub Pages.'
+    'footer.rights': 'All rights reserved.'
   }
 };
 
